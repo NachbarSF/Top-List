@@ -445,6 +445,8 @@ th .nicb[aria-pressed=false]{opacity:.9;color:var(--accent)}
 .lrow.sfw.folded{padding-top:4px;padding-bottom:4px}
 .lrow.sfw.folded > :not(.sfold){display:none!important}
 #gainSeg button.foc{box-shadow:inset 0 0 0 2px var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
+#gainSeg button[aria-pressed="true"]:not(.foc){background:none;color:var(--dim)}
+#gainSeg button.cur[aria-pressed="true"]{color:var(--accent)}
 th.gfoc{background:color-mix(in srgb,var(--accent) 26%,var(--panel2));box-shadow:inset 0 -4px 0 var(--accent),inset 2px 0 0 var(--accent),inset -2px 0 0 var(--accent)}
 th.gfoc button{color:var(--text)}
 td.gfoc{background-image:linear-gradient(color-mix(in srgb,var(--accent) 17%,transparent),color-mix(in srgb,var(--accent) 17%,transparent));box-shadow:inset 2px 0 0 var(--accent),inset -2px 0 0 var(--accent)}
@@ -3049,7 +3051,7 @@ function buildGain() {
                             ['x', t('gX', {x: gx}), t('gXTip', {x: gx})]].map(function (o) {
     var on = (S.gm || 'day') === o[0];
     return '<button type="button" data-gm="' + o[0] + '" data-tip="' + esc(o[2] + ' · ' + t(on && st.gfoc ? 'gFocOff' : 'gFocOn')) + '" aria-pressed="' + on + '"' +
-      (on && st.gfoc ? ' class="foc"' : '') + '>' + esc(o[1]) + '</button>';
+      (on && st.gfoc ? ' class="foc"' : (on && o[0] !== 'day' ? ' class="cur"' : '')) + '>' + esc(o[1]) + '</button>';
   }).join('');
   var xi = $('gxIn'); xi.hidden = seg ? S.gm !== 'x' && !HASXD : false; if (document.activeElement !== xi) xi.value = S.gx;
   xi.setAttribute('data-tip', t('gxIn'));
@@ -5571,7 +5573,7 @@ function ranksOf(rows, nm, mcol) {                          // Platz = Anzahl gr
   }
   return out;
 }
-var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "fa9b56946b"};
+var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "362c429cd3"};
 function ctxOf(sp) {
   var cols = sp.cols, C = {nc: cols.length, nm: (sp.metrics || []).length, mcol: {}};
   cols.forEach(function (c, j) { if (c.m != null && c.m >= 0) C.mcol[c.m] = j; });
