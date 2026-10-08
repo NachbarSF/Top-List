@@ -657,12 +657,83 @@ kbd{font:600 .85em var(--body);border:1px solid var(--line);border-radius:4px;pa
 .hmsg{overflow-wrap:anywhere}
 .chip.lnk{border-style:dashed}
 @media (max-width:560px){.hkey p{flex-direction:column;gap:0}.hkey p > b{flex:none}}
+
+/* Runde 18 */
+.avm{display:inline-flex;align-items:center;justify-content:center;flex:none;min-width:1.2em;height:1.2em;padding:0 .2em;box-sizing:border-box;border:1.5px solid #7fb8ff;color:#7fb8ff;border-radius:.3em;font:800 .72em/1 system-ui,sans-serif;margin:0 3px;cursor:help}
+.lkm{flex:none;font-size:.88em;margin:0 3px;cursor:help;filter:saturate(.9)}
+.potl .pk{color:var(--up)}.potl .pw{color:var(--inay)}.potl .pg{color:var(--inar)}
+.search .qsv{position:absolute;right:2.15rem;top:50%;transform:translateY(-50%);border:0;background:none;font-size:1.2rem;line-height:1;color:var(--accent);cursor:pointer;width:2rem;height:2rem;padding:0}
+.search input.hasq{padding-right:4.3rem}
+.qform{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:32;background:var(--panel);border:2px solid var(--accent);border-radius:10px;box-shadow:var(--shadow);padding:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.qform[hidden]{display:none}
+.qform input{flex:1 1 150px;min-width:0;height:2.1rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);padding:0 8px;font:inherit}
+.qform small{flex-basis:100%}
+.chip .qdel{margin-left:2px;padding:0 2px;opacity:.55;font-size:1.05em}
+.chip .qdel:hover{opacity:1;color:var(--down)}
+.rivref{display:inline-flex;align-items:center;gap:6px;margin-right:6px}
+.rivref .btn{height:1.9rem;padding:0 .55rem;min-width:0}
+.rivrefn{margin-right:8px;font-size:.85em}
+.gmv{margin-top:12px;padding:12px 14px;border-radius:10px;background:color-mix(in srgb,var(--text) 5%,transparent);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px}
+.gmv h5{margin:0 0 6px;font:800 .72rem/1.2 var(--disp,inherit);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.gmv p{margin:4px 0}
+.gmv .up{color:var(--up)}.gmv .down{color:var(--down)}
+.gst{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin-bottom:8px}
+.gst>span{color:var(--dim)}
+.gchips{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:6px}
+.gchips .chip{height:1.7rem;font-size:.8rem;padding:0 .6rem}
+.gfoot{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ovl .card.chartcard{resize:both;overflow:auto;max-width:calc(100vw - 24px)}
+.chartcard .cardhead .bcrs{margin-left:auto;margin-right:8px;height:2rem;font-size:.85rem}
+#ovlInfo .card.isbig{width:min(1500px,100%)}
+.isfor{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}
+.isfor .btn.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.ispop{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px;padding:8px;border:1px solid var(--line);border-radius:10px}
+.isg{position:relative;display:inline-block}
+.isg input{height:2.1rem;min-width:220px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);padding:0 8px;font:inherit}
+.isgs{position:absolute;left:0;top:calc(100% + 3px);z-index:40;min-width:100%;max-height:18rem;overflow:auto;background:var(--panel);border:2px solid var(--accent);border-radius:10px;box-shadow:var(--shadow);padding:4px;display:flex;flex-direction:column}
+.isgs[hidden]{display:none}
+.isgo{all:unset;cursor:pointer;padding:5px 9px;border-radius:7px;white-space:nowrap}
+.isgo:hover,.isgo.on{background:var(--tint)}
+.isgn{padding:5px 9px}
+.istw{overflow-x:auto;max-width:100%}
+.istab th button{all:unset;cursor:pointer}
+.istab th.on{color:var(--accent)}
+.istab tr.md td{font-weight:600}
+.istab td.n{white-space:nowrap}
+@media (max-width:700px){.gmv{grid-template-columns:1fr}.isg input{min-width:0;width:100%}.isg{flex:1 1 100%}}
+
+/* Runde 19 */
+.isscan{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:6px 0 10px;padding:9px 12px;border:2px solid var(--accent);border-radius:10px;background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.isscan select{height:2.1rem;border-radius:8px;border:1px solid var(--accent);background:var(--panel);color:var(--text);font:700 .92rem/1 inherit;padding:0 6px;max-width:100%}
+.isscan .isinfo{color:var(--dim)}
+.isscan .isbtns{margin-left:auto;display:flex;gap:6px}
+.issec{border:1px solid var(--line);border-radius:12px;padding:2px 12px 8px;margin:10px 0}
+.ishd{all:unset;cursor:pointer;display:flex;align-items:center;gap:8px;margin:8px 0 4px;font-weight:800;font-size:1rem;color:var(--accent)}
+.ishd small{font-weight:500;color:var(--dim)}
+.ishd .car,.istog .car{display:inline-flex;align-items:center;justify-content:center;width:1.35rem;height:1.35rem;border:1px solid var(--line);border-radius:6px;color:var(--text);font-size:.8rem;flex:none}
+.istog{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-weight:800;margin-right:4px}
+.istog:focus-visible,.ishd:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.issum{color:var(--dim);font-weight:600}
+.bccmp{margin:0 0 12px;padding:9px 10px;border:1px solid var(--line);border-radius:10px}
+.bccl{display:flex;flex-direction:column;gap:5px;margin:7px 0}
+.bcci{display:flex;align-items:center;gap:6px;min-width:0}
+.bcci i{width:11px;height:11px;border-radius:50%;flex:none}
+.bcci b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bcci .bcx{all:unset;cursor:pointer;margin-left:auto;padding:0 4px;opacity:.6;font-size:1.05rem}
+.bcci .bcx:hover{opacity:1;color:var(--down)}
+.bcadd{position:relative;display:block}
+.bcadd input{width:100%;box-sizing:border-box;height:2.1rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);padding:0 8px;font:inherit}
+.bcadd .isgs{min-width:100%;right:auto}
+.bcleg{margin-top:7px;font-size:.84rem}
+.bcck.dis{opacity:.55}
+svg.bcs .lg{stroke-width:3}
+svg.bcs .lgt{font-size:12.5px;font-weight:700;fill:var(--text)}
 </style>
 </head>
 <body>
 <div class="app">
   <header class="top">
-    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>13 Scans</b> von 03.01.2025 23:58 bis 04.10.2026 23:55 · alle Spieler<br>Beta 2.0 gibt mir bitte euen Feedback</p></div>
+    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>14 Scans</b> von 03.01.2026 23:51 bis 08.10.2026 19:51 · alle Spieler<br>Beta 2.0 gibt mir bitte euen Feedback</p></div>
     <div class="hbtn" id="hbtn" hidden>
       <button class="btn rkq" id="bRk" type="button" aria-pressed="true">#</button>
       <select class="sel" id="lang" aria-label="Sprache / Language"></select>
@@ -675,7 +746,7 @@ kbd{font:600 .85em var(--body);border:1px solid var(--line);border-radius:4px;pa
     interaktiven Seiten anzeigen – zum Beispiel die Vorschau in WhatsApp, Discord, Telegram oder im E-Mail-Programm oder der
     „HTML-Viewer“ am Handy. Bitte öffne die Datei mit einem Browser: <b>Chrome, Edge, Firefox oder Safari</b>
     (am Handy: Datei speichern, antippen, „Öffnen mit“ und Chrome wählen). Dann funktionieren Sortieren, Suchen und alles andere.</div>
-  <div class="static" id="static"><table><thead><tr><th class="r">#</th><th>Name</th><th>⠀</th><th>Guild</th><th class="r">Level</th><th class="r">XP Gain</th><th class="r">Base Sum</th><th class="r">Base Gain</th><th class="r">Total Sum</th><th class="r">Base Main</th><th class="r">Base Con</th><th class="r">HP</th><th class="r">Base/Day</th><th class="r">XP/Day</th><th class="r">Gem Mine</th><th class="r">Gem Avg</th><th class="r">Album</th><th class="r">Item Quality</th><th class="r">Base Ratio</th><th class="r">Total Ratio</th><th class="r">Last Active</th><th class="r">Armor</th><th class="r">Weapon Dmg</th><th class="r">Total Main</th></tr></thead><tbody><tr><td class="r">1</td><td>DeTermit</td><td>GN</td><td>Dragon Enemy Will Burn</td><td class="r">827<small>#1</small></td><td class="r">–</td><td class="r">627.963<small>#137</small></td><td class="r">–</td><td class="r">1.433.547<small>#101</small></td><td class="r">386.030<small>#181</small></td><td class="r">241.933<small>#274</small></td><td class="r">4.218.405.493<small>#230</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.717<small>#11</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.188<small>#39</small></td><td class="r">61:39</td><td class="r">59:41</td><td class="r">00:02:26</td><td class="r">38.846<small>#11.685</small></td><td class="r">2.718<small>#12.098</small></td><td class="r">842.858<small>#155</small></td></tr><tr><td class="r">2</td><td>Deinnachbar</td><td>F8</td><td>ENDGEGNER</td><td class="r">825<small>#2</small></td><td class="r">–</td><td class="r">742.653<small>#4</small></td><td class="r">–</td><td class="r">1.659.603<small>#3</small></td><td class="r">500.030<small>#8</small></td><td class="r">242.623<small>#270</small></td><td class="r">5.383.884.777<small>#40</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.745<small>#2</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.239<small>#1</small></td><td class="r">67:33</td><td class="r">64:36</td><td class="r">00:00:03</td><td class="r">88.228<small>#1</small></td><td class="r">2.238<small>#20.213</small></td><td class="r">1.055.033<small>#5</small></td></tr><tr><td class="r">3</td><td>DoktorDarm</td><td>F17</td><td>Phoenix</td><td class="r">823<small>#3</small></td><td class="r">–</td><td class="r">558.217<small>#374</small></td><td class="r">–</td><td class="r">1.272.844<small>#353</small></td><td class="r">315.054<small>#619</small></td><td class="r">243.163<small>#265</small></td><td class="r">5.094.990.532<small>#73</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.737<small>#3</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.205<small>#16</small></td><td class="r">56:44</td><td class="r">55:45</td><td class="r">00:03:19</td><td class="r">85.755<small>#9</small></td><td class="r">2.230<small>#20.331</small></td><td class="r">699.326<small>#572</small></td></tr><tr><td class="r">4</td><td>Furaken</td><td>ST</td><td>ENDGEGNER I</td><td class="r">821<small>#4</small></td><td class="r">–</td><td class="r">732.989<small>#9</small></td><td class="r">–</td><td class="r">1.642.799<small>#4</small></td><td class="r">366.495<small>#261</small></td><td class="r">366.494<small>#2</small></td><td class="r">7.279.383.087<small>#2</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.731<small>#4</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.237<small>#2</small></td><td class="r">50:50</td><td class="r">50:50</td><td class="r">00:00:40</td><td class="r">86.608<small>#3</small></td><td class="r">2.244<small>#20.129</small></td><td class="r">821.401<small>#190</small></td></tr><tr><td class="r">5</td><td>Deraphin</td><td>F17</td><td>Die Unfassbaren</td><td class="r">821<small>#4</small></td><td class="r">–</td><td class="r">695.900<small>#26</small></td><td class="r">–</td><td class="r">1.569.479<small>#16</small></td><td class="r">429.027<small>#69</small></td><td class="r">266.873<small>#114</small></td><td class="r">4.557.674.146<small>#160</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.729<small>#5</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.211<small>#13</small></td><td class="r">62:38</td><td class="r">59:41</td><td class="r">00:00:57</td><td class="r">40.395<small>#10.764</small></td><td class="r">2.797<small>#11.492</small></td><td class="r">926.625<small>#56</small></td></tr><tr><td class="r">6</td><td>MaiSta</td><td>F8</td><td>ENDGEGNER</td><td class="r">820<small>#6</small></td><td class="r">–</td><td class="r">699.241<small>#23</small></td><td class="r">–</td><td class="r">1.568.076<small>#18</small></td><td class="r">447.928<small>#46</small></td><td class="r">251.313<small>#205</small></td><td class="r">5.417.060.625<small>#37</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.721<small>#9</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.193<small>#26</small></td><td class="r">64:36</td><td class="r">61:39</td><td class="r">00:00:00</td><td class="r">82.756<small>#26</small></td><td class="r">2.203<small>#20.727</small></td><td class="r">956.076<small>#34</small></td></tr><tr><td class="r">7</td><td>Ohrmel</td><td>F8</td><td>ENDGEGNER</td><td class="r">820<small>#6</small></td><td class="r">–</td><td class="r">678.423<small>#45</small></td><td class="r">–</td><td class="r">1.505.909<small>#39</small></td><td class="r">414.738<small>#97</small></td><td class="r">263.685<small>#126</small></td><td class="r">2.197.921.010<small>#2.283</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.622<small>#168</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.127<small>#352</small></td><td class="r">61:39</td><td class="r">59:41</td><td class="r">00:00:00</td><td class="r">14.936<small>#32.415</small></td><td class="r">4.943<small>#22</small></td><td class="r">885.126<small>#87</small></td></tr><tr><td class="r">8</td><td>Rhabarber Barbara</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">819<small>#8</small></td><td class="r">–</td><td class="r">679.661<small>#42</small></td><td class="r">–</td><td class="r">1.511.856<small>#36</small></td><td class="r">416.877<small>#93</small></td><td class="r">262.784<small>#133</small></td><td class="r">4.392.708.532<small>#190</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.659<small>#60</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.135<small>#284</small></td><td class="r">61:39</td><td class="r">59:41</td><td class="r">00:00:26</td><td class="r">38.687<small>#11.774</small></td><td class="r">2.748<small>#11.860</small></td><td class="r">890.759<small>#80</small></td></tr><tr><td class="r">9</td><td>Nachteule</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">819<small>#8</small></td><td class="r">–</td><td class="r">751.471<small>#3</small></td><td class="r">–</td><td class="r">1.675.052<small>#2</small></td><td class="r">497.974<small>#9</small></td><td class="r">253.497<small>#192</small></td><td class="r">2.205.237.326<small>#2.261</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.747<small>#1</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.235<small>#3</small></td><td class="r">66:34</td><td class="r">63:37</td><td class="r">00:00:45</td><td class="r">17.164<small>#29.778</small></td><td class="r">5.048<small>#1</small></td><td class="r">1.051.443<small>#6</small></td></tr><tr><td class="r">10</td><td>mario ppp</td><td>GN</td><td>Dreamers</td><td class="r">817<small>#10</small></td><td class="r">–</td><td class="r">708.457<small>#19</small></td><td class="r">–</td><td class="r">1.594.832<small>#11</small></td><td class="r">406.850<small>#117</small></td><td class="r">301.607<small>#34</small></td><td class="r">6.220.331.714<small>#11</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.720<small>#10</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.224<small>#5</small></td><td class="r">57:43</td><td class="r">56:44</td><td class="r">00:00:24</td><td class="r">86.567<small>#5</small></td><td class="r">2.240<small>#20.192</small></td><td class="r">889.504<small>#81</small></td></tr><tr><td class="r">11</td><td>Lambretta</td><td>F8</td><td>GODS of LIGHT</td><td class="r">817<small>#10</small></td><td class="r">–</td><td class="r">663.869<small>#62</small></td><td class="r">–</td><td class="r">1.505.211<small>#40</small></td><td class="r">432.671<small>#67</small></td><td class="r">231.198<small>#342</small></td><td class="r">5.082.575.641<small>#77</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.724<small>#8</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.190<small>#33</small></td><td class="r">65:35</td><td class="r">62:38</td><td class="r">00:03:24</td><td class="r">85.058<small>#11</small></td><td class="r">2.201<small>#20.752</small></td><td class="r">928.894<small>#52</small></td></tr><tr><td class="r">12</td><td>Bresl</td><td>F8</td><td>ENDGEGNER</td><td class="r">816<small>#12</small></td><td class="r">–</td><td class="r">711.261<small>#17</small></td><td class="r">–</td><td class="r">1.602.107<small>#9</small></td><td class="r">456.043<small>#38</small></td><td class="r">255.218<small>#182</small></td><td class="r">2.203.240.052<small>#2.269</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.707<small>#15</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.232<small>#4</small></td><td class="r">64:36</td><td class="r">61:39</td><td class="r">00:02:19</td><td class="r">17.313<small>#29.652</small></td><td class="r">5.044<small>#2</small></td><td class="r">976.775<small>#22</small></td></tr><tr><td class="r">13</td><td>Boom</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">815<small>#13</small></td><td class="r">–</td><td class="r">640.906<small>#105</small></td><td class="r">–</td><td class="r">1.431.584<small>#103</small></td><td class="r">320.453<small>#568</small></td><td class="r">320.453<small>#15</small></td><td class="r">6.297.180.119<small>#7</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.677<small>#30</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.094<small>#798</small></td><td class="r">50:50</td><td class="r">50:50</td><td class="r">00:02:11</td><td class="r">76.127<small>#242</small></td><td class="r">2.234<small>#20.269</small></td><td class="r">715.792<small>#490</small></td></tr><tr><td class="r">14</td><td>T0NY</td><td>ST</td><td>Dragons Legends</td><td class="r">815<small>#13</small></td><td class="r">–</td><td class="r">668.426<small>#54</small></td><td class="r">–</td><td class="r">1.523.198<small>#32</small></td><td class="r">457.750<small>#36</small></td><td class="r">210.676<small>#566</small></td><td class="r">1.919.294.270<small>#3.188</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.728<small>#6</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.217<small>#9</small></td><td class="r">68:32</td><td class="r">64:36</td><td class="r">00:00:55</td><td class="r">17.017<small>#29.933</small></td><td class="r">5.037<small>#3</small></td><td class="r">977.789<small>#21</small></td></tr><tr><td class="r">15</td><td>PAPA von Tony</td><td>F17</td><td>Phoenix</td><td class="r">815<small>#13</small></td><td class="r">–</td><td class="r">645.467<small>#91</small></td><td class="r">–</td><td class="r">1.472.225<small>#60</small></td><td class="r">395.500<small>#153</small></td><td class="r">249.967<small>#227</small></td><td class="r">2.142.265.148<small>#2.453</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.704<small>#16</small></td><td class="r">99,6 %<small>#6.909</small></td><td class="r">1.192<small>#28</small></td><td class="r">61:39</td><td class="r">59:41</td><td class="r">00:02:08</td><td class="r">17.454<small>#29.512</small></td><td class="r">4.902<small>#63</small></td><td class="r">863.454<small>#117</small></td></tr><tr><td class="r">16</td><td>markow</td><td>BF</td><td>Awanturnicy</td><td class="r">814<small>#16</small></td><td class="r">–</td><td class="r">678.996<small>#43</small></td><td class="r">–</td><td class="r">1.510.153<small>#37</small></td><td class="r">423.944<small>#77</small></td><td class="r">255.052<small>#184</small></td><td class="r">2.134.455.659<small>#2.482</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#67</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.220<small>#7</small></td><td class="r">62:38</td><td class="r">60:40</td><td class="r">00:01:03</td><td class="r">16.394<small>#30.596</small></td><td class="r">5.010<small>#4</small></td><td class="r">902.857<small>#69</small></td></tr><tr><td class="r">17</td><td>Baajl</td><td>ST</td><td>ENDGEGNER I</td><td class="r">814<small>#16</small></td><td class="r">–</td><td class="r">639.702<small>#108</small></td><td class="r">–</td><td class="r">1.459.025<small>#69</small></td><td class="r">394.893<small>#156</small></td><td class="r">244.809<small>#252</small></td><td class="r">2.102.447.400<small>#2.580</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.726<small>#7</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.202<small>#21</small></td><td class="r">62:38</td><td class="r">59:41</td><td class="r">00:00:27</td><td class="r">15.725<small>#31.378</small></td><td class="r">4.920<small>#43</small></td><td class="r">860.836<small>#125</small></td></tr><tr><td class="r">18</td><td>Falka</td><td>MA</td><td>WeAreOne</td><td class="r">813<small>#18</small></td><td class="r">–</td><td class="r">683.690<small>#41</small></td><td class="r">–</td><td class="r">1.543.508<small>#23</small></td><td class="r">352.301<small>#319</small></td><td class="r">331.389<small>#10</small></td><td class="r">6.612.282.764<small>#5</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.684<small>#24</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.204<small>#19</small></td><td class="r">52:48</td><td class="r">51:49</td><td class="r">00:00:00</td><td class="r">84.311<small>#14</small></td><td class="r">2.211<small>#20.621</small></td><td class="r">790.052<small>#259</small></td></tr><tr><td class="r">19</td><td>Umbums</td><td>F9</td><td>Horizon</td><td class="r">813<small>#18</small></td><td class="r">–</td><td class="r">678.953<small>#44</small></td><td class="r">–</td><td class="r">1.493.069<small>#46</small></td><td class="r">428.268<small>#71</small></td><td class="r">250.685<small>#206</small></td><td class="r">5.187.895.452<small>#59</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.715<small>#12</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.075<small>#1.215</small></td><td class="r">63:37</td><td class="r">60:40</td><td class="r">00:00:00</td><td class="r">74.629<small>#372</small></td><td class="r">2.084<small>#22.768</small></td><td class="r">901.919<small>#71</small></td></tr><tr><td class="r">20</td><td>Warbird</td><td>F9</td><td>Horizon</td><td class="r">813<small>#18</small></td><td class="r">–</td><td class="r">547.636<small>#413</small></td><td class="r">–</td><td class="r">1.258.173<small>#391</small></td><td class="r">330.000<small>#479</small></td><td class="r">217.636<small>#485</small></td><td class="r">3.726.389.435<small>#404</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.704<small>#16</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.169<small>#92</small></td><td class="r">60:40</td><td class="r">58:42</td><td class="r">00:00:00</td><td class="r">37.133<small>#12.900</small></td><td class="r">2.744<small>#11.891</small></td><td class="r">727.405<small>#437</small></td></tr><tr><td class="r">21</td><td>DonZeus</td><td>F8</td><td>ENDGEGNER</td><td class="r">812<small>#21</small></td><td class="r">–</td><td class="r">676.472<small>#47</small></td><td class="r">–</td><td class="r">1.478.659<small>#54</small></td><td class="r">338.062<small>#409</small></td><td class="r">338.410<small>#6</small></td><td class="r">5.186.406.062<small>#60</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.638<small>#115</small></td><td class="r">99,11 %<small>#9.532</small></td><td class="r">1.098<small>#738</small></td><td class="r">50:50</td><td class="r">50:50</td><td class="r">00:01:13</td><td class="r">35.573<small>#14.047</small></td><td class="r">2.632<small>#13.044</small></td><td class="r">739.025<small>#388</small></td></tr><tr><td class="r">22</td><td>kulfon68</td><td>BF</td><td>SzaUzi</td><td class="r">811<small>#22</small></td><td class="r">–</td><td class="r">571.768<small>#319</small></td><td class="r">–</td><td class="r">1.305.942<small>#303</small></td><td class="r">324.700<small>#534</small></td><td class="r">247.068<small>#239</small></td><td class="r">5.121.685.812<small>#69</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.652<small>#80</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.096<small>#768</small></td><td class="r">57:43</td><td class="r">55:45</td><td class="r">00:02:52</td><td class="r">77.250<small>#185</small></td><td class="r">2.106<small>#22.331</small></td><td class="r">720.899<small>#463</small></td></tr><tr><td class="r">23</td><td>Quilp the Round</td><td>MA</td><td>El Presidente</td><td class="r">811<small>#22</small></td><td class="r">–</td><td class="r">502.875<small>#660</small></td><td class="r">–</td><td class="r">1.192.974<small>#555</small></td><td class="r">288.069<small>#927</small></td><td class="r">214.806<small>#514</small></td><td class="r">4.660.671.671<small>#145</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.654<small>#75</small></td><td class="r">99,64 %<small>#6.762</small></td><td class="r">1.140<small>#252</small></td><td class="r">57:43</td><td class="r">55:45</td><td class="r">00:07:07</td><td class="r">77.530<small>#164</small></td><td class="r">2.149<small>#21.585</small></td><td class="r">660.592<small>#777</small></td></tr><tr><td class="r">24</td><td>Zauriel</td><td>F17</td><td>Phoenix</td><td class="r">811<small>#22</small></td><td class="r">–</td><td class="r">556.623<small>#383</small></td><td class="r">–</td><td class="r">1.290.313<small>#326</small></td><td class="r">296.528<small>#834</small></td><td class="r">260.095<small>#151</small></td><td class="r">5.368.865.591<small>#42</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.609<small>#211</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.143<small>#232</small></td><td class="r">53:47</td><td class="r">52:48</td><td class="r">00:04:00</td><td class="r">78.095<small>#144</small></td><td class="r">2.105<small>#22.369</small></td><td class="r">677.035<small>#680</small></td></tr><tr><td class="r">25</td><td>Blue</td><td>BF</td><td>Awanturnicy</td><td class="r">810<small>#25</small></td><td class="r">–</td><td class="r">526.389<small>#530</small></td><td class="r">–</td><td class="r">1.219.905<small>#482</small></td><td class="r">420.183<small>#86</small></td><td class="r">106.206<small>#4.937</small></td><td class="r">1.172.421.490<small>#7.741</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.713<small>#13</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.094<small>#798</small></td><td class="r">80:20</td><td class="r">73:27</td><td class="r">00:01:15</td><td class="r">13.871<small>#34.599</small></td><td class="r">4.864<small>#106</small></td><td class="r">884.682<small>#89</small></td></tr><tr><td class="r">26</td><td>Marodeur2</td><td>F17</td><td>Ritter des Anduril</td><td class="r">810<small>#25</small></td><td class="r">–</td><td class="r">457.232<small>#1.023</small></td><td class="r">–</td><td class="r">1.108.235<small>#838</small></td><td class="r">253.306<small>#1.525</small></td><td class="r">203.926<small>#670</small></td><td class="r">1.786.875.792<small>#3.719</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.673<small>#36</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.127<small>#352</small></td><td class="r">55:45</td><td class="r">54:46</td><td class="r">00:11:39</td><td class="r">16.092<small>#30.977</small></td><td class="r">4.767<small>#282</small></td><td class="r">597.325<small>#1.265</small></td></tr><tr><td class="r">27</td><td>DonMuErte</td><td>F17</td><td>Werwolf Legion</td><td class="r">810<small>#25</small></td><td class="r">–</td><td class="r">694.048<small>#28</small></td><td class="r">–</td><td class="r">1.568.978<small>#17</small></td><td class="r">477.653<small>#19</small></td><td class="r">216.395<small>#497</small></td><td class="r">3.888.367.073<small>#342</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.708<small>#14</small></td><td class="r">99,96 %<small>#4.727</small></td><td class="r">1.223<small>#6</small></td><td class="r">69:31</td><td class="r">65:35</td><td class="r">00:00:23</td><td class="r">40.539<small>#10.675</small></td><td class="r">2.789<small>#11.569</small></td><td class="r">1.013.090<small>#11</small></td></tr><tr><td class="r">28</td><td>Surja</td><td>F8</td><td>ENDGEGNER</td><td class="r">810<small>#25</small></td><td class="r">–</td><td class="r">701.461<small>#20</small></td><td class="r">–</td><td class="r">1.525.793<small>#30</small></td><td class="r">436.335<small>#64</small></td><td class="r">265.126<small>#120</small></td><td class="r">4.288.480.918<small>#207</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.575<small>#342</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.069<small>#1.367</small></td><td class="r">62:38</td><td class="r">60:40</td><td class="r">00:00:00</td><td class="r">34.564<small>#14.866</small></td><td class="r">2.599<small>#13.556</small></td><td class="r">912.704<small>#64</small></td></tr><tr><td class="r">29</td><td>Rincewind</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">809<small>#29</small></td><td class="r">–</td><td class="r">637.531<small>#116</small></td><td class="r">–</td><td class="r">1.420.061<small>#114</small></td><td class="r">375.416<small>#222</small></td><td class="r">262.115<small>#137</small></td><td class="r">4.267.844.234<small>#214</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.652<small>#80</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.143<small>#232</small></td><td class="r">59:41</td><td class="r">57:43</td><td class="r">00:01:28</td><td class="r">37.257<small>#12.796</small></td><td class="r">2.644<small>#12.912</small></td><td class="r">809.169<small>#221</small></td></tr><tr><td class="r">30</td><td>Tommis</td><td>GN</td><td>Dreamers</td><td class="r">809<small>#29</small></td><td class="r">–</td><td class="r">586.305<small>#264</small></td><td class="r">–</td><td class="r">1.334.006<small>#245</small></td><td class="r">385.682<small>#183</small></td><td class="r">200.623<small>#732</small></td><td class="r">4.410.786.402<small>#188</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.653<small>#77</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.159<small>#132</small></td><td class="r">66:34</td><td class="r">62:38</td><td class="r">00:03:52</td><td class="r">80.728<small>#54</small></td><td class="r">2.162<small>#21.355</small></td><td class="r">828.924<small>#177</small></td></tr><tr><td class="r">31</td><td>Elfinchen</td><td>F8</td><td>ENDGEGNER</td><td class="r">809<small>#29</small></td><td class="r">–</td><td class="r">553.915<small>#391</small></td><td class="r">–</td><td class="r">1.273.759<small>#349</small></td><td class="r">323.810<small>#542</small></td><td class="r">230.105<small>#357</small></td><td class="r">3.876.579.303<small>#347</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.545<small>#482</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.113<small>#506</small></td><td class="r">58:42</td><td class="r">56:44</td><td class="r">00:04:00</td><td class="r">38.147<small>#12.155</small></td><td class="r">2.584<small>#13.770</small></td><td class="r">718.872<small>#479</small></td></tr><tr><td class="r">32</td><td>Sephrenia</td><td>F9</td><td>Keltic</td><td class="r">809<small>#29</small></td><td class="r">–</td><td class="r">618.484<small>#157</small></td><td class="r">–</td><td class="r">1.409.542<small>#135</small></td><td class="r">418.354<small>#91</small></td><td class="r">200.130<small>#756</small></td><td class="r">1.794.854.952<small>#3.679</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#67</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.149<small>#192</small></td><td class="r">68:32</td><td class="r">64:36</td><td class="r">00:00:00</td><td class="r">16.374<small>#30.628</small></td><td class="r">4.866<small>#102</small></td><td class="r">895.717<small>#75</small></td></tr><tr><td class="r">33</td><td>Best</td><td>BF</td><td>Awanturnicy</td><td class="r">808<small>#33</small></td><td class="r">–</td><td class="r">654.030<small>#79</small></td><td class="r">–</td><td class="r">1.448.911<small>#76</small></td><td class="r">455.161<small>#40</small></td><td class="r">198.869<small>#807</small></td><td class="r">3.490.208.024<small>#552</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.686<small>#23</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.145<small>#222</small></td><td class="r">70:30</td><td class="r">65:35</td><td class="r">00:00:58</td><td class="r">36.757<small>#13.195</small></td><td class="r">2.748<small>#11.860</small></td><td class="r">948.711<small>#38</small></td></tr><tr><td class="r">34</td><td>Cloud Strife 87</td><td>F17</td><td>A V A L A N C H E</td><td class="r">808<small>#33</small></td><td class="r">–</td><td class="r">671.014<small>#51</small></td><td class="r">–</td><td class="r">1.174.273<small>#602</small></td><td class="r">420.680<small>#84</small></td><td class="r">250.334<small>#211</small></td><td class="r">3.322.585.752<small>#671</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">–</td><td class="r">100 %<small>#3</small></td><td class="r">–</td><td class="r">63:37</td><td class="r">63:37</td><td class="r">00:01:10</td><td class="r">0<small>#57.387</small></td><td class="r">1.118<small>#45.535</small></td><td class="r">736.190<small>#400</small></td></tr><tr><td class="r">35</td><td>Vuu</td><td>F8</td><td>ENDGEGNER</td><td class="r">808<small>#33</small></td><td class="r">–</td><td class="r">606.367<small>#191</small></td><td class="r">–</td><td class="r">1.061.134<small>#1.057</small></td><td class="r">383.597<small>#190</small></td><td class="r">222.770<small>#433</small></td><td class="r">2.365.390.605<small>#1.908</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">–</td><td class="r">100 %<small>#3</small></td><td class="r">–</td><td class="r">63:37</td><td class="r">63:37</td><td class="r">00:00:36</td><td class="r">0<small>#57.387</small></td><td class="r">1.398<small>#38.337</small></td><td class="r">671.288<small>#720</small></td></tr><tr><td class="r">36</td><td>W70</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">579.175<small>#288</small></td><td class="r">–</td><td class="r">1.310.480<small>#295</small></td><td class="r">326.305<small>#518</small></td><td class="r">252.870<small>#195</small></td><td class="r">5.148.209.370<small>#64</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.670<small>#42</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.141<small>#245</small></td><td class="r">56:44</td><td class="r">55:45</td><td class="r">00:02:21</td><td class="r">77.676<small>#159</small></td><td class="r">2.140<small>#21.713</small></td><td class="r">719.496<small>#476</small></td></tr><tr><td class="r">37</td><td>W7O</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">587.899<small>#256</small></td><td class="r">–</td><td class="r">1.314.734<small>#287</small></td><td class="r">329.952<small>#481</small></td><td class="r">257.947<small>#166</small></td><td class="r">4.142.115.746<small>#256</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.667<small>#46</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.113<small>#506</small></td><td class="r">56:44</td><td class="r">55:45</td><td class="r">00:02:20</td><td class="r">34.338<small>#15.070</small></td><td class="r">2.729<small>#12.016</small></td><td class="r">720.371<small>#468</small></td></tr><tr><td class="r">38</td><td>Dominik1</td><td>GN</td><td>Dreamers</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">565.594<small>#341</small></td><td class="r">–</td><td class="r">1.306.324<small>#302</small></td><td class="r">400.294<small>#136</small></td><td class="r">165.300<small>#1.518</small></td><td class="r">1.559.460.098<small>#4.896</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.679<small>#28</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.174<small>#76</small></td><td class="r">71:29</td><td class="r">66:34</td><td class="r">00:00:36</td><td class="r">16.579<small>#30.400</small></td><td class="r">4.943<small>#22</small></td><td class="r">858.782<small>#128</small></td></tr><tr><td class="r">39</td><td>Surja</td><td>F17</td><td>Phoenix</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">690.846<small>#33</small></td><td class="r">–</td><td class="r">1.506.265<small>#38</small></td><td class="r">436.782<small>#62</small></td><td class="r">254.064<small>#188</small></td><td class="r">4.134.387.125<small>#258</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.573<small>#352</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.067<small>#1.439</small></td><td class="r">63:37</td><td class="r">61:39</td><td class="r">00:00:00</td><td class="r">36.015<small>#13.752</small></td><td class="r">2.596<small>#13.580</small></td><td class="r">913.011<small>#63</small></td></tr><tr><td class="r">40</td><td>Viper1978</td><td>F17</td><td>Ritter des Anduril</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">723.114<small>#12</small></td><td class="r">–</td><td class="r">1.527.704<small>#28</small></td><td class="r">361.600<small>#283</small></td><td class="r">361.514<small>#4</small></td><td class="r">6.653.443.679<small>#4</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.554<small>#437</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.052<small>#1.937</small></td><td class="r">50:50</td><td class="r">50:50</td><td class="r">00:01:44</td><td class="r">50.179<small>#7.340</small></td><td class="r">2.057<small>#23.439</small></td><td class="r">763.928<small>#333</small></td></tr><tr><td class="r">41</td><td>W70</td><td>F8</td><td>ENDGEGNER</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">593.285<small>#239</small></td><td class="r">–</td><td class="r">1.325.727<small>#261</small></td><td class="r">356.531<small>#306</small></td><td class="r">236.754<small>#307</small></td><td class="r">1.944.553.100<small>#3.106</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.671<small>#40</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.152<small>#176</small></td><td class="r">60:40</td><td class="r">58:42</td><td class="r">00:00:00</td><td class="r">16.409<small>#30.580</small></td><td class="r">4.837<small>#144</small></td><td class="r">767.669<small>#321</small></td></tr><tr><td class="r">42</td><td>Imm0rt4liS</td><td>F8</td><td>ENDGEGNER</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">687.130<small>#38</small></td><td class="r">–</td><td class="r">1.541.150<small>#24</small></td><td class="r">487.130<small>#13</small></td><td class="r">200.000<small>#786</small></td><td class="r">3.619.259.552<small>#462</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.688<small>#19</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.181<small>#51</small></td><td class="r">71:29</td><td class="r">66:34</td><td class="r">00:01:50</td><td class="r">39.892<small>#11.048</small></td><td class="r">2.728<small>#12.020</small></td><td class="r">1.021.813<small>#9</small></td></tr><tr><td class="r">43</td><td>Mordae</td><td>F9</td><td>Keltic</td><td class="r">807<small>#36</small></td><td class="r">–</td><td class="r">615.130<small>#168</small></td><td class="r">–</td><td class="r">1.413.130<small>#129</small></td><td class="r">415.000<small>#96</small></td><td class="r">200.130<small>#756</small></td><td class="r">1.806.901.412<small>#3.627</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.687<small>#20</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.174<small>#76</small></td><td class="r">67:33</td><td class="r">63:37</td><td class="r">00:00:00</td><td class="r">16.760<small>#30.199</small></td><td class="r">4.911<small>#51</small></td><td class="r">894.576<small>#76</small></td></tr><tr><td class="r">44</td><td>Maverick</td><td>BF</td><td>ZabójczePomidory</td><td class="r">806<small>#44</small></td><td class="r">–</td><td class="r">631.123<small>#126</small></td><td class="r">–</td><td class="r">1.442.326<small>#89</small></td><td class="r">352.212<small>#320</small></td><td class="r">278.911<small>#71</small></td><td class="r">5.716.416.780<small>#24</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.682<small>#25</small></td><td class="r">99,52 %<small>#7.657</small></td><td class="r">1.178<small>#61</small></td><td class="r">56:44</td><td class="r">54:46</td><td class="r">00:02:50</td><td class="r">82.379<small>#29</small></td><td class="r">2.202<small>#20.728</small></td><td class="r">785.302<small>#266</small></td></tr><tr><td class="r">45</td><td>Stryga</td><td>GN</td><td>Dreamers</td><td class="r">806<small>#44</small></td><td class="r">–</td><td class="r">582.413<small>#275</small></td><td class="r">–</td><td class="r">1.324.102<small>#264</small></td><td class="r">398.345<small>#143</small></td><td class="r">184.068<small>#1.071</small></td><td class="r">1.651.554.298<small>#4.396</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.675<small>#32</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.204<small>#19</small></td><td class="r">68:32</td><td class="r">64:36</td><td class="r">00:00:23</td><td class="r">16.575<small>#30.406</small></td><td class="r">4.931<small>#36</small></td><td class="r">849.543<small>#143</small></td></tr><tr><td class="r">46</td><td>Zaemon</td><td>MA</td><td>La Liga Hispana</td><td class="r">806<small>#44</small></td><td class="r">–</td><td class="r">649.492<small>#84</small></td><td class="r">–</td><td class="r">1.444.951<small>#84</small></td><td class="r">424.296<small>#76</small></td><td class="r">225.196<small>#403</small></td><td class="r">4.770.145.096<small>#129</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.634<small>#127</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.149<small>#192</small></td><td class="r">65:35</td><td class="r">62:38</td><td class="r">00:00:26</td><td class="r">80.325<small>#62</small></td><td class="r">2.169<small>#21.240</small></td><td class="r">896.688<small>#74</small></td></tr><tr><td class="r">47</td><td>Fredocbr</td><td>ST</td><td>La Fred Team</td><td class="r">806<small>#44</small></td><td class="r">–</td><td class="r">658.940<small>#71</small></td><td class="r">–</td><td class="r">1.494.366<small>#45</small></td><td class="r">346.451<small>#366</small></td><td class="r">312.489<small>#21</small></td><td class="r">6.242.299.211<small>#9</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.679<small>#28</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.199<small>#22</small></td><td class="r">53:47</td><td class="r">52:48</td><td class="r">00:01:05</td><td class="r">80.460<small>#61</small></td><td class="r">2.226<small>#20.401</small></td><td class="r">776.899<small>#286</small></td></tr><tr><td class="r">48</td><td>Muktat</td><td>F17</td><td>Phoenix</td><td class="r">806<small>#44</small></td><td class="r">–</td><td class="r">485.611<small>#789</small></td><td class="r">–</td><td class="r">1.134.844<small>#736</small></td><td class="r">259.020<small>#1.422</small></td><td class="r">226.591<small>#390</small></td><td class="r">1.875.981.150<small>#3.348</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.577<small>#337</small></td><td class="r">99,28 %<small>#8.693</small></td><td class="r">1.136<small>#274</small></td><td class="r">53:47</td><td class="r">53:47</td><td class="r">00:00:00</td><td class="r">14.221<small>#33.699</small></td><td class="r">4.934<small>#34</small></td><td class="r">595.798<small>#1.274</small></td></tr><tr><td class="r">49</td><td>lucafreak</td><td>F8</td><td>ENDGEGNER</td><td class="r">806<small>#44</small></td><td class="r">–</td><td class="r">735.221<small>#7</small></td><td class="r">–</td><td class="r">1.588.539<small>#12</small></td><td class="r">415.150<small>#94</small></td><td class="r">320.071<small>#16</small></td><td class="r">2.474.674.325<small>#1.686</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.563<small>#399</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.081<small>#1.063</small></td><td class="r">56:44</td><td class="r">55:45</td><td class="r">00:00:00</td><td class="r">14.880<small>#32.497</small></td><td class="r">4.981<small>#9</small></td><td class="r">877.464<small>#98</small></td></tr><tr><td class="r">50</td><td>lilith luna</td><td>F17</td><td>moffiX (s4de)</td><td class="r">805<small>#50</small></td><td class="r">–</td><td class="r">503.397<small>#657</small></td><td class="r">–</td><td class="r">1.189.374<small>#563</small></td><td class="r">389.189<small>#170</small></td><td class="r">114.208<small>#4.100</small></td><td class="r">1.230.730.868<small>#7.202</small></td><td class="r">–</td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">2.630<small>#144</small></td><td class="r">100 %<small>#3</small></td><td class="r">1.165<small>#112</small></td><td class="r">77:23</td><td class="r">70:30</td><td class="r">00:03:23</td><td class="r">16.439<small>#30.548</small></td><td class="r">4.889<small>#74</small></td><td class="r">835.296<small>#164</small></td></tr></tbody></table><div class="more">… und 57.511 weitere Zeilen – vollständig, sortier- und durchsuchbar nur im Browser.</div></div>
+  <div class="static" id="static"><table><thead><tr><th class="r">#</th><th>Name</th><th>⠀</th><th>Guild</th><th class="r">Level</th><th class="r">XP Gain</th><th class="r">Base Sum</th><th class="r">Base Gain</th><th class="r">Total Sum</th><th class="r">Base Main</th><th class="r">Base Con</th><th class="r">HP</th><th class="r">Item Quality</th><th class="r">Gem Mine</th><th class="r">Gem Avg</th><th class="r">Base Ratio</th><th class="r">Weapon Dmg</th></tr></thead><tbody><tr><td class="r">1</td><td>DeTermit</td><td>GN</td><td>Dragon Enemy Will Burn</td><td class="r">828<small>#1</small></td><td class="r">–<small>#47.525</small></td><td class="r">629.070<small>#137</small></td><td class="r">–<small>#2.203</small></td><td class="r">1.435.485<small>#104</small></td><td class="r">387.137<small>#181</small></td><td class="r">241.933<small>#274</small></td><td class="r">4.223.500.185<small>#232</small></td><td class="r">1.188<small>#40</small></td><td class="r">100<small>#1</small></td><td class="r">2.717<small>#11</small></td><td class="r">62:38</td><td class="r">2.718<small>#12.109</small></td></tr><tr><td class="r">2</td><td>Deinnachbar</td><td>F8</td><td>ENDGEGNER</td><td class="r">826<small>#2</small></td><td class="r">–<small>#13.960</small></td><td class="r">743.658<small>#4</small></td><td class="r">–<small>#3.117</small></td><td class="r">1.661.361<small>#3</small></td><td class="r">500.040<small>#8</small></td><td class="r">243.618<small>#265</small></td><td class="r">5.405.934.633<small>#39</small></td><td class="r">1.239<small>#1</small></td><td class="r">100<small>#1</small></td><td class="r">2.745<small>#2</small></td><td class="r">67:33</td><td class="r">2.238<small>#20.220</small></td></tr><tr><td class="r">3</td><td>DoktorDarm</td><td>F17</td><td>Phoenix</td><td class="r">824<small>#3</small></td><td class="r">–<small>#27.606</small></td><td class="r">559.057<small>#376</small></td><td class="r">–<small>#4.726</small></td><td class="r">1.274.316<small>#355</small></td><td class="r">315.894<small>#616</small></td><td class="r">243.163<small>#267</small></td><td class="r">5.101.173.773<small>#75</small></td><td class="r">1.205<small>#16</small></td><td class="r">100<small>#1</small></td><td class="r">2.737<small>#3</small></td><td class="r">57:43</td><td class="r">2.230<small>#20.338</small></td></tr><tr><td class="r">4</td><td>Furaken</td><td>ST</td><td>ENDGEGNER I</td><td class="r">822<small>#4</small></td><td class="r">–<small>#27.748</small></td><td class="r">734.219<small>#8</small></td><td class="r">–<small>#918</small></td><td class="r">1.644.950<small>#4</small></td><td class="r">367.110<small>#260</small></td><td class="r">367.109<small>#2</small></td><td class="r">7.297.786.099<small>#2</small></td><td class="r">1.237<small>#2</small></td><td class="r">100<small>#1</small></td><td class="r">2.731<small>#4</small></td><td class="r">50:50</td><td class="r">2.244<small>#20.135</small></td></tr><tr><td class="r">5</td><td>Deraphin</td><td>F17</td><td>Die Unfassbaren</td><td class="r">822<small>#4</small></td><td class="r">–<small>#28.314</small></td><td class="r">695.912<small>#27</small></td><td class="r">–<small>#35.040</small></td><td class="r">1.569.500<small>#18</small></td><td class="r">429.039<small>#71</small></td><td class="r">266.873<small>#114</small></td><td class="r">4.563.218.762<small>#162</small></td><td class="r">1.211<small>#13</small></td><td class="r">100<small>#1</small></td><td class="r">2.729<small>#5</small></td><td class="r">62:38</td><td class="r">2.797<small>#11.501</small></td></tr><tr><td class="r">6</td><td>MaiSta</td><td>F8</td><td>ENDGEGNER</td><td class="r">821<small>#6</small></td><td class="r">–<small>#29.245</small></td><td class="r">700.341<small>#23</small></td><td class="r">–<small>#2.270</small></td><td class="r">1.570.001<small>#17</small></td><td class="r">448.456<small>#46</small></td><td class="r">251.885<small>#204</small></td><td class="r">5.432.529.799<small>#37</small></td><td class="r">1.193<small>#28</small></td><td class="r">100<small>#1</small></td><td class="r">2.721<small>#9</small></td><td class="r">64:36</td><td class="r">2.203<small>#20.736</small></td></tr><tr><td class="r">7</td><td>Ohrmel</td><td>F8</td><td>ENDGEGNER</td><td class="r">820<small>#7</small></td><td class="r">–<small>#19.800</small></td><td class="r">678.427<small>#45</small></td><td class="r">–<small>#38.103</small></td><td class="r">1.505.916<small>#42</small></td><td class="r">414.742<small>#100</small></td><td class="r">263.685<small>#127</small></td><td class="r">2.197.921.010<small>#2.285</small></td><td class="r">1.127<small>#363</small></td><td class="r">100<small>#1</small></td><td class="r">2.622<small>#172</small></td><td class="r">61:39</td><td class="r">4.943<small>#22</small></td></tr><tr><td class="r">8</td><td>Nachteule</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">820<small>#7</small></td><td class="r">–<small>#3.918</small></td><td class="r">752.704<small>#3</small></td><td class="r">–<small>#897</small></td><td class="r">1.677.209<small>#2</small></td><td class="r">498.674<small>#9</small></td><td class="r">254.030<small>#193</small></td><td class="r">2.211.226.443<small>#2.240</small></td><td class="r">1.235<small>#3</small></td><td class="r">100<small>#1</small></td><td class="r">2.747<small>#1</small></td><td class="r">66:34</td><td class="r">5.048<small>#1</small></td></tr><tr><td class="r">9</td><td>mario ppp</td><td>GN</td><td>Dreamers</td><td class="r">819<small>#9</small></td><td class="r">–<small>#52.436</small></td><td class="r">709.691<small>#19</small></td><td class="r">–<small>#890</small></td><td class="r">1.596.990<small>#11</small></td><td class="r">408.084<small>#117</small></td><td class="r">301.607<small>#34</small></td><td class="r">6.235.540.349<small>#10</small></td><td class="r">1.224<small>#5</small></td><td class="r">100<small>#1</small></td><td class="r">2.720<small>#10</small></td><td class="r">58:42</td><td class="r">2.240<small>#20.200</small></td></tr><tr><td class="r">10</td><td>Rhabarber Barbara</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">819<small>#9</small></td><td class="r">–<small>#6.974</small></td><td class="r">679.690<small>#44</small></td><td class="r">–<small>#32.133</small></td><td class="r">1.511.907<small>#38</small></td><td class="r">416.906<small>#93</small></td><td class="r">262.784<small>#134</small></td><td class="r">4.392.708.532<small>#193</small></td><td class="r">1.135<small>#289</small></td><td class="r">100<small>#1</small></td><td class="r">2.659<small>#62</small></td><td class="r">61:39</td><td class="r">2.748<small>#11.865</small></td></tr><tr><td class="r">11</td><td>Lambretta</td><td>F8</td><td>GODS of LIGHT</td><td class="r">818<small>#11</small></td><td class="r">–<small>#16.575</small></td><td class="r">664.905<small>#62</small></td><td class="r">–<small>#2.846</small></td><td class="r">1.507.024<small>#41</small></td><td class="r">433.707<small>#66</small></td><td class="r">231.198<small>#348</small></td><td class="r">5.088.789.059<small>#79</small></td><td class="r">1.190<small>#36</small></td><td class="r">100<small>#1</small></td><td class="r">2.724<small>#8</small></td><td class="r">65:35</td><td class="r">2.201<small>#20.760</small></td></tr><tr><td class="r">12</td><td>T0NY</td><td>ST</td><td>Dragons Legends</td><td class="r">816<small>#12</small></td><td class="r">–<small>#27.831</small></td><td class="r">669.669<small>#54</small></td><td class="r">–<small>#858</small></td><td class="r">1.525.374<small>#33</small></td><td class="r">458.993<small>#36</small></td><td class="r">210.676<small>#567</small></td><td class="r">1.921.646.346<small>#3.179</small></td><td class="r">1.217<small>#9</small></td><td class="r">100<small>#1</small></td><td class="r">2.728<small>#6</small></td><td class="r">69:31</td><td class="r">5.037<small>#3</small></td></tr><tr><td class="r">13</td><td>Bresl</td><td>F8</td><td>ENDGEGNER</td><td class="r">816<small>#12</small></td><td class="r">–<small>#17.499</small></td><td class="r">712.462<small>#17</small></td><td class="r">–<small>#1.173</small></td><td class="r">1.604.370<small>#9</small></td><td class="r">456.786<small>#38</small></td><td class="r">255.676<small>#180</small></td><td class="r">2.206.347.613<small>#2.257</small></td><td class="r">1.232<small>#4</small></td><td class="r">100<small>#1</small></td><td class="r">2.712<small>#14</small></td><td class="r">64:36</td><td class="r">5.044<small>#2</small></td></tr><tr><td class="r">14</td><td>Boom</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">816<small>#12</small></td><td class="r">–<small>#15.406</small></td><td class="r">641.816<small>#106</small></td><td class="r">–<small>#4.074</small></td><td class="r">1.433.174<small>#105</small></td><td class="r">320.908<small>#569</small></td><td class="r">320.908<small>#14</small></td><td class="r">6.311.899.834<small>#7</small></td><td class="r">1.094<small>#800</small></td><td class="r">100<small>#1</small></td><td class="r">2.677<small>#31</small></td><td class="r">50:50</td><td class="r">2.234<small>#20.276</small></td></tr><tr><td class="r">15</td><td>Falka</td><td>MA</td><td>WeAreOne</td><td class="r">815<small>#15</small></td><td class="r">–<small>#53.669</small></td><td class="r">684.874<small>#41</small></td><td class="r">–<small>#1.354</small></td><td class="r">1.545.738<small>#23</small></td><td class="r">352.976<small>#320</small></td><td class="r">331.898<small>#10</small></td><td class="r">6.637.062.734<small>#5</small></td><td class="r">1.204<small>#19</small></td><td class="r">100<small>#1</small></td><td class="r">2.689<small>#19</small></td><td class="r">52:48</td><td class="r">2.211<small>#20.632</small></td></tr><tr><td class="r">16</td><td>Baajl</td><td>ST</td><td>ENDGEGNER I</td><td class="r">815<small>#15</small></td><td class="r">–<small>#4.514</small></td><td class="r">640.913<small>#108</small></td><td class="r">–<small>#1.068</small></td><td class="r">1.461.135<small>#71</small></td><td class="r">396.104<small>#155</small></td><td class="r">244.809<small>#257</small></td><td class="r">2.105.027.090<small>#2.573</small></td><td class="r">1.202<small>#21</small></td><td class="r">100<small>#1</small></td><td class="r">2.726<small>#7</small></td><td class="r">62:38</td><td class="r">4.920<small>#44</small></td></tr><tr><td class="r">17</td><td>markow</td><td>BF</td><td>Awanturnicy</td><td class="r">815<small>#15</small></td><td class="r">–<small>#13.761</small></td><td class="r">680.183<small>#43</small></td><td class="r">–<small>#1.326</small></td><td class="r">1.512.230<small>#37</small></td><td class="r">425.131<small>#77</small></td><td class="r">255.052<small>#185</small></td><td class="r">2.137.074.623<small>#2.473</small></td><td class="r">1.220<small>#7</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#70</small></td><td class="r">63:37</td><td class="r">5.010<small>#4</small></td></tr><tr><td class="r">18</td><td>PAPA von Tony</td><td>F17</td><td>Phoenix</td><td class="r">815<small>#15</small></td><td class="r">–<small>#17.282</small></td><td class="r">646.552<small>#91</small></td><td class="r">–<small>#2.420</small></td><td class="r">1.474.182<small>#62</small></td><td class="r">396.585<small>#152</small></td><td class="r">249.967<small>#230</small></td><td class="r">2.142.384.794<small>#2.453</small></td><td class="r">1.192<small>#30</small></td><td class="r">100<small>#1</small></td><td class="r">2.706<small>#16</small></td><td class="r">61:39</td><td class="r">4.902<small>#64</small></td></tr><tr><td class="r">19</td><td>Warbird</td><td>F9</td><td>Horizon</td><td class="r">814<small>#19</small></td><td class="r">–<small>#55.759</small></td><td class="r">548.685<small>#414</small></td><td class="r">–<small>#2.739</small></td><td class="r">1.261.231<small>#389</small></td><td class="r">330.000<small>#484</small></td><td class="r">218.685<small>#478</small></td><td class="r">3.748.168.190<small>#400</small></td><td class="r">1.169<small>#94</small></td><td class="r">100<small>#1</small></td><td class="r">2.704<small>#17</small></td><td class="r">60:40</td><td class="r">2.744<small>#11.897</small></td></tr><tr><td class="r">20</td><td>Umbums</td><td>F9</td><td>Horizon</td><td class="r">813<small>#20</small></td><td class="r">–<small>#3.916</small></td><td class="r">680.207<small>#42</small></td><td class="r">–<small>#806</small></td><td class="r">1.495.264<small>#49</small></td><td class="r">429.522<small>#69</small></td><td class="r">250.685<small>#207</small></td><td class="r">5.187.895.452<small>#62</small></td><td class="r">1.075<small>#1.221</small></td><td class="r">100<small>#1</small></td><td class="r">2.715<small>#12</small></td><td class="r">63:37</td><td class="r">2.084<small>#22.774</small></td></tr><tr><td class="r">21</td><td>Quilp the Round</td><td>MA</td><td>El Presidente</td><td class="r">812<small>#21</small></td><td class="r">–<small>#23.750</small></td><td class="r">503.997<small>#657</small></td><td class="r">–<small>#2.055</small></td><td class="r">1.194.935<small>#549</small></td><td class="r">288.723<small>#929</small></td><td class="r">215.274<small>#510</small></td><td class="r">4.673.581.312<small>#143</small></td><td class="r">1.140<small>#256</small></td><td class="r">100<small>#1</small></td><td class="r">2.654<small>#77</small></td><td class="r">57:43</td><td class="r">2.149<small>#21.591</small></td></tr><tr><td class="r">22</td><td>kulfon68</td><td>BF</td><td>SzaUzi</td><td class="r">812<small>#21</small></td><td class="r">–<small>#27.292</small></td><td class="r">572.553<small>#319</small></td><td class="r">–<small>#5.389</small></td><td class="r">1.307.317<small>#305</small></td><td class="r">324.945<small>#538</small></td><td class="r">247.608<small>#240</small></td><td class="r">5.136.276.380<small>#70</small></td><td class="r">1.096<small>#769</small></td><td class="r">100<small>#1</small></td><td class="r">2.652<small>#82</small></td><td class="r">57:43</td><td class="r">2.106<small>#22.337</small></td></tr><tr><td class="r">23</td><td>DonZeus</td><td>F8</td><td>ENDGEGNER</td><td class="r">812<small>#21</small></td><td class="r">–<small>#28.294</small></td><td class="r">676.483<small>#48</small></td><td class="r">–<small>#35.201</small></td><td class="r">1.478.677<small>#58</small></td><td class="r">338.073<small>#414</small></td><td class="r">338.410<small>#6</small></td><td class="r">5.186.406.062<small>#63</small></td><td class="r">1.098<small>#740</small></td><td class="r">100<small>#1</small></td><td class="r">2.638<small>#120</small></td><td class="r">50:50</td><td class="r">2.632<small>#13.059</small></td></tr><tr><td class="r">24</td><td>Zauriel</td><td>F17</td><td>Phoenix</td><td class="r">812<small>#21</small></td><td class="r">–<small>#27.622</small></td><td class="r">557.709<small>#383</small></td><td class="r">–<small>#2.407</small></td><td class="r">1.292.215<small>#327</small></td><td class="r">297.614<small>#832</small></td><td class="r">260.095<small>#154</small></td><td class="r">5.375.477.494<small>#43</small></td><td class="r">1.143<small>#235</small></td><td class="r">100<small>#1</small></td><td class="r">2.609<small>#216</small></td><td class="r">53:47</td><td class="r">2.105<small>#22.376</small></td></tr><tr><td class="r">25</td><td>Blue</td><td>BF</td><td>Awanturnicy</td><td class="r">811<small>#25</small></td><td class="r">–<small>#7.937</small></td><td class="r">527.507<small>#530</small></td><td class="r">–<small>#2.095</small></td><td class="r">1.221.861<small>#481</small></td><td class="r">421.301<small>#84</small></td><td class="r">106.206<small>#4.962</small></td><td class="r">1.173.867.140<small>#7.707</small></td><td class="r">1.094<small>#800</small></td><td class="r">100<small>#1</small></td><td class="r">2.713<small>#13</small></td><td class="r">80:20</td><td class="r">4.864<small>#106</small></td></tr><tr><td class="r">26</td><td>Surja</td><td>F8</td><td>ENDGEGNER</td><td class="r">811<small>#25</small></td><td class="r">–<small>#20.965</small></td><td class="r">702.684<small>#20</small></td><td class="r">–<small>#972</small></td><td class="r">1.527.934<small>#31</small></td><td class="r">437.138<small>#63</small></td><td class="r">265.546<small>#119</small></td><td class="r">4.298.916.384<small>#208</small></td><td class="r">1.069<small>#1.370</small></td><td class="r">100<small>#1</small></td><td class="r">2.575<small>#345</small></td><td class="r">62:38</td><td class="r">2.599<small>#13.562</small></td></tr><tr><td class="r">27</td><td>Elfinchen</td><td>F8</td><td>ENDGEGNER</td><td class="r">811<small>#25</small></td><td class="r">–<small>#50.390</small></td><td class="r">555.038<small>#391</small></td><td class="r">–<small>#2.045</small></td><td class="r">1.284.649<small>#339</small></td><td class="r">324.933<small>#539</small></td><td class="r">230.105<small>#359</small></td><td class="r">3.917.407.724<small>#342</small></td><td class="r">1.127<small>#363</small></td><td class="r">100<small>#1</small></td><td class="r">2.576<small>#341</small></td><td class="r">59:41</td><td class="r">2.749<small>#11.839</small></td></tr><tr><td class="r">28</td><td>DonMuErte</td><td>F17</td><td>Werwolf Legion</td><td class="r">811<small>#25</small></td><td class="r">–<small>#15.603</small></td><td class="r">695.250<small>#28</small></td><td class="r">–<small>#1.162</small></td><td class="r">1.571.081<small>#16</small></td><td class="r">478.855<small>#17</small></td><td class="r">216.395<small>#498</small></td><td class="r">3.893.161.607<small>#349</small></td><td class="r">1.223<small>#6</small></td><td class="r">100<small>#1</small></td><td class="r">2.708<small>#15</small></td><td class="r">69:31</td><td class="r">2.789<small>#11.578</small></td></tr><tr><td class="r">29</td><td>Tommis</td><td>GN</td><td>Dreamers</td><td class="r">810<small>#29</small></td><td class="r">–<small>#27.545</small></td><td class="r">587.488<small>#264</small></td><td class="r">–<small>#1.372</small></td><td class="r">1.336.088<small>#245</small></td><td class="r">386.865<small>#182</small></td><td class="r">200.623<small>#739</small></td><td class="r">4.416.231.818<small>#187</small></td><td class="r">1.159<small>#135</small></td><td class="r">100<small>#1</small></td><td class="r">2.653<small>#79</small></td><td class="r">66:34</td><td class="r">2.162<small>#21.363</small></td></tr><tr><td class="r">30</td><td>Rincewind</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">810<small>#29</small></td><td class="r">–<small>#56.087</small></td><td class="r">637.531<small>#118</small></td><td class="r">–<small>#39.499</small></td><td class="r">1.420.061<small>#117</small></td><td class="r">375.416<small>#225</small></td><td class="r">262.115<small>#142</small></td><td class="r">4.273.113.178<small>#214</small></td><td class="r">1.143<small>#235</small></td><td class="r">100<small>#1</small></td><td class="r">2.652<small>#82</small></td><td class="r">59:41</td><td class="r">2.644<small>#12.924</small></td></tr><tr><td class="r">31</td><td>Marodeur2</td><td>F17</td><td>Ritter des Anduril</td><td class="r">810<small>#29</small></td><td class="r">–<small>#17.506</small></td><td class="r">457.828<small>#1.030</small></td><td class="r">–<small>#8.652</small></td><td class="r">1.109.278<small>#842</small></td><td class="r">253.902<small>#1.528</small></td><td class="r">203.926<small>#673</small></td><td class="r">1.786.875.792<small>#3.729</small></td><td class="r">1.127<small>#363</small></td><td class="r">100<small>#1</small></td><td class="r">2.673<small>#37</small></td><td class="r">55:45</td><td class="r">4.767<small>#286</small></td></tr><tr><td class="r">32</td><td>Sephrenia</td><td>F9</td><td>Keltic</td><td class="r">809<small>#32</small></td><td class="r">–<small>#27.460</small></td><td class="r">619.695<small>#157</small></td><td class="r">–<small>#1.068</small></td><td class="r">1.411.661<small>#132</small></td><td class="r">419.565<small>#90</small></td><td class="r">200.130<small>#759</small></td><td class="r">1.794.854.952<small>#3.699</small></td><td class="r">1.149<small>#196</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#70</small></td><td class="r">68:32</td><td class="r">4.866<small>#102</small></td></tr><tr><td class="r">33</td><td>Cloud Strife 87</td><td>F17</td><td>A V A L A N C H E</td><td class="r">809<small>#32</small></td><td class="r">–<small>#25.000</small></td><td class="r">672.189<small>#50</small></td><td class="r">–<small>#1.466</small></td><td class="r">1.507.279<small>#40</small></td><td class="r">421.855<small>#81</small></td><td class="r">250.334<small>#211</small></td><td class="r">5.270.758.846<small>#53</small></td><td class="r">1.158<small>#144</small></td><td class="r">100<small>#1</small></td><td class="r">2.672<small>#41</small></td><td class="r">63:37</td><td class="r">2.189<small>#20.933</small></td></tr><tr><td class="r">34</td><td>Zaemon</td><td>MA</td><td>La Liga Hispana</td><td class="r">808<small>#34</small></td><td class="r">–<small>#56.275</small></td><td class="r">650.650<small>#84</small></td><td class="r">–<small>#1.641</small></td><td class="r">1.446.979<small>#86</small></td><td class="r">425.454<small>#76</small></td><td class="r">225.196<small>#411</small></td><td class="r">4.781.967.018<small>#129</small></td><td class="r">1.149<small>#196</small></td><td class="r">100<small>#1</small></td><td class="r">2.634<small>#134</small></td><td class="r">65:35</td><td class="r">2.169<small>#21.244</small></td></tr><tr><td class="r">35</td><td>Dominik1</td><td>GN</td><td>Dreamers</td><td class="r">808<small>#34</small></td><td class="r">–<small>#28.982</small></td><td class="r">566.396<small>#342</small></td><td class="r">–<small>#5.190</small></td><td class="r">1.307.727<small>#303</small></td><td class="r">400.304<small>#137</small></td><td class="r">166.092<small>#1.509</small></td><td class="r">1.566.225.617<small>#4.850</small></td><td class="r">1.174<small>#77</small></td><td class="r">100<small>#1</small></td><td class="r">2.679<small>#29</small></td><td class="r">71:29</td><td class="r">4.943<small>#22</small></td></tr><tr><td class="r">36</td><td>Best</td><td>BF</td><td>Awanturnicy</td><td class="r">808<small>#34</small></td><td class="r">–<small>#28.546</small></td><td class="r">655.185<small>#79</small></td><td class="r">–<small>#1.683</small></td><td class="r">1.450.933<small>#79</small></td><td class="r">456.316<small>#39</small></td><td class="r">198.869<small>#814</small></td><td class="r">3.490.208.024<small>#553</small></td><td class="r">1.145<small>#225</small></td><td class="r">100<small>#1</small></td><td class="r">2.686<small>#24</small></td><td class="r">70:30</td><td class="r">2.748<small>#11.865</small></td></tr><tr><td class="r">37</td><td>Vuu</td><td>F8</td><td>ENDGEGNER</td><td class="r">808<small>#34</small></td><td class="r">–<small>#24.072</small></td><td class="r">607.559<small>#191</small></td><td class="r">–<small>#1.269</small></td><td class="r">1.063.226<small>#1.056</small></td><td class="r">384.749<small>#189</small></td><td class="r">222.810<small>#438</small></td><td class="r">2.365.815.330<small>#1.902</small></td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">–</td><td class="r">63:37</td><td class="r">1.398<small>#38.313</small></td></tr><tr><td class="r">38</td><td>Imm0rt4liS</td><td>F8</td><td>ENDGEGNER</td><td class="r">808<small>#34</small></td><td class="r">–<small>#5.135</small></td><td class="r">688.381<small>#38</small></td><td class="r">–<small>#823</small></td><td class="r">1.543.340<small>#24</small></td><td class="r">488.381<small>#13</small></td><td class="r">200.000<small>#790</small></td><td class="r">3.623.738.834<small>#465</small></td><td class="r">1.181<small>#52</small></td><td class="r">100<small>#1</small></td><td class="r">2.688<small>#21</small></td><td class="r">71:29</td><td class="r">2.728<small>#12.026</small></td></tr><tr><td class="r">39</td><td>Muktat</td><td>F17</td><td>Phoenix</td><td class="r">808<small>#34</small></td><td class="r">–<small>#48.984</small></td><td class="r">486.636<small>#786</small></td><td class="r">–<small>#2.951</small></td><td class="r">1.136.636<small>#732</small></td><td class="r">259.030<small>#1.431</small></td><td class="r">227.606<small>#383</small></td><td class="r">1.886.826.553<small>#3.303</small></td><td class="r">1.136<small>#279</small></td><td class="r">100<small>#1</small></td><td class="r">2.577<small>#338</small></td><td class="r">53:47</td><td class="r">4.934<small>#34</small></td></tr><tr><td class="r">40</td><td>Surja</td><td>F17</td><td>Phoenix</td><td class="r">808<small>#34</small></td><td class="r">–<small>#27.611</small></td><td class="r">692.054<small>#33</small></td><td class="r">–<small>#1.106</small></td><td class="r">1.508.381<small>#39</small></td><td class="r">437.597<small>#62</small></td><td class="r">254.457<small>#190</small></td><td class="r">4.144.311.524<small>#260</small></td><td class="r">1.067<small>#1.442</small></td><td class="r">100<small>#1</small></td><td class="r">2.573<small>#356</small></td><td class="r">63:37</td><td class="r">2.596<small>#13.586</small></td></tr><tr><td class="r">41</td><td>Viper1978</td><td>F17</td><td>Ritter des Anduril</td><td class="r">808<small>#34</small></td><td class="r">–<small>#28.666</small></td><td class="r">724.135<small>#12</small></td><td class="r">–<small>#2.992</small></td><td class="r">1.529.486<small>#29</small></td><td class="r">362.100<small>#285</small></td><td class="r">362.035<small>#4</small></td><td class="r">6.669.589.021<small>#4</small></td><td class="r">1.052<small>#1.938</small></td><td class="r">100<small>#1</small></td><td class="r">2.554<small>#441</small></td><td class="r">50:50</td><td class="r">2.057<small>#23.441</small></td></tr><tr><td class="r">42</td><td>Fredocbr</td><td>ST</td><td>La Fred Team</td><td class="r">807<small>#42</small></td><td class="r">–<small>#27.607</small></td><td class="r">660.149<small>#71</small></td><td class="r">–<small>#1.096</small></td><td class="r">1.496.720<small>#47</small></td><td class="r">347.660<small>#365</small></td><td class="r">312.489<small>#21</small></td><td class="r">6.251.062.331<small>#9</small></td><td class="r">1.200<small>#22</small></td><td class="r">100<small>#1</small></td><td class="r">2.680<small>#27</small></td><td class="r">53:47</td><td class="r">2.226<small>#20.408</small></td></tr><tr><td class="r">43</td><td>W70</td><td>F8</td><td>ENDGEGNER</td><td class="r">807<small>#42</small></td><td class="r">–<small>#13.066</small></td><td class="r">593.743<small>#241</small></td><td class="r">–<small>#11.822</small></td><td class="r">1.328.918<small>#262</small></td><td class="r">356.989<small>#308</small></td><td class="r">236.754<small>#311</small></td><td class="r">1.948.717.078<small>#3.084</small></td><td class="r">1.152<small>#181</small></td><td class="r">100<small>#1</small></td><td class="r">2.674<small>#34</small></td><td class="r">60:40</td><td class="r">4.837<small>#143</small></td></tr><tr><td class="r">44</td><td>Mordae</td><td>F9</td><td>Keltic</td><td class="r">807<small>#42</small></td><td class="r">–<small>#21.111</small></td><td class="r">616.316<small>#166</small></td><td class="r">–<small>#1.336</small></td><td class="r">1.415.206<small>#128</small></td><td class="r">416.186<small>#95</small></td><td class="r">200.130<small>#759</small></td><td class="r">1.806.901.412<small>#3.643</small></td><td class="r">1.174<small>#77</small></td><td class="r">100<small>#1</small></td><td class="r">2.687<small>#22</small></td><td class="r">68:32</td><td class="r">4.911<small>#52</small></td></tr><tr><td class="r">45</td><td>W7O</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">807<small>#42</small></td><td class="r">–<small>#23.030</small></td><td class="r">587.912<small>#261</small></td><td class="r">–<small>#34.684</small></td><td class="r">1.316.996<small>#286</small></td><td class="r">329.965<small>#485</small></td><td class="r">257.947<small>#166</small></td><td class="r">4.149.921.026<small>#258</small></td><td class="r">1.113<small>#511</small></td><td class="r">100<small>#1</small></td><td class="r">2.667<small>#47</small></td><td class="r">56:44</td><td class="r">2.729<small>#12.022</small></td></tr><tr><td class="r">46</td><td>W70</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">807<small>#42</small></td><td class="r">–<small>#22.228</small></td><td class="r">579.175<small>#293</small></td><td class="r">–<small>#39.499</small></td><td class="r">1.312.336<small>#296</small></td><td class="r">326.305<small>#524</small></td><td class="r">252.870<small>#197</small></td><td class="r">5.156.302.121<small>#65</small></td><td class="r">1.141<small>#249</small></td><td class="r">100<small>#1</small></td><td class="r">2.670<small>#43</small></td><td class="r">56:44</td><td class="r">2.140<small>#21.721</small></td></tr><tr><td class="r">47</td><td>Stryga</td><td>GN</td><td>Dreamers</td><td class="r">806<small>#47</small></td><td class="r">–<small>#19.062</small></td><td class="r">583.470<small>#275</small></td><td class="r">–<small>#2.682</small></td><td class="r">1.332.291<small>#250</small></td><td class="r">399.402<small>#143</small></td><td class="r">184.068<small>#1.078</small></td><td class="r">1.662.586.493<small>#4.338</small></td><td class="r">1.204<small>#19</small></td><td class="r">100<small>#1</small></td><td class="r">2.675<small>#33</small></td><td class="r">68:32</td><td class="r">4.931<small>#37</small></td></tr><tr><td class="r">48</td><td>Maverick</td><td>BF</td><td>ZabójczePomidory</td><td class="r">806<small>#47</small></td><td class="r">–<small>#30.085</small></td><td class="r">632.267<small>#125</small></td><td class="r">–<small>#1.830</small></td><td class="r">1.444.328<small>#90</small></td><td class="r">353.356<small>#318</small></td><td class="r">278.911<small>#72</small></td><td class="r">5.716.416.780<small>#25</small></td><td class="r">1.178<small>#62</small></td><td class="r">100<small>#1</small></td><td class="r">2.682<small>#25</small></td><td class="r">56:44</td><td class="r">2.202<small>#20.737</small></td></tr><tr><td class="r">49</td><td>lucafreak</td><td>F8</td><td>ENDGEGNER</td><td class="r">806<small>#47</small></td><td class="r">–<small>#23.924</small></td><td class="r">736.488<small>#7</small></td><td class="r">–<small>#765</small></td><td class="r">1.590.754<small>#12</small></td><td class="r">416.417<small>#94</small></td><td class="r">320.071<small>#16</small></td><td class="r">2.474.674.325<small>#1.686</small></td><td class="r">1.081<small>#1.069</small></td><td class="r">100<small>#1</small></td><td class="r">2.563<small>#402</small></td><td class="r">57:43</td><td class="r">4.981<small>#9</small></td></tr><tr><td class="r">50</td><td>lilith luna</td><td>F17</td><td>moffiX (s4de)</td><td class="r">806<small>#47</small></td><td class="r">–<small>#28.111</small></td><td class="r">504.433<small>#654</small></td><td class="r">–<small>#2.846</small></td><td class="r">1.191.187<small>#560</small></td><td class="r">390.180<small>#167</small></td><td class="r">114.253<small>#4.118</small></td><td class="r">1.232.536.244<small>#7.163</small></td><td class="r">1.165<small>#114</small></td><td class="r">100<small>#1</small></td><td class="r">2.630<small>#150</small></td><td class="r">77:23</td><td class="r">4.889<small>#74</small></td></tr></tbody></table><div class="more">… und 57.491 weitere Zeilen – vollständig, sortier- und durchsuchbar nur im Browser.</div></div>
   <div class="lrows" id="lrows" hidden></div>
   <div id="blks" hidden>
     <div class="blk scansel" id="blk_scan"></div>
@@ -685,7 +756,8 @@ kbd{font:600 .85em var(--body);border:1px solid var(--line);border-radius:4px;pa
     <div class="gm blk" id="gainBox"><span class="lbl" id="gainLbl"></span><div class="seg" id="gainSeg" role="group"></div>
       <input class="gxin" id="gxIn" type="number" min="1" max="365" step="1" inputmode="numeric" hidden></div>
     <div class="search blk" id="blk_search"><span class="mag" aria-hidden="true"></span><input id="q" type="search" autocomplete="off">
-      <button class="x" id="qx" type="button">&times;</button><div class="sugg" id="sugg" hidden role="listbox"></div></div>
+      <button class="qsv" id="qsv" type="button" hidden>&#9734;</button><button class="x" id="qx" type="button">&times;</button>
+      <div class="sugg" id="sugg" hidden role="listbox"></div><div class="qform" id="qform" hidden></div></div>
     <div class="riv blk" id="blk_riv"></div>
     <div class="seg blk" id="lists" role="group"></div>
     <button class="btn blk" id="bColf" type="button" aria-pressed="false"></button>
@@ -761,6 +833,95 @@ function gcName(k) {                                   // "Name (Server)" einer 
 }
 var I18N = {
 de: {
+  "twCnt": "Gefunden: {n} verschiedene Spezial-Bilder – CC: {c} Bilder ({cp} Spieler) · Avatar-Bild (A): {a} Bilder ({ap} Spieler)",
+  "bcProjTip": "Gestrichelt weiter in die Zukunft (Ø pro Tag über die gezeigten Scans) – nur bei einem Wert, einem Spieler und „Werte“",
+  "bcProj": "Prognose (30 / 60 / 90 Tage)",
+  "bcCmpDel": "Aus dem Vergleich nehmen",
+  "bcCmpNo": "nichts gefunden",
+  "bcCmpOwnG": "(diese Gilde)",
+  "bcCmpOwn": "(Profil)",
+  "bcCmpFull": "3 von 3 – ✕ zum Tauschen",
+  "bcCmpPhG": "+ Gilde dazu (Name tippen) …",
+  "bcCmpPh": "+ Spieler dazu (Name tippen) …",
+  "bcCmpMax": "(bis 3)",
+  "bcCmpG": "Gilden vergleichen",
+  "bcCmpT": "Spieler vergleichen",
+  "isLoad": "Ältere Scans werden geladen …",
+  "isVals": "Werte",
+  "isCmp2": "Vergleichen",
+  "isSecVs": "(Stand Scan neu: {d})",
+  "isSecV": "Nach Werten sortiert",
+  "isSecGs": "(Zuwachs zwischen alt und neu)",
+  "isSecG": "Nach Zuwachs sortiert",
+  "isAsListTip": "Wieder die Scans nehmen, die in der Liste gewählt sind",
+  "isAsList": "wie in der Liste",
+  "isBoth": "{n} in beiden Scans",
+  "isDays": "{n} Tage",
+  "isNew": "neu",
+  "isOld": "Scan alt",
+  "isUsed": "Berücksichtigt:",
+  "riseClimbT": "Plätze gut gemacht",
+  "isBack": "Zurück zur Statistik",
+  "isNone": "Für diese Auswahl gibt es keinen Zuwachs (nur wer in beiden Scans steht, zählt).",
+  "isGain": "Zuwachs {c}",
+  "isPlace": "Platz",
+  "isMore": "{n} weitere zeigen (von {m})",
+  "isHint": "Klick auf eine Überschrift sortiert · Klick auf einen Namen zeigt ihn in der Liste",
+  "isList": "Auswahl der Liste: {s}",
+  "isWinNo": "Das Fenster wurde vom Browser blockiert (Pop-ups erlauben).",
+  "isWin": "Eigenes Fenster",
+  "isSmall": "Kleiner",
+  "isBig": "Größer",
+  "isCmp": "Vergleichen:",
+  "isGNo": "keine Gilde gefunden",
+  "isGPh2": "weitere Gilde …",
+  "isGPh": "Gilde suchen …",
+  "isSrvAll": "Server: alle",
+  "isSrv": "Server: {s}",
+  "isFor": "Für:",
+  "bcRsTip": "Das Fenster wieder in der normalen Größe zeigen (an der Ecke rechts unten ziehen = größer / kleiner)",
+  "bcRs": "Standardgröße",
+  "gs_ina3": "Inaktiv > 3 Tage",
+  "gs_newm": "Neue Mitglieder",
+  "gs_abase": "Ø Base Sum",
+  "gs_honor": "Zuwachs Ehre",
+  "gs_raids": "Zuwachs Raids",
+  "gs_rank": "Platz (Σ Base)",
+  "gs_act": "Aktiv (24 h)",
+  "gs_top3": "Meister Zuwachs",
+  "gs_glv": "Zuwachs Ø Level",
+  "gs_gsum": "Zuwachs Σ Base",
+  "gsOf": "{a} von {b}",
+  "gsDay": "{n} / Tag",
+  "gClose": "Schließen",
+  "gStatPick": "Zeigen",
+  "gStat": "Statistik dieser Gilde",
+  "gMoreI": "Mehr im „i“ ›",
+  "gNoMv": "keine",
+  "gAb": "– Abgänge ({n}):",
+  "gZu": "+ Zugänge ({n}):",
+  "gZuAb": "Zu- und Abgänge ({a} → {b})",
+  "rivRefTip": "◀ ▶ oder Pfeiltasten: für wen „Rivalen suchen“ gilt (alle oder einer)",
+  "rivRefOf": "{i} von {n}",
+  "rivRefAll": "alle {n}",
+  "qSaved": "Gespeichert unter „Schnellsuche“: {n}",
+  "qDel": "Schnellsuche löschen",
+  "qSaveHint": "Steht dann unter „Schnellsuche“ (nur in diesem Browser); × am Knopf löscht sie wieder.",
+  "qOk": "Speichern",
+  "qName": "Name",
+  "qSavedTip": "★ Diese Suche ist schon eine Schnellsuche – Klick: unter anderem Namen speichern",
+  "qSaveTip": "☆ Die eingetippte Suche als Knopf unter „Schnellsuche“ merken",
+  "qSave": "Als Schnellsuche speichern",
+  "potUntil": "bis {d}",
+  "potGone": "abgelaufen",
+  "potLeftH": "noch {n} h",
+  "potLeft": "noch {n} T",
+  "potLife": "Lebenstrank",
+  "potCon": "Ausdauer",
+  "potMain": "Haupttrank",
+  "pfPotL": "Laufzeit",
+  "lkTip": "vermutlich gesperrt – in den Gildendaten steht bei „zuletzt online“ keine Zeit, sondern ein Sonderwert",
+  "avTip": "Avatar-Bild (Spezial-Bild, kein Content Creator)",
   "gFilter": "Gilde: {g}",
   "gInList": " ({n} in der Spielerliste)",
   "set": "Einstellungen",
@@ -796,8 +957,8 @@ de: {
   "old": "Alt",
   "new": "Neu",
   "dsort": "Nach Zuwachs sortieren",
-  "twCc": "CCs mitzählen",
-  "twCcTip": "Content Creator (CC) bei „Gleiches Aussehen“ mitzählen – aus: Gruppen nur aus Spielern ohne CC",
+  "twCc": "Avatar-Bilder mitzählen",
+  "twCcTip": "Spieler mit Spezial-Bild (Content Creator oder Avatar-Bild) bei „Gleiches Aussehen“ mitzählen – aus: Gruppen nur aus Spielern mit normalem Gesicht",
   "bcScans": "Scans",
   "bcLast": "letzte {n}",
   "bcLastN": "letzte {n} von {m}",
@@ -985,7 +1146,7 @@ de: {
   "created": "Erstellt am {d}.",
   "lang": "Sprache",
   "infoT": "Hilfe",
-  "tab_new": "Neu",
+  "tab_new": "Statistik",
   "tab_use": "Bedienung",
   "tab_scans": "Scans",
   "tab_signs": "Zeichen",
@@ -1053,7 +1214,7 @@ de: {
   "zIna": "Graue Zeile: seit mindestens {n} Tagen nicht aktiv.",
   "zGain": "Zuwachs: {up} mehr, {down} weniger.",
   "zTags": "<span class='tag new'>{n}</span> nicht im alten Scan · <span class='tag gone'>{g}</span> nur im alten Scan (Maus darüber zeigt mehr).",
-  "zIcons": "Symbole hinter dem Namen: Klasse, Reittier und Tränke (links Haupttrank, Mitte Flügel, rechts Ausdauer; ein Bild mit allen dreien = alle großen Tränke aktiv). CC = offizieller Content Creator. Maus über ein Symbol zeigt, was es ist.",
+  "zIcons": "Symbole hinter dem Namen: Klasse, Reittier und Tränke (links Haupttrank, Mitte Flügel, rechts Ausdauer; ein Bild mit allen dreien = alle großen Tränke aktiv). CC = offizieller Content Creator, A = Avatar-Bild (ohne CC), 🔒 = vermutlich gesperrt. Maus über ein Symbol zeigt, was es ist.",
   "e1": "Unter Einstellungen änderst du Größe, Schrift, Design, Farben, Kontrast, Zeilenhöhe und Spalten. Rang-Marken, Top-Marken, Rang-Bewegung und Zuwachs-Zahlen stellst du über den Knopf # oben ein.||Außerdem legst du dort eigene Such-Knöpfe an, etwa für deine Gilde.||Dein Browser merkt sich alles auf diesem Gerät. Mit „Als Code kopieren“ oder „Als Datei speichern“ nimmst du deine Einstellungen auf ein anderes Gerät mit.||Die Einstellungen stehen auf Reitern. Unter „Anordnung“ wählst du die Anordnung des Erstellers, die Standard-Anordnung oder deine eigene: Element anklicken und mit den Pfeilen verschieben.",
   "eBtn": "Einstellungen öffnen",
   "srv1": "Server in dieser Liste, nach Gruppen:",
@@ -1139,7 +1300,7 @@ de: {
   "pfAlbum": "Album",
   "pfChB": "Verlauf Base Sum",
   "pfChL": "Verlauf Level",
-  "pfChNote": "ein Punkt je Scan · gestrichelt = Prognose in 30 / 60 / 90 Tagen (Ø {v} pro Tag über alle Scans)",
+  "pfChNote": "ein Punkt je Scan · Ø {v} pro Tag über alle Scans · Klick = großes Fenster (dort Prognose zuschaltbar)",
   "pfChNone": "Für den Verlauf braucht es mindestens zwei Scans.",
   "pfEq": "Ausrüstung & Tränke",
   "pfPot": "Tränke",
@@ -1218,6 +1379,97 @@ de: {
   "rcYears": "über {n} Jahren"
 },
 en: {
+  "twCnt": "Found: {n} different special pictures – CC: {c} pictures ({cp} players) · avatar picture (A): {a} pictures ({ap} players)",
+  "bcProjTip": "Dashed line into the future (avg. per day over the shown scans) – only with one value, one player and “Values”",
+  "bcProj": "Forecast (30 / 60 / 90 days)",
+  "bcCmpDel": "Remove from comparison",
+  "bcCmpNo": "nothing found",
+  "bcCmpOwnG": "(this guild)",
+  "bcCmpOwn": "(profile)",
+  "bcCmpFull": "3 of 3 – ✕ to swap",
+  "bcCmpPhG": "+ add guild (type a name) …",
+  "bcCmpPh": "+ add player (type a name) …",
+  "bcCmpMax": "(up to 3)",
+  "bcCmpG": "Compare guilds",
+  "bcCmpT": "Compare players",
+  "isLoad": "Loading older scans …",
+  "isVals": "Values",
+  "isCmp2": "Compare",
+  "isSecVs": "(as of new scan: {d})",
+  "isSecV": "Sorted by values",
+  "isSecGs": "(gain between old and new)",
+  "isSecG": "Sorted by gain",
+  "isAsListTip": "Use the scans chosen in the list again",
+  "isAsList": "as in the list",
+  "isBoth": "{n} in both scans",
+  "isDays": "{n} days",
+  "isNew": "new",
+  "isOld": "Old scan",
+  "isUsed": "Used:",
+  "riseClimbT": "Most places gained",
+  "isBack": "Back to the statistics",
+  "isNone": "No gain for this selection (only players in both scans count).",
+  "isGain": "{c} gain",
+  "isPlace": "Rank",
+  "isMore": "show {n} more (of {m})",
+  "isHint": "Click a heading to sort · click a name to show it in the list",
+  "isList": "Selection of the list: {s}",
+  "isWinNo": "The browser blocked the window (allow pop-ups).",
+  "isWin": "Own window",
+  "isSmall": "Smaller",
+  "isBig": "Bigger",
+  "isCmp": "Compare:",
+  "isGNo": "no guild found",
+  "isGPh2": "another guild …",
+  "isGPh": "Search guild …",
+  "isSrvAll": "Servers: all",
+  "isSrv": "Servers: {s}",
+  "isFor": "For:",
+  "bcRsTip": "Show the window in its normal size again (drag the bottom right corner = bigger / smaller)",
+  "bcRs": "Default size",
+  "gs_ina3": "Inactive > 3 days",
+  "gs_newm": "New members",
+  "gs_abase": "Avg base sum",
+  "gs_honor": "Honor gain",
+  "gs_raids": "Raids gain",
+  "gs_rank": "Rank (sum base)",
+  "gs_act": "Active (24 h)",
+  "gs_top3": "Top gainers",
+  "gs_glv": "Avg level gain",
+  "gs_gsum": "Sum base gain",
+  "gsOf": "{a} of {b}",
+  "gsDay": "{n} / day",
+  "gClose": "Close",
+  "gStatPick": "Show",
+  "gStat": "Stats of this guild",
+  "gMoreI": "More in “i” ›",
+  "gNoMv": "none",
+  "gAb": "– Left ({n}):",
+  "gZu": "+ Joined ({n}):",
+  "gZuAb": "Joined and left ({a} → {b})",
+  "rivRefTip": "◀ ▶ or arrow keys: who “Find rivals” is for (all or one)",
+  "rivRefOf": "{i} of {n}",
+  "rivRefAll": "all {n}",
+  "qSaved": "Saved under “Quick search”: {n}",
+  "qDel": "Delete quick search",
+  "qSaveHint": "Appears under “Quick search” (only in this browser); × on the button deletes it.",
+  "qOk": "Save",
+  "qName": "Name",
+  "qSavedTip": "★ This search is already a quick search – click: save under another name",
+  "qSaveTip": "☆ Keep the typed search as a button under “Quick search”",
+  "qSave": "Save as quick search",
+  "potUntil": "until {d}",
+  "potGone": "expired",
+  "potLeftH": "{n} h left",
+  "potLeft": "{n} d left",
+  "potLife": "Life potion",
+  "potCon": "Constitution",
+  "potMain": "Main potion",
+  "pfPotL": "Runtime",
+  "lkTip": "probably banned – the guild data shows no time for “last online”, only a special value",
+  "avTip": "Avatar picture (special picture, no content creator)",
+  "twCcTip": "Count players with a special picture (content creator or avatar) for “same look” – off: groups only of players with a normal face",
+  "twCc": "Count avatar pictures",
   "gFilter": "Guild: {g}",
   "gInList": " ({n} in the player list)",
   "set": "Settings",
@@ -1417,7 +1669,7 @@ en: {
   "created": "Created on {d}.",
   "lang": "Language",
   "infoT": "Help",
-  "tab_new": "New",
+  "tab_new": "Statistics",
   "tab_use": "How to use",
   "tab_scans": "Scans",
   "tab_signs": "Signs",
@@ -1485,7 +1737,7 @@ en: {
   "zIna": "Grey row: not active for at least {n} days.",
   "zGain": "Gain: {up} more, {down} less.",
   "zTags": "<span class='tag new'>{n}</span> not in the old scan · <span class='tag gone'>{g}</span> only in the old scan (hover for more).",
-  "zIcons": "Icons after the name: class, mount and potions (left main potion, middle life potion, right constitution; one picture with all three = all large potions active). CC = official content creator. Hover over an icon to see what it is.",
+  "zIcons": "Icons after the name: class, mount and potions (left main potion, middle life potion, right constitution; one picture with all three = all large potions active). CC = official content creator, A = avatar picture (no CC), 🔒 = probably banned. Hover over an icon to see what it is.",
   "e1": "In Settings you change size, font, design, colors, contrast, row height and columns. Rank badges, top badges, rank movement and gain numbers are set via the # button at the top.||You can also add your own search buttons there, e.g. for your guild.||Your browser remembers everything on this device. With “Copy as code” or “Save as file” you take your settings to another device.||Settings are split into tabs. Under “Layout” you choose the creator's layout, the standard layout or your own: click an element and move it with the arrows.",
   "eBtn": "Open settings",
   "srv1": "Servers in this list, by group:",
@@ -1571,7 +1823,7 @@ en: {
   "pfAlbum": "Album",
   "pfChB": "Base Sum history",
   "pfChL": "Level history",
-  "pfChNote": "one point per scan · dashed = forecast in 30 / 60 / 90 days (avg. {v} per day over all scans)",
+  "pfChNote": "one point per scan · avg. {v} per day over all scans · click = big window (forecast can be switched on there)",
   "pfChNone": "The history needs at least two scans.",
   "pfEq": "Equipment & potions",
   "pfPot": "Potions",
@@ -1650,6 +1902,63 @@ en: {
   "rcYears": "over {n} years"
 },
 pl: {
+  "bcProj": "Prognoza (30 / 60 / 90 dni)",
+  "bcCmpDel": "Usuń z porównania",
+  "bcCmpNo": "nic nie znaleziono",
+  "bcCmpOwnG": "(ta gildia)",
+  "bcCmpOwn": "(profil)",
+  "bcCmpFull": "3 z 3 – ✕ aby zamienić",
+  "bcCmpPhG": "+ dodaj gildię …",
+  "bcCmpPh": "+ dodaj gracza …",
+  "bcCmpMax": "(do 3)",
+  "bcCmpG": "Porównaj gildie",
+  "bcCmpT": "Porównaj graczy",
+  "gAb": "– Odeszli ({n}):",
+  "gZu": "+ Doszli ({n}):",
+  "isLoad": "Wczytywanie starszych skanów …",
+  "isVals": "Wartości",
+  "isCmp2": "Porównaj",
+  "isSecVs": "(stan nowego skanu: {d})",
+  "isSecV": "Wg wartości",
+  "isSecGs": "(przyrost między starym a nowym)",
+  "isSecG": "Wg przyrostu",
+  "isAsList": "jak na liście",
+  "isBoth": "{n} w obu skanach",
+  "isDays": "{n} dni",
+  "isNew": "nowy",
+  "isOld": "Skan stary",
+  "isUsed": "Uwzględnione:",
+  "bcRs": "Rozmiar domyślny",
+  "isGain": "Przyrost {c}",
+  "isPlace": "Miejsce",
+  "isWin": "Osobne okno",
+  "isSmall": "Mniejsze",
+  "isBig": "Większe",
+  "isCmp": "Porównaj:",
+  "isGPh": "Szukaj gildii …",
+  "isSrvAll": "Serwery: wszystkie",
+  "isFor": "Dla:",
+  "gNoMv": "brak",
+  "gStatPick": "Pokaż",
+  "gStat": "Statystyki gildii",
+  "gClose": "Zamknij",
+  "rivRefOf": "{i} z {n}",
+  "rivRefAll": "wszyscy {n}",
+  "qDel": "Usuń szybkie wyszukiwanie",
+  "qName": "Nazwa",
+  "qOk": "Zapisz",
+  "qSave": "Zapisz jako szybkie wyszukiwanie",
+  "potUntil": "do {d}",
+  "potGone": "wygasła",
+  "potLeftH": "jeszcze {n} h",
+  "potLeft": "jeszcze {n} dni",
+  "potLife": "Mikstura życia",
+  "potCon": "Wytrzymałość",
+  "potMain": "Główna mikstura",
+  "pfPotL": "Czas działania",
+  "lkTip": "prawdopodobnie zablokowany",
+  "avTip": "Awatar (specjalny obrazek, nie twórca treści)",
+  "twCc": "Licz awatary",
   "gFilter": "Gildia: {g}",
   "gInList": " ({n} na liście graczy)",
   "set": "Ustawienia",
@@ -1849,7 +2158,7 @@ pl: {
   "created": "Utworzono {d}.",
   "lang": "Język",
   "infoT": "Pomoc",
-  "tab_new": "Nowości",
+  "tab_new": "Statystyki",
   "tab_use": "Obsługa",
   "tab_scans": "Skany",
   "tab_signs": "Oznaczenia",
@@ -2003,7 +2312,7 @@ pl: {
   "pfAlbum": "Album",
   "pfChB": "Przebieg Base Sum",
   "pfChL": "Przebieg poziomu",
-  "pfChNote": "jeden punkt na skan · przerywana = prognoza za 30 / 60 / 90 dni (śr. {v} na dzień ze wszystkich skanów)",
+  "pfChNote": "jeden punkt na skan · śr. {v} na dzień ze wszystkich skanów · kliknięcie = duże okno (tam prognoza)",
   "pfChNone": "Przebieg wymaga co najmniej dwóch skanów.",
   "pfEq": "Wyposażenie i mikstury",
   "pfPot": "Mikstury",
@@ -2082,6 +2391,63 @@ pl: {
   "rcYears": "ponad {n} lat"
 },
 cs: {
+  "bcProj": "Odhad (30 / 60 / 90 dní)",
+  "bcCmpDel": "Odebrat z porovnání",
+  "bcCmpNo": "nic nenalezeno",
+  "bcCmpOwnG": "(tento cech)",
+  "bcCmpOwn": "(profil)",
+  "bcCmpFull": "3 ze 3 – ✕ pro výměnu",
+  "bcCmpPhG": "+ přidat cech …",
+  "bcCmpPh": "+ přidat hráče …",
+  "bcCmpMax": "(až 3)",
+  "bcCmpG": "Porovnat cechy",
+  "bcCmpT": "Porovnat hráče",
+  "gAb": "– Odešli ({n}):",
+  "gZu": "+ Přišli ({n}):",
+  "isLoad": "Načítají se starší skeny …",
+  "isVals": "Hodnoty",
+  "isCmp2": "Porovnat",
+  "isSecVs": "(stav nového skenu: {d})",
+  "isSecV": "Podle hodnot",
+  "isSecGs": "(přírůstek mezi starým a novým)",
+  "isSecG": "Podle přírůstku",
+  "isAsList": "jako v seznamu",
+  "isBoth": "{n} v obou skenech",
+  "isDays": "{n} dní",
+  "isNew": "nový",
+  "isOld": "Sken starý",
+  "isUsed": "Započteno:",
+  "bcRs": "Výchozí velikost",
+  "isGain": "Přírůstek {c}",
+  "isPlace": "Místo",
+  "isWin": "Vlastní okno",
+  "isSmall": "Menší",
+  "isBig": "Větší",
+  "isCmp": "Porovnat:",
+  "isGPh": "Hledat cech …",
+  "isSrvAll": "Servery: všechny",
+  "isFor": "Pro:",
+  "gNoMv": "žádné",
+  "gStatPick": "Zobrazit",
+  "gStat": "Statistika cechu",
+  "gClose": "Zavřít",
+  "rivRefOf": "{i} z {n}",
+  "rivRefAll": "všichni {n}",
+  "qDel": "Smazat rychlé hledání",
+  "qName": "Název",
+  "qOk": "Uložit",
+  "qSave": "Uložit jako rychlé hledání",
+  "potUntil": "do {d}",
+  "potGone": "vypršel",
+  "potLeftH": "ještě {n} h",
+  "potLeft": "ještě {n} dní",
+  "potLife": "Lektvar života",
+  "potCon": "Výdrž",
+  "potMain": "Hlavní lektvar",
+  "pfPotL": "Doba trvání",
+  "lkTip": "pravděpodobně zablokován",
+  "avTip": "Avatar (speciální obrázek, ne tvůrce obsahu)",
+  "twCc": "Počítat avatary",
   "gFilter": "Cech: {g}",
   "gInList": " ({n} v seznamu hráčů)",
   "set": "Nastavení",
@@ -2281,7 +2647,7 @@ cs: {
   "created": "Vytvořeno {d}.",
   "lang": "Jazyk",
   "infoT": "Nápověda",
-  "tab_new": "Novinky",
+  "tab_new": "Statistiky",
   "tab_use": "Ovládání",
   "tab_scans": "Skeny",
   "tab_signs": "Značky",
@@ -2435,7 +2801,7 @@ cs: {
   "pfAlbum": "Album",
   "pfChB": "Průběh Base Sum",
   "pfChL": "Průběh úrovně",
-  "pfChNote": "jeden bod za sken · čárkovaně = odhad za 30 / 60 / 90 dní (průměr {v} za den ze všech skenů)",
+  "pfChNote": "jeden bod za sken · průměr {v} za den ze všech skenů · klik = velké okno (tam odhad)",
   "pfChNone": "Průběh potřebuje aspoň dva skeny.",
   "pfEq": "Výbava a lektvary",
   "pfPot": "Lektvary",
@@ -2606,14 +2972,16 @@ function cellText(c, v) {
 var MINE = {};
 (D.mine || []).forEach(function (k) { MINE[k] = 1; });
 function mkRows(sc) {                                  // Zeilen eines Scans (erst beim ersten Zugriff, grosse Seiten)
-  var INA = {}, FU = {};
+  var INA = {}, FU = {}, AV = {}, LK = {};
   (sc.ina || []).forEach(function (i) { INA[i] = 1; });
+  (sc.av || []).forEach(function (i) { AV[i] = 1; });
+  (sc.lk || []).forEach(function (i) { LK[i] = 1; });
   (sc.fu || []).forEach(function (i) { FU[i] = 1; });
   var rows = sc.rows.map(function (v, i) {
     return {v: v, k: sc.keys ? sc.keys[i] : String(i), r: sc.ranks ? sc.ranks[i] : null, ic: sc.ic ? sc.ic[i] : null,
             ina: !!INA[i], me: !!MINE[sc.keys ? sc.keys[i] : ''], mv: sc.mv ? sc.mv[i] : null, ov: sc.ov ? sc.ov[i] : null,
             fu: !!FU[i], on: sc.on ? (sc.on[i] || null) : null, bg: sc.bg ? sc.bg[i] : null, pf: sc.pf ? (sc.pf[i] || null) : null,
-            dd: sc.dd ? sc.dd[i] : (sc.days || null)};
+            dd: sc.dd ? sc.dd[i] : (sc.days || null), av: !!AV[i], lk: !!LK[i]};
   });
   return rows;
 }
@@ -2638,13 +3006,14 @@ function perMode() { return S.gm === 'day' || S.gm === 'week' || S.gm === 'x'; }
 function gmPer() { return S.gm === 'week' ? 7 : (S.gm === 'x' ? S.gx : 1); }
 function gainVal(r, c, ci) {                        // Zuwachs-Spalte je nach Umschalter (gesamt / pro Tag / pro Woche / pro X Tage)
   var v = num(c, r.v[ci]);
+  if (c.gday && v != null && HASGAIN && dayPer()) return r.dd && r.dd >= 0.25 ? v / r.dd * gmPer() : null;   // Gilden-Zuwachs
   if (!c.gain || !HASGAIN || !perMode() || v == null || !dayCol(c)) return v;   // nur "/Day"-Spalten folgen dem Umschalter
   return r.dd && r.dd >= 0.25 ? v / r.dd * gmPer() : null;
 }
 function rateOf(x, c) {                              // Base/Tag, /Woche, /X Tage im Vergleich Alt -> Neu selbst rechnen
   if (!c.rate || !st.cmp) return undefined;
   var si = CI[c.rate[0]]; if (si == null) return undefined;
-  if (!x.o || x.gone || isFus(x)) return null;
+  if (!x.o || x.gone) return null;                    // auch fusionierte Spieler (anderer Server, gleiche Werte)
   var sc = COLS[si], a = num(sc, x.o.v[si]), b = num(sc, x.r.v[si]), d = cmpDays();
   if (a == null || b == null) return null;
   var g = c.rate[0] === 'xp' ? xpGain(x.o, x.r) : b - a;   // XP: mit Level-Aufstiegen dazwischen
@@ -2676,10 +3045,10 @@ function cellNum(x, c, ci) {                         // Zahl einer Zelle so, wie
   var rv = rateOf(x, c); if (rv !== undefined) return rv;
   var v = gainVal(x.r, c, ci);
   if (v != null && c.xd) v = v * S.gx / c.xd;
-  if (v != null && dayCol(c)) v = v * dayMul(c);
+  if (v != null && dayCol(c) && !c.gday) v = v * dayMul(c);
   return v;
 }
-function dayCol(c) { return /_day$/.test(c.id); }       // Base/Day, XP/Day: folgen dem Zuwachs-Knopf
+function dayCol(c) { return /_day$/.test(c.id) || !!c.gday; }   // Base/Day, XP/Day, Gilden-Zuwachs: folgen dem Zuwachs-Knopf
 var HASDAY = null;
 function segOn() {                                   // Umschalter: nur fuer die "/Day"-Spalten
   if (HASDAY === null) HASDAY = COLS.some(function (c) { return dayCol(c) && !INTERNAL.has(c.id); });
@@ -2825,7 +3194,8 @@ var SH0 = (D.scans.length ? (D.scans[D.scans.length - 1].n_total || 0) : 0) > 15
 var st = {
   scan: SCANS.length - 1, cmp: SCANS.length > 1, a: Math.max(0, SCANS.length - 2), b: SCANS.length - 1,
   q: '', list: 'all', topx: D.top_n || 0, srv: new Set(), sort: null, sort2: null, colf: {}, colfOn: false,
-  shown: SH0, gone: true, prof: null, pch: 'base', gexp: new Set(), riv: null, gf: null, qx: {}, gfoc: false
+  shown: SH0, gone: true, prof: null, pch: 'base', gexp: new Set(), riv: null, gf: null, qx: {}, gfoc: false,
+  rivRef: -1, isS: new Set(), isG: new Set()
 };
 function defaultSort() {
   if (NMET) return {c: MET[0].id, dir: -1, delta: false};
@@ -2907,6 +3277,10 @@ function applyTexts() {
     $('vtabs').hidden = false;
   }
   newBadge();
+}
+function fmtDay(ms) {
+  try { return new Date(ms).toLocaleDateString(LOC[L], {day: '2-digit', month: '2-digit', year: 'numeric'}); }
+  catch (e) { return ''; }
 }
 function fmtDate(ms) {
   try { return new Date(ms).toLocaleString(LOC[L], {day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'}); }
@@ -3051,7 +3425,7 @@ function buildGain() {
                             ['x', t('gX', {x: gx}), t('gXTip', {x: gx})]].map(function (o) {
     var on = (S.gm || 'day') === o[0];
     return '<button type="button" data-gm="' + o[0] + '" data-tip="' + esc(o[2] + ' · ' + t(on && st.gfoc ? 'gFocOff' : 'gFocOn')) + '" aria-pressed="' + on + '"' +
-      (on && st.gfoc ? ' class="foc"' : (on && o[0] !== 'day' ? ' class="cur"' : '')) + '>' + esc(o[1]) + '</button>';
+      (on && st.gfoc ? ' class="foc"' : '') + '>' + esc(o[1]) + '</button>';
   }).join('');
   var xi = $('gxIn'); xi.hidden = seg ? S.gm !== 'x' && !HASXD : false; if (document.activeElement !== xi) xi.value = S.gx;
   xi.setAttribute('data-tip', t('gxIn'));
@@ -3059,7 +3433,8 @@ function buildGain() {
 $('gainSeg').addEventListener('click', function (e) {
   var b = e.target.closest('button'); if (!b) return;
   var gm = b.getAttribute('data-gm');
-  st.gfoc = !(st.gfoc && S.gm === gm);                  // gleicher Knopf noch einmal: Spalten zurueck an ihren Platz
+  if (st.gfoc && S.gm === gm) { st.gfoc = false; gm = 'day'; }   // gleicher Knopf noch einmal: aus, zurueck auf "pro Tag"
+  else st.gfoc = true;
   S.gm = gm; saveS(); buildGain(); hideTip(); render(); sfoldText();
   if (st.gfoc) gfocShow();
   if (S.gm === 'x') $('gxIn').focus();
@@ -3126,11 +3501,13 @@ function buildChips() {
   var ps = allPresets(), gs = groups(), h = '', h2 = '';
   if (ps.length || HASTP || HASTW) {
     var chips = ps.map(function (p, i) {
-      return '<button type="button" class="chip' + (p.own ? ' own' : '') + '" data-i="' + i + '" aria-pressed="' + (st.q === p.q) + '" data-tip="' + esc(p.q) + '">' + esc(p.label) + '</button>';
+      return '<button type="button" class="chip' + (p.own ? ' own' : '') + '" data-i="' + i + '" aria-pressed="' + (st.q === p.q) + '" data-tip="' + esc(p.q) + '">' + esc(p.label) +
+        (p.own && setWhere('presets') ? '<span class="qdel" data-qdel="' + i + '" aria-label="' + esc(t('qDel')) + '" data-tip="' + esc(t('qDel')) + '">&times;</span>' : '') + '</button>';
     }).join('');
     if (HASTP) chips += '<button type="button" class="chip tpc" id="tpChip" aria-pressed="' + !!st.tpOnly + '" aria-label="' + esc(t('tpChipTip', {x: nf1.format(D.tp_f)})) + '" data-tip="' + esc(t('tpChipTip', {x: nf1.format(D.tp_f)})) + '">✦</button>';
     if (HASTW) chips += '<button type="button" class="chip twc" id="twChip" aria-pressed="' + !!st.twOnly + '" aria-label="' + esc(t('twTip')) + '" data-tip="' + esc(t('twTip')) + '">👥</button>';
-    if (HASCC && st.twOnly) chips += '<button type="button" class="chip twcc" id="twCc" aria-pressed="' + !!st.twCc + '" data-tip="' + esc(t('twCcTip')) + '">' + esc(t('twCc')) + '</button>';
+    if (HASCC && st.twOnly) chips += '<button type="button" class="chip twcc" id="twCc" aria-pressed="' + !!st.twCc + '" data-tip="' + esc(t('twCcTip') + (D.twsp ? '\n' + t('twCnt', {n: nf0.format(D.twsp[0] + D.twsp[2]),
+      c: nf0.format(D.twsp[0]), cp: nf0.format(D.twsp[1]), a: nf0.format(D.twsp[2]), ap: nf0.format(D.twsp[3])}) : '')) + '">' + esc(t('twCc')) + '</button>';
     if (D.quickPop) {                               // Knopf "Schnellsuche ▾" – die Liste klappt beim Darueberfahren auf
       var act = ps.filter(function (p) { return st.q === p.q; })[0];
       h += '<div class="qwrap"><button type="button" class="qbtn' + (act || st.tpOnly || st.twOnly ? ' on' : '') + '" aria-expanded="' + QOPEN + '"><span class="lbl q">' + esc(t('quick')) + '</span>' +
@@ -3152,6 +3529,7 @@ function buildChips() {
     } else h2 = '<span class="lbl">' + esc(t('servers')) + '</span>' + schips;
   }
   $('quick').innerHTML = h; vis($('quick'), !!h);
+  updQsv();
   $('srvchips').innerHTML = h2; vis($('srvchips'), !!h2);
   updRows();
   var ss = $('srvsel'), gfh = st.gf ? ' <button type="button" class="chip on" id="gfClr">' + esc(t('gFilter', {g: st.gf.g + (st.gf.srv ? ' (' + st.gf.srv + ')' : '')})) + ' &times;</button>' : '';
@@ -3177,6 +3555,12 @@ $('quick').addEventListener('click', function (e) {
   if (e.target.closest('.qbtn')) { qOpen(COARSE ? !QOPEN : true); return; }
   var b = e.target.closest('.chip'); if (!b) return;
   QOPEN = false;
+  var qd = e.target.closest('[data-qdel]');
+  if (qd) {                                          // eigene Schnellsuche loeschen
+    var pd = allPresets()[+qd.getAttribute('data-qdel')];
+    if (pd && pd.own) { S.presets = (S.presets || []).filter(function (x) { return !(x.label === pd.label && x.q === pd.q); }); saveS(); }
+    QOPEN = true; buildChips(); qOpen(true); return;
+  }
   if (b.id === 'tpChip') { st.tpOnly = !st.tpOnly; st.shown = SH0; buildChips(); render(); return; }
   if (b.id === 'twChip') { st.twOnly = !st.twOnly; if (st.twOnly) gcEv('Gleiches Aussehen (Schnellsuche)'); st.shown = SH0; buildChips(); render(); return; }
   if (b.id === 'twCc') { st.twCc = !st.twCc; twBuild(); st.shown = SH0; buildChips(); render(); return; }
@@ -3323,8 +3707,42 @@ $('blk_scan').addEventListener('change', function (e) {
 
 // Suche
 var QT2 = null;
+function updQsv() {                                    // Stern im Suchfeld: eingetippte Suche als Schnellsuche speichern
+  var b = $('qsv'), q = String(st.q || '').trim(), on = !!q && !!setWhere('presets') && !GUILDLIST;
+  b.hidden = !on; $('q').classList.toggle('hasq', on);
+  if (!on) { $('qform').hidden = true; return; }
+  var have = allPresets().some(function (p) { return String(p.q).trim() === q; });
+  b.innerHTML = have ? '&#9733;' : '&#9734;';
+  b.setAttribute('data-tip', t(have ? 'qSavedTip' : 'qSaveTip')); b.setAttribute('aria-label', t('qSave'));
+}
+function qFormOpen() {
+  var f = $('qform'), q = String(st.q || '').trim();
+  var sug = q.length > 28 ? q.slice(0, 27) + '…' : q;
+  f.innerHTML = '<b>' + esc(t('qSave')) + '</b><input id="qfName" type="text" maxlength="40" value="' + esc(sug) + '" aria-label="' + esc(t('qName')) + '">' +
+    '<button type="button" class="btn" id="qfOk">' + esc(t('qOk')) + '</button><button type="button" class="btn" id="qfX">&times;</button>' +
+    '<small class="dim">' + esc(t('qSaveHint')) + '</small>';
+  f.hidden = false; $('sugg').hidden = true;
+  var i = $('qfName'); i.focus(); i.select();
+}
+function qFormSave() {
+  var q = String(st.q || '').trim(), n = String(($('qfName') || {}).value || '').trim() || q;
+  if (!q) return;
+  S.presets = (S.presets || []).filter(function (x) { return String(x.q).trim() !== q; });
+  S.presets.push({label: n, q: q}); saveS();
+  $('qform').hidden = true; buildChips(); toast(t('qSaved', {n: n}));
+}
+$('qsv').addEventListener('click', function (e) { e.stopPropagation(); if ($('qform').hidden) qFormOpen(); else $('qform').hidden = true; });
+$('qform').addEventListener('click', function (e) {
+  if (e.target.closest('#qfOk')) qFormSave();
+  else if (e.target.closest('#qfX')) $('qform').hidden = true;
+});
+$('qform').addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') { e.preventDefault(); qFormSave(); }
+  else if (e.key === 'Escape') { e.stopPropagation(); $('qform').hidden = true; $('q').focus(); }
+});
+document.addEventListener('click', function (e) { if (!$('qform').hidden && !e.target.closest('#qform, #qsv')) $('qform').hidden = true; });
 $('q').addEventListener('input', function (e) {             // grosse Listen: erst suchen, wenn kurz nicht getippt wird
-  st.q = e.target.value; st.riv = null; st.shown = SH0;
+  st.q = e.target.value; st.riv = null; st.rivRef = -1; st.shown = SH0; updQsv();
   var pl0 = st.q.split(','), lt0 = fold(pl0[pl0.length - 1].trim());      // selbst weiter getippt: dieser Begriff zaehlt wieder normal
   if (lt0) Object.keys(st.qx).forEach(function (k) { if (k === lt0 || lt0.indexOf(k) === 0 || k.indexOf(lt0) === 0) delete st.qx[k]; });
   clearTimeout(QT2);
@@ -3570,7 +3988,7 @@ function headHtml(cols) {
     var dir = s ? st.sort.dir : (s2 ? st.sort2.dir : -1);
     var tip = c.kp ? t(c.id === 'komp_lvb' ? 'kpTipL' : 'kpTipS') : (L === 'de' && c.tip ? String(c.tip).replace('X Tage', nf0.format(S.gx) + ' Tage') : '');
     if (tip && dayCol(c) && dayPer() && S.gm !== 'day') tip = tip.replace('pro Tag', S.gm === 'week' ? 'pro Woche' : 'pro ' + nf0.format(S.gx) + ' Tage');
-    var per = dayCol(c) && !dayLab(c) && S.gm !== 'day' && dayPer() ?
+    var per = dayCol(c) && !dayLab(c) && (S.gm !== 'day' || c.gday) && dayPer() ?
       (S.gm === 'week' ? t('perWeek') : (S.gm === 'x' ? t('perX', {x: nf0.format(S.gx)}) : t('perDay'))) : '';
     var nic = ci === NAME && D.icons && !GUILDLIST ? '<button type="button" class="nicb" data-nic="1" aria-pressed="' + nicOn() + '" aria-label="' + esc(t(nicOn() ? 'nicOff' : 'nicOn')) +
       '" data-tip="' + esc(t(nicOn() ? 'nicOff' : 'nicOn')) + '"><svg viewBox="0 0 20 14" aria-hidden="true"><path d="M1 7s3.2-5.5 9-5.5S19 7 19 7s-3.2 5.5-9 5.5S1 7 1 7z" fill="none" stroke="currentColor" stroke-width="1.7"/>' +
@@ -3597,6 +4015,10 @@ function iconTitle(k) { var m = D.icon_t && (D.icon_t[L] || D.icon_t.de); return
 var VISCLS = false;
 function clsKey(r) { var ck = null; (r.ic || []).forEach(function (k) { if (!ck && /^c\d+$/.test(k) && D.icons && D.icons[k]) ck = k; }); return ck; }
 function nicOn() { return String(S.nic) !== 'false'; }
+function markHtml(r) {                                 // (A) = Avatar-Bild ohne CC, Schloss = vermutlich gesperrt
+  return (r.av && nicOn() ? '<span class="avm" data-tip="' + esc(t('avTip')) + '">A</span>' : '') +
+    (r.lk ? '<span class="lkm" data-tip="' + esc(t('lkTip')) + '">&#128274;</span>' : '');
+}
 function nameCell(x, c, ci) {
   var r = x.r, ic = '';
   if (r.ic && D.icons && nicOn()) r.ic.forEach(function (k) {
@@ -3605,6 +4027,7 @@ function nameCell(x, c, ci) {
     var tt = iconTitle(k);
     ic += '<img src="' + D.icons[k] + '" alt="' + esc(tt) + '" data-tip="' + esc(tt) + '" loading="lazy"' + (k === 'xcc' ? ' class="cc"' : (FLIP[k] ? ' class="fl"' : '')) + '>';
   });
+  ic = markHtml(r) + ic;
   var tag = '';
   if (st.cmp && x.gone) tag = ' <span class="tag gone" data-tip="' + esc(t('tagGoneTip', {d: SCANS[st.a].label})) + '">' + esc(t('tagGone')) + '</span>';
   else if (st.cmp && !x.o) tag = ' <span class="tag new">' + esc(t('tagNew')) + '</span>';
@@ -3835,6 +4258,7 @@ function histDone(list, err) {
   var pc = !$('ovlProf').hidden && document.querySelector('#profBody .pcard');      // offenes Profil / Diagramm neu zeichnen
   if (pc) openProf(pc.getAttribute('data-pk'));
   if (!$('ovlChart').hidden && BC) bcDraw();         // grosses Fenster mit allen Scans neu
+  if (!$('ovlInfo').hidden && infoTab === 'new') { var ib = $('infoBody'), stp = ib.scrollTop; buildInfo(); ib.scrollTop = stp; }
 }
 
 function sort2Click(id) {                           // 1. Mal: bei Gleichstand danach, 2. Mal: umdrehen, 3. Mal: aufheben
@@ -4004,9 +4428,9 @@ $('lang').addEventListener('change', function (e) { S.lang = e.target.value; sav
 
 var TABS = ['new', 'use', 'feat', 'scans', 'signs', 'settings', 'srv'];
 var FEATK = ['u13', 'u12', 'u2', 'u4', 'f_komp', 'f_zu', 'f_stat'];     // Abschnitte im Reiter "Features" (alle anderen: "Bedienung")
-var infoTab = 'new', WASNEW = false;
-function openInfo(tab) {
-  infoTab = tab || infoTab;
+var infoTab = 'new', WASNEW = false, IGF = null, ISBIG = false, ISSORT = null, ISN = 10, ISSRV = false;
+function openInfo(tab, igf) {
+  infoTab = tab || infoTab; IGF = igf || null;
   buildInfo(); openOvl('ovlInfo');
   SEEN.note = NOTEH; SEEN.stamp = D.stamp || ''; saveSeen(); newBadge();
 }
@@ -4047,7 +4471,7 @@ function buildInfo() {
     if (WASNEW && D.stamp) h += '<p><b>' + esc(t('newSince', {d: D.stamp})) + '</b></p>';
     h += '<p>' + esc(periodText()) + '</p>';
     if (D.note) h += '<h3>' + esc(t('note')) + '</h3><div class="note">' + esc(D.note) + '</div>';
-    h += risersHtml();
+    h += istatHtml();
     h += '<p><label><input type="checkbox" id="noAuto"' + (SEEN.noAuto ? ' checked' : '') + '> ' + esc(t('noAuto')) + '</label></p>';
   } else if (infoTab === 'use') {
     var hasRiv = D0.cols && D0.cols.some(function (c) { return c.id === 'base_sum'; }) && !D0.noRiv;
@@ -4134,7 +4558,8 @@ function buildInfo() {
 }
 $('ovlInfo').addEventListener('click', function (e) {
   var b = e.target.closest('[data-tab]');
-  if (b) { infoTab = b.getAttribute('data-tab'); buildInfo(); $('infoBody').scrollTop = 0; return; }
+  if (b) { infoTab = b.getAttribute('data-tab'); IGF = null; buildInfo(); $('infoBody').scrollTop = 0; return; }
+  if (istatClick(e)) return;
   var hj = e.target.closest('[data-hj]');
   if (hj) { helpJump(hj.getAttribute('data-hj')); return; }
   var gm0 = e.target.closest('.gmn');                    // Gilden-Liste: Spieler -> Profil in der Spieler-Liste
@@ -4154,6 +4579,11 @@ $('ovlInfo').addEventListener('click', function (e) {
 });
 $('ovlInfo').addEventListener('change', function (e) {
   if (e.target.id === 'noAuto') { SEEN.noAuto = e.target.checked; saveSeen(); }
+  if (e.target.id === 'isA' || e.target.id === 'isB') {    // Scans der Statistik (die Liste bleibt, wie sie ist)
+    var p0 = isPair(), a = $('isA') ? +$('isA').value : p0[0], b = $('isB') ? +$('isB').value : p0[1];
+    if (a > b) { var x = a; a = b; b = x; }
+    if (a !== b) { IS_P = [a, b]; ISN = 10; ISNV = 10; buildInfo(); }
+  }
 });
 
 // Statistik im Reiter Neu: gilt fuer den gewaehlten Vergleich und die gerade gezeigte Auswahl (Suche, Server, Gilde, Filter)
@@ -4256,21 +4686,21 @@ function guildDetailHtml(gname, gsrv, pair) {           // eine Gilde: Base Sum 
   return h + '</div>';
 }
 function guildStatsHtml() {                             // Gilden-Liste: Gilden-Fortschritt + Top Zu- und Abgaenge (oder eine gesuchte Gilde)
-  var pair = cmpPair(); if (!pair) return '';
-  var ks = selKeys(), one = lastRows.filter(function (x) { return !x.gone; });
+  var pair = isPair(); if (!pair) return '';
+  var ks = isScope(), one = lastRows.filter(function (x) { return !x.gone; });
   var gn = CI.g_name, gsv = CI.g_server;
   if (one.length === 1 && (st.q.trim() || st.gf) && gn != null) return guildDetailHtml(cellText(COLS[gn], one[0].r.v[gn]), gsv != null ? one[0].r.v[gsv] : '', pair);
   var A = SCANS[pair[0]], B2 = SCANS[pair[1]], old = new Map(A.rows.map(function (r) { return [r.k, r]; }));
   var days = A.ts && B2.ts && B2.ts > A.ts ? (B2.ts - A.ts) / 86400000 : null, list = [], gi = CI.gs_base_sum;
   var inSel = function (r) { return ks ? !!ks[r.k] : true; };
-  var scope = ks ? t('riseSelX', {s: selText()}) : t('tpAll');
+  var scope = ks ? t('riseSelX', {s: isSelText()}) : t('tpAll');
   var h = '<h3>' + esc(t('gpT')) + '</h3><p class="dim">' + esc(t('cmpInfo', {a: A.label, b: B2.label})) + ' · ' + esc(scope) + ' · ' + esc(t('gpHint')) + '</p><div class="rise">';
   var nm = function (r) { return gn != null ? cellText(COLS[gn], r.v[gn]) : ''; }, sv = function (r) { return gsv != null ? (r.v[gsv] || '') : ''; };
   var gbtn = function (r, i, tail) {
     return '<tr><td class="n">' + (i + 1) + '.</td><td><button type="button" class="lnk" data-gx="' + esc(nm(r)) + '" data-gs="' + esc(sv(r)) + '">' + esc(nm(r)) + '</button></td>' +
       (gsv != null ? '<td class="sv">' + esc(sv(r)) + '</td>' : '') + tail + '</tr>';
   };
-  if (gi != null) {
+  if (gi != null && !ISNOGAIN) {
     var c = COLS[gi];
     B2.rows.forEach(function (r) {
       var o = old.get(r.k); if (!o || !inSel(r)) return;
@@ -4299,12 +4729,260 @@ function guildStatsHtml() {                             // Gilden-Liste: Gilden-
   if (!list.length && !zz) return '';
   return h + zz + '</div>';
 }
+// ---- "i" › Statistik: Zuwachs je gewaehltem Wert mit Plaetzen #1 #2 #3, eigene Server- / Gildenwahl
+var ISNOGAIN = false, IS_P = null, ISNV = 10, ISSORTV = null;
+function isPair() {                                     // Scans der Statistik: eigene Wahl im "i", sonst wie die Liste, sonst die zwei neuesten
+  if (!MULTI) return null;
+  if (IS_P && SCANS[IS_P[0]] && SCANS[IS_P[1]] && IS_P[0] < IS_P[1]) return IS_P;
+  var p = cmpPair(); if (p) return p;
+  var ok = []; SCANS.forEach(function (sc, i) { if (sc.ts) ok.push(i); });
+  return ok.length > 1 ? [ok[ok.length - 2], ok[ok.length - 1]] : null;
+}
+function isOpen(k) {                                    // auf- / zugeklappt (im Browser gemerkt)
+  var v = S['is_' + k];
+  return v == null ? {og: true, ov: false, cg: true, cv: true}[k] !== false : String(v) === 'true';
+}
+function isScope() {                                    // null = alle; Liste gefiltert: ihre Zeilen; sonst die Auswahl im "i"
+  if (activeFilters() || st.riv) return selKeys();
+  if (!st.isS.size && !st.isG.size) return null;
+  var o = {}, gc = GUILDLIST ? CI.g_name : GUILD, sc = GUILDLIST ? CI.g_server : SRV;
+  curScan().rows.forEach(function (r) {
+    var sv = sc != null ? r.v[sc] : '', g = gc != null ? cellText(COLS[gc], r.v[gc]) : '';
+    if (st.isS.has(sv) || st.isG.has(g + '|' + sv)) o[r.k] = 1;      // Server oder Gilde (jede Wahl kommt dazu)
+  });
+  return o;
+}
+function isSelText() {
+  if (activeFilters() || st.riv) return selText();
+  var p = [];
+  if (st.isS.size) p.push(t('srvSel', {s: Array.from(st.isS).sort(function (a, b) { return a.localeCompare(b, 'de', {numeric: true}); }).join(', ')}));
+  if (st.isG.size) p.push(Array.from(st.isG).map(isGLab).join(', '));
+  return p.join(' + ');
+}
+var ISGL = null;
+function isGuilds() {                                   // Gilden der Liste: [{key, n, s, dup}]
+  var sc0 = curScan(); if (ISGL && ISGL.sc === sc0) return ISGL.list;
+  var gc = GUILDLIST ? CI.g_name : GUILD, scc = GUILDLIST ? CI.g_server : SRV, m = {}, cnt = {};
+  if (gc != null) sc0.rows.forEach(function (r) {
+    var g = cellText(COLS[gc], r.v[gc]), sv = scc != null ? (r.v[scc] || '') : ''; if (!g) return;
+    var k = g + '|' + sv; if (!m[k]) { m[k] = {key: k, n: g, s: sv, c: 0}; cnt[fold(g)] = (cnt[fold(g)] || 0) + 1; }
+    m[k].c++;
+  });
+  var list = Object.keys(m).map(function (k) { var x = m[k]; x.dup = cnt[fold(x.n)] > 1; return x; });
+  ISGL = {sc: sc0, list: list}; return list;
+}
+function isGLab(key) { var p = key.split('|'), x = isGuilds().filter(function (g) { return g.key === key; })[0]; return p[0] + (x && x.dup || !x ? ' (' + p[1] + ')' : ''); }
+function isGSugg(q) {                                   // Vorschlaege beim Tippen: Gilden, bei gleichem Namen mit Server in Klammern
+  q = fold(String(q || '').trim()); if (!q) return [];
+  var hit = isGuilds().filter(function (g) { return !st.isG.has(g.key) && fold(g.n).indexOf(q) >= 0; });
+  hit.sort(function (a, b) { var ai = fold(a.n).indexOf(q) === 0 ? 0 : 1, bi = fold(b.n).indexOf(q) === 0 ? 0 : 1; return ai - bi || b.c - a.c || a.n.localeCompare(b.n); });
+  return hit.slice(0, 12);
+}
+function isGSuggHtml(q) {
+  var hs = isGSugg(q);
+  return hs.map(function (g, i) { return '<button type="button" class="isgo' + (i ? '' : ' on') + '" data-isga="' + esc(g.key) + '">' + esc(g.n) + (g.dup ? ' <span class="dim">(' + esc(g.s) + ')</span>' : '') + '</button>'; }).join('');
+}
+function isAvail() {                                    // Werte, die man vergleichen kann (Zahlen-Spalten, ohne selbst gerechnete)
+  var out = [];
+  COLS.forEach(function (c, ci) {
+    if (c.type !== 'num' || c.rate || c.gday || c.fmt === 'flag' || ci === NAME) return;
+    if (/^(gd_|komp_|kg_)/.test(c.id) || ['rank', 'g_rank', 'level2', 'xp2', 'delta_base', 'base_day', 'base_week', 'base_xd', 'xp_day', 'xp_week', 'xp_xd', 'last_active', 'mount_days', 'origin_id'].indexOf(c.id) >= 0) return;
+    out.push(c.id);
+  });
+  return out;
+}
+function isSel(av) {
+  var key = GUILDLIST ? 'iStatG' : 'iStatP', s0 = Array.isArray(S[key]) ? S[key] : (GUILDLIST ? ['gs_base_sum', 'g_level_avg'] : ['base_sum', 'level']);
+  var sel = s0.filter(function (id) { return av.indexOf(id) >= 0; });
+  return sel.length ? sel : av.slice(0, 1);
+}
+function isForHtml() {
+  var cnt = srvCounts(), srvs = Object.keys(cnt).sort(function (a, b) { return a.localeCompare(b, 'de', {numeric: true}); });
+  var ss = Array.from(st.isS).sort(function (a, b) { return a.localeCompare(b, 'de', {numeric: true}); });
+  var h = '<div class="isfor">';
+  if (srvs.length > 1) h += '<button type="button" class="btn' + (ss.length ? ' on' : '') + '" id="isSrvB" aria-expanded="' + ISSRV + '">' + esc(ss.length ? t('isSrv', {s: ss.join(', ')}) : t('isSrvAll')) + ' &#9662;</button>';
+  if ((GUILDLIST ? CI.g_name : GUILD) != null) {
+    h += Array.from(st.isG).map(function (k) { return '<button type="button" class="chip on" data-isgx="' + esc(k) + '">' + esc(isGLab(k)) + ' &times;</button>'; }).join('');
+    h += '<span class="isg"><input id="isGIn" type="search" autocomplete="off" placeholder="' + esc(t(st.isG.size ? 'isGPh2' : 'isGPh')) + '" aria-label="' + esc(t('isGPh')) + '"><span class="isgs" id="isGS" hidden></span></span>';
+  }
+  if (st.isS.size || st.isG.size) h += '<button type="button" class="btn" id="isClr">&times; ' + esc(t('reset')) + '</button>';
+  h += '</div>';
+  if (ISSRV && srvs.length > 1) h += '<div class="ispop">' + srvs.map(function (s) { return '<button type="button" class="chip" data-iss2="' + esc(s) + '" aria-pressed="' + st.isS.has(s) + '">' + esc(s) + '</button>'; }).join('') + '</div>';
+  return h;
+}
+function isTable(pair, sel) {
+  var A = SCANS[pair[0]], B2 = SCANS[pair[1]], old = new Map(A.rows.map(function (r) { return [r.k, r]; })), ks = isScope();
+  var days = A.ts && B2.ts && B2.ts > A.ts ? (B2.ts - A.ts) / 86400000 : null;
+  var srt = ISSORT && sel.indexOf(ISSORT) >= 0 ? ISSORT : sel[0], list = [];
+  B2.rows.forEach(function (r) {
+    var o = old.get(r.k); if (!o || (ks && !ks[r.k])) return;
+    if (!GUILDLIST && (r.ina || r.fu || (SRV != null && o.v[SRV] !== r.v[SRV]))) return;
+    var g = {}, any = false;
+    sel.forEach(function (id) { var ci = CI[id], c = COLS[ci], a = num(c, o.v[ci]), b = num(c, r.v[ci]); if (a != null && b != null) { g[id] = b - a; any = true; } });
+    if (any) list.push({r: r, g: g});
+  });
+  if (!list.length) return '<p class="dim">' + esc(t('isNone')) + '</p>';
+  var gv = function (x) { return x.g[srt] == null ? -Infinity : x.g[srt]; };
+  list.sort(function (a, b) { return gv(b) - gv(a); });
+  var nmc = GUILDLIST ? CI.g_name : NAME, svc = GUILDLIST ? CI.g_server : SRV, md = ['&#129351;', '&#129352;', '&#129353;'];
+  var h = '<div class="istw"><table class="rtab istab"><tr><th>' + esc(t('isPlace')) + '</th><th>' + esc(t(GUILDLIST ? 'gpName' : 'riseName')) + '</th>' + (svc != null ? '<th>' + esc(colLabel(COLS[svc])) + '</th>' : '') +
+    sel.map(function (id) { return '<th class="r' + (id === srt ? ' on' : '') + '"><button type="button" data-iss="' + esc(id) + '">' + esc(t('isGain', {c: colLabel(COLS[CI[id]])})) + (id === srt ? ' &#9660;' : '') + '</button></th>'; }).join('') +
+    (days && days >= 0.25 ? '<th class="r">' + esc(t('gDay')) + '</th>' : '') + '</tr>';
+  list.slice(0, ISN).forEach(function (x, i) {
+    var r = x.r, nm = cellText(COLS[nmc], r.v[nmc]), sv = svc != null ? (r.v[svc] || '') : '';
+    var btn = GUILDLIST ? '<button type="button" class="lnk" data-gx="' + esc(nm) + '" data-gs="' + esc(sv) + '">' + esc(nm) + '</button>'
+                        : '<button type="button" class="lnk" data-pk="' + esc(r.k) + '" data-q="' + esc(nm) + '">' + esc(nm) + '</button>';
+    h += '<tr' + (i < 3 ? ' class="md"' : '') + '><td class="n">' + (i < 3 ? md[i] + ' ' : '') + '<b>#' + (i + 1) + '</b></td><td>' + btn + markHtml(r) + '</td>' + (svc != null ? '<td class="sv">' + esc(sv) + '</td>' : '') +
+      sel.map(function (id) { var d = x.g[id]; return '<td class="r">' + (d == null ? '–' : '<span class="dl ' + (d > 0 ? 'up' : (d < 0 ? 'down' : 'eq')) + '" style="display:inline">' + fmtIG(d) + '</span>') + '</td>'; }).join('') +
+      (days && days >= 0.25 ? '<td class="r">' + (x.g[srt] == null ? '–' : fmtGain(x.g[srt] / days)) + '</td>' : '') + '</tr>';
+  });
+  h += '</table></div>';
+  if (list.length > ISN) h += '<p><button type="button" class="btn" id="isMore">' + esc(t('isMore', {n: nf0.format(Math.min(25, list.length - ISN)), m: nf0.format(list.length)})) + '</button></p>';
+  return h + '<p class="dim small">' + esc(t('isHint')) + '</p>';
+}
+function isSelV(av) {
+  var key = GUILDLIST ? 'iStatVG' : 'iStatVP', s0 = Array.isArray(S[key]) ? S[key] : (GUILDLIST ? ['gs_base_sum', 'g_level_avg'] : ['base_sum', 'level']);
+  var sel = s0.filter(function (id) { return av.indexOf(id) >= 0; });
+  return sel.length ? sel : av.slice(0, 1);
+}
+function isScanBox(pair) {                              // hervorgehoben: welche Scans zaehlen (hier waehlbar, nur fuer die Statistik)
+  var A = SCANS[pair[0]], B2 = SCANS[pair[1]], days = A.ts && B2.ts && B2.ts > A.ts ? (B2.ts - A.ts) / 86400000 : null;
+  var ka = new Set(A.rows.map(function (r) { return r.k; })), ks = isScope();
+  var both = B2.rows.filter(function (r) { return ka.has(r.k) && (!ks || ks[r.k]) && (GUILDLIST || (!r.ina && !r.fu)); }).length;
+  var opt = function (cur, isA) {
+    return SCANS.map(function (sc, i) {
+      if (!sc.ts) return '';
+      var dis = isA ? i >= pair[1] : i <= pair[0];
+      return '<option value="' + i + '"' + (i === cur ? ' selected' : '') + (dis ? ' disabled' : '') + '>' + esc(sc.label) + '</option>';
+    }).join('');
+  };
+  var lp = cmpPair(), diff = IS_P && !(lp && lp[0] === pair[0] && lp[1] === pair[1]);
+  return '<div class="isscan"><b>' + esc(t('isUsed')) + '</b> <span>' + esc(t('isOld')) + '</span> <select id="isA" aria-label="' + esc(t('isOld')) + '">' + opt(pair[0], true) +
+    '</select> <span>&rarr; ' + esc(t('isNew')) + '</span> <select id="isB" aria-label="' + esc(t('isNew')) + '">' + opt(pair[1], false) + '</select>' +
+    (diff && lp ? '<button type="button" class="btn" id="isPr" data-tip="' + esc(t('isAsListTip')) + '">&#8634; ' + esc(t('isAsList')) + '</button>' : '') +
+    '<span class="isinfo">' + (days ? esc(t('isDays', {n: nf0.format(Math.round(days))})) + ' · ' : '') + esc(isScope() ? t('riseSelX', {s: isSelText()}) : t('tpAll')) +
+    ' · ' + esc(t('isBoth', {n: nf0.format(both)})) + '</span>' +
+    (NARROW ? '' : '<span class="isbtns"><button type="button" class="btn" id="isBig">' + (ISBIG ? '&#10530; ' + esc(t('isSmall')) : '&#10529; ' + esc(t('isBig'))) + '</button>' +
+    '<button type="button" class="btn" id="isWin">&#8599; ' + esc(t('isWin')) + '</button></span>') + '</div>';
+}
+function isChips(kind, av, sel) {                       // "▾ Vergleichen" / "▾ Werte": Klick auf das Wort klappt die Auswahl ein / aus
+  var open = isOpen('c' + kind), lab = t(kind === 'g' ? 'isCmp2' : 'isVals');
+  return '<div class="isfor"><button type="button" class="istog" data-isec="c' + kind + '" aria-expanded="' + open + '"><span class="car">' + (open ? '&#9662;' : '&#9656;') + '</span>' + esc(lab) + '</button>' +
+    (open ? av.map(function (id) {
+      return '<button type="button" class="chip" data-' + (kind === 'g' ? 'ism' : 'isv') + '="' + esc(id) + '" aria-pressed="' + (sel.indexOf(id) >= 0) + '">' + esc(colLabel(COLS[CI[id]])) + '</button>'; }).join('')
+      : '<span class="issum">' + esc(sel.map(function (id) { return colLabel(COLS[CI[id]]); }).join(' · ')) + '</span>') + '</div>';
+}
+function isSec(key, title, sub, body) {
+  var open = isOpen(key);
+  return '<div class="issec' + (open ? ' on' : '') + '"><button type="button" class="ishd" data-isec="' + key + '" aria-expanded="' + open + '"><span class="car">' + (open ? '&#9662;' : '&#9656;') + '</span>' +
+    esc(title) + ' <small>' + esc(sub) + '</small></button>' + (open ? body() : '') + '</div>';
+}
+function isVTable(pair, sel) {                          // Rangliste nach den Werten im neuen Scan, klein dahinter der Zuwachs seit dem alten
+  var A = SCANS[pair[0]], B2 = SCANS[pair[1]], old = new Map(A.rows.map(function (r) { return [r.k, r]; })), ks = isScope();
+  var srt = ISSORTV && sel.indexOf(ISSORTV) >= 0 ? ISSORTV : sel[0], list = [];
+  B2.rows.forEach(function (r) {
+    if (ks && !ks[r.k]) return;
+    if (!GUILDLIST && (r.ina || r.fu)) return;
+    var v = {}; sel.forEach(function (id) { v[id] = num(COLS[CI[id]], r.v[CI[id]]); });
+    if (v[srt] == null) return;
+    var o = old.get(r.k); if (o && !GUILDLIST && SRV != null && o.v[SRV] !== r.v[SRV]) o = null;
+    list.push({r: r, v: v, o: o});
+  });
+  if (!list.length) return '<p class="dim">' + esc(t('isNone')) + '</p>';
+  list.sort(function (a, b) { return b.v[srt] - a.v[srt]; });
+  var nmc = GUILDLIST ? CI.g_name : NAME, svc = GUILDLIST ? CI.g_server : SRV, md = ['&#129351;', '&#129352;', '&#129353;'];
+  var h = '<div class="istw"><table class="rtab istab"><tr><th>' + esc(t('isPlace')) + '</th><th>' + esc(t(GUILDLIST ? 'gpName' : 'riseName')) + '</th>' + (svc != null ? '<th>' + esc(colLabel(COLS[svc])) + '</th>' : '') +
+    sel.map(function (id) { return '<th class="r' + (id === srt ? ' on' : '') + '"><button type="button" data-issv="' + esc(id) + '">' + esc(colLabel(COLS[CI[id]])) + (id === srt ? ' &#9660;' : '') + '</button></th>'; }).join('') + '</tr>';
+  list.slice(0, ISNV).forEach(function (x, i) {
+    var r = x.r, nm = cellText(COLS[nmc], r.v[nmc]), sv = svc != null ? (r.v[svc] || '') : '';
+    var btn = GUILDLIST ? '<button type="button" class="lnk" data-gx="' + esc(nm) + '" data-gs="' + esc(sv) + '">' + esc(nm) + '</button>'
+                        : '<button type="button" class="lnk" data-pk="' + esc(r.k) + '" data-q="' + esc(nm) + '">' + esc(nm) + '</button>';
+    h += '<tr' + (i < 3 ? ' class="md"' : '') + '><td class="n">' + (i < 3 ? md[i] + ' ' : '') + '<b>#' + (i + 1) + '</b></td><td>' + btn + markHtml(r) + '</td>' + (svc != null ? '<td class="sv">' + esc(sv) + '</td>' : '') +
+      sel.map(function (id) {
+        var ci = CI[id], v = x.v[id], a = x.o ? num(COLS[ci], x.o.v[ci]) : null, d = v != null && a != null ? v - a : null;
+        return '<td class="r">' + (v == null ? '–' : '<b>' + esc(cellText(COLS[ci], r.v[ci])) + '</b>') +
+          (d != null && d !== 0 ? ' <span class="dl ' + (d > 0 ? 'up' : 'down') + '" style="display:inline">' + fmtIG(d) + '</span>' : '') + '</td>';
+      }).join('') + '</tr>';
+  });
+  h += '</table></div>';
+  if (list.length > ISNV) h += '<p><button type="button" class="btn" id="isMoreV">' + esc(t('isMore', {n: nf0.format(Math.min(25, list.length - ISNV)), m: nf0.format(list.length)})) + '</button></p>';
+  return h + '<p class="dim small">' + esc(t('isHint')) + '</p>';
+}
+function istatHtml() {
+  var pair = isPair();
+  if (pair && HIST && VIEW === 'p' && histGet(pair)) return '<p class="dim">' + esc(t('isLoad')) + '</p>';   // Online: aeltere Scans erst laden
+  if (IGF) return '<p><button type="button" class="btn" id="igfX">&#9664; ' + esc(t('isBack')) + '</button></p>' + (pair ? guildDetailHtml(IGF.g, IGF.s, pair) : '');
+  if (!pair) return risersHtml();                      // nur ein Scan: wie bisher
+  var av = isAvail(), sel = isSel(av), selV = isSelV(av), h = '<div class="istat">';
+  h += isScanBox(pair);
+  h += activeFilters() || st.riv ? '<p class="dim">' + esc(t('isList', {s: selText()})) + '</p>' : isForHtml();
+  h += isSec('og', t('isSecG'), t('isSecGs'), function () { return isChips('g', av, sel) + isTable(pair, sel); });
+  h += isSec('ov', t('isSecV'), t('isSecVs', {d: shortDate(SCANS[pair[1]].label)}), function () { return isChips('v', av, selV) + isVTable(pair, selV); });
+  h += '</div>';
+  ISNOGAIN = true;
+  try { h += risersHtml(); } finally { ISNOGAIN = false; }
+  return h;
+}
+function isWin() {                                      // Statistik in einem eigenen Fenster (zum Ansehen, z. B. auf dem zweiten Bildschirm)
+  var w = window.open('', '_blank'); if (!w) { toast(t('isWinNo'), true); return; }
+  var css = Array.prototype.map.call(document.querySelectorAll('style'), function (s) { return s.outerHTML; }).join('');
+  var at = Array.prototype.map.call(document.documentElement.attributes, function (a) { return a.name + '="' + esc(a.value) + '"'; }).join(' ');
+  var body = $('infoBody').cloneNode(true);
+  Array.prototype.forEach.call(body.querySelectorAll('.isscan select'), function (sl) {
+    var sp = document.createElement('b'); sp.textContent = sl.options[sl.selectedIndex] ? sl.options[sl.selectedIndex].text : ''; sl.replaceWith(sp); });
+  Array.prototype.forEach.call(body.querySelectorAll('.isfor, .ispop, #isMore, #isMoreV, .isbtns, #isPr, label, #igfX, .ishd .car'), function (n) { n.remove(); });
+  w.document.write('<!doctype html><html ' + at + '><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' +
+    esc(t('tab_new') + ' – ' + (D.title || '')) + '</title>' + css + '</head><body style="padding:18px"><div class="card" style="width:auto;max-width:none"><h2>' + esc(D.title || '') + '</h2>' +
+    body.innerHTML + '</div></body></html>');
+  w.document.close();
+}
+function istatClick(e) {
+  var tg = e.target;
+  if (tg.closest('#isBig')) { ISBIG = !ISBIG; document.querySelector('#ovlInfo .card').classList.toggle('isbig', ISBIG); buildInfo(); return true; }
+  if (tg.closest('#isWin')) { isWin(); return true; }
+  if (tg.closest('#igfX')) { IGF = null; buildInfo(); return true; }
+  var b = tg.closest('[data-ism]');
+  if (b) {
+    var key = GUILDLIST ? 'iStatG' : 'iStatP', av = isAvail(), cur = isSel(av).slice(), id = b.getAttribute('data-ism'), i = cur.indexOf(id);
+    if (i >= 0) { if (cur.length > 1) cur.splice(i, 1); } else cur.push(id);
+    S[key] = av.filter(function (x) { return cur.indexOf(x) >= 0; }); saveS(); buildInfo(); return true;
+  }
+  b = tg.closest('[data-isv]');
+  if (b) {
+    var keyV = GUILDLIST ? 'iStatVG' : 'iStatVP', avV = isAvail(), curV = isSelV(avV).slice(), idV = b.getAttribute('data-isv'), iV = curV.indexOf(idV);
+    if (iV >= 0) { if (curV.length > 1) curV.splice(iV, 1); } else curV.push(idV);
+    S[keyV] = avV.filter(function (x) { return curV.indexOf(x) >= 0; }); saveS(); buildInfo(); return true;
+  }
+  b = tg.closest('[data-isec]'); if (b) { var ky = b.getAttribute('data-isec'); S['is_' + ky] = !isOpen(ky); saveS(); buildInfo(); return true; }
+  b = tg.closest('[data-iss]'); if (b) { ISSORT = b.getAttribute('data-iss'); buildInfo(); return true; }
+  b = tg.closest('[data-issv]'); if (b) { ISSORTV = b.getAttribute('data-issv'); buildInfo(); return true; }
+  if (tg.closest('#isMore')) { ISN += 25; buildInfo(); return true; }
+  if (tg.closest('#isMoreV')) { ISNV += 25; buildInfo(); return true; }
+  if (tg.closest('#isPr')) { IS_P = null; ISN = 10; ISNV = 10; buildInfo(); return true; }
+  if (tg.closest('#isSrvB')) { ISSRV = !ISSRV; buildInfo(); return true; }
+  b = tg.closest('[data-iss2]'); if (b) { var s2 = b.getAttribute('data-iss2'); if (st.isS.has(s2)) st.isS.delete(s2); else st.isS.add(s2); ISN = 10; buildInfo(); return true; }
+  b = tg.closest('[data-isga]'); if (b) { st.isG.add(b.getAttribute('data-isga')); ISN = 10; buildInfo(); var gi = $('isGIn'); if (gi) gi.focus(); return true; }
+  b = tg.closest('[data-isgx]'); if (b) { st.isG.delete(b.getAttribute('data-isgx')); ISN = 10; buildInfo(); return true; }
+  if (tg.closest('#isClr')) { st.isS.clear(); st.isG.clear(); ISN = 10; buildInfo(); return true; }
+  return false;
+}
+$('ovlInfo').addEventListener('input', function (e) {
+  if (e.target.id !== 'isGIn') return;
+  var box = $('isGS'), hh = isGSuggHtml(e.target.value);
+  box.innerHTML = hh || (e.target.value.trim() ? '<span class="dim isgn">' + esc(t('isGNo')) + '</span>' : '');
+  box.hidden = !box.innerHTML;
+});
+$('ovlInfo').addEventListener('keydown', function (e) {
+  if (e.target.id !== 'isGIn') return;
+  if (e.key === 'Enter') { e.preventDefault(); var f = document.querySelector('#isGS [data-isga]'); if (f) f.click(); }
+  else if (e.key === 'Escape' && !$('isGS').hidden) { e.stopPropagation(); $('isGS').hidden = true; }
+});
 // Aufsteiger (Reiter Neu): meister Zuwachs an Base und meiste Plaetze gut gemacht
 function risersHtml() {
   if (GUILDLIST) return guildStatsHtml();
   var sc = curScan(), list = [], climb = [], bi = CI.base_sum, mB = MET.findIndex(function (m) { return m.id === 'base_sum'; });
-  var ks = selKeys(), inSel = function (r) { return ks ? !!ks[r.k] : true; };
-  var per = null, pair = cmpPair(), extra = '';
+  var ks = isScope(), inSel = function (r) { return ks ? !!ks[r.k] : true; };
+  var per = null, pair = isPair(), extra = '';
   if (pair && GUILD != null) {                          // genau eine ganze Gilde zu sehen: ihre Spieler und Zu- und Abgaenge
     var vis0 = lastRows.filter(function (x) { return !x.gone; }), g0 = vis0.length ? vis0[0].r.v[GUILD] : '', s0 = vis0.length && SRV != null ? vis0[0].r.v[SRV] : '';
     if (g0 && vis0.length >= 2 && vis0.every(function (x) { return x.r.v[GUILD] === g0 && (SRV == null || x.r.v[SRV] === s0); }) &&
@@ -4330,7 +5008,7 @@ function risersHtml() {
     per = t('cmpInfo', {a: A.label, b: B.label});
   }
   if (!list.length && !climb.length) return extra;
-  var scope = ks ? t('riseSelX', {s: selText()}) : t('tpAll');
+  var scope = ks ? t('riseSelX', {s: isSelText()}) : t('tpAll');
   var who = function (r, i) {
     var nm = cellText(COLS[NAME], r.v[NAME]);
     return '<td class="n">' + (i + 1) + '.</td><td><button type="button" class="lnk" data-pk="' + esc(r.k) + '" data-q="' + esc(nm) + '">' + esc(nm) + '</button></td>' +
@@ -4339,8 +5017,9 @@ function risersHtml() {
   var hd = function (last) {
     return '<tr><th></th><th>' + esc(t('riseName')) + '</th>' + (SRV != null ? '<th>' + esc(t('servers')) + '</th>' : '') + last + '</tr>';
   };
-  var h = extra + '<h3>' + esc(t('riseT')) + '</h3><p class="dim">' + esc(per ? per + ' · ' + scope : t('riseScope', {s: scope})) + ' · ' + esc(t('riseHint')) + '</p><div class="rise">';
-  if (list.length && !extra) {                           // eine Gilde: ihre Base Sum steht schon oben
+  if (ISNOGAIN && !climb.filter(function (x) { return x.m > 0; }).length) return extra;
+  var h = extra + '<h3>' + esc(ISNOGAIN ? t('riseClimbT') : t('riseT')) + '</h3><p class="dim">' + esc(per ? per + ' · ' + scope : t('riseScope', {s: scope})) + ' · ' + esc(t('riseHint')) + '</p><div class="rise">';
+  if (list.length && !extra && !ISNOGAIN) {              // eine Gilde: ihre Base Sum steht schon oben; "i"-Statistik: Tabelle oben
     list.sort(function (a, b) { return b.g - a.g; });
     h += '<div><b>' + esc(t('riseGain')) + '</b><table class="rtab">' + hd('<th class="r">' + esc(t('gainMode')) + '</th><th class="r">' + esc(t('gDay')) + '</th>') +
       list.slice(0, 10).map(function (x, i) {
@@ -4628,7 +5307,7 @@ function bkApply(code) {
     localStorage.setItem(LS, JSON.stringify(o.s || {}));
     if (o.c) localStorage.setItem(LSC, JSON.stringify(o.c)); else localStorage.removeItem(LSC);
   } catch (e) { if (msg) { msg.hidden = false; msg.className = 'bkmsg err'; msg.textContent = t('bkNoStore'); } return; }
-  try { sessionStorage.setItem('sf-bk', '1'); } catch (e) {}
+  try { sessionStorage.setItem('sf-bk', '1'); sessionStorage.setItem('sf-nopv', 'bk'); } catch (e) {}
   location.reload();
 }
 function bkDownload(code) {
@@ -4656,7 +5335,7 @@ function ownCols() {                                   // Standard -> eigene Aus
 
 // ---------------- Paket 4: Reiter Spieler | Gilden, aufklappbare Gilde, Spieler-Profil, Rivalen-Suche
 function goView(v, pend) {
-  try { if (pend) sessionStorage.setItem('sf-pend', JSON.stringify(pend)); } catch (e) {}
+  try { if (pend) sessionStorage.setItem('sf-pend', JSON.stringify(pend)); sessionStorage.setItem('sf-nopv', v); } catch (e) {}
   location.hash = v; location.reload();
 }
 $('vtabs').addEventListener('click', function (e) {
@@ -4701,6 +5380,68 @@ function gIndex() {
   });
   return GIDX;
 }
+function rowTop(k) {
+  var tr = null;
+  Array.prototype.some.call($('tbody').rows, function (x) { if (x.getAttribute('data-k') === String(k)) { tr = x; return true; } return false; });
+  return tr ? tr.getBoundingClientRect().top : null;
+}
+function keepRow(k, fn) {                              // nach dem Neuzeichnen steht die Zeile k wieder an derselben Stelle
+  var a = rowTop(k); fn(); var b = rowTop(k);
+  if (a != null && b != null && Math.abs(b - a) > 1) $('scroller').scrollTop += (b - a);
+}
+var GSTK = ['gsum', 'glv', 'top3', 'act', 'rank', 'raids', 'honor', 'abase', 'newm', 'ina3'];
+function gstOpen() { return S.gsto == null || String(S.gsto) === 'true'; }
+function gstSel() { var s0 = Array.isArray(S.gst) ? S.gst : ['gsum', 'glv', 'top3', 'act', 'rank']; return GSTK.filter(function (k) { return s0.indexOf(k) >= 0; }); }
+function fmtIG(x) { var a = Math.abs(x); return (x > 0 ? '+' : (x < 0 ? '−' : '±')) + (Math.round(a) === a || a >= 100 ? nf0.format(Math.round(a)) : nf1.format(a)); }
+function gcardMore(r, gn, sv, mem) {                    // Zu- und Abgaenge und waehlbare Statistik unter einer aufgeklappten Gilde
+  var pair = cmpPair(), o = {zu: [], ab: []}, h = '', days = null, old = null;
+  if (pair) {
+    var jj = p0Pair(pair), mv = gMoves(jj[0], jj[1]);
+    Object.keys(mv).forEach(function (key) { var p = key.split('|'); if (fold(p[0]) === fold(gn) && (!sv || p[1] === sv)) { o.zu = o.zu.concat(mv[key].zu); o.ab = o.ab.concat(mv[key].ab); } });
+    var A = SCANS[pair[0]], B2 = SCANS[pair[1]];
+    days = A.ts && B2.ts && B2.ts > A.ts ? (B2.ts - A.ts) / 86400000 : null;
+    old = scanRow(pair[0], r.k);
+    var lst = function (arr, kind) {
+      if (!arr.length) return '<span class="dim">' + esc(t('gNoMv')) + '</span>';
+      return arr.slice(0, 15).map(function (x) {
+        return '<button type="button" class="lnk gmn" data-pk="' + esc(x.k) + '" data-pn="' + esc(x.n) + '">' + esc(x.n) + '</button> ' +
+          (/^<span class="tag/.test(mvWhere(x, kind)) ? mvWhere(x, kind) : '<span class="dim">(' + mvWhere(x, kind) + ')</span>');
+      }).join(', ') + (arr.length > 15 ? ' …' : '');
+    };
+    h += '<div><h5>' + esc(t('gZuAb', {a: shortDate(A.label), b: shortDate(B2.label)})) + '</h5><p><b class="up">' + esc(t('gZu', {n: nf0.format(o.zu.length)})) + '</b> ' + lst(o.zu, 'zu') +
+      '</p><p><b class="down">' + esc(t('gAb', {n: nf0.format(o.ab.length)})) + '</b> ' + lst(o.ab, 'ab') + '</p><p><button type="button" class="lnk" data-gi="' + esc(gn) + '" data-gs="' + esc(sv) +
+      '">' + esc(t('gMoreI')) + '</button></p></div>';
+  }
+  var sel = gstSel(), rowsS = [];
+  var val = function (row, id) { return row && CI[id] != null ? num(COLS[CI[id]], row.v[CI[id]]) : null; };
+  var diff = function (id) { var a = val(old, id), b = val(r, id); return a != null && b != null ? b - a : null; };
+  var gains = mem.filter(function (m) { return m.g != null; }), gsum = gains.reduce(function (s, m) { return s + m.g; }, 0);
+  sel.forEach(function (k) {
+    var v = null;
+    if (k === 'gsum') v = gains.length ? '<b>' + fmtIG(gsum) + '</b>' + (days && days >= 0.25 ? ' <span class="dim">(' + esc(t('gsDay', {n: fmtIG(gsum / days)})) + ')</span>' : '') : null;
+    else if (k === 'glv') { var d1 = diff('g_level_avg'); v = d1 != null ? '<b>' + fmtIG(d1) + '</b>' : null; }
+    else if (k === 'raids') { var d2 = diff('g_raids'); v = d2 != null ? '<b>' + fmtIG(d2) + '</b>' : null; }
+    else if (k === 'honor') { var d3 = diff('g_honor'); v = d3 != null ? '<b>' + fmtIG(d3) + '</b>' : null; }
+    else if (k === 'abase') { var a1 = val(r, 'ga_base_sum'); if (a1 == null && mem.length) a1 = mem.reduce(function (s, m) { return s + (m.bs || 0); }, 0) / mem.length; v = a1 != null ? '<b>' + nf0.format(Math.round(a1)) + '</b>' : null; }
+    else if (k === 'top3') v = gains.length ? gains.slice().sort(function (a, b) { return b.g - a.g; }).slice(0, 3).map(function (m) { return '<b>' + esc(m.n) + '</b> ' + fmtIG(m.g); }).join(' · ') : null;
+    else if (k === 'act') { var na = mem.filter(function (m) { return m.la != null; }); v = na.length ? '<b>' + esc(t('gsOf', {a: nf0.format(na.filter(function (m) { return m.la < 1440; }).length), b: nf0.format(mem.length)})) + '</b>' : null; }
+    else if (k === 'ina3') { var nb = mem.filter(function (m) { return m.la != null; }); v = nb.length ? '<b>' + nf0.format(nb.filter(function (m) { return m.la >= 4320; }).length) + '</b>' : null; }
+    else if (k === 'newm') v = pair ? '<b>' + nf0.format(o.zu.length) + '</b>' : null;
+    else if (k === 'rank' && CI.gs_base_sum != null) {
+      var rk = function (si, row) { var me = val(row, 'gs_base_sum'); if (me == null) return null; var c = COLS[CI.gs_base_sum], n = 1;
+        SCANS[si].rows.forEach(function (x) { var w = num(c, x.v[CI.gs_base_sum]); if (w != null && w > me) n++; }); return n; };
+      var rn = rk(pair ? pair[1] : (st.cmp ? st.b : st.scan), r), ro = pair && old ? rk(pair[0], old) : null;
+      v = rn != null ? '<b>#' + nf0.format(rn) + '</b>' + (ro != null && ro !== rn ? ' <span class="' + (ro > rn ? 'up' : 'down') + '">' + (ro > rn ? '▲' : '▼') + nf0.format(Math.abs(ro - rn)) + '</span>' : '') : null;
+    }
+    rowsS.push('<span>' + esc(t('gs_' + k)) + '</span><div>' + (v == null ? '<span class="dim">–</span>' : v) + '</div>');
+  });
+  h += '<div><h5>' + esc(t('gStat')) + '</h5>' + (rowsS.length ? '<div class="gst">' + rowsS.join('') + '</div>' : '') +
+    '<div class="gchips"><button type="button" class="istog" data-gsto="' + esc(r.k) + '" aria-expanded="' + gstOpen() + '"><span class="car">' + (gstOpen() ? '&#9662;' : '&#9656;') + '</span>' +
+    esc(t('gStatPick')) + '</button>' + (gstOpen() ? GSTK.map(function (k) {
+      return '<button type="button" class="chip" data-gst="' + k + '" aria-pressed="' + (sel.indexOf(k) >= 0) + '">' + esc(t('gs_' + k)) + '</button>'; }).join('')
+      : '<span class="issum">' + esc(sel.map(function (k) { return t('gs_' + k); }).join(' · ')) + '</span>') + '</div></div>';
+  return '<div class="gmv">' + h + '</div>';
+}
 function gcardHtml(r) {
   var gn = CI.g_name != null ? r.v[CI.g_name] : '', sv = CI.g_server != null ? r.v[CI.g_server] : '';
   var mem = (gIndex().get(gn + '|' + sv) || []).slice().sort(function (a, b) { return (b.bs || 0) - (a.bs || 0); });
@@ -4715,7 +5456,8 @@ function gcardHtml(r) {
     (gains.length ? ' · ' + esc(t('gGain', {n: (gsum >= 0 ? '+' : '') + nf0.format(gsum)})) : '') +
     (MULTI ? ' <button type="button" class="btn gdev" data-gdev="' + esc(r.k) + '">&#128200; ' + esc(t('gDev')) + '</button>' : '') +
     '<span class="leg"><b class="iyel">' + esc(t('exName')) + '</b> ' + esc(t('gLegY')) + ' · <b class="ired">' + esc(t('exName')) + '</b> ' + esc(t('gLegR')) + '</span></div>';
-  if (!mem.length) return h + '<p class="dim">' + esc(t('gNone')) + '</p></div>';
+  if (!mem.length) return h + '<p class="dim">' + esc(t('gNone')) + '</p>' + gcardMore(r, gn, sv, mem) +
+    '<div class="gfoot"><button class="btn" type="button" data-gclose="' + esc(r.k) + '">&#9650; ' + esc(t('gClose')) + '</button></div></div>';
   var rowsN = Math.ceil(mem.length / (NARROW ? 1 : 3));
   var hd = '<div class="mh"><span></span><span>' + esc(t('riseName')) + '</span><span class="v">' + esc(t('pfLevel')) + '</span><span class="v">' +
     esc(t('pfBase')) + '</span><span>' + esc(t('gainMode')) + '</span></div>';
@@ -4727,8 +5469,9 @@ function gcardHtml(r) {
       (m.lv != null ? nf0.format(m.lv) : '–') + '</span><span class="v">' + (m.bs != null ? nf0.format(m.bs) : '–') + '</span><small class="dl ' +
       (m.g == null ? 'eq">' + esc(t('tagNew')) : (m.g >= 0 ? 'up">+' : 'down">') + nf0.format(m.g)) + '</small></div>';
   });
-  return h + '</div><div class="gfoot"><button class="btn" type="button" data-gq="' + esc(gn) + '" data-gs="' + esc(sv) + '">' +
-    esc(t('gAll', {n: nf0.format(mem.length)})) + '</button> <span class="dim">' + esc(t('gHint')) + '</span></div></div>';
+  return h + '</div>' + gcardMore(r, gn, sv, mem) + '<div class="gfoot"><button class="btn" type="button" data-gq="' + esc(gn) + '" data-gs="' + esc(sv) + '">' +
+    esc(t('gAll', {n: nf0.format(mem.length)})) + '</button> <span class="dim">' + esc(t('gHint')) + '</span><span style="flex:1"></span>' +
+    '<button class="btn" type="button" data-gclose="' + esc(r.k) + '">&#9650; ' + esc(t('gClose')) + '</button></div></div>';
 }
 // Spieler-Profil
 var CNF = null;
@@ -4756,6 +5499,11 @@ function profPoints(k) {                             // [{ts, label, lv, bs}] �
   }
   return pts;
 }
+function lblKeep(xs, gap) {                           // Datum unter dem Diagramm: nur so viele, dass nichts ueberlappt (neueste zuerst)
+  var keep = {}, last = null;
+  for (var i = xs.length - 1; i >= 0; i--) if (last == null || last - xs[i] >= gap) { keep[i] = 1; last = xs[i]; }
+  return keep;
+}
 function shortDate(lab) { var m = String(lab || '').match(/(\d{2})\.(\d{2})\.(\d{2})(\d{2})/); return m ? m[1] + '.' + m[2] + '.' + m[4] : String(lab || '').slice(0, 8); }
 function spanTxt(dd) { return dd >= 1 ? t('pfDays', {n: nf0.format(dd)}) : t('pfHrs', {n: nf0.format(Math.max(1, dd * 24))}); }
 function ptTip(p, i, key, f, fr) {                  // Mausover an einem Scan-Punkt: Wert, Zuwachs seit dem Punkt davor, pro Tag
@@ -4775,18 +5523,19 @@ function chartSvg(pts, key, big) {
   }
   var day = 86400000, a = p[0], b = p[p.length - 1];     // Durchschnitt pro Tag ueber alle Scans (erster -> letzter)
   var dd = (b.ts - a.ts) / day, per = dd > 0.25 ? (b[key] - a[key]) / dd : 0;
-  var proj = [30, 60, 90].map(function (d) { return {ts: b.ts + d * day, v: b[key] + per * d, d: d}; });
-  var all = p.map(function (x) { return x[key]; }).concat(proj.map(function (x) { return x.v; }));
+  var proj = [];                                     // Prognose nur noch im grossen Fenster (zuschaltbar)
+  var all = p.map(function (x) { return x[key]; });
   var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all), pad = (hi - lo) * 0.08 || 1, ymin = lo - pad, ymax = hi + pad;
-  var W = big ? 1000 : 430, H = big ? 430 : 190, Lm = big ? 88 : 62, Rm = big ? 24 : 12, Tm = big ? 30 : 12, Bm = big ? 40 : 28, x0 = p[0].ts, x1 = proj[2].ts;
+  var W = big ? 1000 : 430, H = big ? 430 : 190, Lm = big ? 88 : 62, Rm = big ? 24 : 12, Tm = big ? 30 : 12, Bm = big ? 40 : 28, x0 = p[0].ts, x1 = proj.length ? proj[2].ts : b.ts;
+  if (x1 <= x0) x1 = x0 + day;
   var X = function (ts) { return Lm + (ts - x0) / (x1 - x0) * (W - Lm - Rm); }, Y = function (v) { return Tm + (1 - (v - ymin) / (ymax - ymin)) * (H - Tm - Bm); };
   var f = function (v) { return key === 'lv' ? nf0.format(v) : nf0.format(Math.round(v)); };
   var fr = function (v) { return key === 'lv' ? nf2.format(v) : nf0.format(Math.round(v)); };
   var sv = '<svg class="pch' + (big ? ' big' : ' zoom') + '" data-ck="' + key + '" viewBox="0 0 ' + W + ' ' + H + '" role="img"' + (big ? '' : ' data-tip="' + esc(t('pfChBig')) + '"') + '>';
   for (var i = 0; i < 4; i++) { var v = ymin + (ymax - ymin) * i / 3; sv += '<line x1="' + Lm + '" x2="' + (W - Rm) + '" y1="' + Y(v).toFixed(1) + '" y2="' + Y(v).toFixed(1) + '" class="gl"/><text x="' + (Lm - 6) + '" y="' + (Y(v) + 4).toFixed(1) + '" text-anchor="end">' + f(v) + '</text>'; }
   sv += '<polyline class="ln" points="' + p.map(function (x) { return X(x.ts).toFixed(1) + ',' + Y(x[key]).toFixed(1); }).join(' ') + '"/>';
-  sv += '<polyline class="ln pr" points="' + [b].map(function (x) { return X(x.ts).toFixed(1) + ',' + Y(x[key]).toFixed(1); }).concat(proj.map(function (x) { return X(x.ts).toFixed(1) + ',' + Y(x.v).toFixed(1); })).join(' ') + '"/>';
-  var step = Math.max(1, Math.ceil(p.length / (big ? 14 : 7)));      // Datum unten: bei vielen Scans nur jedes n-te
+  if (proj.length) sv += '<polyline class="ln pr" points="' + [b].map(function (x) { return X(x.ts).toFixed(1) + ',' + Y(x[key]).toFixed(1); }).concat(proj.map(function (x) { return X(x.ts).toFixed(1) + ',' + Y(x.v).toFixed(1); })).join(' ') + '"/>';
+  var LK0 = lblKeep(p.map(function (x) { return X(x.ts); }), big ? 92 : 54);   // Datum unten: nur ohne Ueberlappen
   if (big && p.length <= 12) p.forEach(function (x, i) {              // gross: Zuwachs zwischen zwei Scans an der Linie
     if (!i) return;
     var a = p[i - 1], d = x[key] - a[key], mx = (X(a.ts) + X(x.ts)) / 2, my = (Y(a[key]) + Y(x[key])) / 2;
@@ -4796,7 +5545,7 @@ function chartSvg(pts, key, big) {
     var cx = X(x.ts).toFixed(1), cy = Y(x[key]).toFixed(1), tip = esc(ptTip(p, i, key, f, fr));
     sv += '<circle class="pt" cx="' + cx + '" cy="' + cy + '" r="' + (big ? 6 : 4.5) + '"/><circle class="hit" cx="' + cx + '" cy="' + cy + '" r="' + (big ? 16 : 11) + '" data-tip="' + tip + '"/>';
     if (big && p.length <= 14) sv += '<text class="val" x="' + cx + '" y="' + (Y(x[key]) - 12).toFixed(1) + '" text-anchor="middle">' + f(x[key]) + '</text>';
-    if (i % step === 0 || i === p.length - 1) sv += '<text x="' + cx + '" y="' + (H - (big ? 12 : 8)) + '" text-anchor="middle">' + esc(big ? String(x.label).slice(0, 10) : shortDate(x.label)) + '</text>';
+    if (LK0[i]) sv += '<text x="' + cx + '" y="' + (H - (big ? 12 : 8)) + '" text-anchor="middle">' + esc(big ? String(x.label).slice(0, 10) : shortDate(x.label)) + '</text>';
   });
   proj.forEach(function (x) {
     var cx = X(x.ts).toFixed(1), cy = Y(x.v).toFixed(1), tip = esc(t('pfPtProj', {d: x.d, v: f(x.v), p: (per >= 0 ? '+' : '−') + fr(Math.abs(per))}));
@@ -4838,7 +5587,17 @@ function profHtml(r0) {
     if (/^[pk]/.test(key)) pots.push(/^k/.test(key) ? iconTitle(key).replace(/^[^:]+:\s*/, '') : iconTitle(key));
     if (/^m/.test(key)) mt = iconTitle(key).replace(MPRE[L] || /^$/, '');
   });
+  head = markHtml(r) + head;
   add(eq, t('pfPot'), pots.length ? esc(pots.join(' · ')) : esc(t('pfNone')));
+  if (D.potDays) {                                   // Laufzeit je Trank: Resttage ab dem Scan und Datum
+    var cts0 = pfv(r, 'cts');
+    var pl = [['potMain', 'pm'], ['potCon', 'pc'], ['potLife', 'pw']].filter(function (x) { return pfv(r, x[1]) != null; }).map(function (x) {
+      var v = pfv(r, x[1]), cls = v < 0 ? 'pg' : (v < 3 ? 'pw' : 'pk');
+      var txt = v < 0 ? t('potGone') : (v < 1 ? t('potLeftH', {n: nf0.format(Math.max(1, Math.floor(v * 24)))}) : t('potLeft', {n: nf0.format(Math.floor(v))}));
+      return esc(t(x[0])) + ' · <b class="' + cls + '">' + esc(txt) + '</b>' + (cts0 ? ' <span class="dim">(' + esc(t('potUntil', {d: fmtDay(cts0 + v * 86400000)})) + ')</span>' : '');
+    });
+    if (pl.length) add(eq, t('pfPotL'), '<span class="potl">' + pl.join('<br>') + '</span>');
+  }
   if (mt) add(eq, t('pfMount'), esc(mt) + (D.mountDays && pfv(r, 'md') ? ' · ' + esc(t('pfMountDays', {n: nf0.format(pfv(r, 'md'))})) : ''));
   [['pfArmor', 'arm'], ['pfWeap', 'wd'], ['pfIq', 'iq'], ['pfUpg', 'upg'], ['pfGem', 'gem']].forEach(function (x) {
     add(eq, t(x[0]), pfv(r, x[1]) != null ? nf0.format(pfv(r, x[1])) : null);
@@ -4893,10 +5652,24 @@ function bcFmt(id, v, avg) {
 }
 function bcOpen(k, metric) {
   gcEv('Entwicklung (großes Fenster)');
-  BC = {k: k, off: {}, mode: null, vals: null, dl: null};
+  BC = {k: k, off: {}, mode: null, vals: null, dl: null, cmp: []};
   if (metric) BCSEL[VIEW] = [metric];
   if (HIST && MULTI) histGet(HIST.all());              // Online: alle Scans fuer den Verlauf
   bcDraw(); openOvl('ovlChart');
+  var cb = $('chartBody');                            // Groesse gemerkt (an der Ecke ziehen)
+  cb.style.width = !NARROW && S.chW ? Math.min(S.chW, window.innerWidth - 24) + 'px' : '';
+  cb.style.height = !NARROW && S.chH ? Math.min(S.chH, window.innerHeight - 24) + 'px' : '';
+}
+var CHRO = null, CHRT = null;
+if (window.ResizeObserver) {
+  CHRO = new ResizeObserver(function () {
+    var cb = $('chartBody'); if ($('ovlChart').hidden || NARROW) return;
+    var w = parseInt(cb.style.width, 10), h = parseInt(cb.style.height, 10), ch = false;
+    if (w && w !== S.chW) { S.chW = w; ch = true; }
+    if (h && h !== S.chH) { S.chH = h; ch = true; }
+    if (ch) { saveS(); clearTimeout(CHRT); CHRT = setTimeout(function () { if (!$('ovlChart').hidden && BC) bcDraw(); }, 160); }   // Diagramm passt sich an
+  });
+  CHRO.observe($('chartBody'));
 }
 function bcName() {
   var r = NEWK.get(BC.k) || null; if (!r) SCANS.forEach(function (sc, si) { r = r || scanRow(si, BC.k); });
@@ -4905,18 +5678,29 @@ function bcName() {
                        : [GUILD != null ? r.v[GUILD] : '', CLSCOL != null ? cellText(COLS[CLSCOL], r.v[CLSCOL]) : '', CI.level != null ? t('pfLevel') + ' ' + cellText(COLS[CI.level], r.v[CI.level]) : ''];
   return {nm: cellText(COLS[NAME], r.v[NAME]) + (!GUILDLIST && SRV != null && r.v[SRV] ? ' · ' + r.v[SRV] : ''), meta: meta.filter(Boolean).join(' · '), r: r};
 }
-function bcSvg(vis, ms, pct, showV, showD, av) {
-  var day = 86400000, lines = [];
-  ms.forEach(function (id) {
-    var p = vis.filter(function (x) { return x.v[id] != null; });
-    if (p.length < 2) return;
-    var v0 = p[0].v[id];
-    if (pct && !v0) return;
-    lines.push({id: id, col: BCOL[av.indexOf(id) % BCOL.length], p: p, y: function (v) { return pct ? (v / v0 - 1) * 100 : v; }});
+var PCOL = ['#5aa9ff', '#f0b232', '#e86fb0'], PDASH = ['', '9 6', '2 6'];
+function bcDash(mi) { return ['━━', '╍╍', '┈┈'][mi % 3]; }
+function bcSvg(vis, ms, pct, showV, showD, av, ser) {
+  var day = 86400000, lines = [], multi = !!(ser && ser.length > 1);
+  (ser || [{nm: '', vis: vis}]).forEach(function (S0, pi) {
+    ms.forEach(function (id, mi) {
+      var p = S0.vis.filter(function (x) { return x.v[id] != null; });
+      if (p.length < (multi ? 1 : 2)) return;
+      var v0 = p[0].v[id];
+      if (pct && !v0) return;
+      var by = {}; p.forEach(function (x, i) { by[x.si] = i; });
+      lines.push({id: id, nm: S0.nm, col: multi ? PCOL[pi % 3] : BCOL[av.indexOf(id) % BCOL.length], dash: multi ? PDASH[mi % 3] : '', p: p, by: by,
+        y: function (v) { return pct ? (v / v0 - 1) * 100 : v; }});
+    });
   });
   if (!lines.length) return '<p class="dim bcnone">' + esc(t(vis.length < 2 ? 'bcFew' : 'pfChNone')) + '</p>';
+  var cols = vis;
+  if (multi) {                                         // Spalten: alle Scans, in denen einer der Spieler steht
+    var cm = {}; lines.forEach(function (L) { L.p.forEach(function (x) { if (!cm[x.si]) cm[x.si] = x; }); });
+    cols = Object.keys(cm).map(function (k) { return cm[k]; }).sort(function (a, b) { return a.ts - b.ts; });
+  }
   var proj = null;
-  if (!pct && lines.length === 1) {                    // ein Wert absolut: Prognose 30 / 60 / 90 Tage wie im Profil
+  if (!multi && !pct && lines.length === 1 && String(S.bcProj) === 'true') {     // Prognose 30 / 60 / 90 Tage (zuschaltbar)
     var L0 = lines[0], a = L0.p[0], b = L0.p[L0.p.length - 1], dd = (b.ts - a.ts) / day, per = dd > 0.25 ? (b.v[L0.id] - a.v[L0.id]) / dd : 0;
     proj = [30, 60, 90].map(function (d) { return {ts: b.ts + d * day, v: b.v[L0.id] + per * d, d: d, per: per}; });
   }
@@ -4925,27 +5709,31 @@ function bcSvg(vis, ms, pct, showV, showD, av) {
   if (proj) proj.forEach(function (x) { all.push(x.v); });
   var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all), pad = (hi - lo) * 0.1 || Math.max(1, Math.abs(hi) * 0.05), ymin = lo - pad, ymax = hi + pad;
   var sm = COARSE || NARROW, W = sm ? 560 : 1000, H = sm ? 360 : 400, Lm = sm ? 76 : 92, Rm = proj ? 30 : 24, Tm = 28, Bm = 40;   // Handy: groessere Schrift
-  var x0 = vis[0].ts, x1 = proj ? proj[2].ts : vis[vis.length - 1].ts; if (x1 <= x0) x1 = x0 + day;
+  var cbx = $('chartBody');                            // Fenster groesser gezogen: Diagramm auch hoeher
+  if (!sm && cbx && cbx.style.height) { var rw = cbx.clientWidth - 300, rh = cbx.clientHeight - 290; if (rw > 200 && rh > 150) H = Math.max(300, Math.min(1100, Math.round(W * rh / rw))); }
+  var legH = multi ? 8 + lines.length * (sm ? 24 : 20) : 0; Tm += legH; H += legH;   // Legende oben: Spieler · Wert
+  var x0 = cols[0].ts, x1 = proj ? proj[2].ts : cols[cols.length - 1].ts; if (x1 <= x0) x1 = x0 + day;
   var X = function (ts) { return Lm + (ts - x0) / (x1 - x0) * (W - Lm - Rm); }, Y = function (v) { return Tm + (1 - (v - ymin) / (ymax - ymin)) * (H - Tm - Bm); };
   var fy = function (v) { return pct ? (v > 0.05 ? '+' : (v < -0.05 ? '−' : '±')) + nf1.format(Math.abs(v)) + ' %' : bcFmt(lines[0].id, v); };
   var sv = '<svg class="bcs" viewBox="0 0 ' + W + ' ' + H + '" role="img">';
   for (var i = 0; i < 5; i++) { var gv = ymin + (ymax - ymin) * i / 4; sv += '<line x1="' + Lm + '" x2="' + (W - Rm) + '" y1="' + Y(gv).toFixed(1) + '" y2="' + Y(gv).toFixed(1) + '" class="gl"/><text x="' + (Lm - 8) + '" y="' + (Y(gv) + 4).toFixed(1) + '" text-anchor="end">' + fy(gv) + '</text>'; }
-  var step = Math.max(1, Math.ceil(vis.length / 12));
-  vis.forEach(function (x, i) {                        // Spalte je Scan: Maus zeigt alle Werte
-    var cx = X(x.ts), prev = i ? vis[i - 1] : null, nx = i < vis.length - 1 ? vis[i + 1] : null;
+  var LK1 = lblKeep(cols.map(function (x) { return X(x.ts); }), sm ? 74 : 66);
+  cols.forEach(function (x, i) {                        // Spalte je Scan: Maus zeigt alle Werte
+    var cx = X(x.ts), prev = i ? cols[i - 1] : null, nx = i < cols.length - 1 ? cols[i + 1] : null;
     var l = prev ? (X(prev.ts) + cx) / 2 : Lm, r = nx ? (X(nx.ts) + cx) / 2 : cx + 30;
-    var tip = x.label + (x.g ? ' · ' + x.g : '');
+    var tip = x.label + (x.g && !multi ? ' · ' + x.g : '');
     lines.forEach(function (L) {
-      var v = x.v[L.id]; if (v == null) return;
-      tip += '\n' + bcLab(L.id) + ': ' + bcFmt(L.id, v);
-      var pv = prev && prev.v[L.id] != null ? prev.v[L.id] : null;
-      if (pv != null) { var d = v - pv, dd2 = (x.ts - prev.ts) / day; tip += ' (' + (d >= 0 ? '+' : '−') + bcFmt(L.id, Math.abs(d)) + (dd2 >= 0.25 ? ' · ' + (d >= 0 ? '+' : '−') + bcFmt(L.id, Math.abs(d / dd2), true) + t('perDay').trim() : '') + ')'; }
+      var j = L.by[x.si]; if (j == null) return;
+      var pt = L.p[j], v = pt.v[L.id], pp = j ? L.p[j - 1] : null;
+      tip += '\n' + (multi ? L.nm + ' · ' : '') + bcLab(L.id) + ': ' + bcFmt(L.id, v) + (multi && pct ? ' (' + fy(L.y(v)) + ')' : '');
+      if (pp) { var d = v - pp.v[L.id], dd2 = (pt.ts - pp.ts) / day; tip += ' (' + (d >= 0 ? '+' : '−') + bcFmt(L.id, Math.abs(d)) + (dd2 >= 0.25 ? ' · ' + (d >= 0 ? '+' : '−') + bcFmt(L.id, Math.abs(d / dd2), true) + t('perDay').trim() : '') + ')'; }
     });
     sv += '<rect class="col" x="' + l.toFixed(1) + '" y="' + Tm + '" width="' + Math.max(4, r - l).toFixed(1) + '" height="' + (H - Tm - Bm) + '" data-tip="' + esc(tip) + '"/>';
-    if (i % step === 0 || i === vis.length - 1) sv += '<text x="' + cx.toFixed(1) + '" y="' + (H - 12) + '" text-anchor="middle">' + esc(shortDate(x.label)) + '</text>';
+    if (LK1[i]) sv += '<text x="' + cx.toFixed(1) + '" y="' + (H - 12) + '" text-anchor="middle">' + esc(shortDate(x.label)) + '</text>';
   });
   lines.forEach(function (L) {
-    sv += '<polyline class="ln" style="stroke:' + L.col + '" points="' + L.p.map(function (x) { return X(x.ts).toFixed(1) + ',' + Y(L.y(x.v[L.id])).toFixed(1); }).join(' ') + '"/>';
+    var ds = L.dash ? ';stroke-dasharray:' + L.dash.replace(' ', ',') : '';
+    sv += '<polyline class="ln" style="stroke:' + L.col + ds + '" points="' + L.p.map(function (x) { return X(x.ts).toFixed(1) + ',' + Y(L.y(x.v[L.id])).toFixed(1); }).join(' ') + '"/>';
     if (showD && L.p.length <= 16) L.p.forEach(function (x, i) {
       if (!i) return;
       var a = L.p[i - 1], d = x.v[L.id] - a.v[L.id], mx = (X(a.ts) + X(x.ts)) / 2, my = (Y(L.y(a.v[L.id])) + Y(L.y(x.v[L.id]))) / 2;
@@ -4953,9 +5741,14 @@ function bcSvg(vis, ms, pct, showV, showD, av) {
     });
     L.p.forEach(function (x) {
       var cx = X(x.ts).toFixed(1), cy = Y(L.y(x.v[L.id]));
-      sv += '<circle class="pt" style="fill:' + L.col + '" cx="' + cx + '" cy="' + cy.toFixed(1) + '" r="5.5"/>';
+      sv += '<circle class="pt" style="fill:' + L.col + '" cx="' + cx + '" cy="' + cy.toFixed(1) + '" r="' + (multi ? 4.5 : 5.5) + '"/>';
       if (showV && L.p.length <= 16) sv += '<text class="val" x="' + cx + '" y="' + (cy - 11).toFixed(1) + '" text-anchor="middle">' + bcFmt(L.id, x.v[L.id]) + '</text>';
     });
+  });
+  if (multi) lines.forEach(function (L, i) {            // Legende: Farbe = Spieler, Linienart = Wert
+    var y = 18 + i * (sm ? 24 : 20), lp = L.p[L.p.length - 1], ds = L.dash ? ' style="stroke-dasharray:' + L.dash.replace(' ', ',') + '"' : '';
+    sv += '<line x1="' + (Lm + 10) + '" x2="' + (Lm + 44) + '" y1="' + (y - 4) + '" y2="' + (y - 4) + '" class="lg" stroke="' + L.col + '"' + ds + '/>' +
+      '<text class="lgt" x="' + (Lm + 52) + '" y="' + y + '">' + esc(L.nm + ' · ' + bcLab(L.id)) + ' <tspan style="fill:' + L.col + '">' + (pct ? fy(L.y(lp.v[L.id])) : bcFmt(L.id, lp.v[L.id])) + '</tspan></text>';
   });
   if (proj) {
     var L1 = lines[0], lb = L1.p[L1.p.length - 1];
@@ -4966,6 +5759,27 @@ function bcSvg(vis, ms, pct, showV, showD, av) {
     });
   }
   return sv + '</svg>';
+}
+function bcShort(k) {                                   // "Name (Server)" fuer Legende und Liste
+  var r = NEWK.get(k) || null; if (!r) SCANS.forEach(function (sc, si) { r = r || scanRow(si, k); });
+  if (!r) return String(k);
+  var sc = GUILDLIST ? CI.g_server : SRV, sv = sc != null ? (r.v[sc] || '') : '';
+  return cellText(COLS[NAME], r.v[NAME]) + (sv ? ' (' + sv + ')' : '');
+}
+function bcSugg(q) {                                    // Vorschlaege beim Tippen (Name, Server in Klammern)
+  q = fold(String(q || '').trim()); if (!q || !BC) return [];
+  var have = {}; have[BC.k] = 1; (BC.cmp || []).forEach(function (k) { have[k] = 1; });
+  var sc = GUILDLIST ? CI.g_server : SRV, hit = [];
+  curScan().rows.forEach(function (r) {
+    if (have[r.k]) return;
+    var n = fold(cellText(COLS[NAME], r.v[NAME])), ix = n.indexOf(q);
+    if (ix >= 0) hit.push({r: r, s: ix === 0 ? 0 : 1, n: n});
+  });
+  hit.sort(function (a, b) { return a.s - b.s || a.n.length - b.n.length || a.n.localeCompare(b.n); });
+  return hit.slice(0, 10).map(function (x) {
+    var r = x.r, sv = sc != null ? (r.v[sc] || '') : '';
+    return {k: r.k, nm: cellText(COLS[NAME], r.v[NAME]), sv: sv};
+  });
 }
 function bcGuildMoves(a, b) {                          // Gilden-Fenster: Zu- und Abgaenge zwischen zwei Scans der Gilden-Liste
   if (!GUILDLIST || !BC) return null;
@@ -4983,10 +5797,16 @@ function bcDraw() {
   if (!ms.length) ms = [av.indexOf(GUILDLIST ? 'gs_base_sum' : 'base_sum') >= 0 ? (GUILDLIST ? 'gs_base_sum' : 'base_sum') : av[0]].filter(Boolean);
   BCSEL[VIEW] = ms;
   var vis = data.filter(function (x) { return !BC.off[x.si]; });
+  BC.cmp = (BC.cmp || []).filter(function (k) { return k !== BC.k; }).slice(0, 2);
+  var ser = [{nm: bcShort(BC.k), vis: vis}].concat(BC.cmp.map(function (k) { return {nm: bcShort(k), vis: bcData(k).filter(function (x) { return !BC.off[x.si]; })}; }));
+  var multi = ser.length > 1;
   var pct = BC.mode ? BC.mode === 'pct' : ms.length > 1;
-  var showV = BC.vals != null ? BC.vals : ms.length === 1, showD = BC.dl != null ? BC.dl : ms.length <= 3;
+  var showV = BC.vals != null ? BC.vals : ms.length === 1 && !multi, showD = BC.dl != null ? BC.dl : ms.length <= 3 && !multi;
+  var projOk = !multi && !pct && ms.length === 1;
   var phone = COARSE || NARROW, h = '';
-  h += '<div class="cardhead"><h2>' + esc(info.nm) + ' <small class="dim">' + esc(info.meta) + '</small></h2><button class="close" type="button" data-close>' + esc(t('close')) + '</button></div>';
+  h += '<div class="cardhead"><h2>' + esc(info.nm) + ' <small class="dim">' + esc(info.meta) + '</small></h2>' +
+    (S.chW || S.chH ? '<button class="btn bcrs" type="button" id="bcRs" data-tip="' + esc(t('bcRsTip')) + '">&#8634; ' + esc(t('bcRs')) + '</button>' : '') +
+    '<button class="close" type="button" data-close>' + esc(t('close')) + '</button></div>';
   if (data.length > 1) {
     h += '<div class="bcscans"><span class="lbl">' + esc(t('bcScans')) + '</span>';
     if (phone && data.length > 2) {                      // Handy: Schieberegler "letzte N von M"
@@ -5000,12 +5820,21 @@ function bcDraw() {
     }).join('');
     h += '</div><p class="dim bchint">' + esc(t(phone ? 'bcHintP' : 'bcHint')) + '</p>';
   }
-  h += '<div class="bcwrap"><div class="bcplot">' + bcSvg(vis, ms, pct, showV, showD, av) + '</div><div class="bcside"><span class="lbl">' + esc(t('bcVals')) + '</span><div class="bcms">' +
+  var cmpBox = !MULTI ? '' : '<div class="bccmp"><b>' + esc(t(GUILDLIST ? 'bcCmpG' : 'bcCmpT')) + '</b> <small class="dim">' + esc(t('bcCmpMax')) + '</small><div class="bccl">' +
+    ser.map(function (s0, i) {
+      return '<span class="bcci"><i style="background:' + PCOL[i] + '"></i><b>' + esc(s0.nm) + '</b>' + (i ? '<button type="button" class="bcx" data-bcx="' + esc(BC.cmp[i - 1]) + '" aria-label="' + esc(t('bcCmpDel')) + '" data-tip="' + esc(t('bcCmpDel')) + '">&times;</button>'
+        : ' <small class="dim">' + esc(t(GUILDLIST ? 'bcCmpOwnG' : 'bcCmpOwn')) + '</small>') + '</span>';
+    }).join('') + '</div>' +
+    (BC.cmp.length < 2 ? '<span class="bcadd"><input type="search" id="bcAdd" autocomplete="off" placeholder="' + esc(t(GUILDLIST ? 'bcCmpPhG' : 'bcCmpPh')) + '" aria-label="' + esc(t(GUILDLIST ? 'bcCmpPhG' : 'bcCmpPh')) + '"><span class="isgs" id="bcSug" hidden></span></span>'
+      : '<small class="dim">' + esc(t('bcCmpFull')) + '</small>') +
+    (multi ? '<div class="dim bcleg">' + ms.map(function (id, mi) { return bcDash(mi) + ' ' + esc(bcLab(id)); }).join(' · ') + '</div>' : '') + '</div>';
+  h += '<div class="bcwrap"><div class="bcplot">' + bcSvg(vis, ms, pct, showV, showD, av, ser) + '</div><div class="bcside">' + cmpBox + '<span class="lbl">' + esc(t('bcVals')) + '</span><div class="bcms">' +
     av.map(function (id) { var on = ms.indexOf(id) >= 0, col = BCOL[av.indexOf(id) % BCOL.length];
-      return '<button type="button" class="bcm" data-bm="' + esc(id) + '" aria-pressed="' + on + '" style="--c:' + col + '"><i></i>' + esc(bcLab(id)) + '</button>'; }).join('') + '</div>' +
+      return '<button type="button" class="bcm" data-bm="' + esc(id) + '" aria-pressed="' + on + '" style="--c:' + (multi ? 'var(--text)' : col) + '"><i></i>' + (multi && on ? bcDash(ms.indexOf(id)) + ' ' : '') + esc(bcLab(id)) + '</button>'; }).join('') + '</div>' +
     '<div class="seg bcmode"><button type="button" data-bmode="abs" aria-pressed="' + !pct + '">' + esc(t('bcAbs')) + '</button><button type="button" data-bmode="pct" aria-pressed="' + pct + '">' + esc(t('bcPct')) + '</button></div>' +
     '<label class="bcck"><input type="checkbox" data-bflag="vals"' + (showV ? ' checked' : '') + '> ' + esc(t('bcShowV')) + '</label>' +
     '<label class="bcck"><input type="checkbox" data-bflag="dl"' + (showD ? ' checked' : '') + '> ' + esc(t('bcShowD')) + '</label>' +
+    '<label class="bcck' + (projOk ? '' : ' dis') + '" data-tip="' + esc(t('bcProjTip')) + '"><input type="checkbox" data-bproj="1"' + (String(S.bcProj) === 'true' ? ' checked' : '') + (projOk ? '' : ' disabled') + '> ' + esc(t('bcProj')) + '</label>' +
     '<p class="dim bcnote">' + esc(t('bcAuto')) + '</p></div></div>';
   // Tabelle: eine Zeile je Scan, Δ zum vorigen gezeigten Scan, zuschaltbar grau "Ø je X Tage"
   var avgOn = String(S.bcAvg) === 'true', X = Math.max(1, Math.round(+S.bcX || S.gx || 30));
@@ -5068,14 +5897,36 @@ $('chartBody').addEventListener('click', function (e) {
     if (i >= 0) { if (ms.length > 1) ms.splice(i, 1); } else ms.push(id);
     BCSEL[VIEW] = ms;
   } else if (b.hasAttribute('data-bmode')) BC.mode = b.getAttribute('data-bmode');
+  else if (b.hasAttribute('data-bcx')) { var kx = b.getAttribute('data-bcx'); BC.cmp = BC.cmp.filter(function (k) { return k !== kx; }); }
+  else if (b.hasAttribute('data-bcadd')) {
+    var ka = b.getAttribute('data-bcadd'); if (BC.cmp.indexOf(ka) < 0 && BC.cmp.length < 2) BC.cmp.push(ka);
+    gcEv('Entwicklung: Vergleich'); hideTip(); bcDraw(); var ia = $('bcAdd'); if (ia) ia.focus(); return;
+  }
   else if (b.id === 'bcAvg') { S.bcAvg = String(S.bcAvg) !== 'true'; saveS(); }
+  else if (b.id === 'bcRs') { S.chW = 0; S.chH = 0; saveS(); var cbx = $('chartBody'); cbx.style.width = ''; cbx.style.height = ''; }
   else return;
   hideTip(); bcDraw();
 });
 $('chartBody').addEventListener('change', function (e) {
+  if (e.target.hasAttribute('data-bproj')) { S.bcProj = e.target.checked; saveS(); bcDraw(); return; }
   var f = e.target.getAttribute('data-bflag');
   if (f && BC) { BC[f] = e.target.checked; bcDraw(); return; }
   if (e.target.id === 'bcX') { var v = Math.round(+e.target.value); if (v >= 1 && v <= 365) { S.bcX = v; saveS(); bcDraw(); } }
+});
+function bcSugHtml(q) {
+  var hs = bcSugg(q);
+  return hs.map(function (x, i) { return '<button type="button" class="isgo' + (i ? '' : ' on') + '" data-bcadd="' + esc(x.k) + '">' + esc(x.nm) + (x.sv ? ' <span class="dim">(' + esc(x.sv) + ')</span>' : '') + '</button>'; }).join('');
+}
+$('chartBody').addEventListener('input', function (e) {
+  if (e.target.id !== 'bcAdd') return;
+  var box = $('bcSug'), hh = bcSugHtml(e.target.value);
+  box.innerHTML = hh || (e.target.value.trim() ? '<span class="dim isgn">' + esc(t('bcCmpNo')) + '</span>' : '');
+  box.hidden = !box.innerHTML;
+});
+$('chartBody').addEventListener('keydown', function (e) {
+  if (e.target.id !== 'bcAdd') return;
+  if (e.key === 'Enter') { e.preventDefault(); var f = document.querySelector('#bcSug [data-bcadd]'); if (f) f.click(); }
+  else if (e.key === 'Escape' && !$('bcSug').hidden) { e.stopPropagation(); $('bcSug').hidden = true; }
 });
 $('chartBody').addEventListener('input', function (e) {
   if (e.target.id !== 'bcRange' || !BC) return;
@@ -5108,6 +5959,16 @@ $('tbody').addEventListener('click', function (e) {
     if (gdv) { bcOpen(gdv.getAttribute('data-gdev')); return; }
     var gq = e.target.closest('[data-gq]');
     if (gq) { goView('p', {gf: gq.getAttribute('data-gq'), srv: gq.getAttribute('data-gs')}); return; }
+    var gcx = e.target.closest('[data-gclose]');
+    if (gcx) { var kc = gcx.getAttribute('data-gclose'); st.gexp.delete(kc); render(); keepRow(kc, function () {}); return; }
+    var gso = e.target.closest('[data-gsto]');
+    if (gso) { var ko = gso.getAttribute('data-gsto'); S.gsto = !gstOpen(); saveS(); keepRow(ko, function () { render(); }); return; }
+    var gsb = e.target.closest('[data-gst]');
+    if (gsb) { var gk = gsb.getAttribute('data-gst'), cur = gstSel(), ix = cur.indexOf(gk);
+      if (ix >= 0) cur.splice(ix, 1); else cur.push(gk);
+      S.gst = GSTK.filter(function (x) { return cur.indexOf(x) >= 0; }); saveS(); render(); return; }
+    var gi0 = e.target.closest('[data-gi]');
+    if (gi0) { openInfo('new', {g: gi0.getAttribute('data-gi'), s: gi0.getAttribute('data-gs') || ''}); return; }
     return;
   }
   var gcl = e.target.closest('td.gl');
@@ -5115,7 +5976,10 @@ $('tbody').addEventListener('click', function (e) {
   var tr = e.target.closest('tr[data-k]'); if (!tr || tr.classList.contains('gone')) return;
   if (e.target.closest('button, a, input')) return;
   var k = tr.getAttribute('data-k');
-  if (GUILDLIST && D0.gv) { if (st.gexp.has(k)) st.gexp.delete(k); else { st.gexp.add(k); gcEv('Gilde: ' + gcName(k)); } render(); return; }
+  if (GUILDLIST && D0.gv) {                         // eine Gilde zur Zeit offen; die angeklickte Zeile bleibt an ihrem Platz
+    keepRow(k, function () { if (st.gexp.has(k)) st.gexp.delete(k); else { st.gexp.clear(); st.gexp.add(k); gcEv('Gilde: ' + gcName(k)); } render(); });
+    return;
+  }
   if (!PROF) return;
   if (NARROW) { gcEv('Profil: ' + gcName(k)); openProf(k); return; }
   st.prof = st.prof === k ? null : k; if (st.prof) gcEv('Profil: ' + gcName(k)); render();
@@ -5258,17 +6122,34 @@ function updRiv() {
   var rt = rivTargets();
   if (!rt) { el.innerHTML = ''; vis(el, false); updRows(); return; }
   if (rt.err) { el.innerHTML = '<div class="rivhint">' + (rt.html ? rt.err : esc(rt.err)) + '</div>'; vis(el, true); updRows(); return; }
-  var nm = rt.rows.map(function (r) { return cellText(COLS[NAME], r.v[NAME]) + (SRV != null ? ' (' + r.v[SRV] + ')' : ''); }).join(', ');
+  var nmOf = function (r) { return cellText(COLS[NAME], r.v[NAME]) + (SRV != null ? ' (' + r.v[SRV] + ')' : ''); };
+  var nm = rt.rows.map(nmOf).join(', '), nR = rt.rows.length, ri = rivRef(nR), nmH = esc(nm) + ':';
+  if (nR > 1) nmH = '<span class="rivref" data-tip="' + esc(t('rivRefTip')) + '"><button type="button" class="btn" data-rref="-1" aria-label="&#9664;">&#9664;</button><b>' +
+    esc(ri < 0 ? t('rivRefAll', {n: nR}) : nmOf(rt.rows[ri])) + '</b><button type="button" class="btn" data-rref="1" aria-label="&#9654;">&#9654;</button></span>' +
+    '<span class="dim rivrefn">' + esc(ri < 0 ? nm : t('rivRefOf', {i: ri + 1, n: nR}) + ' · ' + rt.rows.filter(function (r, i) { return i !== ri; }).map(nmOf).join(', ')) + '</span>';
   var seg = function (key, cur, opts) { return '<span class="seg2">' + opts.map(function (o) { return '<button type="button" data-' + key + '="' + o[0] + '" aria-pressed="' + (String(cur) === String(o[0])) + '">' + esc(o[1]) + '</button>'; }).join('') + '</span>'; };
   var rn = String(S.rivN) === 'c' ? 'c' : (+S.rivN === 25 ? 25 : 10);
-  el.innerHTML = '<div class="rivbar"><span class="rn">' + esc(nm) + ':</span><button class="btn pulse" type="button" id="rivGo" data-tip="' + esc(t('rivTip', {k: rivN()})) + '">' + esc(t('rivBtn')) + '</button>' +
+  el.innerHTML = '<div class="rivbar"><span class="rn">' + nmH + '</span><button class="btn pulse" type="button" id="rivGo" data-tip="' + esc(t('rivTip', {k: rivN()})) + '">' + esc(t('rivBtn')) + '</button>' +
     seg('rn', rn, [[10, '10'], [25, '25'], ['c', t('rivOwn')]]) +
     (rn === 'c' ? '<input class="rivin" id="rivIn" type="number" min="1" max="500" step="1" inputmode="numeric" value="' + rivN() + '" aria-label="' + esc(t('rivUnit')) + '">' : '') +
     '<span class="rvu">' + esc(t('rivUnit')) + '</span>' + seg('rs', String(S.rivSame) === 'true', [[false, t('rivAll')], [true, t('rivSame')]]) + '</div>';
   vis(el, true); updRows();
 }
+function rivRef(n) { return st.rivRef != null && st.rivRef >= 0 && st.rivRef < n ? st.rivRef : -1; }
+function rivStep(d) {                                  // Bezugsspieler: alle -> 1 -> 2 -> ... -> alle
+  var rt = rivTargets(); if (!rt || !rt.rows || rt.rows.length < 2) return false;
+  var n = rt.rows.length, i = rivRef(n) + 1;
+  st.rivRef = ((i + d) % (n + 1) + n + 1) % (n + 1) - 1; updRiv(); return true;
+}
+document.addEventListener('keydown', function (e) {    // Pfeiltasten links / rechts: Bezugsspieler wechseln
+  if ((e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') || st.riv || $('blk_riv').hidden || !document.querySelector('#blk_riv .rivref')) return;
+  if (e.target.closest && e.target.closest('input, textarea, select, [contenteditable]')) return;
+  if (['ovlInfo', 'ovlSet', 'ovlSrv', 'ovlProf', 'ovlChart'].some(function (id) { return !$(id).hidden; })) return;
+  if (rivStep(e.key === 'ArrowLeft' ? -1 : 1)) e.preventDefault();
+});
 $('blk_riv').addEventListener('click', function (e) {
   var b = e.target.closest('button'); if (!b) return;
+  if (b.hasAttribute('data-rref')) { rivStep(+b.getAttribute('data-rref')); return; }
   if (b.hasAttribute('data-rn')) {
     var rv = b.getAttribute('data-rn'); S.rivN = rv === 'c' ? 'c' : +rv; saveS(); updRiv();
     if (rv === 'c' && $('rivIn')) { $('rivIn').focus(); $('rivIn').select(); }
@@ -5277,6 +6158,7 @@ $('blk_riv').addEventListener('click', function (e) {
   if (b.hasAttribute('data-rs')) { S.rivSame = b.getAttribute('data-rs') === 'true'; saveS(); updRiv(); return; }
   if (b.id === 'rivGo') {
     var rt = rivTargets(); if (!rt || !rt.rows) return;
+    var ri0 = rivRef(rt.rows.length); if (ri0 >= 0) rt = {rows: [rt.rows[ri0]]};     // nur der Bezugsspieler
     var keys = {}; rt.rows.forEach(function (r) { keys[r.k] = 1; });
     st.riv = {keys: keys, ks: rt.rows.map(function (r) { return r.k; }), n: rivN(), same: String(S.rivSame) === 'true',
               names: rt.rows.map(function (r) { return cellText(COLS[NAME], r.v[NAME]) + (SRV != null ? ' (' + r.v[SRV] + ')' : ''); }),
@@ -5432,7 +6314,9 @@ refreshAll();
   }
 })();
 (function () {
-  var h = String(location.hash || ''), m = h.match(/^#([pg])=(.*)$/), p = location.pathname || '/';
+  var h = String(location.hash || ''), m = h.match(/^#([pg])=(.*)$/), p = location.pathname || '/', nopv = null;
+  try { nopv = sessionStorage.getItem('sf-nopv'); sessionStorage.removeItem('sf-nopv'); } catch (e) {}
+  if (nopv) { if (nopv !== 'bk') gcEv(VIEW === 'g' ? 'Wechsel: Gilden-Liste' : 'Wechsel: Spieler-Liste'); return; }   // kein neuer Besuch
   if (m) { var d = m[2]; try { d = decodeURIComponent(d.replace(/\+/g, ' ')); } catch (e) {} gcSend(p + '#' + m[1] + '=' + d, document.title + ' (Link)', false); }
   else gcSend(p + (VIEW === 'g' ? '#g' : ''), document.title, false);
 })();
@@ -5573,7 +6457,7 @@ function ranksOf(rows, nm, mcol) {                          // Platz = Anzahl gr
   }
   return out;
 }
-var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "9b54a6d31b"};
+var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "2d7dce6149"};
 function ctxOf(sp) {
   var cols = sp.cols, C = {nc: cols.length, nm: (sp.metrics || []).length, mcol: {}};
   cols.forEach(function (c, j) { if (c.m != null && c.m >= 0) C.mcol[c.m] = j; });
