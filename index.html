@@ -896,12 +896,53 @@ body.mgmode .hbtn #bRk{display:none}
 }
 
 td.sqc{white-space:nowrap;line-height:0}
+
+#ovlProf .card{max-width:1000px;margin:auto}
+.pcard2{display:block!important;padding:4px 6px}
+.pcard2 .phead{display:flex;align-items:flex-start;gap:10px;justify-content:space-between;flex-wrap:wrap}
+.pcard2 .pname2{margin:2px 0 6px;font:700 1.5rem/1.2 var(--disp);display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.pcard2 .pname2 img{width:26px;height:26px}
+.pcard2 .pbtns2{display:flex;gap:6px;flex-wrap:wrap}
+.pcard2 .pline{margin:4px 0;font-size:.98rem}
+.pcard2 .dim2{color:var(--dim)}
+.pcard2 .pchips{display:flex;flex-wrap:wrap;gap:6px 18px;margin:8px 0}
+.pcard2 .pchips span{display:flex;flex-direction:column}
+.pcard2 .pchips small{font:700 .66rem/1.2 var(--disp);letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.pcard2 .pchips.sm{margin-top:8px}
+.pcard2 .pper2{font-size:.85rem;color:var(--dim);margin-bottom:4px}
+.pcard2 .mgd{font-size:.75rem;font-weight:700}
+.pcard2 .mgd.up{color:var(--up)}.pcard2 .mgd.down{color:var(--down)}.pcard2 .mgd.eq{color:var(--dim)}
+.pcard2 .up{color:var(--up)}.pcard2 .down{color:var(--down)}.pcard2 .iyel{color:var(--inay)}.pcard2 .ired{color:var(--inar)}
+.pcard2 .pfoot{margin-top:8px}
+.pcard2 .mgt th{position:static}
+@media (max-width:700px){.pcard2 .mgatt td,.pcard2 .mgatt th{padding:3px 5px;font-size:.8rem}.pcard2 .pname2{font-size:1.25rem}}
+.pcard .pdet{grid-column:1/-1}
+.pcard .phalf svg{max-width:50%;height:auto}
+.pcard .ctog [data-phalf]{min-width:2rem}
+.pfus{color:var(--accent);font-weight:600}
+details.mgdet{border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:8px 0;background:var(--panel)}
+details.mgdet>summary{cursor:pointer;font:700 .95rem/1.3 var(--disp);color:var(--accent)}
+details.mgdet[open]>summary{margin-bottom:6px}
+#mgDlg.mgsmall{max-width:760px}
+.colist{display:flex!important;flex-wrap:wrap;gap:6px;padding:4px 2px 10px}
+.cchip .cno{position:absolute;top:4px;left:7px;font:700 .8rem/1 var(--disp);color:var(--accent)}
+.cchip label{margin-top:10px}
+.cchip{flex:none;width:9.6rem;display:flex;flex-direction:column;gap:4px;padding:6px;border-radius:8px;background:var(--panel2);border:1px solid var(--line);position:relative;touch-action:pan-y}
+.cchip.off{opacity:.6}
+.cchip label{display:flex;align-items:center;gap:6px;background:transparent!important;padding:0!important;min-width:0}
+.cchip label span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cchip .cbt{display:flex;gap:4px;justify-content:flex-end}
+.cgrip{position:absolute;top:2px;right:6px;cursor:grab;color:var(--dim);font-size:1rem;touch-action:none;user-select:none;padding:0 2px}
+.cchip.drag{opacity:.45;outline:2px dashed var(--accent)}
+.cchip.dl{box-shadow:inset 4px 0 0 var(--accent)}.cchip.dr{box-shadow:inset -4px 0 0 var(--accent)}
+.status .outb{display:inline-flex;gap:4px;margin-left:10px;vertical-align:middle}
+.status .outb .btn.sm{padding:.18rem .5rem;font-size:.8rem}
 </style>
 </head>
 <body>
 <div class="app">
   <header class="top">
-    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>5 Scans</b> von 03.01.2026 23:51 bis 17.10.2026 11:00 · alle Spieler<br>Beta 2.2 gibt mir bitte euen Feedback</p></div>
+    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>5 Scans</b> von 03.01.2026 23:51 bis 17.10.2026 23:55 · alle Spieler<br>Beta 3 gibt mir bitte euen Feedback</p></div>
     <div class="hbtn" id="hbtn" hidden>
       <button class="btn rkq" id="bRk" type="button" aria-pressed="true">#</button>
       <select class="sel" id="lang" aria-label="Sprache / Language"></select>
@@ -914,7 +955,7 @@ td.sqc{white-space:nowrap;line-height:0}
     interaktiven Seiten anzeigen – zum Beispiel die Vorschau in WhatsApp, Discord, Telegram oder im E-Mail-Programm oder der
     „HTML-Viewer“ am Handy. Bitte öffne die Datei mit einem Browser: <b>Chrome, Edge, Firefox oder Safari</b>
     (am Handy: Datei speichern, antippen, „Öffnen mit“ und Chrome wählen). Dann funktionieren Sortieren, Suchen und alles andere.</div>
-  <div class="static" id="static"><table><thead><tr><th class="r">#</th><th>Name</th><th>⠀</th><th>Guild</th><th class="r">Level</th><th class="r">XP Gain</th><th class="r">Base Sum</th><th class="r">Base Gain</th><th class="r">Total Sum</th><th class="r">Base Main</th><th class="r">Base Con</th><th class="r">HP</th><th class="r">Item Quality</th><th class="r">Gem Mine</th><th class="r">Gem Avg</th><th class="r">Base Ratio</th><th class="r">Weapon Dmg</th><th class="r">Fortress</th><th class="r">Runes</th><th class="r">Pets</th><th class="r">Portal</th><th class="r">Frames</th></tr></thead><tbody><tr><td class="r">1</td><td>thceam</td><td>F29</td><td>Order 66</td><td class="r">610<small>#1</small></td><td class="r">–</td><td class="r">130.103<small>#199</small></td><td class="r">–</td><td class="r">227.679<small>#944</small></td><td class="r">90.023<small>#166</small></td><td class="r">40.080<small>#261</small></td><td class="r">321.416.550<small>#1.268</small></td><td class="r">–</td><td class="r">78<small>#46</small></td><td class="r">–</td><td class="r">69:31</td><td class="r">1.051<small>#4.199</small></td><td class="r">20.15.15.15.78.20.45.10.2.2.0.0</td><td class="r">0.0.0.0.0.0.0.0.0</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">2</td><td>Teigo eu5</td><td>F29</td><td>Tavernenflotte</td><td class="r">604<small>#2</small></td><td class="r">–</td><td class="r">186.379<small>#2</small></td><td class="r">–</td><td class="r">569.736<small>#3</small></td><td class="r">78.150<small>#307</small></td><td class="r">108.229<small>#1</small></td><td class="r">1.623.812.663<small>#2</small></td><td class="r">963<small>#3</small></td><td class="r">88<small>#29</small></td><td class="r">2.010<small>#11</small></td><td class="r">42:58</td><td class="r">2.462<small>#1.436</small></td><td class="r">20.15.8.8.88.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.32.32.32</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">3</td><td>BaShFX</td><td>F29</td><td>Tavernenflotte</td><td class="r">604<small>#2</small></td><td class="r">–</td><td class="r">163.785<small>#21</small></td><td class="r">–</td><td class="r">521.716<small>#16</small></td><td class="r">105.000<small>#51</small></td><td class="r">58.785<small>#75</small></td><td class="r">575.089.556<small>#520</small></td><td class="r">925<small>#38</small></td><td class="r">80<small>#41</small></td><td class="r">2.026<small>#6</small></td><td class="r">64:36</td><td class="r">4.333<small>#2</small></td><td class="r">20.15.10.10.80.20.45.10.1.1.10.1</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td></tr><tr><td class="r">4</td><td>Predator_is_back</td><td>F29</td><td>Tavernenflotte</td><td class="r">604<small>#2</small></td><td class="r">–</td><td class="r">192.130<small>#1</small></td><td class="r">–</td><td class="r">572.105<small>#2</small></td><td class="r">120.154<small>#8</small></td><td class="r">71.976<small>#12</small></td><td class="r">636.339.907<small>#442</small></td><td class="r">929<small>#32</small></td><td class="r">100<small>#1</small></td><td class="r">2.051<small>#2</small></td><td class="r">63:37</td><td class="r">4.171<small>#32</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td></tr><tr><td class="r">5</td><td>Morpheus</td><td>F29</td><td>Tavernenflotte</td><td class="r">603<small>#5</small></td><td class="r">–</td><td class="r">183.436<small>#4</small></td><td class="r">–</td><td class="r">574.177<small>#1</small></td><td class="r">99.243<small>#101</small></td><td class="r">84.193<small>#3</small></td><td class="r">1.783.726.287<small>#1</small></td><td class="r">967<small>#2</small></td><td class="r">91<small>#23</small></td><td class="r">2.029<small>#5</small></td><td class="r">54:46</td><td class="r">1.938<small>#2.001</small></td><td class="r">20.15.15.15.91.20.45.12.1.1.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">6</td><td>eGoLeipzig</td><td>F29</td><td>Tavernenflotte</td><td class="r">602<small>#6</small></td><td class="r">–</td><td class="r">165.201<small>#19</small></td><td class="r">–</td><td class="r">517.429<small>#17</small></td><td class="r">106.192<small>#45</small></td><td class="r">59.009<small>#73</small></td><td class="r">1.130.821.049<small>#57</small></td><td class="r">953<small>#4</small></td><td class="r">64<small>#127</small></td><td class="r">1.850<small>#81</small></td><td class="r">64:36</td><td class="r">2.432<small>#1.464</small></td><td class="r">20.15.9.9.64.20.45.6.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">7</td><td>Jaces</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#7</small></td><td class="r">–</td><td class="r">156.370<small>#40</small></td><td class="r">–</td><td class="r">487.110<small>#53</small></td><td class="r">100.045<small>#86</small></td><td class="r">56.325<small>#85</small></td><td class="r">1.065.968.924<small>#83</small></td><td class="r">887<small>#118</small></td><td class="r">69<small>#83</small></td><td class="r">1.874<small>#65</small></td><td class="r">64:36</td><td class="r">2.240<small>#1.669</small></td><td class="r">20.15.10.10.69.20.45.7.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|Twitch-Rahmen</td></tr><tr><td class="r">8</td><td>Zur HAFENBAR</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#7</small></td><td class="r">–</td><td class="r">173.506<small>#8</small></td><td class="r">–</td><td class="r">508.723<small>#23</small></td><td class="r">106.840<small>#40</small></td><td class="r">66.666<small>#31</small></td><td class="r">1.138.187.930<small>#55</small></td><td class="r">823<small>#378</small></td><td class="r">97<small>#15</small></td><td class="r">2.056<small>#1</small></td><td class="r">62:38</td><td class="r">2.355<small>#1.554</small></td><td class="r">20.15.17.18.97.20.45.15.0.0.0.0</td><td class="r">50.0.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">9</td><td>Drossi</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#7</small></td><td class="r">–</td><td class="r">160.965<small>#27</small></td><td class="r">–</td><td class="r">501.117<small>#32</small></td><td class="r">108.930<small>#29</small></td><td class="r">52.035<small>#121</small></td><td class="r">1.303.092.491<small>#30</small></td><td class="r">911<small>#63</small></td><td class="r">86<small>#31</small></td><td class="r">2.014<small>#9</small></td><td class="r">68:32</td><td class="r">4.234<small>#18</small></td><td class="r">20.15.10.10.86.20.45.9.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|kein Rahmen</td></tr><tr><td class="r">10</td><td>GamerSky</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#7</small></td><td class="r">–</td><td class="r">157.794<small>#35</small></td><td class="r">–</td><td class="r">504.936<small>#25</small></td><td class="r">86.006<small>#209</small></td><td class="r">71.788<small>#13</small></td><td class="r">1.246.280.190<small>#31</small></td><td class="r">950<small>#7</small></td><td class="r">57<small>#273</small></td><td class="r">1.859<small>#73</small></td><td class="r">55:45</td><td class="r">2.445<small>#1.453</small></td><td class="r">20.15.12.12.57.20.45.8.0.1.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.1|Goldrahmen</td></tr><tr><td class="r">11</td><td>Teiss</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#7</small></td><td class="r">–</td><td class="r">162.602<small>#26</small></td><td class="r">–</td><td class="r">528.203<small>#13</small></td><td class="r">90.222<small>#160</small></td><td class="r">72.380<small>#10</small></td><td class="r">1.612.764.772<small>#3</small></td><td class="r">951<small>#5</small></td><td class="r">74<small>#56</small></td><td class="r">1.977<small>#21</small></td><td class="r">55:45</td><td class="r">1.918<small>#2.023</small></td><td class="r">20.15.13.13.74.20.45.10.2.2.2.1</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td></tr><tr><td class="r">12</td><td>Miloo_</td><td>F29</td><td>Order 66</td><td class="r">601<small>#7</small></td><td class="r">–</td><td class="r">154.590<small>#50</small></td><td class="r">–</td><td class="r">493.053<small>#43</small></td><td class="r">108.090<small>#33</small></td><td class="r">46.500<small>#189</small></td><td class="r">499.920.214<small>#646</small></td><td class="r">920<small>#46</small></td><td class="r">79<small>#43</small></td><td class="r">1.962<small>#27</small></td><td class="r">70:30</td><td class="r">4.176<small>#30</small></td><td class="r">20.15.12.12.79.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">13</td><td>Captain Tuny</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">171.898<small>#11</small></td><td class="r">–</td><td class="r">532.984<small>#9</small></td><td class="r">106.605<small>#42</small></td><td class="r">65.293<small>#37</small></td><td class="r">1.194.016.917<small>#37</small></td><td class="r">943<small>#17</small></td><td class="r">97<small>#15</small></td><td class="r">1.900<small>#49</small></td><td class="r">62:38</td><td class="r">2.380<small>#1.517</small></td><td class="r">20.15.14.15.97.20.45.15.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.1|Goldrahmen</td></tr><tr><td class="r">14</td><td>Rocky der Stein</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">182.343<small>#5</small></td><td class="r">–</td><td class="r">523.814<small>#15</small></td><td class="r">103.809<small>#57</small></td><td class="r">78.534<small>#6</small></td><td class="r">621.495.903<small>#464</small></td><td class="r">846<small>#265</small></td><td class="r">97<small>#15</small></td><td class="r">1.898<small>#51</small></td><td class="r">57:43</td><td class="r">4.018<small>#70</small></td><td class="r">20.15.20.20.97.20.45.11.1.1.20.1</td><td class="r">50.48.5.10.15.74.75.73.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.1|Silberrahmen</td></tr><tr><td class="r">15</td><td>Rokky</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">149.780<small>#71</small></td><td class="r">–</td><td class="r">470.211<small>#80</small></td><td class="r">101.092<small>#72</small></td><td class="r">48.688<small>#171</small></td><td class="r">490.505.699<small>#670</small></td><td class="r">946<small>#11</small></td><td class="r">58<small>#247</small></td><td class="r">1.844<small>#89</small></td><td class="r">67:33</td><td class="r">4.275<small>#8</small></td><td class="r">20.15.9.9.58.20.45.9.0.0.0.0</td><td class="r">0.0.5.0.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">16</td><td>Rengoku</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">171.278<small>#12</small></td><td class="r">–</td><td class="r">528.292<small>#11</small></td><td class="r">118.316<small>#12</small></td><td class="r">52.962<small>#115</small></td><td class="r">536.406.698<small>#571</small></td><td class="r">949<small>#8</small></td><td class="r">97<small>#15</small></td><td class="r">2.040<small>#3</small></td><td class="r">69:31</td><td class="r">4.311<small>#4</small></td><td class="r">20.15.17.17.97.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td></tr><tr><td class="r">17</td><td>Lefty</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">163.421<small>#22</small></td><td class="r">–</td><td class="r">486.746<small>#55</small></td><td class="r">109.733<small>#27</small></td><td class="r">53.688<small>#111</small></td><td class="r">503.677.289<small>#639</small></td><td class="r">854<small>#229</small></td><td class="r">89<small>#27</small></td><td class="r">2.025<small>#8</small></td><td class="r">67:33</td><td class="r">4.275<small>#8</small></td><td class="r">20.15.13.13.89.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">18</td><td>d3stroy3r</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">160.659<small>#28</small></td><td class="r">–</td><td class="r">517.376<small>#18</small></td><td class="r">107.314<small>#36</small></td><td class="r">53.345<small>#112</small></td><td class="r">1.096.155.260<small>#67</small></td><td class="r">932<small>#24</small></td><td class="r">92<small>#21</small></td><td class="r">1.992<small>#17</small></td><td class="r">67:33</td><td class="r">1.880<small>#2.064</small></td><td class="r">20.15.17.16.92.20.45.15.15.15.18.15</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.0.0|Silberrahmen</td></tr><tr><td class="r">19</td><td>moZone</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">169.340<small>#15</small></td><td class="r">–</td><td class="r">538.454<small>#7</small></td><td class="r">106.362<small>#43</small></td><td class="r">62.978<small>#43</small></td><td class="r">1.498.495.273<small>#8</small></td><td class="r">968<small>#1</small></td><td class="r">90<small>#24</small></td><td class="r">2.000<small>#15</small></td><td class="r">63:37</td><td class="r">1.954<small>#1.973</small></td><td class="r">20.15.14.14.90.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|kein Rahmen</td></tr><tr><td class="r">20</td><td>ByLe</td><td>F29</td><td>Order 66</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">111.573<small>#362</small></td><td class="r">–</td><td class="r">417.425<small>#209</small></td><td class="r">86.523<small>#202</small></td><td class="r">25.050<small>#654</small></td><td class="r">803.067.919<small>#264</small></td><td class="r">938<small>#20</small></td><td class="r">74<small>#56</small></td><td class="r">1.844<small>#89</small></td><td class="r">78:22</td><td class="r">1.896<small>#2.043</small></td><td class="r">20.15.7.7.74.20.45.6.0.0.0.0</td><td class="r">50.0.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">21</td><td>Triss Merigold</td><td>F29</td><td>Czarne Wąsy</td><td class="r">600<small>#13</small></td><td class="r">–</td><td class="r">157.758<small>#36</small></td><td class="r">–</td><td class="r">499.074<small>#35</small></td><td class="r">106.760<small>#41</small></td><td class="r">50.998<small>#130</small></td><td class="r">520.295.991<small>#606</small></td><td class="r">926<small>#34</small></td><td class="r">78<small>#46</small></td><td class="r">1.975<small>#22</small></td><td class="r">68:32</td><td class="r">4.401<small>#1</small></td><td class="r">20.15.12.12.78.20.45.7.12.9.14.12</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td></tr><tr><td class="r">22</td><td>Black Lotus</td><td>F29</td><td>Tavernenflotte</td><td class="r">599<small>#22</small></td><td class="r">–</td><td class="r">184.365<small>#3</small></td><td class="r">–</td><td class="r">531.658<small>#10</small></td><td class="r">112.316<small>#21</small></td><td class="r">72.049<small>#11</small></td><td class="r">1.193.329.125<small>#38</small></td><td class="r">849<small>#251</small></td><td class="r">99<small>#14</small></td><td class="r">1.997<small>#16</small></td><td class="r">61:39</td><td class="r">2.340<small>#1.564</small></td><td class="r">20.15.15.15.99.20.45.11.3.3.3.1</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">23</td><td>EnmaTo</td><td>F29</td><td>Mandalorians</td><td class="r">599<small>#22</small></td><td class="r">–</td><td class="r">167.063<small>#18</small></td><td class="r">–</td><td class="r">500.798<small>#34</small></td><td class="r">111.533<small>#24</small></td><td class="r">55.530<small>#92</small></td><td class="r">521.114.737<small>#603</small></td><td class="r">908<small>#67</small></td><td class="r">65<small>#109</small></td><td class="r">1.914<small>#44</small></td><td class="r">67:33</td><td class="r">4.248<small>#15</small></td><td class="r">20.15.11.11.65.20.45.8.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">24</td><td>nedik</td><td>F29</td><td>Tavernenflotte</td><td class="r">599<small>#22</small></td><td class="r">–</td><td class="r">149.407<small>#74</small></td><td class="r">–</td><td class="r">469.484<small>#81</small></td><td class="r">90.106<small>#163</small></td><td class="r">59.301<small>#72</small></td><td class="r">1.075.302.900<small>#77</small></td><td class="r">946<small>#11</small></td><td class="r">57<small>#273</small></td><td class="r">1.810<small>#128</small></td><td class="r">60:40</td><td class="r">2.397<small>#1.506</small></td><td class="r">20.15.9.9.57.20.45.8.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">25</td><td>Olivandam</td><td>F29</td><td>Sharkdom</td><td class="r">599<small>#22</small></td><td class="r">–</td><td class="r">155.785<small>#42</small></td><td class="r">–</td><td class="r">493.840<small>#42</small></td><td class="r">105.750<small>#48</small></td><td class="r">50.035<small>#141</small></td><td class="r">1.025.529.749<small>#98</small></td><td class="r">930<small>#30</small></td><td class="r">58<small>#247</small></td><td class="r">1.866<small>#69</small></td><td class="r">68:32</td><td class="r">2.347<small>#1.561</small></td><td class="r">20.15.5.5.58.20.45.5.0.0.0.0</td><td class="r">50.49.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">26</td><td>BIade</td><td>F29</td><td>Sharkdom</td><td class="r">599<small>#22</small></td><td class="r">–</td><td class="r">180.357<small>#6</small></td><td class="r">–</td><td class="r">556.067<small>#4</small></td><td class="r">120.327<small>#7</small></td><td class="r">60.030<small>#63</small></td><td class="r">1.165.792.950<small>#45</small></td><td class="r">944<small>#16</small></td><td class="r">75<small>#52</small></td><td class="r">2.006<small>#14</small></td><td class="r">67:33</td><td class="r">2.377<small>#1.520</small></td><td class="r">20.15.11.11.75.20.45.5.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">27</td><td>Useless-Warrior</td><td>F29</td><td>Sharkdom</td><td class="r">599<small>#22</small></td><td class="r">–</td><td class="r">172.514<small>#10</small></td><td class="r">–</td><td class="r">542.088<small>#5</small></td><td class="r">102.489<small>#64</small></td><td class="r">70.025<small>#16</small></td><td class="r">1.569.564.562<small>#5</small></td><td class="r">941<small>#19</small></td><td class="r">90<small>#24</small></td><td class="r">2.026<small>#6</small></td><td class="r">59:41</td><td class="r">1.896<small>#2.043</small></td><td class="r">20.15.11.10.90.20.45.10.1.2.8.1</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.1.1.0|Goldrahmen</td></tr><tr><td class="r">28</td><td>Rat</td><td>F29</td><td></td><td class="r">598<small>#28</small></td><td class="r">–</td><td class="r">151.992<small>#57</small></td><td class="r">–</td><td class="r">465.462<small>#90</small></td><td class="r">90.000<small>#170</small></td><td class="r">61.992<small>#46</small></td><td class="r">1.075.763.268<small>#76</small></td><td class="r">918<small>#48</small></td><td class="r">59<small>#217</small></td><td class="r">1.774<small>#167</small></td><td class="r">59:41</td><td class="r">1.854<small>#2.104</small></td><td class="r">20.15.9.9.59.20.45.7.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.0</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">29</td><td>Hi Im Chris</td><td>F29</td><td>Order 66</td><td class="r">598<small>#28</small></td><td class="r">–</td><td class="r">134.827<small>#160</small></td><td class="r">–</td><td class="r">413.123<small>#224</small></td><td class="r">84.797<small>#218</small></td><td class="r">50.030<small>#144</small></td><td class="r">910.010.458<small>#159</small></td><td class="r">820<small>#404</small></td><td class="r">57<small>#273</small></td><td class="r">1.546<small>#595</small></td><td class="r">63:37</td><td class="r">2.360<small>#1.548</small></td><td class="r">20.15.10.10.57.20.45.6.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">30</td><td>ChillPill</td><td>F29</td><td>Czarne Wąsy</td><td class="r">598<small>#28</small></td><td class="r">–</td><td class="r">163.005<small>#23</small></td><td class="r">–</td><td class="r">489.024<small>#50</small></td><td class="r">103.005<small>#60</small></td><td class="r">60.000<small>#67</small></td><td class="r">1.068.829.992<small>#82</small></td><td class="r">891<small>#103</small></td><td class="r">60<small>#195</small></td><td class="r">1.829<small>#106</small></td><td class="r">63:37</td><td class="r">2.185<small>#1.723</small></td><td class="r">20.15.10.10.60.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">31</td><td>muuunik</td><td>F29</td><td>All That Matters</td><td class="r">598<small>#28</small></td><td class="r">–</td><td class="r">154.753<small>#48</small></td><td class="r">–</td><td class="r">502.428<small>#30</small></td><td class="r">109.118<small>#28</small></td><td class="r">45.635<small>#195</small></td><td class="r">1.010.883.930<small>#105</small></td><td class="r">926<small>#34</small></td><td class="r">65<small>#109</small></td><td class="r">1.903<small>#47</small></td><td class="r">71:29</td><td class="r">4.207<small>#23</small></td><td class="r">20.15.8.9.65.20.45.6.3.2.8.1</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">32</td><td>ElonMuskow</td><td>F29</td><td>Czarne Wąsy</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">159.136<small>#31</small></td><td class="r">–</td><td class="r">489.518<small>#48</small></td><td class="r">95.136<small>#121</small></td><td class="r">64.000<small>#40</small></td><td class="r">1.121.887.991<small>#59</small></td><td class="r">874<small>#161</small></td><td class="r">67<small>#95</small></td><td class="r">1.922<small>#39</small></td><td class="r">60:40</td><td class="r">2.350<small>#1.557</small></td><td class="r">20.15.9.9.67.20.45.10.6.6.6.1</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">33</td><td>Zogrock</td><td>F29</td><td>Tavernenflotte</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">155.805<small>#41</small></td><td class="r">–</td><td class="r">497.498<small>#37</small></td><td class="r">88.000<small>#193</small></td><td class="r">67.805<small>#27</small></td><td class="r">1.191.842.554<small>#39</small></td><td class="r">942<small>#18</small></td><td class="r">58<small>#247</small></td><td class="r">1.851<small>#79</small></td><td class="r">56:44</td><td class="r">2.375<small>#1.529</small></td><td class="r">20.15.10.10.58.20.45.8.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">34</td><td>TheRock20</td><td>F29</td><td>Tavernenflotte</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">169.012<small>#16</small></td><td class="r">–</td><td class="r">528.228<small>#12</small></td><td class="r">84.506<small>#228</small></td><td class="r">84.506<small>#2</small></td><td class="r">1.362.233.983<small>#22</small></td><td class="r">935<small>#23</small></td><td class="r">100<small>#1</small></td><td class="r">2.040<small>#3</small></td><td class="r">50:50</td><td class="r">1.948<small>#1.981</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">35</td><td>Ares DICKerson</td><td>F29</td><td>Tavernenflotte</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">155.170<small>#45</small></td><td class="r">–</td><td class="r">489.659<small>#47</small></td><td class="r">100.154<small>#81</small></td><td class="r">55.016<small>#97</small></td><td class="r">1.323.820.350<small>#27</small></td><td class="r">946<small>#11</small></td><td class="r">49<small>#676</small></td><td class="r">1.768<small>#173</small></td><td class="r">65:35</td><td class="r">1.906<small>#2.036</small></td><td class="r">20.15.12.13.49.20.45.10.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">36</td><td>Hafensänger Xias</td><td>F29</td><td>Tavernenflotte</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">149.584<small>#72</small></td><td class="r">–</td><td class="r">500.866<small>#33</small></td><td class="r">99.684<small>#98</small></td><td class="r">49.900<small>#158</small></td><td class="r">533.497.028<small>#576</small></td><td class="r">947<small>#10</small></td><td class="r">71<small>#66</small></td><td class="r">1.942<small>#33</small></td><td class="r">67:33</td><td class="r">4.302<small>#5</small></td><td class="r">20.15.10.10.71.20.45.8.7.7.7.1</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">37</td><td>Petrise9</td><td>F29</td><td>Order 66</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">145.498<small>#95</small></td><td class="r">–</td><td class="r">457.532<small>#103</small></td><td class="r">99.452<small>#99</small></td><td class="r">46.046<small>#192</small></td><td class="r">469.448.089<small>#708</small></td><td class="r">855<small>#227</small></td><td class="r">62<small>#161</small></td><td class="r">1.792<small>#147</small></td><td class="r">68:32</td><td class="r">4.167<small>#33</small></td><td class="r">20.15.10.10.62.20.45.7.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">38</td><td>Gabodek</td><td>F29</td><td>Order 66</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">158.969<small>#33</small></td><td class="r">–</td><td class="r">517.133<small>#19</small></td><td class="r">100.176<small>#80</small></td><td class="r">58.793<small>#74</small></td><td class="r">1.146.856.659<small>#49</small></td><td class="r">949<small>#8</small></td><td class="r">79<small>#43</small></td><td class="r">1.974<small>#24</small></td><td class="r">63:37</td><td class="r">2.395<small>#1.507</small></td><td class="r">20.15.12.12.79.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">39</td><td>Kugy</td><td>F29</td><td>All That Matters</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">173.438<small>#9</small></td><td class="r">–</td><td class="r">540.349<small>#6</small></td><td class="r">93.418<small>#136</small></td><td class="r">80.020<small>#5</small></td><td class="r">1.333.025.645<small>#26</small></td><td class="r">931<small>#29</small></td><td class="r">83<small>#36</small></td><td class="r">1.981<small>#20</small></td><td class="r">54:46</td><td class="r">2.432<small>#1.464</small></td><td class="r">20.15.10.10.83.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td></tr><tr><td class="r">40</td><td>Rafus</td><td>F29</td><td>All That Matters</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">162.968<small>#24</small></td><td class="r">–</td><td class="r">509.203<small>#22</small></td><td class="r">102.950<small>#61</small></td><td class="r">60.018<small>#64</small></td><td class="r">1.119.417.429<small>#60</small></td><td class="r">916<small>#55</small></td><td class="r">70<small>#72</small></td><td class="r">1.924<small>#36</small></td><td class="r">63:37</td><td class="r">2.375<small>#1.529</small></td><td class="r">20.15.10.10.70.20.45.10.1.1.10.1</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">41</td><td>OTTiF4nT</td><td>F29</td><td>Mandalorians</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">158.518<small>#34</small></td><td class="r">–</td><td class="r">488.983<small>#51</small></td><td class="r">107.000<small>#38</small></td><td class="r">51.518<small>#124</small></td><td class="r">505.317.661<small>#632</small></td><td class="r">869<small>#179</small></td><td class="r">71<small>#66</small></td><td class="r">1.944<small>#32</small></td><td class="r">68:32</td><td class="r">4.117<small>#47</small></td><td class="r">20.15.10.10.71.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Silberrahmen</td></tr><tr><td class="r">42</td><td>scharffe</td><td>F29</td><td>Sharkdom</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">170.435<small>#13</small></td><td class="r">–</td><td class="r">503.479<small>#28</small></td><td class="r">110.057<small>#26</small></td><td class="r">60.378<small>#55</small></td><td class="r">1.074.209.750<small>#79</small></td><td class="r">830<small>#343</small></td><td class="r">92<small>#21</small></td><td class="r">1.894<small>#54</small></td><td class="r">65:35</td><td class="r">1.676<small>#2.475</small></td><td class="r">20.15.12.12.92.20.45.7.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">43</td><td>Kugy (s8eu)</td><td>F29</td><td>All That Matters</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">153.849<small>#53</small></td><td class="r">–</td><td class="r">509.447<small>#21</small></td><td class="r">80.000<small>#285</small></td><td class="r">73.849<small>#9</small></td><td class="r">1.607.548.178<small>#4</small></td><td class="r">932<small>#24</small></td><td class="r">73<small>#64</small></td><td class="r">1.936<small>#35</small></td><td class="r">52:48</td><td class="r">1.924<small>#2.020</small></td><td class="r">20.15.10.10.73.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td></tr><tr><td class="r">44</td><td>Superheroo</td><td>F29</td><td>Czarne Wąsy</td><td class="r">597<small>#32</small></td><td class="r">–</td><td class="r">141.475<small>#113</small></td><td class="r">–</td><td class="r">443.953<small>#133</small></td><td class="r">97.475<small>#110</small></td><td class="r">44.000<small>#212</small></td><td class="r">903.565.591<small>#168</small></td><td class="r">821<small>#397</small></td><td class="r">63<small>#146</small></td><td class="r">1.697<small>#278</small></td><td class="r">69:31</td><td class="r">2.072<small>#1.847</small></td><td class="r">20.15.9.9.63.20.45.4.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">45</td><td>Andrejkou</td><td>F29</td><td>All That Matters</td><td class="r">596<small>#45</small></td><td class="r">–</td><td class="r">159.122<small>#32</small></td><td class="r">–</td><td class="r">501.163<small>#31</small></td><td class="r">105.122<small>#50</small></td><td class="r">54.000<small>#109</small></td><td class="r">529.973.690<small>#584</small></td><td class="r">922<small>#42</small></td><td class="r">61<small>#178</small></td><td class="r">1.897<small>#52</small></td><td class="r">66:34</td><td class="r">4.045<small>#62</small></td><td class="r">20.15.7.8.61.18.45.8.5.5.5.2</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">46</td><td>Pishkot</td><td>F29</td><td>All That Matters</td><td class="r">596<small>#45</small></td><td class="r">–</td><td class="r">154.481<small>#52</small></td><td class="r">–</td><td class="r">488.034<small>#52</small></td><td class="r">114.446<small>#17</small></td><td class="r">40.035<small>#274</small></td><td class="r">460.607.252<small>#742</small></td><td class="r">926<small>#34</small></td><td class="r">58<small>#247</small></td><td class="r">1.803<small>#133</small></td><td class="r">74:26</td><td class="r">4.324<small>#3</small></td><td class="r">20.15.6.5.58.20.45.7.1.1.5.2</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">47</td><td>Mashkull</td><td>F29</td><td>Tavernenflotte</td><td class="r">596<small>#45</small></td><td class="r">–</td><td class="r">138.737<small>#128</small></td><td class="r">–</td><td class="r">442.131<small>#135</small></td><td class="r">88.677<small>#185</small></td><td class="r">50.060<small>#137</small></td><td class="r">1.205.377.979<small>#34</small></td><td class="r">874<small>#161</small></td><td class="r">54<small>#377</small></td><td class="r">1.814<small>#123</small></td><td class="r">64:36</td><td class="r">4.216<small>#20</small></td><td class="r">20.15.11.11.54.20.45.11.1.1.9.1</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">48</td><td>Yennefeer</td><td>F29</td><td>Czarne Wąsy</td><td class="r">596<small>#45</small></td><td class="r">–</td><td class="r">129.071<small>#209</small></td><td class="r">–</td><td class="r">435.215<small>#154</small></td><td class="r">89.016<small>#180</small></td><td class="r">40.055<small>#265</small></td><td class="r">449.945.989<small>#776</small></td><td class="r">886<small>#121</small></td><td class="r">66<small>#102</small></td><td class="r">1.869<small>#67</small></td><td class="r">69:31</td><td class="r">4.198<small>#26</small></td><td class="r">20.15.3.5.66.20.30.6.2.3.2.2</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">49</td><td>Wizzardking</td><td>F29</td><td>Sharkdom</td><td class="r">596<small>#45</small></td><td class="r">–</td><td class="r">157.658<small>#37</small></td><td class="r">–</td><td class="r">497.950<small>#36</small></td><td class="r">106.212<small>#44</small></td><td class="r">51.446<small>#126</small></td><td class="r">517.628.663<small>#611</small></td><td class="r">914<small>#60</small></td><td class="r">100<small>#1</small></td><td class="r">1.961<small>#28</small></td><td class="r">67:33</td><td class="r">4.126<small>#42</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.1.1.1|Goldrahmen</td></tr><tr><td class="r">50</td><td>Carlos</td><td>F29</td><td>All That Matters</td><td class="r">596<small>#45</small></td><td class="r">–</td><td class="r">167.913<small>#17</small></td><td class="r">–</td><td class="r">526.726<small>#14</small></td><td class="r">107.755<small>#34</small></td><td class="r">60.158<small>#58</small></td><td class="r">1.141.638.248<small>#53</small></td><td class="r">928<small>#33</small></td><td class="r">80<small>#41</small></td><td class="r">1.924<small>#36</small></td><td class="r">64:36</td><td class="r">1.860<small>#2.093</small></td><td class="r">20.15.9.9.80.20.45.6.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr></tbody></table><div class="more">… und 4.510 weitere Zeilen – vollständig, sortier- und durchsuchbar nur im Browser.</div></div>
+  <div class="static" id="static"><table><thead><tr><th class="r">#</th><th>Name</th><th>⠀</th><th>Guild</th><th class="r">Level</th><th class="r">XP Gain</th><th class="r">Base Sum</th><th class="r">Base Gain</th><th class="r">Total Sum</th><th class="r">Base Main</th><th class="r">Base Con</th><th class="r">HP</th><th class="r">Item Quality</th><th class="r">Gem Mine</th><th class="r">Gem Avg</th><th class="r">Base Ratio</th><th class="r">Weapon Dmg</th><th class="r">Fortress</th><th class="r">Runes</th><th class="r">Pets</th><th class="r">Portal</th><th class="r">Frames</th></tr></thead><tbody><tr><td class="r">1</td><td>DeTermit</td><td>GN</td><td>Dragon Enemy Will Burn</td><td class="r">828<small>#1</small></td><td class="r">–<small>#16.139</small></td><td class="r">631.796<small>#136</small></td><td class="r">–<small>#2.155</small></td><td class="r">1.440.254<small>#100</small></td><td class="r">389.858<small>#178</small></td><td class="r">241.938<small>#278</small></td><td class="r">4.223.557.386<small>#235</small></td><td class="r">1.188<small>#42</small></td><td class="r">100<small>#1</small></td><td class="r">2.717<small>#13</small></td><td class="r">62:38</td><td class="r">2.718<small>#12.326</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.0.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">2</td><td>Deinnachbar</td><td>F8</td><td>ENDGEGNER</td><td class="r">827<small>#2</small></td><td class="r">–<small>#46.975</small></td><td class="r">747.013<small>#4</small></td><td class="r">–<small>#587</small></td><td class="r">1.667.420<small>#3</small></td><td class="r">500.050<small>#9</small></td><td class="r">246.963<small>#253</small></td><td class="r">5.465.559.560<small>#35</small></td><td class="r">1.239<small>#1</small></td><td class="r">100<small>#1</small></td><td class="r">2.751<small>#1</small></td><td class="r">67:33</td><td class="r">2.238<small>#20.525</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.49.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">3</td><td>DoktorDarm</td><td>F17</td><td>Phoenix</td><td class="r">824<small>#3</small></td><td class="r">–<small>#10.330</small></td><td class="r">561.056<small>#380</small></td><td class="r">–<small>#5.469</small></td><td class="r">1.277.813<small>#356</small></td><td class="r">317.893<small>#611</small></td><td class="r">243.163<small>#269</small></td><td class="r">5.101.173.773<small>#77</small></td><td class="r">1.205<small>#20</small></td><td class="r">100<small>#1</small></td><td class="r">2.737<small>#3</small></td><td class="r">57:43</td><td class="r">2.230<small>#20.653</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">4</td><td>Furaken</td><td>ST</td><td>ENDGEGNER I</td><td class="r">823<small>#4</small></td><td class="r">–<small>#42.876</small></td><td class="r">737.072<small>#9</small></td><td class="r">–<small>#1.235</small></td><td class="r">1.649.984<small>#4</small></td><td class="r">368.536<small>#263</small></td><td class="r">368.536<small>#2</small></td><td class="r">7.329.022.679<small>#2</small></td><td class="r">1.237<small>#2</small></td><td class="r">100<small>#1</small></td><td class="r">2.732<small>#4</small></td><td class="r">50:50</td><td class="r">2.244<small>#20.438</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.1.1.0|Goldrahmen</td></tr><tr><td class="r">5</td><td>Deraphin</td><td>F17</td><td>Die Unfassbaren</td><td class="r">822<small>#5</small></td><td class="r">–<small>#10.570</small></td><td class="r">699.990<small>#25</small></td><td class="r">–<small>#1.207</small></td><td class="r">1.576.636<small>#16</small></td><td class="r">433.048<small>#69</small></td><td class="r">266.942<small>#117</small></td><td class="r">4.564.077.665<small>#162</small></td><td class="r">1.211<small>#14</small></td><td class="r">100<small>#1</small></td><td class="r">2.729<small>#7</small></td><td class="r">62:38</td><td class="r">2.797<small>#11.693</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">6</td><td>MaiSta</td><td>F8</td><td>ENDGEGNER</td><td class="r">821<small>#6</small></td><td class="r">–<small>#13.890</small></td><td class="r">703.473<small>#23</small></td><td class="r">–<small>#766</small></td><td class="r">1.575.484<small>#18</small></td><td class="r">450.742<small>#45</small></td><td class="r">252.731<small>#203</small></td><td class="r">5.445.654.698<small>#36</small></td><td class="r">1.193<small>#30</small></td><td class="r">100<small>#1</small></td><td class="r">2.721<small>#11</small></td><td class="r">64:36</td><td class="r">2.203<small>#21.076</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">7</td><td>Ohrmel</td><td>F8</td><td>ENDGEGNER</td><td class="r">820<small>#7</small></td><td class="r">–<small>#7.156</small></td><td class="r">682.443<small>#46</small></td><td class="r">–<small>#1.484</small></td><td class="r">1.512.944<small>#39</small></td><td class="r">415.826<small>#102</small></td><td class="r">266.617<small>#121</small></td><td class="r">2.216.087.636<small>#2.284</small></td><td class="r">1.127<small>#381</small></td><td class="r">100<small>#1</small></td><td class="r">2.622<small>#175</small></td><td class="r">61:39</td><td class="r">4.943<small>#27</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">8</td><td>Nachteule</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">820<small>#7</small></td><td class="r">–<small>#2.302</small></td><td class="r">755.774<small>#3</small></td><td class="r">–<small>#638</small></td><td class="r">1.682.667<small>#2</small></td><td class="r">500.505<small>#8</small></td><td class="r">255.269<small>#192</small></td><td class="r">2.219.054.628<small>#2.275</small></td><td class="r">1.235<small>#3</small></td><td class="r">100<small>#1</small></td><td class="r">2.750<small>#2</small></td><td class="r">66:34</td><td class="r">5.048<small>#1</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">9</td><td>Rhabarber Barbara</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">820<small>#7</small></td><td class="r">–<small>#3.215</small></td><td class="r">683.633<small>#43</small></td><td class="r">–<small>#1.698</small></td><td class="r">1.518.807<small>#36</small></td><td class="r">417.277<small>#98</small></td><td class="r">266.356<small>#124</small></td><td class="r">4.442.329.606<small>#186</small></td><td class="r">1.135<small>#303</small></td><td class="r">100<small>#1</small></td><td class="r">2.659<small>#63</small></td><td class="r">61:39</td><td class="r">2.748<small>#12.071</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">10</td><td>mario ppp</td><td>GN</td><td>Dreamers</td><td class="r">819<small>#10</small></td><td class="r">–<small>#35.602</small></td><td class="r">712.597<small>#19</small></td><td class="r">–<small>#1.028</small></td><td class="r">1.602.077<small>#11</small></td><td class="r">410.987<small>#115</small></td><td class="r">301.610<small>#34</small></td><td class="r">6.235.593.393<small>#12</small></td><td class="r">1.224<small>#5</small></td><td class="r">100<small>#1</small></td><td class="r">2.720<small>#12</small></td><td class="r">58:42</td><td class="r">2.240<small>#20.506</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">11</td><td>Lambretta</td><td>F8</td><td>GODS of LIGHT</td><td class="r">819<small>#10</small></td><td class="r">–<small>#49.592</small></td><td class="r">667.907<small>#61</small></td><td class="r">–<small>#1.408</small></td><td class="r">1.512.501<small>#40</small></td><td class="r">435.805<small>#66</small></td><td class="r">232.102<small>#348</small></td><td class="r">5.109.978.496<small>#74</small></td><td class="r">1.190<small>#39</small></td><td class="r">100<small>#1</small></td><td class="r">2.731<small>#5</small></td><td class="r">65:35</td><td class="r">2.201<small>#21.096</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">12</td><td>T0NY</td><td>ST</td><td>Dragons Legends</td><td class="r">817<small>#12</small></td><td class="r">–<small>#51.810</small></td><td class="r">672.641<small>#55</small></td><td class="r">–<small>#802</small></td><td class="r">1.530.575<small>#32</small></td><td class="r">461.964<small>#35</small></td><td class="r">210.677<small>#576</small></td><td class="r">1.924.009.006<small>#3.248</small></td><td class="r">1.217<small>#9</small></td><td class="r">100<small>#1</small></td><td class="r">2.728<small>#8</small></td><td class="r">69:31</td><td class="r">5.037<small>#3</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">13</td><td>Bresl</td><td>F8</td><td>ENDGEGNER</td><td class="r">817<small>#12</small></td><td class="r">–<small>#48.987</small></td><td class="r">715.428<small>#17</small></td><td class="r">–<small>#926</small></td><td class="r">1.609.561<small>#9</small></td><td class="r">458.672<small>#39</small></td><td class="r">256.756<small>#181</small></td><td class="r">2.215.715.373<small>#2.285</small></td><td class="r">1.232<small>#4</small></td><td class="r">100<small>#1</small></td><td class="r">2.712<small>#15</small></td><td class="r">64:36</td><td class="r">5.044<small>#2</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td></tr><tr><td class="r">14</td><td>markow</td><td>BF</td><td>Awanturnicy</td><td class="r">816<small>#14</small></td><td class="r">–<small>#46.503</small></td><td class="r">683.295<small>#45</small></td><td class="r">–<small>#645</small></td><td class="r">1.518.334<small>#37</small></td><td class="r">428.240<small>#76</small></td><td class="r">255.055<small>#194</small></td><td class="r">2.140.870.373<small>#2.525</small></td><td class="r">1.220<small>#7</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#76</small></td><td class="r">63:37</td><td class="r">5.010<small>#4</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">15</td><td>Boom</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">816<small>#14</small></td><td class="r">–<small>#2.761</small></td><td class="r">644.972<small>#103</small></td><td class="r">–<small>#1.296</small></td><td class="r">1.438.878<small>#101</small></td><td class="r">322.486<small>#570</small></td><td class="r">322.486<small>#14</small></td><td class="r">6.337.021.053<small>#7</small></td><td class="r">1.094<small>#838</small></td><td class="r">100<small>#1</small></td><td class="r">2.683<small>#27</small></td><td class="r">50:50</td><td class="r">2.234<small>#20.591</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|kein Rahmen</td></tr><tr><td class="r">16</td><td>Falka</td><td>MA</td><td>WeAreOne</td><td class="r">815<small>#16</small></td><td class="r">–<small>#41.229</small></td><td class="r">687.634<small>#42</small></td><td class="r">–<small>#1.793</small></td><td class="r">1.551.818<small>#21</small></td><td class="r">354.550<small>#323</small></td><td class="r">333.084<small>#10</small></td><td class="r">6.660.824.782<small>#5</small></td><td class="r">1.204<small>#23</small></td><td class="r">100<small>#1</small></td><td class="r">2.728<small>#8</small></td><td class="r">52:48</td><td class="r">2.211<small>#20.951</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.74.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">17</td><td>Baajl</td><td>ST</td><td>ENDGEGNER I</td><td class="r">815<small>#16</small></td><td class="r">–<small>#2.360</small></td><td class="r">643.760<small>#110</small></td><td class="r">–<small>#1.327</small></td><td class="r">1.467.366<small>#67</small></td><td class="r">398.951<small>#151</small></td><td class="r">244.809<small>#263</small></td><td class="r">2.107.208.870<small>#2.626</small></td><td class="r">1.209<small>#17</small></td><td class="r">100<small>#1</small></td><td class="r">2.730<small>#6</small></td><td class="r">62:38</td><td class="r">5.003<small>#6</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">18</td><td>PAPA von Tony</td><td>F17</td><td>Phoenix</td><td class="r">815<small>#16</small></td><td class="r">–<small>#10.465</small></td><td class="r">649.007<small>#93</small></td><td class="r">–<small>#3.112</small></td><td class="r">1.478.543<small>#59</small></td><td class="r">399.040<small>#150</small></td><td class="r">249.967<small>#235</small></td><td class="r">2.142.483.326<small>#2.517</small></td><td class="r">1.192<small>#32</small></td><td class="r">100<small>#1</small></td><td class="r">2.708<small>#16</small></td><td class="r">61:39</td><td class="r">4.902<small>#66</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">19</td><td>Warbird</td><td>F9</td><td>Horizon</td><td class="r">814<small>#19</small></td><td class="r">–<small>#47.242</small></td><td class="r">551.320<small>#411</small></td><td class="r">–<small>#2.663</small></td><td class="r">1.265.950<small>#388</small></td><td class="r">331.320<small>#491</small></td><td class="r">220.000<small>#478</small></td><td class="r">3.764.722.368<small>#404</small></td><td class="r">1.169<small>#98</small></td><td class="r">100<small>#1</small></td><td class="r">2.707<small>#18</small></td><td class="r">60:40</td><td class="r">2.744<small>#12.102</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.49.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">20</td><td>Umbums</td><td>F9</td><td>Horizon</td><td class="r">814<small>#19</small></td><td class="r">–<small>#2.037</small></td><td class="r">683.302<small>#44</small></td><td class="r">–<small>#593</small></td><td class="r">1.500.963<small>#47</small></td><td class="r">432.617<small>#70</small></td><td class="r">250.685<small>#214</small></td><td class="r">5.195.507.715<small>#60</small></td><td class="r">1.075<small>#1.297</small></td><td class="r">100<small>#1</small></td><td class="r">2.724<small>#10</small></td><td class="r">63:37</td><td class="r">2.084<small>#23.101</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.1.1.1|kein Rahmen</td></tr><tr><td class="r">21</td><td>Quilp the Round</td><td>MA</td><td>El Presidente</td><td class="r">812<small>#21</small></td><td class="r">–<small>#6.984</small></td><td class="r">506.504<small>#660</small></td><td class="r">–<small>#2.838</small></td><td class="r">1.199.633<small>#560</small></td><td class="r">290.166<small>#930</small></td><td class="r">216.338<small>#516</small></td><td class="r">4.691.260.631<small>#137</small></td><td class="r">1.144<small>#243</small></td><td class="r">100<small>#1</small></td><td class="r">2.655<small>#80</small></td><td class="r">57:43</td><td class="r">2.149<small>#21.891</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">22</td><td>kulfon68</td><td>BF</td><td>SzaUzi</td><td class="r">812<small>#21</small></td><td class="r">–<small>#7.365</small></td><td class="r">575.054<small>#321</small></td><td class="r">–<small>#3.952</small></td><td class="r">1.314.154<small>#301</small></td><td class="r">325.120<small>#548</small></td><td class="r">249.934<small>#236</small></td><td class="r">5.182.731.708<small>#61</small></td><td class="r">1.101<small>#727</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#76</small></td><td class="r">57:43</td><td class="r">2.106<small>#22.654</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.0.0.10.15.49.49.75.59|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">23</td><td>Blue</td><td>BF</td><td>Awanturnicy</td><td class="r">812<small>#21</small></td><td class="r">–<small>#46.720</small></td><td class="r">530.229<small>#531</small></td><td class="r">–<small>#2.125</small></td><td class="r">1.226.761<small>#481</small></td><td class="r">424.023<small>#83</small></td><td class="r">106.206<small>#5.024</small></td><td class="r">1.175.547.695<small>#7.799</small></td><td class="r">1.099<small>#754</small></td><td class="r">100<small>#1</small></td><td class="r">2.713<small>#14</small></td><td class="r">80:20</td><td class="r">4.934<small>#39</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.49.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">24</td><td>DonZeus</td><td>F8</td><td>ENDGEGNER</td><td class="r">812<small>#21</small></td><td class="r">–<small>#10.949</small></td><td class="r">689.485<small>#41</small></td><td class="r">–<small>#48</small></td><td class="r">1.501.431<small>#46</small></td><td class="r">350.279<small>#359</small></td><td class="r">339.206<small>#6</small></td><td class="r">5.196.173.951<small>#59</small></td><td class="r">1.098<small>#773</small></td><td class="r">100<small>#1</small></td><td class="r">2.638<small>#127</small></td><td class="r">51:49</td><td class="r">2.632<small>#13.284</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.0.0|Goldrahmen</td></tr><tr><td class="r">25</td><td>Zauriel</td><td>F17</td><td>Phoenix</td><td class="r">812<small>#21</small></td><td class="r">–<small>#11.299</small></td><td class="r">560.283<small>#383</small></td><td class="r">–<small>#2.746</small></td><td class="r">1.297.432<small>#325</small></td><td class="r">300.040<small>#822</small></td><td class="r">260.243<small>#158</small></td><td class="r">5.380.876.830<small>#44</small></td><td class="r">1.143<small>#247</small></td><td class="r">100<small>#1</small></td><td class="r">2.609<small>#226</small></td><td class="r">54:46</td><td class="r">2.105<small>#22.694</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">26</td><td>Tommis</td><td>GN</td><td>Dreamers</td><td class="r">811<small>#26</small></td><td class="r">–<small>#48.875</small></td><td class="r">590.095<small>#266</small></td><td class="r">–<small>#2.282</small></td><td class="r">1.344.465<small>#237</small></td><td class="r">389.472<small>#180</small></td><td class="r">200.623<small>#755</small></td><td class="r">4.438.380.581<small>#188</small></td><td class="r">1.159<small>#140</small></td><td class="r">100<small>#1</small></td><td class="r">2.653<small>#87</small></td><td class="r">66:34</td><td class="r">2.162<small>#21.683</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">27</td><td>Surja</td><td>F8</td><td>ENDGEGNER</td><td class="r">811<small>#26</small></td><td class="r">–<small>#5.046</small></td><td class="r">705.631<small>#20</small></td><td class="r">–<small>#917</small></td><td class="r">1.533.090<small>#30</small></td><td class="r">438.948<small>#63</small></td><td class="r">266.683<small>#120</small></td><td class="r">4.312.846.345<small>#206</small></td><td class="r">1.069<small>#1.460</small></td><td class="r">100<small>#1</small></td><td class="r">2.575<small>#358</small></td><td class="r">62:38</td><td class="r">2.599<small>#13.813</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">28</td><td>Elfinchen</td><td>F8</td><td>ENDGEGNER</td><td class="r">811<small>#26</small></td><td class="r">–<small>#39.087</small></td><td class="r">557.726<small>#392</small></td><td class="r">–<small>#2.216</small></td><td class="r">1.289.353<small>#338</small></td><td class="r">327.621<small>#525</small></td><td class="r">230.105<small>#368</small></td><td class="r">3.917.407.724<small>#348</small></td><td class="r">1.127<small>#381</small></td><td class="r">100<small>#1</small></td><td class="r">2.576<small>#353</small></td><td class="r">59:41</td><td class="r">2.749<small>#12.042</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">29</td><td>Sephrenia</td><td>F9</td><td>Keltic</td><td class="r">811<small>#26</small></td><td class="r">–<small>#41.637</small></td><td class="r">622.717<small>#156</small></td><td class="r">–<small>#758</small></td><td class="r">1.416.951<small>#133</small></td><td class="r">422.587<small>#86</small></td><td class="r">200.130<small>#777</small></td><td class="r">1.799.286.693<small>#3.744</small></td><td class="r">1.149<small>#208</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#76</small></td><td class="r">68:32</td><td class="r">4.866<small>#112</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|Twitch-Rahmen</td></tr><tr><td class="r">30</td><td>DonMuErte</td><td>F17</td><td>Werwolf Legion</td><td class="r">811<small>#26</small></td><td class="r">–<small>#2.523</small></td><td class="r">698.290<small>#27</small></td><td class="r">–<small>#740</small></td><td class="r">1.576.401<small>#17</small></td><td class="r">481.895<small>#17</small></td><td class="r">216.395<small>#514</small></td><td class="r">3.893.161.607<small>#358</small></td><td class="r">1.223<small>#6</small></td><td class="r">100<small>#1</small></td><td class="r">2.708<small>#16</small></td><td class="r">69:31</td><td class="r">2.789<small>#11.762</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">31</td><td>Rincewind</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">810<small>#31</small></td><td class="r">–<small>#40.649</small></td><td class="r">637.531<small>#121</small></td><td class="r">–<small>#44.408</small></td><td class="r">1.421.270<small>#123</small></td><td class="r">375.416<small>#235</small></td><td class="r">262.115<small>#147</small></td><td class="r">4.277.338.082<small>#216</small></td><td class="r">1.143<small>#247</small></td><td class="r">100<small>#1</small></td><td class="r">2.652<small>#90</small></td><td class="r">59:41</td><td class="r">2.644<small>#13.150</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td></tr><tr><td class="r">32</td><td>Marodeur2</td><td>F17</td><td>Ritter des Anduril</td><td class="r">810<small>#31</small></td><td class="r">–<small>#2.619</small></td><td class="r">457.858<small>#1.054</small></td><td class="r">–<small>#23.076</small></td><td class="r">1.109.330<small>#871</small></td><td class="r">253.932<small>#1.555</small></td><td class="r">203.926<small>#686</small></td><td class="r">1.786.875.792<small>#3.796</small></td><td class="r">1.127<small>#381</small></td><td class="r">100<small>#1</small></td><td class="r">2.673<small>#40</small></td><td class="r">55:45</td><td class="r">4.767<small>#320</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">33</td><td>Cloud Strife 87</td><td>F17</td><td>A V A L A N C H E</td><td class="r">810<small>#31</small></td><td class="r">–<small>#47.196</small></td><td class="r">675.297<small>#51</small></td><td class="r">–<small>#657</small></td><td class="r">1.181.767<small>#604</small></td><td class="r">424.963<small>#81</small></td><td class="r">250.334<small>#217</small></td><td class="r">3.330.799.808<small>#698</small></td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">–</td><td class="r">63:37</td><td class="r">1.121<small>#45.998</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">0.0.0.0.0.0.0.0.0</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td></tr><tr><td class="r">34</td><td>Mordae</td><td>F9</td><td>Keltic</td><td class="r">809<small>#34</small></td><td class="r">–<small>#46.293</small></td><td class="r">619.173<small>#167</small></td><td class="r">–<small>#1.386</small></td><td class="r">1.420.205<small>#128</small></td><td class="r">419.043<small>#95</small></td><td class="r">200.130<small>#777</small></td><td class="r">1.811.373.941<small>#3.696</small></td><td class="r">1.174<small>#80</small></td><td class="r">100<small>#1</small></td><td class="r">2.687<small>#24</small></td><td class="r">68:32</td><td class="r">4.911<small>#57</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">35</td><td>Surja</td><td>F17</td><td>Phoenix</td><td class="r">809<small>#34</small></td><td class="r">–<small>#48.259</small></td><td class="r">695.051<small>#33</small></td><td class="r">–<small>#831</small></td><td class="r">1.513.620<small>#38</small></td><td class="r">439.438<small>#61</small></td><td class="r">255.613<small>#190</small></td><td class="r">4.163.532.536<small>#261</small></td><td class="r">1.067<small>#1.531</small></td><td class="r">100<small>#1</small></td><td class="r">2.573<small>#364</small></td><td class="r">63:37</td><td class="r">2.596<small>#13.842</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td></tr><tr><td class="r">36</td><td>Viper1978</td><td>F17</td><td>Ritter des Anduril</td><td class="r">809<small>#34</small></td><td class="r">–<small>#50.761</small></td><td class="r">727.214<small>#12</small></td><td class="r">–<small>#1.171</small></td><td class="r">1.534.878<small>#28</small></td><td class="r">363.614<small>#285</small></td><td class="r">363.600<small>#4</small></td><td class="r">6.701.804.831<small>#4</small></td><td class="r">1.052<small>#2.051</small></td><td class="r">100<small>#1</small></td><td class="r">2.554<small>#453</small></td><td class="r">50:50</td><td class="r">2.057<small>#23.785</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td></tr><tr><td class="r">37</td><td>Zaemon</td><td>MA</td><td>La Liga Hispana</td><td class="r">808<small>#37</small></td><td class="r">–<small>#48.411</small></td><td class="r">653.530<small>#84</small></td><td class="r">–<small>#1.408</small></td><td class="r">1.452.019<small>#83</small></td><td class="r">428.334<small>#75</small></td><td class="r">225.196<small>#418</small></td><td class="r">4.781.967.018<small>#128</small></td><td class="r">1.149<small>#208</small></td><td class="r">100<small>#1</small></td><td class="r">2.634<small>#138</small></td><td class="r">66:34</td><td class="r">2.169<small>#21.565</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.59|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">38</td><td>Dominik1</td><td>GN</td><td>Dreamers</td><td class="r">808<small>#37</small></td><td class="r">–<small>#10.230</small></td><td class="r">569.475<small>#342</small></td><td class="r">–<small>#1.996</small></td><td class="r">1.316.963<small>#294</small></td><td class="r">400.317<small>#143</small></td><td class="r">169.158<small>#1.456</small></td><td class="r">1.591.659.060<small>#4.800</small></td><td class="r">1.174<small>#80</small></td><td class="r">100<small>#1</small></td><td class="r">2.679<small>#32</small></td><td class="r">70:30</td><td class="r">4.943<small>#27</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|Twitch-Rahmen</td></tr><tr><td class="r">39</td><td>Best</td><td>BF</td><td>Awanturnicy</td><td class="r">808<small>#37</small></td><td class="r">–<small>#12.718</small></td><td class="r">658.049<small>#79</small></td><td class="r">–<small>#1.490</small></td><td class="r">1.457.602<small>#76</small></td><td class="r">459.137<small>#38</small></td><td class="r">198.912<small>#840</small></td><td class="r">3.496.515.797<small>#569</small></td><td class="r">1.147<small>#222</small></td><td class="r">100<small>#1</small></td><td class="r">2.697<small>#21</small></td><td class="r">70:30</td><td class="r">2.774<small>#11.846</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.59|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">40</td><td>W70</td><td>F8</td><td>ENDGEGNER</td><td class="r">808<small>#37</small></td><td class="r">–<small>#33.915</small></td><td class="r">596.910<small>#241</small></td><td class="r">–<small>#2.852</small></td><td class="r">1.334.586<small>#257</small></td><td class="r">357.727<small>#311</small></td><td class="r">239.183<small>#305</small></td><td class="r">1.966.179.593<small>#3.091</small></td><td class="r">1.152<small>#190</small></td><td class="r">100<small>#1</small></td><td class="r">2.678<small>#34</small></td><td class="r">60:40</td><td class="r">4.837<small>#157</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td></tr><tr><td class="r">41</td><td>Vuu</td><td>F8</td><td>ENDGEGNER</td><td class="r">808<small>#37</small></td><td class="r">–<small>#8.090</small></td><td class="r">610.585<small>#191</small></td><td class="r">–<small>#794</small></td><td class="r">1.369.626<small>#196</small></td><td class="r">387.685<small>#185</small></td><td class="r">222.900<small>#445</small></td><td class="r">3.772.285.493<small>#402</small></td><td class="r">1.100<small>#743</small></td><td class="r">100<small>#1</small></td><td class="r">2.702<small>#19</small></td><td class="r">63:37</td><td class="r">2.683<small>#12.671</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td></tr><tr><td class="r">42</td><td>Imm0rt4liS</td><td>F8</td><td>ENDGEGNER</td><td class="r">808<small>#37</small></td><td class="r">–<small>#2.915</small></td><td class="r">691.451<small>#38</small></td><td class="r">–<small>#622</small></td><td class="r">1.548.712<small>#23</small></td><td class="r">491.451<small>#11</small></td><td class="r">200.000<small>#811</small></td><td class="r">3.623.738.834<small>#488</small></td><td class="r">1.181<small>#56</small></td><td class="r">100<small>#1</small></td><td class="r">2.688<small>#23</small></td><td class="r">71:29</td><td class="r">2.728<small>#12.244</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.59|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">43</td><td>W70</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">808<small>#37</small></td><td class="r">–<small>#40.451</small></td><td class="r">582.889<small>#291</small></td><td class="r">–<small>#2.540</small></td><td class="r">1.318.836<small>#289</small></td><td class="r">326.310<small>#538</small></td><td class="r">256.579<small>#183</small></td><td class="r">5.219.289.664<small>#56</small></td><td class="r">1.141<small>#266</small></td><td class="r">100<small>#1</small></td><td class="r">2.670<small>#46</small></td><td class="r">56:44</td><td class="r">2.140<small>#22.022</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td></tr><tr><td class="r">44</td><td>Muktat</td><td>F17</td><td>Phoenix</td><td class="r">808<small>#37</small></td><td class="r">–<small>#21.016</small></td><td class="r">489.066<small>#786</small></td><td class="r">–<small>#3.404</small></td><td class="r">1.143.546<small>#735</small></td><td class="r">259.066<small>#1.469</small></td><td class="r">230.000<small>#372</small></td><td class="r">1.906.077.821<small>#3.311</small></td><td class="r">1.153<small>#181</small></td><td class="r">100<small>#1</small></td><td class="r">2.582<small>#320</small></td><td class="r">53:47</td><td class="r">4.934<small>#39</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">0.44.5.0.15.0.75.70.55|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">45</td><td>Fredocbr</td><td>ST</td><td>La Fred Team</td><td class="r">807<small>#45</small></td><td class="r">–<small>#6.656</small></td><td class="r">662.917<small>#72</small></td><td class="r">–<small>#1.681</small></td><td class="r">1.503.621<small>#45</small></td><td class="r">350.428<small>#356</small></td><td class="r">312.489<small>#23</small></td><td class="r">6.260.034.918<small>#9</small></td><td class="r">1.213<small>#11</small></td><td class="r">100<small>#1</small></td><td class="r">2.684<small>#26</small></td><td class="r">53:47</td><td class="r">2.226<small>#20.728</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td></tr><tr><td class="r">46</td><td>Maverick</td><td>BF</td><td>ZabójczePomidory</td><td class="r">807<small>#45</small></td><td class="r">–<small>#5.015</small></td><td class="r">635.072<small>#126</small></td><td class="r">–<small>#1.769</small></td><td class="r">1.449.232<small>#88</small></td><td class="r">356.158<small>#315</small></td><td class="r">278.914<small>#75</small></td><td class="r">5.723.543.876<small>#24</small></td><td class="r">1.178<small>#65</small></td><td class="r">100<small>#1</small></td><td class="r">2.682<small>#29</small></td><td class="r">56:44</td><td class="r">2.202<small>#21.077</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.57|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">47</td><td>lucafreak</td><td>F8</td><td>ENDGEGNER</td><td class="r">807<small>#45</small></td><td class="r">–<small>#4.127</small></td><td class="r">739.461<small>#7</small></td><td class="r">–<small>#744</small></td><td class="r">1.597.347<small>#12</small></td><td class="r">419.390<small>#93</small></td><td class="r">320.071<small>#17</small></td><td class="r">2.480.159.080<small>#1.721</small></td><td class="r">1.081<small>#1.135</small></td><td class="r">100<small>#1</small></td><td class="r">2.563<small>#415</small></td><td class="r">57:43</td><td class="r">4.981<small>#11</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr><tr><td class="r">48</td><td>W7O</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">807<small>#45</small></td><td class="r">–<small>#10.691</small></td><td class="r">591.523<small>#258</small></td><td class="r">–<small>#2.856</small></td><td class="r">1.323.316<small>#281</small></td><td class="r">330.640<small>#496</small></td><td class="r">260.883<small>#151</small></td><td class="r">4.185.727.748<small>#252</small></td><td class="r">1.113<small>#543</small></td><td class="r">100<small>#1</small></td><td class="r">2.667<small>#49</small></td><td class="r">56:44</td><td class="r">2.729<small>#12.240</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.74.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td></tr><tr><td class="r">49</td><td>lilith luna</td><td>F17</td><td>moffiX (s4de)</td><td class="r">807<small>#45</small></td><td class="r">–<small>#51.530</small></td><td class="r">506.780<small>#656</small></td><td class="r">–<small>#3.649</small></td><td class="r">1.195.831<small>#567</small></td><td class="r">392.302<small>#169</small></td><td class="r">114.478<small>#4.168</small></td><td class="r">1.236.370.290<small>#7.243</small></td><td class="r">1.166<small>#111</small></td><td class="r">100<small>#1</small></td><td class="r">2.633<small>#143</small></td><td class="r">77:23</td><td class="r">4.900<small>#69</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">49.50.5.9.15.25.25.25.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td></tr><tr><td class="r">50</td><td>TheChoosenOne</td><td>GN</td><td>Mirror of Time</td><td class="r">806<small>#50</small></td><td class="r">–<small>#45.296</small></td><td class="r">734.102<small>#10</small></td><td class="r">–<small>#750</small></td><td class="r">1.617.730<small>#7</small></td><td class="r">548.559<small>#3</small></td><td class="r">185.543<small>#1.071</small></td><td class="r">1.709.558.584<small>#4.198</small></td><td class="r">1.166<small>#111</small></td><td class="r">100<small>#1</small></td><td class="r">2.664<small>#53</small></td><td class="r">75:25</td><td class="r">4.889<small>#79</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td></tr></tbody></table><div class="more">… und 57.881 weitere Zeilen – vollständig, sortier- und durchsuchbar nur im Browser.</div></div>
   <div class="lrows" id="lrows" hidden></div>
   <div id="blks" hidden>
     <div class="blk scansel" id="blk_scan"></div>
@@ -933,7 +974,7 @@ td.sqc{white-space:nowrap;line-height:0}
     <button class="btn blk" id="bReset" type="button"></button>
     <div class="chips blk" id="quick"></div>
     <div class="chips blk" id="srvchips"></div>
-    <div class="status blk" id="blk_count"><span id="count" aria-live="polite"></span><span id="srvsel"></span></div>
+    <div class="status blk" id="blk_count"><span id="count" aria-live="polite"></span><span id="srvsel"></span><span class="outb" id="outB"></span></div>
   </div>
   <div class="rkpop" id="rkPop" hidden></div>
   <div class="rivban" id="rivban" hidden></div>
@@ -984,7 +1025,7 @@ window.sfErrUI = function (txt, msg, where) {             // Fehlermeldung oben 
   var page = location.protocol === 'file:' ? 'Datei (PC/Handy)' : (/^127\.|^localhost$/.test(location.hostname) ? 'Live-Vorschau' : 'Online-Liste');
   if (/^#og?$/.test(location.hash)) page += ' · Eigene Scans'; else if (/^#s=/.test(location.hash)) page += ' · geteilter Link';
   else if (/^#g/.test(location.hash)) page += ' · Gilden';
-  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 17.10.2026 20:45',
+  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 18.10.2026 01:29',
              'Browser: ' + br + ' · ' + os + ' · ' + (window.innerWidth || 0) + '×' + (window.innerHeight || 0),
              'Fehler: ' + String(msg || '?').slice(0, 300), 'Stelle: ' + String(where || '–').slice(0, 120),
              'Ansprechpartner: Deinnachbar (Discord)'].join('\n');
@@ -1013,6 +1054,7 @@ window.sfErrWhere = function (e, src, line, col) {         // Stelle: Datei:Zeil
   return '–';
 };
 window.onerror = function (msg, src, line, col, err) {
+  if (/^Script error\.?$/.test(String(msg || '')) && !line) return true;   // fremdes Skript (z. B. Kurzlink-Dienst): nichts anzeigen
   window.sfErrUI('Die Liste konnte nicht angezeigt werden (' + msg + '). ' +
     'Ist die Datei vollständig angekommen? Bitte die Datei neu herunterladen und mit Chrome, Edge, Firefox oder Safari öffnen.', msg, window.sfErrWhere(err, src, line, col));
 };
@@ -1646,7 +1688,7 @@ MG_DK.push('rune_dmg_el');
 ['sq_pet', 'sq_portal'].forEach(function (k) { SQ_GROUPS[k].forEach(function (g) { MG_DK.push(g[0]); }); });
 MG_DK = MG_DK.concat(['gold_frame', 'silver_frame', 'twitch_frame', 'ff_frame', 'frame', '_pot', 'pot_main', 'pot_con', 'pot_life',
                       'tranke_voll', '_att', 'eq_total', 'eq_parts', 'eq_smith', 'eq_gems', 'upgrade', 'petb_main', 'petb_con',
-                      'potb_main', 'potb_con', 'rank', 'album']);
+                      'potb_main', 'potb_con', 'rank', 'album', 'g_joined']);
 function mgV(v) {
   if (v == null) return null;
   if (typeof v === 'boolean') return v ? 1 : 0;
@@ -1732,6 +1774,7 @@ function mgBuild(scans, keep, dscope, days) {                // scans: [{ts, rec
   return {v: 1, ts: oTs, G: G, P: P, gs: oGs, m: oM, mf: mFrom, dk: MG_DK.slice(),
           d: Object.keys(det).map(Number).sort(function (a, b) { return a - b; }).map(function (i) { return [i].concat(det[i]); })};
 }
+function mgDetRow(rec) { var r = mgTrim(MG_DK.map(function (f) { return mgV(rec[f]); })); return r.length ? r : null; }   // Profil: Einzelheiten
 function cellVal(c, rec, kind) {                             // Wert einer Zelle der Seite (wie html_val)
   var key = c.id;
   if (c.sq) { var sp = sqPack(key, rec); return sp == null ? null : [jnum(rec[key]), sp]; }
@@ -1821,7 +1864,7 @@ function plaus(nw, old) {                                   // [[Farbe r/y, Art,
 var lib = {recFromSave: recFromSave, derive: derive, guildFromGroup: guildFromGroup, buildGuilds: buildGuilds, harExtract: harExtract,
            loadRaw: loadRaw, readFile: readFile, docFromRecs: docFromRecs, recsFromDoc: recsFromDoc, packDat: packDat, unpackDat: unpackDat,
            isDat: isDat, cellVal: cellVal, fmtValue: fmtValue, fmtNum: fmtNum, fmtTs: fmtTs, ranks: ranks, isAvatar: isAvatar, keysFor: keysFor,
-           jnum: jnum, TUPLES: TUPLES, SQ_GROUPS: SQ_GROUPS, sqCells: sqCells, sqValue: sqValue, sqPack: sqPack, sqUnpack: sqUnpack, mgBuild: mgBuild, MG_DK: MG_DK, mgKey: mgKey, metaOfDoc: metaOfDoc, guildCover: guildCover, plaus: plaus};
+           jnum: jnum, TUPLES: TUPLES, SQ_GROUPS: SQ_GROUPS, sqCells: sqCells, sqValue: sqValue, sqPack: sqPack, sqUnpack: sqUnpack, mgBuild: mgBuild, MG_DK: MG_DK, mgDetRow: mgDetRow, mgKey: mgKey, metaOfDoc: metaOfDoc, guildCover: guildCover, plaus: plaus};
 if (typeof window !== 'undefined') window.sfOwnLib = lib;
 else if (typeof self !== 'undefined') self.sfOwnLib = lib;      // Hintergrund-Leser (Worker)
 if (typeof module !== 'undefined') module.exports = lib;
@@ -2115,6 +2158,7 @@ function scanOfRecs(recs, T, X, opt) {
     if (pf) {
       var w = wr[keyOf(r)], row = (opt.pfKeys || []).map(function (pk) {
         if (PF_FIELDS[pk]) return L.jnum(r[PF_FIELDS[pk]]);
+        if (pk === 'dt') return L.mgDetRow ? L.mgDetRow(r) : null;
         var wi = ['wl', 'wb', 'wt'].indexOf(pk);
         return wi >= 0 && w ? w[wi] : null;
       });
@@ -2359,7 +2403,7 @@ window.sfMain = function (D0) {
 'use strict';
 var VIEW = 'p';                                        // p = Spieler, g = Gilden (zweiter Reiter derselben Datei)
 var OWN = !!D0.isOwn, SHARE = !!D0.isShare;            // Reiter "Eigene Scans" (Dateien der Besucher) / geteilter Link
-try { if (OWN) VIEW = D0.ownView === 'g' ? 'g' : 'p'; else if (D0.gv && /^#g(=|$)/.test(location.hash)) VIEW = 'g'; } catch (e) {}
+try { if (OWN) VIEW = D0.ownView === 'g' ? 'g' : 'p'; else if (D0.gv && /^#g(=|s=|$)/.test(location.hash)) VIEW = 'g'; } catch (e) {}
 var D = VIEW === 'g' ? D0.gv : D0;
 var GC = '', GC_SENT = {};                             // Besucher-Statistik: nur auf der echten Seite (http/https), nie lokal
 try {
@@ -2439,7 +2483,7 @@ de: {
   "oShLong": "Langen Link kopieren",
   "oShGo": "Link erstellen und kopieren",
   "oShFile": "Kurzlinks gehen nur auf der Online-Seite (diese Datei liegt auf deinem PC) – der lange Link lässt sich trotzdem kopieren.",
-  "oShNote": "Versteckte und entfernte Einträge sind nicht dabei. Der Link wird über is.gd gekürzt; wer ihn öffnet, sieht genau diese Tabelle.",
+  "oShNote": "Versteckte und entfernte Einträge sind nicht dabei. Den langen Link kannst du bei TinyURL selbst kürzen; wer ihn öffnet, sieht genau diese Tabelle.",
   "oShBig": "{n} {u} × {c} Spalten ≈ {x} Zeichen – zu lang für einen Kurzlink. Weniger Zeilen oder Spalten wählen – oder den langen Link kopieren.",
   "oShOk": "✓ {n} {u} × {c} Spalten ≈ {x} von 5.000 Zeichen – passt.",
   "oShCapMax": "{u} höchstens",
@@ -3127,7 +3171,7 @@ en: {
   "oShLong": "Copy long link",
   "oShGo": "Create and copy link",
   "oShFile": "Short links only work on the online page (this file is on your PC) – the long link can still be copied.",
-  "oShNote": "Hidden and removed entries are not included. The link is shortened via is.gd; whoever opens it sees exactly this table.",
+  "oShNote": "Hidden and removed entries are not included. You can shorten the long link yourself at TinyURL; whoever opens it sees exactly this table.",
   "oShBig": "{n} {u} × {c} columns ≈ {x} characters – too long for a short link. Choose fewer rows or columns – or copy the long link.",
   "oShOk": "✓ {n} {u} × {c} columns ≈ {x} of 5,000 characters – fits.",
   "oShCapMax": "{u} at most",
@@ -3792,7 +3836,7 @@ pl: {
   "oShLong": "Copy long link",
   "oShGo": "Create and copy link",
   "oShFile": "Short links only work on the online page (this file is on your PC) – the long link can still be copied.",
-  "oShNote": "Hidden and removed entries are not included. The link is shortened via is.gd; whoever opens it sees exactly this table.",
+  "oShNote": "Hidden and removed entries are not included. You can shorten the long link yourself at TinyURL; whoever opens it sees exactly this table.",
   "oShBig": "{n} {u} × {c} columns ≈ {x} characters – too long for a short link. Choose fewer rows or columns – or copy the long link.",
   "oShOk": "✓ {n} {u} × {c} columns ≈ {x} of 5,000 characters – fits.",
   "oShCapMax": "{u} at most",
@@ -4423,7 +4467,7 @@ cs: {
   "oShLong": "Copy long link",
   "oShGo": "Create and copy link",
   "oShFile": "Short links only work on the online page (this file is on your PC) – the long link can still be copied.",
-  "oShNote": "Hidden and removed entries are not included. The link is shortened via is.gd; whoever opens it sees exactly this table.",
+  "oShNote": "Hidden and removed entries are not included. You can shorten the long link yourself at TinyURL; whoever opens it sees exactly this table.",
   "oShBig": "{n} {u} × {c} columns ≈ {x} characters – too long for a short link. Choose fewer rows or columns – or copy the long link.",
   "oShOk": "✓ {n} {u} × {c} columns ≈ {x} of 5,000 characters – fits.",
   "oShCapMax": "{u} at most",
@@ -5251,9 +5295,11 @@ function loadS() {
   s.tm = Math.max(1, Math.round(+s.tm || 100));
   return s;
 }
+var LSTMP = null;                                       // geteilte Ansicht: Spalten des Absenders nur anzeigen, nicht speichern
 function saveS() {
-  var o = {}, c = {};
-  Object.keys(S).forEach(function (k) { if (COLKEYS.indexOf(k) < 0) o[k] = S[k]; else c[k] = S[k]; });
+  var o = {}, c = {}, S1 = S;
+  if (LSTMP) { S1 = {}; Object.keys(S).forEach(function (k) { S1[k] = S[k]; }); Object.keys(LSTMP).forEach(function (k) { if (LSTMP[k] === undefined) delete S1[k]; else S1[k] = LSTMP[k]; }); }
+  Object.keys(S1).forEach(function (k) { if (COLKEYS.indexOf(k) < 0) o[k] = S1[k]; else c[k] = S1[k]; });
   if (VIEW === 'g') { o.fz_g = S.fz; o.fs_g = S.fs; o.fz = S.fzP; o.fs = S.fsP; delete o.fzP; delete o.fsP; }
   try { localStorage.setItem(LS, JSON.stringify(o)); localStorage.setItem(LSC, JSON.stringify(c)); } catch (e) {}
 }
@@ -5296,8 +5342,8 @@ function visibleCols() {
   var hid = hiddenSet();
   var out = colOrder().filter(function (id) { return !hid.has(id) || CI[id] === NAME; }).map(function (id) { return CI[id]; });
   FOC = {};
-  if (st.gfoc && segOn()) {                             // Zuwachs-Knopf gedrueckt: Base/Day, XP/Day direkt hinter den Namen
-    var dc = out.filter(function (ci) { return dayCol(COLS[ci]); });
+  if (st.gfoc && segOn()) {                             // Zuwachs-Knopf gedrueckt: Base/Day, XP/Day direkt hinter den Namen (auch ausgeblendete)
+    var dc = colOrder().map(function (id) { return CI[id]; }).filter(function (ci) { return ci != null && dayCol(COLS[ci]) && !INTERNAL.has(COLS[ci].id); });
     if (dc.length) {
       out = out.filter(function (ci) { return !dayCol(COLS[ci]); });
       var at0 = out.indexOf(NAME); out.splice.apply(out, [at0 + 1, 0].concat(dc));
@@ -6161,11 +6207,10 @@ function nameCell(x, c, ci) {
     var tt = iconTitle(k);
     ic += '<img src="' + D.icons[k] + '" alt="' + esc(tt) + '" data-tip="' + esc(tt) + '" loading="lazy"' + (k === 'xcc' ? ' class="cc"' : (FLIP[k] ? ' class="fl"' : '')) + '>';
   });
-  ic = markHtml(r) + ic + onlMark(r.k);
+  ic = markHtml(r) + ic + (nicOn() ? onlMark(r.k) : '');
   var tag = '';
   if (st.cmp && x.gone) tag = ' <span class="tag gone" data-tip="' + esc(t('tagGoneTip', {d: SCANS[st.a].label})) + '">' + esc(t('tagGone')) + '</span>';
   else if (st.cmp && !x.o) tag = ' <span class="tag new">' + esc(t('tagNew')) + '</span>';
-  if (isFus(x)) tag += ' <span class="tag fus" data-tip="' + esc(t('tagFusTip')) + '">' + esc(t('tagFus')) + '</span>';
   var star = r.me ? '<span class="star" data-tip="' + esc(GUILDLIST ? t('myGuildStar') : t('me')) + '">★</span>' : '';
   var on = oldName(x), tpv = TP && TP.map.get(x);
   var tp = tpv ? '<span class="tp" data-tip="' + esc(t('tpTip', {f: nf1.format(tpv), s: TP.scope, x: nf1.format(D.tp_f)})) + '">✦</span>' : '';
@@ -6352,7 +6397,7 @@ function render() {
     cols.forEach(function (ci) { var c = COLS[ci], td = (ci === NAME) ? nameCell(x, c, ci) : valCell(x, c, ci);
       tr += FOC[ci] ? td.replace('<td class="', '<td class="gfoc ') : td; });
     html.push(tr + '<td class="fill"></td></tr>');
-    if (PROF && !NARROW && st.prof === x.r.k && !x.gone) html.push('<tr class="prof"><td colspan="' + (cols.length + 2) + '">' + profHtml(x.r) + '</td></tr>');
+
     if (GUILDLIST && D0.gv && st.gexp.has(x.r.k)) html.push('<tr class="gexp"><td colspan="' + (cols.length + 2) + '">' + gcardHtml(x.r) + '</td></tr>');
   }
   rows.forEach(function (x) { delete x.lr; delete x.lm; });
@@ -6362,6 +6407,9 @@ function render() {
   updRiv();
   updReset();
   var tot = curScan().rows.length;
+  if ($('outB') && ML && !$('outB').firstChild) $('outB').innerHTML = '<button class="btn sm" type="button" data-mgimg="list" data-tip="Gezeigte Zeilen als Bild">📷 ▾</button>' +
+    '<button class="btn sm" type="button" data-mgdc="list" data-tip="Gezeigte Zeilen als Text für Discord">Für Discord</button>' +
+    '<button class="btn sm" type="button" data-mglink="list" data-tip="Kurzlink: nur diese Tabelle">🔗</button>';
   $('count').innerHTML = t('count', {n: nf0.format(rows.filter(function (x) { return !x.gone; }).length), t: nf0.format(tot), unit: esc(unit())}) +
     (st.cmp ? ' &middot; ' + esc(t('cmpInfo', {a: SCANS[st.a].label, b: SCANS[st.b].label})) : '');
 }
@@ -6666,7 +6714,6 @@ function buildInfo() {
     h += '<p><i class="rk">#' + nf0.format(S.tm + 58) + '</i> ' + esc(t('zTm')) + '</p>';
     if (HASMV) {
       h += '<p><i class="rk in hasra">#5<b class="ra up">▲2</b></i> <i class="rk in hasra">#9<b class="ra dn">▼1</b></i> ' + esc(t('zMove')) + '</p>';
-      h += '<p><span class="tag fus">' + esc(t('tagFus')) + '</span> ' + esc(t('zFus')) + '</p>';
     }
     h += '<h4>' + esc(t('zhRows')) + '</h4>';
     if (D.mine) h += '<p><span style="color:var(--accent)">★</span> ' + esc(t('zMe')) + '</p>';
@@ -6722,7 +6769,7 @@ $('ovlInfo').addEventListener('click', function (e) {
   if (ql) {
     st.q = ql.getAttribute('data-q'); $('q').value = st.q; st.shown = SH0; closeOvl(); buildChips(); render();
     var pk = ql.getAttribute('data-pk');
-    if (pk && PROF) { st.prof = pk; gcEv('Profil: ' + gcName(pk)); if (NARROW) { render(); openProf(pk); return; } render(); }
+    if (pk && PROF) { st.prof = pk; gcEv('Profil: ' + gcName(pk)); render(); openProf(pk); return; }
     if (pk) { var tr = null;
       Array.prototype.some.call($('tbody').rows, function (row) { if (row.getAttribute('data-k') === pk) { tr = row; return true; } return false; });
       if (tr) { tr.scrollIntoView({block: 'center'}); tr.classList.add('flash'); setTimeout(function () { tr.classList.remove('flash'); }, 2200); } }
@@ -7307,16 +7354,17 @@ function buildSettings() {
     segRow(t('colModeT'), 'colMode', [['std', t('colStd')], ['own', t('colOwn')]]) +
     '<p class="expl">' + esc(t(own ? 'colOwnHint' : 'colStdHint')) + '</p>' +
     '<p style="margin:0;color:var(--dim)">' + esc(t('colsHint')) + (NMET ? ' ' + esc(t('colsHintRk')) : '') + '</p>';
-  if (grs.length > 1) hc += '<div class="tabs ctabs" role="tablist">' + grs.map(function (g) {
-    return '<button type="button" role="tab" data-ct="' + g + '" aria-selected="' + (g === colTab) + '">' + esc(cgName(g)) + '</button>';
-  }).join('') + '</div>';
-  hc += '<div class="colist">' + inTab.map(function (id) {
+  inTab = ord;                                          // waagerechte Leiste: alle Spalten in der Reihenfolge der Tabelle
+  hc += '<p class="expl">Reihenfolge wie in der Tabelle (1. = ganz links). Spalte am Griff ⠿ an ihren Platz ziehen (Maus oder Finger) – oder ◀ ▶ für einen Schritt.</p>';
+  hc += '<div class="colist" id="colStrip">' + inTab.map(function (id) {
     var c = COLS[CI[id]], fixed2 = CI[id] === NAME, i = ord.indexOf(id);
     var rkb = !NMET ? '' : (rkCol(c) ? '<button type="button" class="rkc" data-rkc="' + esc(id) + '" aria-pressed="' + !rko[id] + '" data-tip="' + esc(t('rkcTip')) + '" aria-label="' + esc(t('rkcTip')) + '">#</button>'
       : '<span class="rkc0" aria-hidden="true"></span>');
-    return '<label><input type="checkbox" data-col="' + esc(id) + '"' + (hid.has(id) && !fixed2 ? '' : ' checked') + (fixed2 ? ' disabled' : '') + '><span>' + esc(colLabel(c)) + '</span>' + rkb +
+    return '<div class="cchip' + (hid.has(id) && !fixed2 ? ' off' : '') + '" data-cid="' + esc(id) + '"><span class="cno">' + (i + 1) + '.</span><span class="cgrip" data-cgrip aria-hidden="true">⠿</span>' +
+      '<label><input type="checkbox" data-col="' + esc(id) + '"' + (hid.has(id) && !fixed2 ? '' : ' checked') + (fixed2 ? ' disabled' : '') + '><span>' + esc(colLabel(c)) + '</span></label>' +
+      '<div class="cbt">' + rkb +
       '<button type="button" data-mv="-1" data-id="' + esc(id) + '"' + (i === 0 ? ' disabled' : '') + ' aria-label="' + esc(t('toLeft')) + '">&#9664;</button>' +
-      '<button type="button" data-mv="1" data-id="' + esc(id) + '"' + (i === ord.length - 1 ? ' disabled' : '') + ' aria-label="' + esc(t('toRight')) + '">&#9654;</button></label>';
+      '<button type="button" data-mv="1" data-id="' + esc(id) + '"' + (i === ord.length - 1 ? ' disabled' : '') + ' aria-label="' + esc(t('toRight')) + '">&#9654;</button></div></div>';
   }).join('') + '</div>';
   add('cols', hc);
   add('lay', layHtml());
@@ -7336,8 +7384,42 @@ function buildSettings() {
   var h = tabs.length > 1 ? '<div class="tabs stabs" role="tablist">' + tabs.map(function (tb) {
     return '<button type="button" role="tab" data-st="' + tb + '" aria-selected="' + (tb === SETTAB) + '">' + esc(tabName(tb)) + '</button>';
   }).join('') + '</div>' : '';
+  var cs0 = $('colStrip'), csl = cs0 ? cs0.scrollLeft : 0;
   $('setBody').innerHTML = h + (SETTAB ? parts[SETTAB] : '<p class="expl">' + esc(t('setNone')) + '</p>');
+  var cs1 = $('colStrip'); if (cs1) cs1.scrollLeft = csl;
 }
+(function () {                                          // Spalten ziehen: Griff festhalten, an den neuen Platz bewegen, loslassen
+  var drag = null;
+  var chipAt = function (x, y) { var el = document.elementFromPoint(x, y); return el && el.closest ? el.closest('#colStrip .cchip') : null; };
+  $('ovlSet').addEventListener('pointerdown', function (e) {
+    var g = e.target.closest('[data-cgrip]'); if (!g) return;
+    var ch = g.closest('.cchip'); drag = {id: ch.getAttribute('data-cid'), el: ch, over: null, x: e.clientX};
+    ch.classList.add('drag'); e.preventDefault();
+    try { g.setPointerCapture(e.pointerId); } catch (e2) {}
+  });
+  $('ovlSet').addEventListener('pointermove', function (e) {
+    if (!drag) return;
+    var ov = chipAt(e.clientX, e.clientY);
+    if (drag.over && drag.over !== ov) drag.over.classList.remove('dl', 'dr');
+    if (ov && ov !== drag.el) {
+      var rb = ov.getBoundingClientRect(), right = e.clientX > rb.left + rb.width / 2;
+      ov.classList.toggle('dr', right); ov.classList.toggle('dl', !right); drag.over = ov; drag.right = right;
+    } else drag.over = null;
+  });
+  var end = function () {
+    if (!drag) return;
+    var d0 = drag; drag = null; d0.el.classList.remove('drag');
+    if (!d0.over) return;
+    d0.over.classList.remove('dl', 'dr');
+    ownCols();
+    var ord = colOrder(), to = d0.over.getAttribute('data-cid');
+    ord.splice(ord.indexOf(d0.id), 1);
+    var at = ord.indexOf(to) + (d0.right ? 1 : 0); ord.splice(at, 0, d0.id);
+    S.order = ord; saveS(); buildSettings(); refreshAll();
+  };
+  $('ovlSet').addEventListener('pointerup', end);
+  $('ovlSet').addEventListener('pointercancel', function () { if (drag) { drag.el.classList.remove('drag'); if (drag.over) drag.over.classList.remove('dl', 'dr'); drag = null; } });
+})();
 $('ovlSet').addEventListener('click', function (e) {
   var it = e.target.closest('[data-lb]');
   if (it && !e.target.closest('input')) { LSEL = it.getAttribute('data-lb'); buildSettings(); return; }
@@ -7723,68 +7805,58 @@ function chartSvg(pts, key, big) {
 var MPRE = {de: /^Reittier\s+/, en: /^Mount\s+/, pl: /^Wierzchowiec\s+/, cs: /^Jezdecké zvíře\s+/};
 function profHtml(r0) {
   if (HIST && MULTI) histGet(HIST.all());              // Online: Verlauf aller Scans
-  var k = r0.k, r = NEWK.get(k) || r0, pts = profPoints(k), kv = [], eq = [];
+  var k = r0.k, r = NEWK.get(k) || r0, pts = profPoints(k);
   var nv = function (id) { return CI[id] != null ? num(COLS[CI[id]], r.v[CI[id]]) : null; };
   var lv = pfv(r, 'lv') != null ? pfv(r, 'lv') : nv('level'), bs = pfv(r, 'bs') != null ? pfv(r, 'bs') : nv('base_sum'), ts = pfv(r, 'ts') != null ? pfv(r, 'ts') : nv('total_sum');
-  var a = pts.length > 1 ? pts[0] : null, b = pts[pts.length - 1] || {}, days = a && a.ts && b.ts ? (b.ts - a.ts) / 86400000 : null;
-  if (MULTI && st.cmp) { var ra = scanRow(st.a, k), rb = scanRow(st.b, k); if (ra && rb) { a = {ts: SCANS[st.a].ts, label: SCANS[st.a].label, lv: num(COLS[CI.level], ra.v[CI.level]), bs: num(COLS[CI.base_sum], ra.v[CI.base_sum])}; b = {ts: SCANS[st.b].ts, label: SCANS[st.b].label, lv: num(COLS[CI.level], rb.v[CI.level]), bs: num(COLS[CI.base_sum], rb.v[CI.base_sum])}; days = a.ts && b.ts ? (b.ts - a.ts) / 86400000 : null; } }
+  var a = pts.length > 1 ? pts[0] : null, b = pts[pts.length - 1] || {}, days = a && a.ts && b.ts ? (b.ts - a.ts) / 86400000 : null, ra = null;
+  if (MULTI && st.cmp) { ra = scanRow(st.a, k); var rb = scanRow(st.b, k); if (ra && rb) { a = {ts: SCANS[st.a].ts, label: SCANS[st.a].label, lv: num(COLS[CI.level], ra.v[CI.level]), bs: num(COLS[CI.base_sum], ra.v[CI.base_sum])}; b = {ts: SCANS[st.b].ts, label: SCANS[st.b].label, lv: num(COLS[CI.level], rb.v[CI.level]), bs: num(COLS[CI.base_sum], rb.v[CI.base_sum])}; days = a.ts && b.ts ? (b.ts - a.ts) / 86400000 : null; } }
   var dtxt = days == null ? '?' : (days >= 1 ? t('pfDays', {n: nf0.format(days)}) : (days * 24 >= 1 ? t('pfHrs', {n: nf0.format(days * 24)}) : nf0.format(Math.max(0, days * 1440)) + ' ' + t('uM')));
   var per = a ? t('pfData', {a: '<b>' + esc(a.label) + '</b>', b: '<b>' + esc(b.label) + '</b>', n: dtxt}) : t('pfScan', {b: '<b>' + esc(b.label || SCANS[SCANS.length - 1].label) + '</b>'});
   var gain = function (key, cur) { return a && a[key] != null && cur != null ? cur - a[key] : null; };
-  var gtag = function (g) { return g == null ? '' : ' <small class="dl ' + (g > 0 ? 'up' : (g < 0 ? 'down' : 'eq')) + '">' + (g > 0 ? '+' : '') + nf0.format(g) + '</small>'; };
-  var add = function (arr, lab, val, tip) { if (val != null && val !== '') arr.push('<span>' + esc(lab) + '</span><b' + (tip ? ' data-tip="' + esc(tip) + '"' : '') + '>' + val + '</b>'); };
-  var dB = gain('bs', b.bs != null ? b.bs : bs), dL = gain('lv', b.lv != null ? b.lv : lv);
-  add(kv, t('pfLevel'), lv != null ? nf0.format(lv) + gtag(dL) : null);
-  add(kv, t('pfBase'), bs != null ? nf0.format(bs) + gtag(dB) : null);
-  add(kv, t('pfTotal'), ts != null ? nf0.format(ts) : null);
-  if (dB != null && days && days >= 0.25) add(kv, t('pfBaseDay'), nf0.format(Math.round(dB / days)));
-  add(kv, t('pfHp'), pfv(r, 'hp') != null ? fmtBig(pfv(r, 'hp')) : null);
+  var dB = gain('bs', b.bs != null ? b.bs : bs), dL = gain('lv', b.lv != null ? b.lv : lv), dT = null;
+  if (ra && CI.total_sum != null && ts != null) { var ot = num(COLS[CI.total_sum], ra.v[CI.total_sum]); if (ot != null) dT = ts - ot; }
+  var chips = [];
+  if (dB != null && days && days >= 0.25) chips.push([t('pfBaseDay'), nf0.format(Math.round(dB / days))]);
+  if (pfv(r, 'hp') != null) chips.push([t('pfHp'), fmtBig(pfv(r, 'hp'))]);
   var wr = [['pfLevel', 'wl'], ['pfBase', 'wb'], ['pfTotal', 'wt']].filter(function (x) { return pfv(r, x[1]) != null; })
     .map(function (x) { return esc(t(x[0]).replace(' Sum', '')) + ' #' + nf0.format(pfv(r, x[1])); });
-  if (wr.length) add(kv, t('pfWr'), wr.join(' · '), t('pfWrTip', {n: nf0.format(D.wr_n || 0)}));
-  add(kv, t('pfHof'), pfv(r, 'hof') != null ? '#' + nf0.format(pfv(r, 'hof')) : null);
-  add(kv, t('pfAlbum'), pfv(r, 'alb') != null ? nf2.format(pfv(r, 'alb')) + ' %' : null);
-  var ic = r.ic || [], pots = [], mt = null, head = '';
+  if (wr.length) chips.push([t('pfWr'), wr.join(' · '), t('pfWrTip', {n: nf0.format(D.wr_n || 0)})]);
+  if (pfv(r, 'hof') != null) chips.push([t('pfHof'), '#' + nf0.format(pfv(r, 'hof'))]);
+  if (pfv(r, 'alb') != null) chips.push([t('pfAlbum'), nf2.format(pfv(r, 'alb')) + ' %']);
+  var ic = r.ic || [], head = '', cls = 0, mt = null;
   ic.forEach(function (key) {
+    var mm = /^c(\d+)$/.exec(key); if (mm) cls = +mm[1];
+    if (/^m/.test(key)) mt = iconTitle(key).replace(MPRE[L] || /^$/, '');
     if (!D.icons || !D.icons[key]) return;
     head += '<img src="' + D.icons[key] + '" alt="" data-tip="' + esc(iconTitle(key)) + '"' + (FLIP[key] ? ' class="fl"' : '') + '>';
-    if (/^[pk]/.test(key)) pots.push(/^k/.test(key) ? iconTitle(key).replace(/^[^:]+:\s*/, '') : iconTitle(key));
-    if (/^m/.test(key)) mt = iconTitle(key).replace(MPRE[L] || /^$/, '');
   });
   head = markHtml(r) + head;
-  add(eq, t('pfPot'), pots.length ? esc(pots.join(' · ')) : esc(t('pfNone')));
-  if (D.potDays) {                                   // Laufzeit je Trank: Resttage ab dem Scan und Datum
-    var cts0 = pfv(r, 'cts');
-    var pl = [['potMain', 'pm'], ['potCon', 'pc'], ['potLife', 'pw']].filter(function (x) { return pfv(r, x[1]) != null; }).map(function (x) {
-      var v = pfv(r, x[1]), cls = v < 0 ? 'pg' : (v < 3 ? 'pw' : 'pk');
-      var txt = v < 0 ? t('potGone') : (v < 1 ? t('potLeftH', {n: nf0.format(Math.max(1, Math.floor(v * 24)))}) : t('potLeft', {n: nf0.format(Math.floor(v))}));
-      return esc(t(x[0])) + ' · <b class="' + cls + '">' + esc(txt) + '</b>' + (cts0 ? ' <span class="dim">(' + esc(t('potUntil', {d: fmtDay(cts0 + v * 86400000)})) + ')</span>' : '');
-    });
-    if (pl.length) add(eq, t('pfPotL'), '<span class="potl">' + pl.join('<br>') + '</span>');
+  var eq = [];
+  [['pfArmor', 'arm'], ['pfWeap', 'wd'], ['pfIq', 'iq'], ['pfGem', 'gem']].forEach(function (x) { if (pfv(r, x[1]) != null) eq.push([t(x[0]), nf0.format(pfv(r, x[1]))]); });
+  var dtr = pfv(r, 'dt'), d = dtr ? mgDetOf(dtr) : null;
+  if (!d) {                                             // ohne Einzelheiten: Upgrade, Runen und Portal als Text
+    if (pfv(r, 'upg') != null) eq.push([t('pfUpg'), nf0.format(pfv(r, 'upg'))]);
+    var runes = [['pfRGold', 'rg', '%'], ['pfREpic', 're', '%'], ['pfRQual', 'rq', ''], ['pfRXp', 'rx', '%'], ['pfRHp', 'rh', '%'], ['pfRDmg', 'rd', '%']]
+      .filter(function (x) { return pfv(r, x[1]); }).map(function (x) { return esc(t(x[0])) + ' ' + nf0.format(pfv(r, x[1])) + (x[2] ? ' ' + x[2] : ''); });
+    if (runes.length) eq.push([t('pfRunes'), runes.join(' · ')]);
+    if (pfv(r, 'ph') != null || pfv(r, 'pg') != null) eq.push([t('pfPortal'), esc(t('pfPDemon')) + ' ' + nf0.format(pfv(r, 'ph') || 0) + ' % · ' + esc(t('pfPGuild')) + ' ' + nf0.format(pfv(r, 'pg') || 0) + ' %']);
   }
-  if (mt) add(eq, t('pfMount'), esc(mt) + (D.mountDays && pfv(r, 'md') ? ' · ' + esc(t('pfMountDays', {n: nf0.format(pfv(r, 'md'))})) : ''));
-  [['pfArmor', 'arm'], ['pfWeap', 'wd'], ['pfIq', 'iq'], ['pfUpg', 'upg'], ['pfGem', 'gem']].forEach(function (x) {
-    add(eq, t(x[0]), pfv(r, x[1]) != null ? nf0.format(pfv(r, x[1])) : null);
-  });
-  var runes = [['pfRGold', 'rg', '%'], ['pfREpic', 're', '%'], ['pfRQual', 'rq', ''], ['pfRXp', 'rx', '%'], ['pfRHp', 'rh', '%'], ['pfRDmg', 'rd', '%']]
-    .filter(function (x) { return pfv(r, x[1]); }).map(function (x) { return esc(t(x[0])) + ' ' + nf0.format(pfv(r, x[1])) + (x[2] ? ' ' + x[2] : ''); });
-  if (runes.length) add(eq, t('pfRunes'), runes.join(' · '));
-  if (pfv(r, 'ph') != null || pfv(r, 'pg') != null) add(eq, t('pfPortal'), esc(t('pfPDemon')) + ' ' + nf0.format(pfv(r, 'ph') || 0) + ' % · ' + esc(t('pfPGuild')) + ' ' + nf0.format(pfv(r, 'pg') || 0) + ' %');
-  var nm = cellText(COLS[NAME], r.v[NAME]), ia = inaTxt(pfv(r, 'la') != null ? pfv(r, 'la') : (CI.last_active != null ? num(COLS[CI.last_active], r.v[CI.last_active]) : null));
-  var meta = [SRV != null ? r.v[SRV] : '', GUILD != null ? r.v[GUILD] : '', CLSCOL != null ? cellText(COLS[CLSCOL], r.v[CLSCOL]) : ''].filter(Boolean).map(esc).join(' · ');
+  var la = pfv(r, 'la') != null ? pfv(r, 'la') : (CI.last_active != null ? num(COLS[CI.last_active], r.v[CI.last_active]) : null), ia = inaTxt(la);
+  var fus = '';
+  if (SRV != null && ra && ra.v[SRV] && ra.v[SRV] !== r.v[SRV]) fus = 'vorher ' + ra.v[SRV]; else if (r.fu) fus = 'seit dem Vergleichs-Scan';
   var cnt = function (key) { return pts.filter(function (x) { return x[key] != null && x.ts; }).length; };
   var chk = st.pch === 'lv' ? 'lv' : (st.pch === 'bs' ? 'bs' : (cnt('bs') >= 2 || cnt('lv') < 2 ? 'bs' : 'lv'));
-  var tog = '<div class="ctog" role="group"><button type="button" data-pch="bs" aria-pressed="' + (chk === 'bs') + '">' + esc(t('pfChB')) + '</button><button type="button" data-pch="lv" aria-pressed="' + (chk === 'lv') + '">' + esc(t('pfChL')) + '</button></div>';
-  return '<div class="pcard" data-pk="' + esc(k) + '"><div class="pper">' + per + '</div>' +
-    '<div><div class="pname">' + (r.me ? '<span class="star">★</span> ' : '') + '<span class="' + (ia ? ia.cls : '') + '">' + esc(nm) + '</span>' + head + '</div>' +
-    '<div class="pmeta">' + meta + (ia ? ' · <b class="' + ia.cls + '">' + esc(ia.txt) + '</b>' : '') + '</div>' +
-    '<h4>' + esc(t('pfVals')) + '</h4><div class="kv">' + kv.join('') + '</div></div>' +
-    '<div>' + tog + chartSvg(pts, chk) + '</div>' +
-    '<div><h4>' + esc(t('pfEq')) + '</h4><div class="kv">' + eq.join('') + '</div></div>' +
-    '<div class="pbtns"><span class="dim">' + (wr.length ? esc(t('pfWrTip', {n: nf0.format(D.wr_n || 0)})) : '') + '</span><span style="flex:1"></span>' +
-    ownBtns(k, 'p') +
-    (LNK && SRV != null && NAME != null ? '<button class="btn plink" type="button" data-plink="' + esc(k) + '">&#128279; ' + esc(t('lnkP')) + '</button>' : '') +
-    '<button class="btn" type="button" data-pclose>' + (NARROW ? '&#9664; ' + esc(t('pfBack')) : '&#9650; ' + esc(t('pfClose'))) + '</button></div></div>';
+  var tog = '<div class="ctog" role="group"><button type="button" data-pch="bs" aria-pressed="' + (chk === 'bs') + '">' + esc(t('pfChB')) + '</button><button type="button" data-pch="lv" aria-pressed="' + (chk === 'lv') + '">' + esc(t('pfChL')) + '</button>' +
+    '<button type="button" data-phalf aria-pressed="' + !!S.pchH + '" data-tip="Diagramm halb so groß">½</button></div>';
+  var btns = ownBtns(k, 'p') + (LNK && SRV != null && NAME != null ? '<button class="btn plink" type="button" data-plink="' + esc(k) + '">&#128279; ' + esc(t('lnkP')) + '</button>' : '') +
+    '<button class="btn" type="button" data-pclose>' + esc(t('close')) + '</button>';
+  var pots = null;
+  if (pfv(r, 'pm') != null || pfv(r, 'pc') != null || pfv(r, 'pw') != null) pots = [pfv(r, 'pm'), pfv(r, 'pc'), pfv(r, 'pw')];
+  return profCard({k: k, name: (r.me ? '★ ' : '') + cellText(COLS[NAME], r.v[NAME]), icons: head, cls: cls, inaCls: ia ? ia.cls : '',
+                   srv: SRV != null ? r.v[SRV] : '', guild: GUILD != null ? r.v[GUILD] : '', lv: lv, glv: dL, bs: bs, gbs: dB, tt: ts, gtt: dT, la: la,
+                   gj: d && d.g_joined ? d.g_joined : null, fus: fus, chips: chips, per: per, chart: tog + chartSvg(pts, chk), d: d, eq: eq, cts: pfv(r, 'cts'),
+                   pots: d ? null : pots, mount: mt ? esc(mt) + (D.mountDays && pfv(r, 'md') ? ' · ' + esc(t('pfMountDays', {n: nf0.format(pfv(r, 'md'))})) : '') : '', btns: btns,
+                   foot: wr.length ? '<span class="dim2 mgsm">' + esc(t('pfWrTip', {n: nf0.format(D.wr_n || 0)})) + '</span>' : ''});
 }
 // ---------------- Grosses Fenster "Entwicklung" (Spieler und Gilde) wie im Programm
 var BCOL = ['#e8b04a', '#5aa9ff', '#4fcf86', '#c49bff', '#ff9f6e', '#ff7bb0', '#3fc7c0', '#c9cd52', '#9aa7ff', '#f28b82', '#b5a27a', '#7dd3fc'];
@@ -8101,12 +8173,13 @@ $('chartBody').addEventListener('input', function (e) {
 function openProf(k) {
   var r = NEWK.get(k) || null; if (!r) { SCANS.forEach(function (sc, si) { r = r || scanRow(si, k); }); }
   if (!r) return;
-  $('profBody').innerHTML = '<div class="pbar"><button class="btn" type="button" data-pclose>&#9664; ' + esc(t('pfBack')) + '</button></div>' + profHtml(r);
+  $('profBody').innerHTML = profHtml(r);
   openOvl('ovlProf');
 }
 $('profBody').addEventListener('click', function (e) {
   var b = e.target.closest('[data-pch]');
   if (b) { st.pch = b.getAttribute('data-pch'); openProf(e.target.closest('.pcard').getAttribute('data-pk')); return; }
+  if (e.target.closest('[data-phalf]')) { S.pchH = !S.pchH; saveS(); openProf(e.target.closest('.pcard').getAttribute('data-pk')); return; }
   var zc = e.target.closest('svg.pch'); if (zc) { openChart(e.target.closest('.pcard').getAttribute('data-pk'), zc.getAttribute('data-ck')); return; }
   if (e.target.closest('[data-pclose]')) { $('ovlProf').hidden = true; st.prof = null; }
 });
@@ -8116,6 +8189,8 @@ $('tbody').addEventListener('click', function (e) {
   if (card) {
     var b = e.target.closest('[data-pch]');
     if (b) { st.pch = b.getAttribute('data-pch'); render(); return; }
+    if (e.target.closest('[data-phalf]')) { S.pchH = !S.pchH; saveS(); render(); return; }
+    if (e.target.closest('summary')) return;
     var zc = e.target.closest('svg.pch'); if (zc && card.classList.contains('pcard')) { openChart(card.getAttribute('data-pk'), zc.getAttribute('data-ck')); return; }
     if (e.target.closest('[data-pclose]')) { st.prof = null; render(); return; }
     var mn = e.target.closest('.gmn');
@@ -8146,8 +8221,7 @@ $('tbody').addEventListener('click', function (e) {
     return;
   }
   if (!PROF) return;
-  if (NARROW) { gcEv('Profil: ' + gcName(k)); openProf(k); return; }
-  st.prof = st.prof === k ? null : k; if (st.prof) gcEv('Profil: ' + gcName(k)); render();
+  gcEv('Profil: ' + gcName(k)); st.prof = k; openProf(k);
 });
 // Vorschlagsliste beim Tippen eines Namens (Spieler-Liste): Klick uebernimmt "Name" bzw. "Name Server"
 var SUGG = [], suggI = -1;
@@ -8371,7 +8445,7 @@ function toast(txt, err, ms) {
   HMT = setTimeout(function () { el.hidden = true; }, ms || 4500);
 }
 function copyLink(u) {
-  var done = function () { toast(t('lnkDone') + ' ' + u.replace(/^https?:\/\//, '')); };
+  var done = function () { var s0 = u.replace(/^https?:\/\//, ''); toast(t('lnkDone') + ' ' + (s0.length > 70 ? s0.slice(0, 48) + ' … (' + nf0.format(u.length) + ' Zeichen)' : s0)); };
   var fb = function () {
     var ta = document.createElement('textarea'); ta.value = u; ta.setAttribute('readonly', '');
     ta.style.cssText = 'position:fixed;left:-9999px;top:0'; document.body.appendChild(ta); ta.select();
@@ -8432,6 +8506,31 @@ function srvResolve(x) {                               // Server aus dem Link: N
   return out;
 }
 var LINKED = false;
+function lsState() {                                   // gezeigte Ansicht als kurzer Link (ohne Daten)
+  var ts = function (i) { return i != null && SCANS[i] ? SCANS[i].ts || null : null; };
+  return {v: 1, q: st.q || '', srv: Array.from(st.srv), sort: st.sort, sort2: st.sort2, list: st.list, topx: st.topx, cmp: !!st.cmp,
+          a: ts(st.a), b: ts(st.b), s: ts(st.scan), cols: colOrder(), hid: Array.from(hiddenSet()), gm: S.gm, gx: S.gx, shown: st.shown};
+}
+function lsApply() {
+  var m = String(location.hash || '').match(/^#[pg]s=(.+)$/); if (!m || OWN || MGV) return;
+  LINKED = true;
+  try { history.replaceState(null, '', location.href.split('#')[0] + (VIEW === 'g' ? '#g' : '')); } catch (e) {}
+  mgDec('z' + m[1]).then(function (o) {
+    var idx = function (x) { for (var i = 0; i < SCANS.length; i++) if (SCANS[i].ts === x) return i; return null; };
+    if (o.cmp && MULTI) { var ia = idx(o.a), ib = idx(o.b); if (ia != null && ib != null) { st.cmp = true; st.a = ia; st.b = ib; } }
+    else if (o.s != null) { var is = idx(o.s); if (is != null) { st.cmp = false; st.scan = is; } }
+    st.q = o.q || ''; $('q').value = st.q; st.srv.clear(); (o.srv || []).forEach(function (x) { st.srv.add(x); });
+    if (o.sort) st.sort = o.sort; if (o.sort2) st.sort2 = o.sort2; if (o.list) st.list = o.list; if (o.topx != null) st.topx = o.topx;
+    if (o.gm) S.gm = o.gm; if (o.gx) S.gx = o.gx;
+    if (o.cols && o.cols.length) {
+      LSTMP = {colMode: S.colMode, order: S.order, hidden: S.hidden};
+      S.colMode = 'own'; S.order = o.cols.filter(function (id) { return CI[id] != null; }); S.hidden = (o.hid || []).filter(function (id) { return CI[id] != null; });
+    }
+    st.shown = Math.max(SH0, o.shown || 0);
+    buildChips(); refreshAll();
+    toast('Geteilte Ansicht – deine eigenen Einstellungen bleiben gespeichert.', false, 6000);
+  }, function () { toast('Der Link ist unvollständig oder beschädigt.', true, 7000); });
+}
 function applyLink() {
   var L0 = hashLink(); if (!L0) return;
   LINKED = true;                                       // per Link gekommen: kein automatisches "Neu"-Fenster
@@ -8449,15 +8548,14 @@ function applyLink() {
   buildChips();
   if (hit && GUILDLIST && D0.gv) { st.q = ''; $('q').value = ''; buildChips(); gotoGuild(cellText(COLS[NAME], hit.v[NAME]), SRV != null ? hit.v[SRV] : ''); }
   else if (hit && PROF) {
-    st.prof = hit.k; render();
-    if (NARROW) openProf(hit.k);
-    else Array.prototype.some.call($('tbody').rows, function (row) { if (row.getAttribute('data-k') === String(hit.k)) { row.scrollIntoView({block: 'center'}); return true; } return false; });
+    st.prof = hit.k; render(); openProf(hit.k);
+    Array.prototype.some.call($('tbody').rows, function (row) { if (row.getAttribute('data-k') === String(hit.k)) { row.scrollIntoView({block: 'center'}); return true; } return false; });
   } else render();
   if (bad.length) toast(t('lnkUnk', {x: bad.join(', ')}), true, 9000);
 }
 window.addEventListener('hashchange', function () {   // Adresse von Hand geaendert: passende Ansicht neu laden
   var h = String(location.hash || '');
-  if (/^#([pg]=|s=|mr=)/.test(h)) { location.reload(); return; }
+  if (/^#([pg]=|s=|mr=|ps=|gs=)/.test(h)) { location.reload(); return; }
   if (/^#m$/.test(h) !== (MGV && !/^#mr=/.test(MGH))) { location.reload(); return; }
   var wo = /^#og?$/.test(h), wg = /^#o?g$/.test(h);
   if (wo !== OWN || (SHARE && !/^#s=/.test(h)) || (!SHARE && wg !== (VIEW === 'g'))) location.reload();
@@ -8869,9 +8967,9 @@ function oShMake(short) {
         '<button class="btn sm" type="button" data-ocopy="' + esc(link) + '">' + esc(t('oCopy')) + '</button></p>';
       copyLink(link);
     };
-    if (!short || u.length > 5000 || !LNK0) { show(u, t('oShLongDone')); return; }
-    if (res) res.innerHTML = '<p class="dim">' + esc(t('oShWait')) + '</p>';
-    oIsgd(u).then(function (s) { show(s, t('oShDone')); }, function () { show(u, t('oShErr')); });
+    show(u, t('oShLongDone'));
+    if (short && res) res.innerHTML += '<p class="mgsm">Für einen Kurzlink: <a class="btn sm" href="https://tinyurl.com/app" target="_blank" rel="noopener noreferrer">TinyURL öffnen</a> – ' +
+      'den Link einfügen (Strg+V, am Handy: lange tippen › Einfügen) und „Shorten URL“ wählen.</p>';
   });
 }
 function oReminder() {                                 // Erinnerung ans Sichern (alle 7 Tage; "30 Tage nicht mehr erinnern")
@@ -8955,10 +9053,11 @@ function ownInit() {
 // ---------------- Runde 22a: Reiter "Meine Gilde" (Mitglieder, Zuwachs & Tränke, Rivalen, Berichte)
 var MGD = D0.mg || null, ML = window.sfOwnLib || null;
 var MGH = String(location.hash || '');
-var MGV = !OWN && !!MGD && !!ML && /^#m(r=.*)?$/.test(MGH);
+var MGV = !OWN && !!ML && (/^#mr=/.test(MGH) || (!!MGD && /^#m$/.test(MGH)));
 var MGLS = 'sf-mg-v1:' + (D0.title || '');
 var MGS = (function () { try { var o = JSON.parse(localStorage.getItem(MGLS) || '{}'); return o && typeof o === 'object' ? o : {}; } catch (e) { return {}; } })();
-function mgSave() { try { localStorage.setItem(MGLS, JSON.stringify(MGS)); } catch (e) {} }
+var MGRO = false, MGPIN = 0;                            // geteilter Link: nur ansehen (nichts speichern), Stand festhalten
+function mgSave() { if (MGRO) return; try { localStorage.setItem(MGLS, JSON.stringify(MGS)); } catch (e) {} }
 function mgMeta() { return OWN ? D0.mainMg : (MGD ? {nb: MGD.nb || 0, vis: MGD.vis} : null); }
 function mgTabOn() { var m = mgMeta(); return !!m && !(m.vis && S.mgTab === 'off'); }
 function mgNew() { var m = mgMeta(); return !!m && !!m.nb && Date.now() < m.nb && !MGS.vdone; }
@@ -8992,11 +9091,13 @@ function mgStep(d) {                                    // -> [Nummer, Text, feh
   for (var i = 0; i < MG_STEPS.length; i++) {
     var req = MG_STEPS[i][2], miss = [];
     if (!req) { req = {}; MG_FB.forEach(function (g) { req[g[0]] = g[2]; }); }
-    Object.keys(req).forEach(function (k) { var v = +(d[k] || 0); if (v < req[k]) miss.push(nm[k][1] + ' ' + v + '/' + req[k]); });
-    if (miss.length) return [MG_STEPS[i][0], MG_STEPS[i][1], miss.join(', ')];
+    var ks = Object.keys(req), sh = [];
+    ks.forEach(function (k) { var v = +(d[k] || 0); if (v < req[k]) { miss.push(nm[k][1] + ' ' + v + '/' + req[k]); sh.push(v + '/' + req[k]); } });
+    if (miss.length) return [MG_STEPS[i][0], MG_STEPS[i][1], miss.join(', '), MG_STEPS[i][2] ? sh.join(' · ') : 'noch ' + miss.length + (miss.length === 1 ? ' Gebäude' : ' Gebäude')];
   }
-  return [41, 'fertig', ''];
+  return [41, 'fertig', '', ''];
 }
+function mgStepTxt(s) { return !s ? '–' : (s[0] > 40 ? '✓ fertig' : s[1] + ' (' + s[3] + ')'); }   // "Mine bis 100 (58/100)"
 function mgLate(d) { return (+(d.gem || 0)) >= 100 && (+(d.trea || 0)) >= 45; }
 
 // ---- Symbole (Klasse, Reittier, Traenke) aus der Seite
@@ -9057,8 +9158,23 @@ function mgMem(M, r, src, det) {
   var p = M.P[r[0]] || ['?', ''], m = {id: src + r[0], name: r[8] || p[0], cur: p[0], srv: p[1], un: r.length < 2};
   m.nk = fold(m.name);
   if (!m.un) { m.lv = r[1]; m.bs = r[2]; m.tt = r[3]; m.la = r[4]; m.cls = r[5]; m.mv = r[6] || 0; m.gj = r[7] ? r[7] * 60000 : null; }
-  m.d = (det && det[r[0]]) || null;
+  m.d = (det && det[r[0]]) || (det && !m.un ? mgPfDet(m.name, m.srv) : null);
   return m;
+}
+var MGPF = null;
+function mgPfDet(name, srv) {                            // Einzelheiten aus dem Profil der Spieler-Liste (neuester Scan)
+  if (MGPF === null) {
+    MGPF = {};
+    var sc = D0.scans && D0.scans[D0.scans.length - 1], ks = D0.pf_keys || [], di = ks.indexOf('dt');
+    var ni = -1, si = -1; (D0.cols || []).forEach(function (c, i) { if (c.id === 'name') ni = i; if (c.id === 'server') si = i; });
+    if (sc && sc.pf && di >= 0 && ni >= 0) sc.rows.forEach(function (v, i) {
+      var p = sc.pf[i]; if (!p || !p[di]) return;
+      var nm = Array.isArray(v[ni]) ? v[ni][1] : v[ni];
+      MGPF[String(nm) + '|' + (si >= 0 ? v[si] : '')] = p[di];
+    });
+  }
+  var row = MGPF[String(name) + '|' + (srv || '')];
+  return row ? mgDetOf(row) : null;
 }
 function mgLoadOwn() {                                   // eigene Scans der Besucher (nur im Browser) dazunehmen
   var X = mgX();
@@ -9115,6 +9231,7 @@ function mgPerDays() { var p = MGS.per == null ? 7 : MGS.per; return typeof p ==
 function mgPair(k, per) {                                // -> {nw, base} (Staende mit Mitgliedern)
   var all = (mgX().snaps[k] || []), list = all.filter(function (s) { return s.mem; });
   if (!list.length) list = all;
+  if (MGPIN) { var pl = list.filter(function (s) { return s.ts <= MGPIN + 60000; }); if (pl.length) list = pl; }
   if (!list.length) return null;
   var nw = list[list.length - 1], base = null, p = per === undefined ? (MGS.per == null ? 7 : MGS.per) : per;
   if (typeof p === 'number') {
@@ -9178,7 +9295,7 @@ var MG_COLS = [
   {id: 'upgrade', l: 'Upg Ø', num: 1, det: 1, d1: 1, tip: 'Schmiede-Upgrades im Durchschnitt'},
   {id: 'petb_main', l: 'Pet Haupt', num: 1, det: 1, tip: 'Pet-Bonus im Hauptattribut'}, {id: 'petb_con', l: 'Pet Ausd.', num: 1, det: 1, tip: 'Pet-Bonus Ausdauer'},
   {id: 'potb_main', l: 'Trank Haupt', num: 1, det: 1, tip: 'Trank-Bonus im Hauptattribut'}, {id: 'potb_con', l: 'Trank Ausd.', num: 1, det: 1, tip: 'Trank-Bonus Ausdauer'},
-  {id: 'la', l: 'Zuletzt online', num: 1}, {id: 'gj', l: 'Dabei seit', num: 1}, {id: 'step', l: 'Baureihenfolge', num: 1, tip: 'Nächster Schritt der Festung (Guide von TunyGhost)'}];
+  {id: 'la', l: 'Zuletzt online', num: 1}, {id: 'gj', l: 'Dabei seit', num: 1}, {id: 'step', l: 'Baureihenfolge', num: 1, left: 1, tip: 'Nächster Schritt der Festung (Guide von TunyGhost)'}];
 var MG_DEFCOLS = ['no', 'name', 'srv', 'g', 'lv', 'bs', 'tt', 'sq_fort', 'sq_rune', 'sq_pet', 'sq_portal', 'sq_frame'];
 function mgCols() {
   var on = MGS.cols && MGS.cols.length ? MGS.cols : MG_DEFCOLS;
@@ -9313,7 +9430,7 @@ function mgMembers(k) {
   var nRows = MGS.rows || 20;
   var head = '<tr>' + cols.map(function (c) {
     var srt = c.id !== 'no' && c.id !== 'srv' && c.id !== 'g';
-    return '<th class="' + (c.num || c.id === 'no' ? 'r' : '') + (c.sq ? ' sqh' : '') + (so.c === c.id ? ' sorted' : '') + '"' + (srt ? ' data-mgs="' + c.id + '"' : '') +
+    return '<th class="' + ((c.num && !c.left) || c.id === 'no' ? 'r' : '') + (c.sq ? ' sqh' : '') + (so.c === c.id ? ' sorted' : '') + '"' + (srt ? ' data-mgs="' + c.id + '"' : '') +
       (c.tip ? ' data-tip="' + esc(c.tip) + '"' : '') + '>' + esc(c.l) + (c.sq ? mgSqHead(c.id) : '') + '</th>';
   }).join('') + '</tr>';
   var body = rows.map(function (r, i) {
@@ -9331,7 +9448,8 @@ function mgMembers(k) {
       return '<option value="' + n + '"' + (n === nRows ? ' selected' : '') + '>' + (n === 999 ? 'alle' : n) + '</option>'; }).join('') + '</select></label>' +
     '<label class="mgsm">Schwächste rot <select class="sel sm" id="mgWeakN">' + [0, 3, 5, 10].map(function (n) {
       return '<option value="' + n + '"' + (n === weakN ? ' selected' : '') + '>' + (n || 'aus') + '</option>'; }).join('') + '</select></label>' +
-    '<button class="btn sm" type="button" data-mgimg="mem" data-tip="Tabelle als Bild">📷</button>' +
+    '<button class="btn sm" type="button" data-mgimg="mem" data-tip="Tabelle als Bild">📷 ▾</button>' +
+    '<button class="btn sm" type="button" data-mgdc="mem" data-tip="Tabelle als Text für Discord">Für Discord</button>' +
     '<button class="btn sm" type="button" data-mglink="mem" data-tip="Kurzlink: nur diese Tabelle">🔗</button></div>';
   return '<div class="mgcard"><div class="mghead"><h4>' + cap + '</h4>' + tools + '</div><div class="mgscroll" id="mgScroll" data-rows="' + nRows + '">' +
     '<table class="mgt" id="mgMemT"><thead>' + head + '</thead><tbody>' + body + '</tbody></table></div>' + leg + '</div>';
@@ -9355,57 +9473,148 @@ function mgCell(c, r, i, weak) {
     case 'tt': return '<td class="r"><span class="mgv">' + (m.tt == null ? '–' : nf0.format(m.tt)) + mgGainH(r.gtt, false, neu) + '</span></td>';
     case 'la': return '<td class="r' + (m.la > 1440 ? (m.la > 4320 ? ' ired' : ' iyel') : '') + '">' + esc(mgAgo(m.la)) + '</td>';
     case 'gj': return '<td class="r">' + (m.gj ? esc(mgDay(m.gj)) : '–') + '</td>';
-    case 'step': return '<td class="mgsm"' + (r.step && r.step[2] ? ' data-tip="' + esc(r.step[2]) + '"' : '') + '>' + (r.step ? (r.step[0] > 40 ? '<span class="up">✓ fertig</span>' : esc(r.step[0] + ' · ' + r.step[1])) : '–') + '</td>';
+    case 'step': return '<td class="mgsm"' + (r.step && r.step[2] ? ' data-tip="' + esc(r.step[2]) + '"' : '') + '>' + (r.step ? (r.step[0] > 40 ? '<span class="up">✓ fertig</span>' : esc(mgStepTxt(r.step))) : '–') + '</td>';
   }
   if (c.sq) return '<td class="sqc">' + mgSq(c.id, d, m.cls) + '</td>';
   var v = r.v[c.id];
   return '<td class="r">' + (v == null ? '<span class="dim">–</span>' : (c.d1 ? nf1.format(v) : nf0.format(v))) + '</td>';
 }
 
-// ---- Profil eines Mitglieds (Klick auf die Zeile): Werte wie im Spiel, Festung, Runen, Pets
-function mgProfile(k, id) {
-  var R = mgRowsOf(k); if (!R) return;
-  var r = R.rows.filter(function (x) { return x.m.id === id; })[0]; if (!r) return;
-  var m = r.m, d = r.d || {}, mi = MG_MAIN[m.cls] || 0, h = '';
-  h += '<div class="cardhead"><h2>' + esc(m.name) + ' ' + mgNameIcons(m) + '</h2><button class="close" type="button" data-close>' + esc(t('close')) + '</button></div>';
-  h += '<p class="mgsm">' + esc((MG_CLS[m.cls] || '') + ' · ' + r.srv + ' · ' + r.g) + ' · Level <b>' + nf0.format(m.lv) + '</b> ' + mgGainH(r.glv) +
-    ' · Base Sum <b>' + nf0.format(m.bs) + '</b> ' + mgGainH(r.gbs) + (m.tt != null ? ' · Total Sum <b>' + nf0.format(m.tt) + '</b> ' + mgGainH(r.gtt) : '') + '</p>';
-  h += '<p class="mgsm dim">Zuletzt online: ' + esc(mgAgo(m.la)) + (m.gj ? ' · in der Gilde seit ' + esc(fmtDate(m.gj)) : '') + '</p>';
-  if (d._att && d._att.length >= 35) {
-    var a = d._att, row = function (i) {
-      var b = a[i * 7], e = a[i * 7 + 1], po = a[i * 7 + 2], pe = a[i * 7 + 3], tot = a[i * 7 + 4], pp = a[i * 7 + 5], pv = a[i * 7 + 6];
-      return '<tr class="' + (i === mi || i === 3 ? 'mghi' : '') + '"><td>' + esc(MG_ATTR[i]) + (i === mi ? ' <small class="dim">(Haupt)</small>' : '') + '</td><td class="r">' + nf0.format(b) +
-        '</td><td class="r">' + nf0.format(e) + '</td><td class="r">' + nf0.format(po) + (pp ? ' <small class="dim">' + pp + ' %</small>' : '') +
-        '</td><td class="r">' + nf0.format(pe) + ' <small class="dim">' + pv + ' %</small></td><td class="r"><b>' + nf0.format(tot) + '</b></td></tr>';
-    };
-    h += '<h4>Attribute (wie im Spiel)</h4><table class="mgt mgatt"><thead><tr><th>Attribut</th><th class="r">Basis</th><th class="r">Ausrüstung</th><th class="r">Trank</th><th class="r">Pet</th><th class="r">Gesamt</th></tr></thead><tbody>' +
-      [0, 1, 2, 3, 4].map(row).join('') + '</tbody></table>';
-    var bar = function (i) {
-      var b = a[i * 7], e = a[i * 7 + 1], po = a[i * 7 + 2], pe = a[i * 7 + 3], tot = a[i * 7 + 4] || 1;
-      var sg = function (v, c, tx) { return '<i style="width:' + (v * 100 / tot).toFixed(2) + '%;background:' + c + '" data-tip="' + esc(tx + ': ' + nf0.format(v)) + '"></i>'; };
-      return '<div class="mgbar2">' + sg(b, '#4b5563', 'Basis') + sg(e, '#3b8fd6', 'Ausrüstung') + sg(po, '#c9952a', 'Trank') + sg(pe, '#2f9e5b', 'Pet') + '</div>';
-    };
-    h += '<p class="mgsm" style="margin:6px 0 2px">' + esc(MG_ATTR[mi]) + '</p>' + bar(mi) + '<p class="mgsm" style="margin:6px 0 2px">Ausdauer</p>' + bar(3);
-    if (d.eq_parts != null) h += '<p class="mgsm">Ausrüstung ' + esc(MG_ATTR[mi]) + ': Teile <b>' + nf0.format(d.eq_parts) + '</b> + Schmiede-Upgrades <b>' + nf0.format(d.eq_smith || 0) +
-      '</b> + Edelsteine <b>' + nf0.format(d.eq_gems || 0) + '</b>' + (d.upgrade != null ? ' · Upgrades Ø ' + nf1.format(d.upgrade) : '') + '</p>';
-  }
-  if (r.d) {
-    h += '<h4>Festung</h4><table class="mgt mgfort"><tbody>' + ML.sqCells('sq_fort', d).map(function (c, i) {
+// ---- Profil: Teile fuer alle Reiter (Werte wie im Spiel, Festung, Runen, Pets, Portal, Rahmen, Traenke)
+function mgDetOf(row, keys) {                             // Liste (Reihenfolge MG_DK) -> Datensatz
+  if (!row || !row.length) return null;
+  var d = {}; (keys || (ML ? ML.MG_DK : [])).forEach(function (k, j) { if (row[j] !== undefined && row[j] !== null) d[k] = row[j]; });
+  return d;
+}
+function mgAttHtml(d, cls) {
+  if (!d || !d._att || d._att.length < 35) return '';
+  var a = d._att, mi = MG_MAIN[cls] || 0, h = '';
+  var row = function (i) {
+    var b = a[i * 7], e = a[i * 7 + 1], po = a[i * 7 + 2], pe = a[i * 7 + 3], tot = a[i * 7 + 4], pp = a[i * 7 + 5], pv = a[i * 7 + 6];
+    return '<tr class="' + (i === mi || i === 3 ? 'mghi' : '') + '"><td>' + esc(MG_ATTR[i]) + (i === mi ? ' <small class="dim">(Haupt)</small>' : '') + '</td><td class="r">' + nf0.format(b) +
+      '</td><td class="r">' + nf0.format(e) + '</td><td class="r">' + nf0.format(po) + (pp ? ' <small class="dim">' + pp + ' %</small>' : '') +
+      '</td><td class="r">' + nf0.format(pe) + ' <small class="dim">' + pv + ' %</small></td><td class="r"><b>' + nf0.format(tot) + '</b></td></tr>';
+  };
+  h += '<div class="mgscroll2"><table class="mgt mgatt"><thead><tr><th>Attribut</th><th class="r">Basis</th><th class="r">Ausrüstung</th><th class="r">Trank</th><th class="r">Pet</th><th class="r">Gesamt</th></tr></thead><tbody>' +
+    [0, 1, 2, 3, 4].map(row).join('') + '</tbody></table></div>';
+  var bar = function (i) {
+    var b = a[i * 7], e = a[i * 7 + 1], po = a[i * 7 + 2], pe = a[i * 7 + 3], tot = a[i * 7 + 4] || 1;
+    var sg = function (v, c, tx) { return '<i style="width:' + (v * 100 / tot).toFixed(2) + '%;background:' + c + '" data-tip="' + esc(tx + ': ' + nf0.format(v)) + '"></i>'; };
+    return '<div class="mgbar2">' + sg(b, '#4b5563', 'Basis') + sg(e, '#3b8fd6', 'Ausrüstung') + sg(po, '#c9952a', 'Trank') + sg(pe, '#2f9e5b', 'Pet') + '</div>';
+  };
+  h += '<p class="mgsm" style="margin:6px 0 2px">' + esc(MG_ATTR[mi]) + '</p>' + bar(mi) + '<p class="mgsm" style="margin:6px 0 2px">Ausdauer</p>' + bar(3);
+  if (d.eq_parts != null) h += '<p class="mgsm">Ausrüstung ' + esc(MG_ATTR[mi]) + ': Teile <b>' + nf0.format(d.eq_parts) + '</b> + Schmiede-Upgrades <b>' + nf0.format(d.eq_smith || 0) +
+    '</b> + Edelsteine <b>' + nf0.format(d.eq_gems || 0) + '</b>' + (d.upgrade != null ? ' · Upgrades Ø ' + nf1.format(d.upgrade) : '') + '</p>';
+  return h;
+}
+function mgFortHtml(d, cls) {
+  if (!d || !ML) return '';
+  var cells = ML.sqCells('sq_fort', d), h = '';
+  if (cells.length) {
+    h += '<table class="mgt mgfort"><tbody>' + cells.map(function (c, i) {
       var g = MG_FB[i];
       return '<tr><td>' + esc(g[1]) + '</td><td class="r"><b>' + nf0.format(+(d[g[0]] || 0)) + '</b> / ' + g[2] + '</td><td><i class="fq ' + c[0] + '"></i>' +
         (c[0] === 'w1' || c[0] === 'w2' ? ' <small class="down">zu früh</small>' : '') + '</td></tr>';
     }).join('') + '</tbody></table>';
-    var stp = r.step;
-    if (stp) h += '<p class="mgsm"><b>Baureihenfolge:</b> ' + (stp[0] > 40 ? '<span class="up">alles fertig</span>' : 'nächster Schritt ' + stp[0] + ' – ' + esc(stp[1]) + ' <span class="dim">(' + esc(stp[2]) + ')</span>') + '</p>';
-    if (!mgLate(d)) h += '<p class="mgsm dim">Bogenschützengilde, Magierturm, Schmiede und Befestigung zählen erst nach Mine 100 + Schatzkammer 45 (bis Stufe 2 in Ordnung).</p>';
-    h += '<div class="mgpsq">' + ['sq_rune', 'sq_pet', 'sq_portal', 'sq_frame'].map(function (q) {
-      return '<div><span class="mglbl">' + esc(MG_SQL[q]) + '</span>' + mgSqHead(q) + mgSq(q, d, m.cls, true) + '</div>';
-    }).join('') + '</div>';
-    var pot = function (v, n) { return v == null ? '<span class="down">' + n + ' fehlt</span>' : (v <= 0 ? '<span class="down">' + n + ' abgelaufen</span>' : n + ' ' + (v < 3 ? '<span class="iyel">' : '<span>') + nf1.format(v) + ' T</span>'); };
-    h += '<p class="mgsm"><b>Tränke:</b> ' + pot(d.pot_main, 'Haupttrank') + ' · ' + pot(d.pot_con, 'Ausdauer') + ' · ' + pot(d.pot_life, 'Lebenstrank') + ' <span class="dim">(Tage ab dem Scan)</span></p>';
-  } else h += '<p class="dim mgsm">Für diese Gilde stehen in der Liste keine Einzelheiten (Festung, Runen, Pets, Tränke).</p>';
+    var stp = mgStep(d);
+    if (stp) h += '<p class="mgsm"><b>Nächster Schritt:</b> ' + (stp[0] > 40 ? '<span class="up">alles fertig</span>' : esc(mgStepTxt(stp))) + '</p>';
+  }
+  h += '<div class="mgpsq">' + ['sq_rune', 'sq_pet', 'sq_portal', 'sq_frame'].map(function (q) {
+    return '<div><span class="mglbl">' + esc(MG_SQL[q]) + '</span>' + mgSqHead(q) + mgSq(q, d, cls, true) + '</div>';
+  }).join('') + '</div>';
+  var pot = function (v, n) { return v == null ? '<span class="down">' + n + ' fehlt</span>' : (v <= 0 ? '<span class="down">' + n + ' abgelaufen</span>' : n + ' ' + (v < 3 ? '<span class="iyel">' : '<span>') + nf1.format(v) + ' T</span>'); };
+  h += '<p class="mgsm"><b>Tränke:</b> ' + pot(d.pot_main, 'Haupttrank') + ' · ' + pot(d.pot_con, 'Ausdauer') + ' · ' + pot(d.pot_life, 'Lebenstrank') + ' <span class="dim">(Tage ab dem Scan)</span></p>';
+  return h;
+}
+function mgDetSections(d, cls) {                          // aufklappbar (Profil der Spieler-Liste, Eigene Scans, Meine Gilde)
+  if (!d) return '';
+  var o = MGS.pdo || {}, at = mgAttHtml(d, cls), ft = mgFortHtml(d, cls);
+  return (at ? '<details class="mgdet" data-mgdo="att"' + (o.att ? ' open' : '') + '><summary>Werte wie im Spiel</summary>' + at + '</details>' : '') +
+    (ft ? '<details class="mgdet" data-mgdo="fort"' + (o.fort ? ' open' : '') + '><summary>Festung, Runen, Pets, Portal, Rahmen, Tränke</summary>' + ft + '</details>' : '');
+}
+document.addEventListener('toggle', function (e) {       // auf-/zugeklappt merken
+  var el = e.target; if (!el || !el.getAttribute || !el.hasAttribute('data-mgdo')) return;
+  MGS.pdo = MGS.pdo || {}; MGS.pdo[el.getAttribute('data-mgdo')] = el.open ? 1 : 0; mgSave();
+}, true);
+function mgMainRow(name, srv) {                           // Spieler in der Spieler-Liste der Seite (fuer das gemeinsame Profil)
+  if (NAME == null) return null;
+  var sc = curScan(); if (!sc || !sc.rows) return null;
+  var hit = null;
+  sc.rows.some(function (r) {
+    var v = r && r.v; if (!v) return false;
+    if (cellText(COLS[NAME], v[NAME]) === name && (SRV == null || !srv || v[SRV] === srv)) { hit = r.k; return true; }
+    return false;
+  });
+  return hit;
+}
+// ---- Profil eines Mitglieds (Klick auf die Zeile): das Profil der Spieler-Liste, sonst ein kurzes eigenes
+function mgProfile(k, id) {
+  var R = mgRowsOf(k); if (!R) return;
+  var r = R.rows.filter(function (x) { return x.m.id === id; })[0]; if (!r) return;
+  var mk = mgMainRow(r.m.name, r.srv);
+  if (mk != null && PROF && typeof openProf === 'function') { openProf(mk); return; }
+  var m = r.m;
+  var h = profCard({name: m.name, icons: mgNameIcons(m), cls: m.cls, srv: r.srv, guild: r.g, lv: m.lv, glv: r.glv, bs: m.bs, gbs: r.gbs, tt: m.tt, gtt: r.gtt,
+                    la: m.la, gj: m.gj || (r.d && r.d.g_joined) || null, d: r.d, mount: m.mv ? esc(MG_MNT[m.mv] || '') : '',
+                    btns: '<button class="close" type="button" data-close>' + esc(t('close')) + '</button>',
+                    noDet: 'Für diesen Spieler stehen in der Liste keine Einzelheiten (Festung, Runen, Pets, Tränke).'});
   $('mgDlg').innerHTML = h;
+  $('mgDlg').classList.add('mgsmall');
   openOvl('ovlMg');
+}
+// ---- Ein Profil fuer alle Reiter: Kopf (Name, Klasse, Server, Gilde, Werte mit Zuwachs), Kennzahlen, Verlauf,
+//      Attribute wie im Spiel + Ausruestung, Festung mit naechstem Schritt, Runen/Pets/Portal/Rahmen, Traenke und Reittier
+function profCard(o) {
+  var gt = function (g, d1) { return g == null ? '' : ' <small class="mgd ' + mgGainCls(g) + '">' + esc(mgSigned(g, d1)) + '</small>'; };
+  var h = '<div class="pcard pcard2"' + (o.k != null ? ' data-pk="' + esc(o.k) + '"' : '') + '>';
+  h += '<div class="phead"><h2 class="pname2"><span class="' + (o.inaCls || '') + '">' + esc(o.name) + '</span> ' + (o.icons || '') + '</h2><div class="pbtns2">' + (o.btns || '') + '</div></div>';
+  var top = [o.cls ? esc(MG_CLS[o.cls] || '') : '', esc(o.srv || ''), esc(o.guild || '')].filter(Boolean).join(' · ');
+  var vals = [];
+  if (o.lv != null) vals.push('Level <b>' + nf0.format(o.lv) + '</b>' + gt(o.glv));
+  if (o.bs != null) vals.push('Base Sum <b>' + nf0.format(o.bs) + '</b>' + gt(o.gbs));
+  if (o.tt != null) vals.push('Total Sum <b>' + nf0.format(o.tt) + '</b>' + gt(o.gtt));
+  h += '<p class="pline">' + top + (vals.length ? ' · ' + vals.join(' · ') : '') + '</p>';
+  var l2 = [];
+  if (o.la != null) l2.push('Zuletzt online: <b class="' + (o.la > 4320 ? 'ired' : (o.la > 1440 ? 'iyel' : '')) + '">' + esc(mgAgo(o.la)) + '</b>');
+  if (o.gj) l2.push('in der Gilde seit ' + esc(fmtDate(o.gj)));
+  if (o.fus) l2.push('<span class="pfus" data-tip="Die Plätze im Vergleich zählen ab der Fusion neu">Server-Fusion: ' + esc(o.fus) + '</span>');
+  if (l2.length) h += '<p class="pline dim2">' + l2.join(' · ') + '</p>';
+  if (o.chips && o.chips.length) h += '<div class="pchips">' + o.chips.map(function (c) { return '<span' + (c[2] ? ' data-tip="' + esc(c[2]) + '"' : '') + '><small>' + esc(c[0]) + '</small><b>' + c[1] + '</b></span>'; }).join('') + '</div>';
+  var po = MGS.pdo || {};
+  if (o.chart) h += '<details class="mgdet" data-mgdo="ver"' + (po.ver === 0 ? '' : ' open') + '><summary>Verlauf</summary>' + (o.per ? '<div class="pper2">' + o.per + '</div>' : '') +
+    '<div class="' + (S.pchH ? 'phalf' : '') + '">' + o.chart + '</div></details>';
+  var d = o.d;
+  if (d) {
+    var at = mgAttHtml(d, o.cls);
+    var eqx = (o.eq || []).length ? '<div class="pchips sm">' + o.eq.map(function (c) { return '<span><small>' + esc(c[0]) + '</small><b>' + c[1] + '</b></span>'; }).join('') + '</div>' : '';
+    if (at || eqx) h += '<details class="mgdet" data-mgdo="att"' + (po.att === 0 ? '' : ' open') + '><summary>Attribute (wie im Spiel)</summary>' + at + eqx + '</details>';
+    var cells = ML ? ML.sqCells('sq_fort', d) : [];
+    if (cells.length) {
+      var stp = mgStep(d);
+      h += '<details class="mgdet" data-mgdo="fort"' + (po.fort === 0 ? '' : ' open') + '><summary>Festung</summary><table class="mgt mgfort"><tbody>' + cells.map(function (c, i) {
+        var g = MG_FB[i];
+        return '<tr><td>' + esc(g[1]) + '</td><td class="r"><b>' + nf0.format(+(d[g[0]] || 0)) + '</b> / ' + g[2] + '</td><td><i class="fq ' + c[0] + '"></i>' +
+          (c[0] === 'w1' || c[0] === 'w2' ? ' <small class="down">zu früh</small>' : '') + '</td></tr>';
+      }).join('') + '</tbody></table>' + (stp ? '<p class="pline"><b>Nächster Schritt:</b> ' + (stp[0] > 40 ? '<span class="up">alles fertig</span>' : esc(mgStepTxt(stp))) + '</p>' : '') + '</details>';
+    }
+    h += '<div class="mgpsq">' + ['sq_rune', 'sq_pet', 'sq_portal', 'sq_frame'].map(function (q) {
+      return '<div><span class="mglbl">' + esc(MG_SQL[q]) + '</span>' + mgSqHead(q) + mgSq(q, d, o.cls, true) + '</div>';
+    }).join('') + '</div>';
+  } else if ((o.eq || []).length) h += '<div class="pchips sm">' + o.eq.map(function (c) { return '<span><small>' + esc(c[0]) + '</small><b>' + c[1] + '</b></span>'; }).join('') + '</div>';
+  var potTxt = function (v, n) {
+    if (v == null) return '<span class="down">' + n + ' fehlt</span>';
+    if (v <= 0) return '<span class="down">' + n + ' abgelaufen</span>';
+    var day = o.cts ? ' <span class="dim2">(bis ' + esc(fmtDay(o.cts + v * 86400000)) + ')</span>' : '';
+    return n + ' <b class="' + (v < 3 ? 'iyel' : '') + '">' + (v < 1 ? nf0.format(Math.max(1, Math.floor(v * 24))) + ' h' : nf0.format(Math.floor(v)) + ' T') + '</b>' + day;
+  };
+  var pots = d ? [d.pot_main, d.pot_con, d.pot_life] : (o.pots || null);
+  var l3 = [];
+  if (pots) l3.push('<b>Tränke:</b> ' + potTxt(pots[0], 'Haupttrank') + ' · ' + potTxt(pots[1], 'Ausdauer') + ' · ' + potTxt(pots[2], 'Lebenstrank'));
+  if (o.mount) l3.push('<b>Reittier:</b> ' + o.mount);
+  if (l3.length) h += '<p class="pline">' + l3.join(' &nbsp; ') + '</p>';
+  if (!d && o.noDet) h += '<p class="dim2 mgsm">' + esc(o.noDet) + '</p>';
+  if (o.foot) h += '<div class="pfoot">' + o.foot + '</div>';
+  return h + '</div>';
 }
 
 // ---- Reiter "Zuwachs, Tränke & Festung"
@@ -9505,7 +9714,7 @@ function mgZu(k) {
     [['bs', 'Base Sum'], ['lv', 'Level']].map(function (x) { return '<button type="button" data-mgfp="' + x[0] + '" aria-pressed="' + (x[0] === mode) + '">' + x[1] + '</button>'; }).join('') +
     '</div><span class="mgsp"></span><label class="mgsm">Spieler: <select class="sel sm" id="mgFpn">' + ['all', 10, 15, 20, 25, 30, 50].map(function (x) {
       return '<option value="' + x + '"' + (String(x) === String(n) ? ' selected' : '') + '>' + (x === 'all' ? 'alle (' + P.lines.length + ')' : x) + '</option>'; }).join('') +
-    '</select></label><button class="btn sm" type="button" data-mgimg="prog" data-tip="Als Bild">📷</button><button class="btn sm" type="button" data-mgdc="prog">Für Discord</button></div>' +
+    '</select></label><button class="btn sm" type="button" data-mgimg="prog" data-tip="Als Bild">📷 ▾</button><button class="btn sm" type="button" data-mgdc="prog">Für Discord</button><button class="btn sm" type="button" data-mglink="prog" data-tip="Kurzlink: nur diese Liste">🔗</button></div>' +
     mgProgHtml(P) + '</div>';
   var withD = R.rows.filter(function (r) { return r.d; });
   var pm = withD.map(function (r) { return [r, mgPotMiss(r.d)]; }).filter(function (x) { return x[1] && x[1].length; });
@@ -9533,7 +9742,7 @@ function mgZu(k) {
     }).join('') + '</tbody></table>';
     var SS = mgStepStats(R.rows);
     c += '<p class="mgsm"><b>Baureihenfolge</b> <span class="dim">(Guide von TunyGhost)</span>: ' + SS.slice(0, 4).map(function (x) {
-      return x[0] > 40 ? x[1] + ' fertig' : x[1] + ' bei Schritt ' + x[0] + ' (' + esc(x[2]) + ')'; }).join(' · ') + '</p>';
+      return x[0] > 40 ? x[1] + ' fertig' : x[1] + ' bei ' + esc(x[2]); }).join(' · ') + '</p>';
   }
   c += '</div>';
   return '<div class="mgcols3">' + a + b + c + '</div>';
@@ -9569,9 +9778,9 @@ function mgRivCell(id, r) {
 function mgRiv(k) {
   var RR = mgRivRows(k), cols = mgRCols();
   var h = '<div class="mgcard"><div class="mghead"><h4>Rivalen · ' + RR.rows.length + ' Gilden' + (RR.pr && RR.pr.base ? ' · Zuwachs vom ' + esc(mgShort(RR.pr.base.ts)) + ' zum ' + esc(mgDay(RR.pr.nw.ts)) : '') + '</h4>' +
-    '<div class="mgtools"><button class="btn sm" type="button" id="mgAddR">+ Gilde</button><button class="btn sm" type="button" id="mgRColsB">Spalten wählen …</button>' +
-    '<button class="btn sm" type="button" data-mgimg="riv" data-tip="Als Bild">📷</button><button class="btn sm" type="button" data-mglink="riv" data-tip="Kurzlink: nur diese Tabelle">🔗</button></div></div>';
-  if (RR.rows.length < 2) h += '<p class="mgsm dim">Füge mit <b>+ Gilde</b> eure Rivalen hinzu – beliebig viele, auch von anderen Servern.</p>';
+    '<div class="mgtools"><button class="btn sm" type="button" id="mgAddR">+ Rivale</button><button class="btn sm" type="button" id="mgRColsB">Spalten wählen …</button>' +
+    '<button class="btn sm" type="button" data-mgimg="riv" data-tip="Als Bild">📷 ▾</button><button class="btn sm" type="button" data-mgdc="riv" data-tip="Tabelle als Text für Discord">Für Discord</button><button class="btn sm" type="button" data-mglink="riv" data-tip="Kurzlink: nur diese Tabelle">🔗</button></div></div>';
+  if (RR.rows.length < 2) h += '<p class="mgsm dim">Füge mit <b>+ Rivale</b> eure Rivalen hinzu – beliebig viele, auch von anderen Servern.</p>';
   h += '<div class="mgscroll2"><table class="mgt mgriv"><thead><tr><th>Gilde</th>' + cols.map(function (c) { return '<th class="' + (c[0] === 'srv' ? '' : 'r') + '">' + esc(c[1]) + '</th>'; }).join('') + '<th></th></tr></thead><tbody>' +
     RR.rows.map(function (r) {
       return '<tr class="' + (r.me ? 'mgme' : '') + '"><td><b>' + esc(r.name) + '</b>' + (r.src === 'e' ? ' <small class="mgown" data-tip="aus deinem eigenen Scan">eigen</small>' : '') + '</td>' +
@@ -9580,35 +9789,38 @@ function mgRiv(k) {
     }).join('') + '</tbody></table></div><p class="mgsm dim">Grün = besser, rot = schlechter (Rang: kleiner ist besser). ◔ = nicht alle Mitglieder im Scan.</p></div>';
   var met = MGS.rch || 'bs', mc = MG_RCOLS.filter(function (c) { return c[0] !== 'srv'; });
   h += '<div class="mgcard mgchartc"><div class="mghead"><h4>Verlauf</h4><select class="sel sm" id="mgRch">' + mc.map(function (c) {
-    return '<option value="' + c[0] + '"' + (c[0] === met ? ' selected' : '') + '>' + esc(c[1]) + '</option>'; }).join('') + '</select></div>' + mgRivChart(RR.rows, met) + '</div>';
+    return '<option value="' + c[0] + '"' + (c[0] === met ? ' selected' : '') + '>' + esc(c[1]) + '</option>'; }).join('') + '</select></div>' + mgRivChart(RR.rows, met, k) + '</div>';
   return h;
 }
-function mgRivChart(rows, met) {
-  var ser = rows.map(function (r) { return {r: r, pts: (mgX().snaps[r.k] || []).filter(function (s) { return s.agg[met] != null; }).map(function (s) { return [s.ts, +s.agg[met]]; })}; }).filter(function (s) { return s.pts.length; });
+function mgRivChart(rows, met, k) {
+  var pr = mgPair(k), from = MGS.rall ? -Infinity : (pr && pr.base ? pr.base.ts - 43200000 : (pr ? pr.nw.ts - 7 * 86400000 : -Infinity));
+  var ser = rows.map(function (r) { return {r: r, pts: (mgX().snaps[r.k] || []).filter(function (s) { return s.agg[met] != null && s.ts >= from; }).map(function (s) { return [s.ts, +s.agg[met]]; })}; }).filter(function (s) { return s.pts.length; });
   var tsAll = []; ser.forEach(function (s) { s.pts.forEach(function (p) { if (tsAll.indexOf(p[0]) < 0) tsAll.push(p[0]); }); });
-  if (tsAll.length < 2) return '<p class="mgsm dim">Für den Verlauf braucht es mindestens zwei Scans.</p>';
+  var tog = '<button class="btn sm" type="button" id="mgRall" aria-pressed="' + !!MGS.rall + '">' + (MGS.rall ? 'nur der Zeitraum' : 'ganzer Verlauf') + '</button>';
+  if (tsAll.length < 2) return '<p class="mgsm dim">Im Zeitraum gibt es nur einen Scan. ' + tog + '</p>';
   tsAll.sort(function (a, b) { return a - b; });
-  var W = 760, H = 260, pl = 64, pr = 170, pt = 12, pb = 26, lo = Infinity, hi = -Infinity;
+  var W = 760, H = 260, pl = 64, prr = 170, pt = 12, pb = 26, lo = Infinity, hi = -Infinity;
   ser.forEach(function (s) { s.pts.forEach(function (p) { lo = Math.min(lo, p[1]); hi = Math.max(hi, p[1]); }); });
   if (hi === lo) { hi += 1; lo -= 1; }
-  var t0 = tsAll[0], t1 = tsAll[tsAll.length - 1], x = function (ts) { return pl + (ts - t0) / (t1 - t0) * (W - pl - pr); };
+  var t0 = tsAll[0], t1 = tsAll[tsAll.length - 1], x = function (ts) { return pl + (ts - t0) / (t1 - t0) * (W - pl - prr); };
   var inv = met === 'rank', y = function (v) { var q = (v - lo) / (hi - lo); return pt + (inv ? q : 1 - q) * (H - pt - pb); };
   var fmtA = function (v) { return Math.abs(v) >= 1e6 ? nf1.format(v / 1e6) + ' Mio' : (Math.abs(v) >= 1e4 ? nf0.format(v / 1e3) + ' Tsd' : nf1.format(v)); };
-  var cols = ['#3b8fd6', '#2f9e5b', '#8b5cf6', '#e5534b', '#14b8a6', '#a16207', '#db2777', '#64748b', '#0ea5e9', '#84cc16'];
+  var cols = ['#3b8fd6', '#2f9e5b', '#8b5cf6', '#e5534b', '#14b8a6', '#d97706', '#db2777', '#64748b', '#0ea5e9', '#84cc16', '#a855f7', '#f43f5e'];
   var g = '<svg class="mgchart" viewBox="0 0 ' + W + ' ' + H + '" role="img">';
-  for (var i = 0; i <= 3; i++) { var v = lo + (hi - lo) * i / 3, yy = y(v); g += '<line x1="' + pl + '" x2="' + (W - pr) + '" y1="' + yy + '" y2="' + yy + '" class="mggr"/><text x="' + (pl - 6) + '" y="' + (yy + 4) + '" text-anchor="end" class="mgax">' + esc(fmtA(v)) + '</text>'; }
-  tsAll.forEach(function (ts, i2) { if (tsAll.length > 8 && i2 % Math.ceil(tsAll.length / 8)) return; g += '<text x="' + x(ts) + '" y="' + (H - 6) + '" text-anchor="middle" class="mgax">' + esc(mgShort(ts)) + '</text>'; });
+  for (var i = 0; i <= 3; i++) { var v = lo + (hi - lo) * i / 3, yy = y(v); g += '<line x1="' + pl + '" x2="' + (W - prr) + '" y1="' + yy + '" y2="' + yy + '" class="mggr"/><text x="' + (pl - 6) + '" y="' + (yy + 4) + '" text-anchor="end" class="mgax">' + esc(fmtA(v)) + '</text>'; }
+  var lx = [];                                           // Datum nur, wo Platz ist (der neueste immer)
+  tsAll.slice().reverse().forEach(function (ts) { var xx = x(ts); if (lx.every(function (q) { return Math.abs(q - xx) >= 44; })) { lx.push(xx); g += '<text x="' + xx + '" y="' + (H - 6) + '" text-anchor="middle" class="mgax">' + esc(mgShort(ts)) + '</text>'; } });
   var labs = [];
   ser.forEach(function (s, i3) {
-    var c = s.r.me ? 'var(--accent)' : cols[i3 % cols.length];
-    g += '<polyline fill="none" stroke="' + c + '" stroke-width="' + (s.r.me ? 3.5 : 2) + '" points="' + s.pts.map(function (p) { return x(p[0]).toFixed(1) + ',' + y(p[1]).toFixed(1); }).join(' ') + '"/>';
+    var cur = s.r.k === k, c = cur ? 'var(--accent)' : cols[i3 % cols.length];
+    g += '<polyline fill="none" stroke="' + c + '" stroke-width="' + (cur ? 3.5 : 2) + '" points="' + s.pts.map(function (p) { return x(p[0]).toFixed(1) + ',' + y(p[1]).toFixed(1); }).join(' ') + '"/>';
     s.pts.forEach(function (p) { g += '<circle cx="' + x(p[0]).toFixed(1) + '" cy="' + y(p[1]).toFixed(1) + '" r="2.5" fill="' + c + '"><title>' + esc(s.r.name + ' · ' + mgDay(p[0]) + ': ' + nf1.format(p[1])) + '</title></circle>'; });
-    var lp = s.pts[s.pts.length - 1]; labs.push({y: y(lp[1]), x: x(lp[0]), t: s.r.name, c: c, me: s.r.me});
+    var lp = s.pts[s.pts.length - 1]; labs.push({y: y(lp[1]), t: s.r.name, c: c, me: cur});
   });
   labs.sort(function (a, b) { return a.y - b.y; });
   for (var j = 1; j < labs.length; j++) if (labs[j].y - labs[j - 1].y < 13) labs[j].y = labs[j - 1].y + 13;
-  labs.forEach(function (l) { g += '<text x="' + (W - pr + 8) + '" y="' + (l.y + 4) + '" fill="' + l.c + '" class="mglab' + (l.me ? ' me' : '') + '">' + esc(l.t) + '</text>'; });
-  return g + '</svg>';
+  labs.forEach(function (l) { g += '<text x="' + (W - prr + 8) + '" y="' + (l.y + 4) + '" fill="' + l.c + '" class="mglab' + (l.me ? ' me' : '') + '">' + esc(l.t) + '</text>'; });
+  return g + '</svg><p class="mgsm dim">' + esc(MGS.rall ? 'Alle Scans der Liste.' : 'Scans im eingestellten Zeitraum.') + ' ' + tog + '</p>';
 }
 
 // ---- Reiter "Bericht": Wochenbericht und Gildenleiter-Bericht
@@ -9620,16 +9832,17 @@ var MG_RLO = [['weak', 'Schwächster Zuwachs'], ['pot', 'Tränke fehlen'], ['off
               ['riv', 'Rivalen'], ['fight', 'Kampf-Quote (ab 22b)']];
 function mgRepConf(w) {
   var key = w === 'w' ? 'rw' : 'rl', def = w === 'w' ? MG_RW : MG_RL, c = MGS[key] || {};
-  return {title: c.title != null ? c.title : def.title, per: c.per != null ? c.per : def.per, n: c.n || def.n, on: c.on || JSON.parse(JSON.stringify(def.on))};
+  return {title: c.title != null ? c.title : def.title, per: c.per != null ? c.per : def.per, n: c.n || def.n, on: c.on || JSON.parse(JSON.stringify(def.on)), rv: c.rv || {}};
 }
 function mgSegs(txt, o) { var s = {t: txt}; if (o) Object.keys(o).forEach(function (k) { s[k] = o[k]; }); return s; }
 function mgChunk(items, n) { var out = []; for (var i = 0; i < items.length; i += n) out.push(items.slice(i, i + n)); return out; }
 function mgListLines(items) {                             // hoechstens 5 je Zeile: [[seg …], …]
   return mgChunk(items, 5).map(function (ch) { var l = []; ch.forEach(function (it, i) { if (i) l.push(mgSegs(' · ')); l = l.concat(it); }); return l; });
 }
-function mgRivLines(k, per) {                             // Rivalen aus der Online-Liste: Name - Base - Level - Raids (falls geaendert)
+function mgRivCand(k) { var out = []; mgMine().concat(mgRivals()).forEach(function (g) { if (g !== k && out.indexOf(g) < 0) out.push(g); }); return out; }
+function mgRivLines(k, per, sel) {                        // Rivalen aus der Online-Liste: Name - Base - Level - Raids (falls geaendert)
   var out = [], pr = mgPair(k, per), days = typeof per === 'number' ? per : (pr && pr.base ? (pr.nw.ts - pr.base.ts) / 86400000 : 7), when = 0;
-  mgRivals().filter(function (g) { return g !== k; }).forEach(function (g) {
+  mgRivCand(k).filter(function (g) { return !sel || !sel.hasOwnProperty(g) || sel[g]; }).forEach(function (g) {
     var on = (mgX().snaps[g] || []).filter(function (s) { return s.src === 'o'; }); if (!on.length) return;
     var nw = on[on.length - 1], b = null;
     for (var i = on.length - 2; i >= 0; i--) if (on[i].ts <= nw.ts - days * 86400000 + 43200000) { b = on[i]; break; }
@@ -9691,7 +9904,7 @@ function mgReport(k, w) {                                 // -> {title, lines: [
       var early = mgFortStats(rows).filter(function (s) { return s.late && s.early; });
       if (early.length) L2.push([mgSegs('Spätausbau zu früh: ' + early.map(function (s) { return s.g[1] + ' ' + s.early; }).join(', '), {c: 'warn'})]);
       var SS = mgStepStats(rows);
-      if (SS.length) L2.push([mgSegs('Baureihenfolge: ' + SS.slice(0, 3).map(function (x) { return x[0] > 40 ? x[1] + ' fertig' : x[1] + ' bei Schritt ' + x[0] + ' (' + x[2] + ')'; }).join(' · '))]);
+      if (SS.length) L2.push([mgSegs('Baureihenfolge: ' + SS.slice(0, 3).map(function (x) { return x[0] > 40 ? x[1] + ' fertig' : x[1] + ' bei ' + x[2]; }).join(' · '))]);
       par();
     }
     if (on.gap) {
@@ -9702,7 +9915,7 @@ function mgReport(k, w) {                                 // -> {title, lines: [
     }
   }
   if (on.riv) {
-    var RV = mgRivLines(k, cf.per);
+    var RV = mgRivLines(k, cf.per, cf.rv || null);
     if (RV.lines.length) { head('Rivalen', [mgSegs(' (Online-Liste vom ' + mgDay(RV.when) + ')', {c: 'dim', sm: 1})]); L2 = L2.concat(RV.lines); par(); }
   }
   while (L2.length && !L2[L2.length - 1].length) L2.pop();
@@ -9739,7 +9952,10 @@ function mgRep(k) {
       '<div class="mgchk">' + opts.map(function (o) {
         var dis = o[0] === 'fight';
         return '<label class="mgsm' + (dis ? ' dim' : '') + '"><input type="checkbox" data-mgro="' + w + ':' + o[0] + '"' + (cf.on[o[0]] && !dis ? ' checked' : '') + (dis ? ' disabled' : '') + '> ' + esc(o[1]) + '</label>';
-      }).join('') + '</div><div class="mgrow mgsm">Zeitraum: <select class="sel sm" data-mgrp="' + w + '">' + per.map(function (o) {
+      }).join('') + '</div>' + (cf.on.riv ? '<div class="mgchk mgrvl"><span class="mgsm dim">Rivalen:</span>' + (mgRivCand(k).map(function (g) {
+        return '<label class="mgsm"><input type="checkbox" data-mgrv="' + w + ':' + esc(g) + '"' + (cf.rv[g] === 0 ? '' : ' checked') + '> ' + esc(mgName(g)) + '</label>';
+      }).join('') || '<span class="mgsm dim">noch keine – im Reiter Rivalen mit „+ Rivale“ hinzufügen</span>') + '</div>' : '') +
+      '<div class="mgrow mgsm">Zeitraum: <select class="sel sm" data-mgrp="' + w + '">' + per.map(function (o) {
         return '<option value="' + o[0] + '"' + (String(o[0]) === String(cf.per) ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join('') + '</select>' +
       ' Spieler je Liste: <select class="sel sm" data-mgrn="' + w + '">' + [3, 5, 10, 15, 20].map(function (n) { return '<option' + (n === cf.n ? ' selected' : '') + '>' + n + '</option>'; }).join('') + '</select>' +
       ' <span class="dim">je Zeile höchstens 5</span></div>' + mgRepHtml(M) + '</div>';
@@ -9748,6 +9964,12 @@ function mgRep(k) {
 
 // ---- Bild (Canvas), Discord-Text, Kurzlink
 var MG_INK = {up: '#5fd08a', down: '#ff7b72', warn: '#f2c14e', dim: '#a89a86', txt: '#f1e6d2', gold: '#f0b43c'};
+function mgTheme() {                                       // Farben des gewaehlten Designs (hell, dunkel, Pergament, Taverne, Comic)
+  var cs = getComputedStyle(document.documentElement), v = function (n, f) { var x = (cs.getPropertyValue(n) || '').trim(); return x || f; };
+  return {bg: v('--panel', '#ffffff'), head: v('--panel2', '#f3f4f8'), zebra: v('--row2', '#f7f8fb'), line: v('--line', '#e0e3ea'), txt: v('--text', '#1a1d26'),
+          dim: v('--dim', '#5b6376'), gold: v('--accent', '#a86f0c'), up: v('--up', '#1d7a3e'), down: v('--down', '#b3261e'), new: v('--new', '#1f6fd1'),
+          warn: v('--inay', '#b07800'), eq: v('--dim', '#5b6376'), edge: v('--cline', '#9aa3ad')};
+}
 function mgFont(px, b) { return (b ? '700 ' : '400 ') + px + 'px "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif'; }
 function mgImgs(keys) {                                    // Symbole als Bilder laden (fuer das Canvas)
   var I = mgIcons(), out = {};
@@ -9782,7 +10004,7 @@ function mgProgLines(P) {                                  // Fortschritt als Ze
 function mgCanvasLines(M) {                                // dunkle Karte wie in der Seite: Ueberschrift + Zeilen (Text, Farben, Symbole)
   var keys = []; M.lines.forEach(function (l) { l.forEach(function (s) { if (s.ic) keys.push(s.ic); }); });
   return mgImgs(keys).then(function (IM) {
-    var W = 980, pad = 30, fs = 17, lh = 26, sc = 2, cv = document.createElement('canvas'), cx = cv.getContext('2d');
+    var W = 980, pad = 30, fs = 17, lh = 26, sc = 2, cv = document.createElement('canvas'), cx = cv.getContext('2d'), TH = mgTheme(), maxX = 0;
     var lay = [], y = pad + 30, maxW = W - 2 * pad;
     cx.font = mgFont(23, true);
     var tl = []; (function () { var words = M.title.split(' '), cur = ''; words.forEach(function (w) { var t2 = cur ? cur + ' ' + w : w; if (cx.measureText(t2).width > maxW && cur) { tl.push(cur); cur = w; } else cur = t2; }); if (cur) tl.push(cur); })();
@@ -9803,16 +10025,19 @@ function mgCanvasLines(M) {                                // dunkle Karte wie i
       });
       lay.push({y: y, items: row}); y += lh;
     });
+    lay.forEach(function (ln) { ln.items.forEach(function (it) { cx.font = mgFont(it.s && it.s.sm ? fs - 3 : fs, it.s && it.s.b); var e2 = it.x + (it.im ? 22 : cx.measureText(it.t).width); if (e2 > maxX) maxX = e2; }); });
+    cx.font = mgFont(23, true); tl.forEach(function (t2) { maxX = Math.max(maxX, cx.measureText(t2).width); });
+    W = Math.max(420, Math.min(980, Math.ceil(maxX) + 2 * pad + 4));
     var H = y + pad - 6;
     cv.width = W * sc; cv.height = H * sc; cx.scale(sc, sc);
-    cx.fillStyle = '#1d1610'; mgRound(cx, 2, 2, W - 4, H - 4, 14); cx.fill();
-    cx.strokeStyle = '#c9952a'; cx.lineWidth = 3; mgRound(cx, 2, 2, W - 4, H - 4, 14); cx.stroke();
-    cx.fillStyle = MG_INK.gold; cx.font = mgFont(23, true); cx.textBaseline = 'alphabetic';
+    cx.fillStyle = TH.bg; mgRound(cx, 2, 2, W - 4, H - 4, 14); cx.fill();
+    cx.strokeStyle = TH.gold; cx.lineWidth = 3; mgRound(cx, 2, 2, W - 4, H - 4, 14); cx.stroke();
+    cx.fillStyle = TH.gold; cx.font = mgFont(23, true); cx.textBaseline = 'alphabetic';
     tl.forEach(function (t2, i) { cx.fillText(t2, pad, pad + 24 + i * 30); });
     lay.forEach(function (ln) {
       ln.items.forEach(function (it) {
         if (it.im) { cx.drawImage(it.im, pad + it.x, ln.y - 17, 21, 21); return; }
-        cx.font = mgFont(it.s.sm ? fs - 3 : fs, it.s.b); cx.fillStyle = MG_INK[it.s.c] || MG_INK.txt; cx.fillText(it.t, pad + it.x, ln.y);
+        cx.font = mgFont(it.s.sm ? fs - 3 : fs, it.s.b); cx.fillStyle = TH[it.s.c] || TH.txt; cx.fillText(it.t, pad + it.x, ln.y);
       });
     });
     return cv;
@@ -9837,7 +10062,7 @@ function mgMemModel(k) {
       case 'tt': o = g(r.gtt); o.t = m.tt == null ? '–' : nf0.format(m.tt); o.al = 'r'; return o;
       case 'la': return {t: mgAgo(m.la), al: 'r'};
       case 'gj': return {t: m.gj ? mgDay(m.gj) : '–', al: 'r'};
-      case 'step': return {t: r.step ? (r.step[0] > 40 ? '✓ fertig' : r.step[0] + ' · ' + r.step[1]) : '–'};
+      case 'step': return {t: mgStepTxt(r.step)};
     }
     if (c.sq) {
       if (!r.d) return {t: '–'};
@@ -9851,7 +10076,7 @@ function mgMemModel(k) {
     return {t: v == null ? '–' : (c.d1 ? nf1.format(v) : nf0.format(v)), al: 'r'};
   };
   return {title: mgName(k) + ' · Scan ' + mgDay(R.pr.nw.ts) + (R.pr.base ? ' gegen ' + mgDay(R.pr.base.ts) : ''),
-          head: cols.map(function (c) { return {t: c.l, al: c.num || c.id === 'no' ? 'r' : ''}; }),
+          head: cols.map(function (c) { return {t: c.l, al: (c.num && !c.left) || c.id === 'no' ? 'r' : ''}; }),
           rows: rows.map(function (r, i) { return cols.map(function (c) { return cell(c, r, i); }); })};
 }
 function mgRivModel(k) {
@@ -9872,7 +10097,7 @@ function mgCanvasTable(T) {
   var keys = []; T.rows.forEach(function (r) { r.forEach(function (c) { (c.ic || []).forEach(function (k2) { keys.push(k2); }); }); });
   return mgImgs(keys).then(function (IM) {
     var sc = 2, cv = document.createElement('canvas'), cx = cv.getContext('2d'), padX = 9, fs = 14, pad = 18;
-    var ink = {up: '#1d7a3e', down: '#b3261e', dim: '#5b6376', new: '#1f6fd1', eq: '#5b6376', gold: '#a86f0c', txt: '#1a1d26'};
+    var ink = mgTheme();
     var hasSub = T.rows.some(function (r) { return r.some(function (c) { return c.sub; }); }), rh = hasSub ? 38 : 26, hh = 26;
     var cw = T.head.map(function (h) { cx.font = mgFont(11, true); return cx.measureText(String(h.t).toUpperCase()).width + 2 * padX; });
     T.rows.forEach(function (r) {
@@ -9885,27 +10110,27 @@ function mgCanvasTable(T) {
     });
     var W = cw.reduce(function (a, b) { return a + b; }, 0) + 2 * pad, H = pad + 30 + hh + T.rows.length * rh + pad;
     cv.width = W * sc; cv.height = H * sc; cx.scale(sc, sc);
-    cx.fillStyle = '#ffffff'; cx.fillRect(0, 0, W, H);
+    cx.fillStyle = ink.bg; cx.fillRect(0, 0, W, H);
     cx.fillStyle = ink.gold; cx.font = mgFont(17, true); cx.fillText(T.title, pad, pad + 16);
     var y0 = pad + 30, x = pad;
-    cx.fillStyle = '#f3f4f8'; cx.fillRect(pad, y0, W - 2 * pad, hh);
+    cx.fillStyle = ink.head; cx.fillRect(pad, y0, W - 2 * pad, hh);
     T.head.forEach(function (h, j) {
-      cx.font = mgFont(11, true); cx.fillStyle = '#5b6376';
+      cx.font = mgFont(11, true); cx.fillStyle = ink.dim;
       var t2 = String(h.t).toUpperCase(), tw = cx.measureText(t2).width;
       cx.fillText(t2, h.al === 'r' ? x + cw[j] - padX - tw : x + padX, y0 + 17); x += cw[j];
     });
     T.rows.forEach(function (r, i) {
       var y = y0 + hh + i * rh; x = pad;
-      if (i % 2) { cx.fillStyle = '#f7f8fb'; cx.fillRect(pad, y, W - 2 * pad, rh); }
-      cx.fillStyle = '#e0e3ea'; cx.fillRect(pad, y + rh - 1, W - 2 * pad, 1);
+      if (i % 2) { cx.fillStyle = ink.zebra; cx.fillRect(pad, y, W - 2 * pad, rh); }
+      cx.fillStyle = ink.line; cx.fillRect(pad, y + rh - 1, W - 2 * pad, 1);
       r.forEach(function (c, j) {
         var mid = y + (c.sub ? 17 : rh / 2 + 5);
         if (c.sq) {
           c.sq.forEach(function (q, n) {
             var qx = x + padX + n * 14, qy = y + rh / 2 - 8;
-            if (q.bg) { cx.fillStyle = q.bg; mgRound(cx, qx, qy, 11, 16, 2); cx.fill(); } else { cx.strokeStyle = '#9aa3ad'; cx.lineWidth = 1; mgRound(cx, qx + .5, qy + .5, 10, 15, 2); cx.stroke(); }
+            if (q.bg) { cx.fillStyle = q.bg; mgRound(cx, qx, qy, 11, 16, 2); cx.fill(); } else { cx.strokeStyle = ink.edge; cx.lineWidth = 1; mgRound(cx, qx + .5, qy + .5, 10, 15, 2); cx.stroke(); }
             if (q.el) { cx.fillStyle = q.el; cx.fillRect(qx, qy + 12, 11, 4); }
-            if (q.ol) { cx.strokeStyle = q.ol; cx.lineWidth = 2; mgRound(cx, qx - 1.5, qy - 1.5, 14, 19, 3); cx.stroke(); }
+            if (q.ol) { cx.strokeStyle = q.ol === '#1a1d26' ? ink.txt : q.ol; cx.lineWidth = 2; mgRound(cx, qx - 1.5, qy - 1.5, 14, 19, 3); cx.stroke(); }
           });
         } else {
           cx.font = mgFont(fs, c.b); cx.fillStyle = ink[c.c] || ink.txt;
@@ -9923,14 +10148,6 @@ function mgCanvasTable(T) {
     });
     return cv;
   });
-}
-function mgWhat(which) {                                   // -> {kind: 'lines'|'table', model, name}
-  var k = mgCur(), nm = mgName(k || '');
-  if (which === 'prog') return {kind: 'lines', model: mgProgLines(mgProg(k, MGS.fp === 'lv' ? 'lv' : 'bs', MGS.fpn || 'all')), name: 'Fortschritt-' + nm};
-  if (which === 'repw' || which === 'repl') return {kind: 'lines', model: mgReport(k, which.slice(3)), name: (which === 'repw' ? 'Wochenbericht-' : 'Gildenleiter-Bericht-') + nm};
-  if (which === 'mem') return {kind: 'table', model: mgMemModel(k), name: 'Mitglieder-' + nm};
-  if (which === 'riv') return {kind: 'table', model: mgRivModel(k), name: 'Rivalen-' + nm};
-  return null;
 }
 function mgCanvas(w) { return w.kind === 'lines' ? mgCanvasLines(w.model) : mgCanvasTable(w.model); }
 function mgFile(name) { return String(name).replace(/[\\/:*?"<>|]+/g, '_').replace(/\s+/g, '-') + '-' + new Date().toISOString().slice(0, 10) + '.png'; }
@@ -9969,13 +10186,6 @@ function mgImgMenu(btn, which) {
   mgPop(btn, '<button type="button" data-mgih="dl:' + which + '">⬇ Herunterladen</button><button type="button" data-mgih="copy:' + which + '">📋 In die Zwischenablage</button>' +
     (sh ? '<button type="button" data-mgih="share:' + which + '">📤 Teilen (Handy)</button>' : ''));
 }
-function mgDiscord(which) {
-  var k = mgCur(), txt = '';
-  if (which === 'prog') txt = mgProgDiscord(mgProg(k, MGS.fp === 'lv' ? 'lv' : 'bs', MGS.fpn || 'all'));
-  else if (which === 'repw' || which === 'repl') txt = mgRepDiscord(mgReport(k, which.slice(3)));
-  if (txt.length > 1990) toast('Hinweis: länger als 2.000 Zeichen – Discord teilt die Nachricht.', false, 6000);
-  copyText(txt, 'Für Discord kopiert – jetzt einfügen');
-}
 function mgB64u(b) { var s = ''; for (var i = 0; i < b.length; i++) s += String.fromCharCode(b[i]); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
 function mgUnB64u(s) { s = s.replace(/-/g, '+').replace(/_/g, '/'); while (s.length % 4) s += '='; var b = atob(s), u = new Uint8Array(b.length); for (var i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; }
 function mgEnc(o) {
@@ -9989,19 +10199,6 @@ function mgDec(s) {
   if (s.charAt(0) === 'j') return Promise.resolve(JSON.parse(new TextDecoder().decode(b)));
   var ds = new Blob([b]).stream().pipeThrough(new DecompressionStream('deflate-raw'));
   return new Response(ds).text().then(function (x) { return JSON.parse(x); });
-}
-function mgLink(which, btn) {
-  var w = mgWhat(which); if (!w || !w.model) return;
-  mgEnc({v: 1, k: w.kind, m: w.model, l: D0.title || ''}).then(function (code) {
-    var u = location.href.split('#')[0] + '#mr=' + code;
-    var show = function (link, note) {
-      mgPop(btn, '<div class="mglink"><b>' + esc(note) + '</b><input type="text" readonly value="' + esc(link) + '"><button type="button" data-mgcopy="' + esc(link) + '">Kopieren</button></div>');
-      copyLink(link);
-    };
-    if (!LNK0 || u.length > 5000) { show(u, LNK0 ? 'Link (zu lang für einen Kurzlink):' : 'Link (Kurzlink nur in der Online-Liste):'); return; }
-    toast('Kurzlink wird erstellt …');
-    oIsgd(u).then(function (s2) { show(s2, 'Kurzlink kopiert:'); }, function () { show(u, 'Kurzlink ging nicht – langer Link kopiert:'); });
-  });
 }
 function mgTableHtml(T) {
   return '<div class="mgscroll2"><table class="mgt"><thead><tr>' + T.head.map(function (h) { return '<th class="' + (h.al === 'r' ? 'r' : '') + '">' + esc(h.t) + '</th>'; }).join('') + '</tr></thead><tbody>' +
@@ -10018,13 +10215,14 @@ function mgTableHtml(T) {
 }
 function mgOpenShared(code) {
   $('mgpane').innerHTML = '<div class="mgcard"><p class="dim">Wird geladen …</p></div>';
-  mgDec(code).then(function (o) {
+  (code.charAt(0) === 's' ? Promise.resolve(code).then(mgFromState) : mgDec(code)).then(function (o) {
+    if (o.k === 'table' && o.p) o.m = mgUnpackT(o.p);
     MGST.shared = o;
     var body = o.k === 'table' ? mgTableHtml(o.m) : mgRepHtml(o.m);
     $('mgpane').innerHTML = '<div class="mgcard mgshared"><div class="mghead"><h4>Geteilt aus ' + esc(o.l || D0.title || '') + '</h4><span class="mgsp"></span>' +
       '<button class="btn sm" type="button" id="mgShImg">📷 Als Bild ▾</button><button class="btn sm mgpri" type="button" id="mgShOpen">Meine Gilde öffnen</button></div>' +
-      (o.k === 'table' ? '<h4>' + esc(o.m.title) + '</h4>' : '') + body + '</div>';
-  }, function () { $('mgpane').innerHTML = '<div class="mgcard"><p class="down">Der Link ist unvollständig oder beschädigt.</p><button class="btn" type="button" id="mgShOpen">Meine Gilde öffnen</button></div>'; });
+      (o.note ? '<p class="mgsm iyel">' + esc(o.note) + '</p>' : '') + (o.k === 'table' ? '<h4>' + esc(o.m.title) + '</h4>' : '') + body + '</div>';
+  }, function () { $('mgpane').innerHTML = '<div class="mgcard"><p class="down">Der Link ist unvollständig oder beschädigt – oder die Gilde steht nicht mehr in der Liste.</p><button class="btn" type="button" id="mgShOpen">Meine Gilde öffnen</button></div>'; });
 }
 
 // ---- Gilde waehlen (+ Gilde), Spalten waehlen
@@ -10040,7 +10238,7 @@ function mgPick(mode, q) {
   });
   if (pre) h += '<div class="mgrow">' + pre + '</div>';
   h += '<input class="mgin mgsearch" id="mgQ" type="search" placeholder="Gilde oder Server suchen …" value="' + esc(q || '') + '" autocomplete="off"><div class="mgplist" id="mgPl">' + mgPickList(mode, q || '') + '</div>';
-  $('mgDlg').innerHTML = h; $('mgDlg').setAttribute('data-mode', mode);
+  $('mgDlg').innerHTML = h; $('mgDlg').setAttribute('data-mode', mode); $('mgDlg').classList.remove('mgsmall');
   openOvl('ovlMg');
   var inp = $('mgQ'); if (inp && !COARSE) inp.focus();
 }
@@ -10062,7 +10260,7 @@ function mgColDlg(kind) {
   if (kind === 'mem') { var on = mgCols().map(function (c) { return c.id; }); h += MG_COLS.filter(function (c) { return !c.fix; }).map(function (c) { return '<label><input type="checkbox" data-mgcol="mem:' + c.id + '"' + (on.indexOf(c.id) >= 0 ? ' checked' : '') + '> ' + esc(c.l) + (c.tip ? ' <small class="dim">' + esc(c.tip) + '</small>' : '') + '</label>'; }).join(''); }
   else { var on2 = mgRCols().map(function (c) { return c[0]; }); h += MG_RCOLS.map(function (c) { return '<label><input type="checkbox" data-mgcol="riv:' + c[0] + '"' + (on2.indexOf(c[0]) >= 0 ? ' checked' : '') + '> ' + esc(c[1]) + '</label>'; }).join(''); }
   h += '</div><p class="mgrow"><button class="btn sm" type="button" data-mgcold="' + kind + '">Standard</button></p>';
-  $('mgDlg').innerHTML = h; openOvl('ovlMg');
+  $('mgDlg').innerHTML = h; $('mgDlg').classList.remove('mgsmall'); openOvl('ovlMg');
 }
 function mgAfter() {                                     // Zeilen sichtbar: Hoehe der Tabelle begrenzen (Rest mit dem Mausrad)
   var sc = $('mgScroll'); if (!sc) return;
@@ -10075,16 +10273,24 @@ function mgAfter() {                                     // Zeilen sichtbar: Hoe
 
 // ---- Bedienung
 document.addEventListener('click', function (e) {
-  if (!MGV || !e.target.closest) return;
+  if (!e.target.closest) return;
   var pop = $('mgPop'), b = e.target.closest('button, a, [data-mgs], tr[data-mgp]');
   if (pop && !pop.hidden && !e.target.closest('#mgPop') && !(b && (b.hasAttribute('data-mgimg') || b.hasAttribute('data-mglink') || b.id === 'mgShImg'))) pop.hidden = true;
   if (!b) return;
-  var a = function (n) { return b.getAttribute(n); }, k = mgCur();
+  var a = function (n) { return b.getAttribute(n); };
+  if (b.hasAttribute('data-mgimg')) { mgImgMenu(b, a('data-mgimg')); return; }
+  if (b.hasAttribute('data-mgih')) { var p0 = a('data-mgih').split(':'); pop.hidden = true; mgImg(p0[1], p0[0]); return; }
+  if (b.hasAttribute('data-mgdc')) { mgDiscord(a('data-mgdc')); return; }
+  if (b.hasAttribute('data-mglink')) { mgLink(a('data-mglink'), b); return; }
+  if (b.hasAttribute('data-mgcopy')) { copyLink(a('data-mgcopy')); return; }
+  if (!MGV) return;
+  var k = mgCur();
   if (b.id === 'mgAddG' || b.id === 'mgAddG2' || b.id === 'mgChg') { e.preventDefault(); mgPick('g'); return; }
   if (b.id === 'mgAddR') { mgPick('riv'); return; }
   if (b.id === 'mgAck') { var pr = mgPair(k); if (pr) { MGS.ack[k] = {ts: pr.nw.ts, n: pr.nw.mem.map(function (m) { return m.nk; })}; mgSave(); } $('mgAlert').innerHTML = ''; return; }
   if (b.id === 'mgColsB') { mgColDlg('mem'); return; }
   if (b.id === 'mgRColsB') { mgColDlg('riv'); return; }
+  if (b.id === 'mgRall') { MGS.rall = !MGS.rall; mgSave(); mgRender(); return; }
   if (b.id === 'mgShOpen') { location.hash = 'm'; location.reload(); return; }
   if (b.id === 'mgShImg') { var o = MGST.shared; if (o) mgPop(b, '<button type="button" data-mgshi="1">⬇ Herunterladen</button>'); return; }
   if (b.hasAttribute('data-mgshi')) { pop.hidden = true; var o2 = MGST.shared; mgCanvas({kind: o2.k, model: o2.m}).then(function (cv) { cv.toBlob(function (bl) { var x = document.createElement('a'); x.href = URL.createObjectURL(bl); x.download = mgFile(o2.m.title || 'Meine-Gilde'); document.body.appendChild(x); x.click(); setTimeout(function () { x.remove(); }, 1500); }); }); return; }
@@ -10093,11 +10299,6 @@ document.addEventListener('click', function (e) {
   if (b.hasAttribute('data-mgs')) { var c = a('data-mgs'), so = MGS.ms || {c: 'bs', d: -1}; MGS.ms = {c: c, d: so.c === c ? -so.d : (c === 'name' ? 1 : -1)}; mgSave(); mgRender(); return; }
   if (b.hasAttribute('data-mgp') && !e.target.closest('[data-mgs]')) { mgProfile(k, a('data-mgp')); return; }
   if (b.hasAttribute('data-mgfp')) { MGS.fp = a('data-mgfp'); mgSave(); mgRender(); return; }
-  if (b.hasAttribute('data-mgimg')) { mgImgMenu(b, a('data-mgimg')); return; }
-  if (b.hasAttribute('data-mgih')) { var p2 = a('data-mgih').split(':'); pop.hidden = true; mgImg(p2[1], p2[0]); return; }
-  if (b.hasAttribute('data-mgdc')) { mgDiscord(a('data-mgdc')); return; }
-  if (b.hasAttribute('data-mglink')) { mgLink(a('data-mglink'), b); return; }
-  if (b.hasAttribute('data-mgcopy')) { copyLink(a('data-mgcopy')); return; }
   if (b.hasAttribute('data-mgrx')) { MGS.r = (MGS.r || []).filter(function (x) { return x !== a('data-mgrx'); }); mgSave(); mgRender(); return; }
   if (b.hasAttribute('data-mgpk')) {
     var v = a('data-mgpk'), md = v.charAt(0), key = v.slice(2);
@@ -10149,6 +10350,8 @@ document.addEventListener('change', function (e) {
   if (ro) { var p = ro.split(':'), cf = mgRepConf(p[0]); cf.on[p[1]] = el.checked ? 1 : 0; MGS[p[0] === 'w' ? 'rw' : 'rl'] = cf; mgSave(); mgRender(); return; }
   var rp = el.getAttribute && el.getAttribute('data-mgrp');
   if (rp) { var cf2 = mgRepConf(rp); cf2.per = /^\d+$/.test(el.value) ? +el.value : el.value; MGS[rp === 'w' ? 'rw' : 'rl'] = cf2; mgSave(); mgRender(); return; }
+  var rv = el.getAttribute && el.getAttribute('data-mgrv');
+  if (rv) { var i0 = rv.indexOf(':'), w0 = rv.slice(0, i0), cfr = mgRepConf(w0); cfr.rv[rv.slice(i0 + 1)] = el.checked ? 1 : 0; MGS[w0 === 'w' ? 'rw' : 'rl'] = cfr; mgSave(); mgRender(); return; }
   var rn = el.getAttribute && el.getAttribute('data-mgrn');
   if (rn) { var cf3 = mgRepConf(rn); cf3.n = +el.value; MGS[rn === 'w' ? 'rw' : 'rl'] = cf3; mgSave(); mgRender(); return; }
   var col = el.getAttribute && el.getAttribute('data-mgcol');
@@ -10162,7 +10365,141 @@ document.addEventListener('change', function (e) {
 window.addEventListener('resize', function () { if (MGV) mgAfter(); });
 window.sfMg = {canvas: function (w) { return mgCanvas(mgWhat(w)); }, discord: function (w) {
   var k = mgCur(); return w === 'prog' ? mgProgDiscord(mgProg(k, MGS.fp === 'lv' ? 'lv' : 'bs', MGS.fpn || 'all')) : mgRepDiscord(mgReport(k, w.slice(3)));
-}, x: mgX, cur: mgCur};
+}, x: mgX, cur: mgCur, dbg: function (n, sv) { var sc = curScan(); return {prof: PROF, name: NAME, srv: SRV, nrows: sc && sc.rows && sc.rows.length, nkeys: sc && sc.keys && sc.keys.length, first: sc && sc.rows && sc.rows[0] && [cellText(COLS[NAME], sc.rows[0][NAME]), sc.rows[0][SRV]], hit: mgMainRow(n, sv)}; }};
+
+// ---- Gleiche Knopfleiste in allen Reitern: Liste als Bild / fuer Discord / Kurzlink (gezeigte Zeilen und Spalten)
+function mgListModel(maxRows) {
+  var cols = visibleCols(), rows = (lastRows || []).filter(function (x) { return !x.gone; }).slice(0, maxRows || 100);
+  var sc = curScan(), out = {title: (D.title || '') + (sc && sc.label ? ' · ' + sc.label : ''), head: [], rows: []};
+  out.head = cols.map(function (ci) { var c = COLS[ci]; return {t: colLabel(c), al: isNum(c) ? 'r' : ''}; });
+  out.rows = rows.map(function (x) {
+    return cols.map(function (ci) {
+      var c = COLS[ci], v = x.r.v[ci];
+      if (c.sq) {
+        var rec = sqRecOf(c, v); if (!rec) return {t: '–'};
+        return {sq: ML.sqCells(c.id, rec).map(function (q) { return {bg: q[0] === 'f0' ? null : MG_SQC[q[0]], el: q[2] && q[2] !== 'now' ? q[2] : null, ol: q[2] === 'now' ? '#1a1d26' : null}; })};
+      }
+      var o = {t: cellText(c, v), al: isNum(c) ? 'r' : ''};
+      if (ci === NAME) {
+        o.b = 1;
+        o.ic = (x.r.ic || []).filter(function (k) { return /^[cm]\d+$/.test(k); });
+      }
+      if (isNum(c) && typeof gnOn === 'function' && gnOn() && st.cmp && x.o && !x.gone && !c.nd) {
+        var a = num(c, x.o.v[ci]), b = num(c, v);
+        if (a != null && b != null && a !== b) { o.sub = fmtNum(c, b - a, true); o.subc = b > a ? 'up' : 'down'; }
+      }
+      return o;
+    });
+  });
+  return out;
+}
+function mgTableDiscord(T, title) {                        // Tabelle als Text (Code-Block, gleich breite Spalten), hoechstens 2.000 Zeichen
+  var sym = function (q) { return !q.bg ? '□' : ({'#127a2a': '■', '#4cd964': '▣', '#f2b632': '▣', '#e5534b': '□', '#f59e0b': '!', '#c2410c': '!'}[q.bg] || '■'); };
+  var cell = function (c) { return c.sq ? c.sq.map(sym).join('') : String(c.t == null ? '' : c.t) + (c.sub ? ' (' + c.sub + ')' : ''); };
+  var rows = T.rows.map(function (r) { return r.map(cell); }), head = T.head.map(function (h) { return String(h.t); });
+  var w = head.map(function (h, j) { var m = h.length; rows.forEach(function (r) { m = Math.max(m, (r[j] || '').length); }); return Math.min(m, 24); });
+  var fmt = function (r) { return r.map(function (x, j) { x = String(x || ''); if (x.length > w[j]) x = x.slice(0, w[j] - 1) + '…'; var pad = new Array(w[j] - x.length + 1).join(' '); return T.head[j].al === 'r' ? pad + x : x + pad; }).join(' │ ').replace(/\s+$/, ''); };
+  var lines = ['**' + (title || T.title) + '**', '```', fmt(head), w.map(function (n) { return new Array(n + 1).join('─'); }).join('─┼─')], used = lines.join('\n').length + 4, n = 0;
+  for (var i = 0; i < rows.length; i++) { var l = fmt(rows[i]); if (used + l.length + 1 > 1900) break; lines.push(l); used += l.length + 1; n++; }
+  lines.push('```');
+  if (n < rows.length) lines.push('… ' + (rows.length - n) + ' weitere (Discord erlaubt 2.000 Zeichen)');
+  return lines.join('\n');
+}
+// Kurzlink: Tabellen kompakt packen (Kaestchen als Kurzzeichen), damit sie meist unter die Grenze passen
+var MG_PAL = [null, '#127a2a', '#4cd964', '#f2b632', '#e5534b', '#f59e0b', '#c2410c', '#d4a52a', '#aab4be', '#8b5cf6', '#e2572b', '#b87333'];
+var MG_PEL = {'#ff6a2b': 'F', '#46b4ff': 'E', '#ffd23a': 'B'}, MG_POL = {'#1a1d26': 'N', '#c9952a': 'M', '#7a8794': 'C'};
+function mgPackT(T) {
+  var b36 = '0123456789ab';
+  return {t: T.title, h: T.head.map(function (h) { return h.al === 'r' ? '>' + h.t : h.t; }),
+          r: T.rows.map(function (r) { return r.map(function (c) {
+            if (c.sq) return {q: c.sq.map(function (q) { var i = MG_PAL.indexOf(q.bg); return b36.charAt(i < 0 ? 1 : i) + (q.el ? MG_PEL[q.el] || '' : '') + (q.ol ? MG_POL[q.ol] || '' : ''); }).join('')};
+            var o = c.t == null ? '' : String(c.t);
+            if (!c.sub && !c.b && !c.c && !(c.ic && c.ic.length)) return o;
+            var x = {t: o}; if (c.sub) { x.s = c.sub; x.k = c.subc; } if (c.b) x.b = 1; if (c.c) x.c = c.c; if (c.ic && c.ic.length) x.i = c.ic;
+            return x;
+          }); })};
+}
+function mgUnpackT(P) {
+  var inv = {}; Object.keys(MG_PEL).forEach(function (k) { inv[MG_PEL[k]] = ['el', k]; }); Object.keys(MG_POL).forEach(function (k) { inv[MG_POL[k]] = ['ol', k]; });
+  var head = P.h.map(function (h) { return h.charAt(0) === '>' ? {t: h.slice(1), al: 'r'} : {t: h}; });
+  return {title: P.t, head: head, rows: P.r.map(function (r) { return r.map(function (c, j) {
+    if (c && c.q != null) { var out = [], cur = null; String(c.q).split('').forEach(function (ch) { if (/[0-9ab]/.test(ch)) { cur = {bg: MG_PAL[parseInt(ch, 16)] || null}; out.push(cur); } else if (cur && inv[ch]) cur[inv[ch][0]] = inv[ch][1]; }); return {sq: out}; }
+    var al = head[j] && head[j].al === 'r' ? 'r' : '';
+    if (typeof c === 'string') return {t: c, al: al};
+    return {t: c.t, sub: c.s, subc: c.k, b: c.b, c: c.c, ic: c.i, al: al};
+  }); })};
+}
+// ueberschreibt die Fassungen aus "Meine Gilde": auch fuer die Listen
+function mgWhat(which) {                                   // -> {kind: 'lines'|'table', model, name}
+  var k = mgCur(), nm = mgName(k || '');
+  if (which === 'list') return {kind: 'table', model: mgListModel(Math.max(20, Math.min(200, st.shown || 100))), name: (D.title || 'Liste')};
+  if (which === 'prog') return {kind: 'lines', model: mgProgLines(mgProg(k, MGS.fp === 'lv' ? 'lv' : 'bs', MGS.fpn || 'all')), name: 'Fortschritt-' + nm};
+  if (which === 'repw' || which === 'repl') return {kind: 'lines', model: mgReport(k, which.slice(3)), name: (which === 'repw' ? 'Wochenbericht-' : 'Gildenleiter-Bericht-') + nm};
+  if (which === 'mem') return {kind: 'table', model: mgMemModel(k), name: 'Mitglieder-' + nm};
+  if (which === 'riv') return {kind: 'table', model: mgRivModel(k), name: 'Rivalen-' + nm};
+  return null;
+}
+function mgDiscord(which) {
+  var k = mgCur(), txt = '';
+  if (which === 'prog') txt = mgProgDiscord(mgProg(k, MGS.fp === 'lv' ? 'lv' : 'bs', MGS.fpn || 'all'));
+  else if (which === 'repw' || which === 'repl') txt = mgRepDiscord(mgReport(k, which.slice(3)));
+  else { var w = mgWhat(which); if (w && w.model) txt = mgTableDiscord(w.model); }
+  if (txt.length > 1990) toast('Hinweis: länger als 2.000 Zeichen – Discord teilt die Nachricht.', false, 6000);
+  copyText(txt, 'Für Discord kopiert – jetzt einfügen');
+}
+// ---- Kurzer Link ohne fremden Dienst: nur die Einstellung (Gilde, Reiter, Zeitraum, Spalten …), die Daten stehen in der Online-Liste
+var MG_SKEYS = {mem: ['cols', 'ms', 'weak'], prog: ['fp', 'fpn', 'weak'], riv: ['r', 'rcols', 'rch', 'rall'], repw: ['rw', 'r'], repl: ['rl', 'r', 'weak']};
+function mgState(which) {                                  // -> Code fuer #mr=s… oder null (eigene Scans: Daten nur im Browser)
+  var k = mgCur(); if (!k || !MG_SKEYS[which]) return null;
+  var pr = mgPair(k); if (!pr || pr.nw.src !== 'o' || (pr.base && pr.base.src !== 'o')) return null;
+  var s = {g: [k].concat(mgMine().filter(function (x) { return x !== k; })), cur: k, per: MGS.per == null ? 7 : MGS.per};
+  MG_SKEYS[which].forEach(function (f) { if (MGS[f] != null) s[f] = MGS[f]; });
+  return {v: 3, w: which, s: s, ts: pr.nw.ts};
+}
+function mgFromState(code) {                               // Einstellung -> dieselbe Tabelle / derselbe Bericht aus den Daten der Seite
+  return mgDec('z' + code.slice(1)).then(function (o) {
+    MGRO = true; MGPIN = o.ts || 0;
+    MGS = JSON.parse(JSON.stringify(o.s || {})); MGS.pdo = MGS.pdo || {};
+    var X = mgX();
+    if (!X.snaps[MGS.cur]) throw new Error('nogilde');
+    var w = mgWhat(o.w); if (!w || !w.model) throw new Error('nodata');
+    var pr = mgPair(MGS.cur), note = pr && o.ts && Math.abs(pr.nw.ts - o.ts) > 60000 ? 'Hinweis: Den Stand vom ' + mgDay(o.ts) + ' gibt es in der Liste nicht mehr – gezeigt wird ' + mgDay(pr.nw.ts) + '.' : '';
+    return {k: w.kind, m: w.model, l: D0.title || '', note: note};
+  });
+}
+function mgTiny(u, btn, note) {                            // langer Link: kopieren, Kurzlink bei TinyURL selbst erstellen (dort ist eine Pruefung)
+  copyLink(u);
+  mgPop(btn, '<div class="mglink"><b>' + esc(note || 'Langer Link kopiert.') + '</b>' +
+    '<span class="mgsm">Für einen Kurzlink: TinyURL öffnen, den Link einfügen (Strg+V, am Handy: lange tippen › Einfügen) und „Shorten URL“ wählen.</span>' +
+    '<a class="btn sm mgpri" href="https://tinyurl.com/app" target="_blank" rel="noopener noreferrer">TinyURL öffnen</a>' +
+    '<input type="text" readonly value="' + esc(u) + '"><button type="button" data-mgcopy="' + esc(u) + '">Noch einmal kopieren</button></div>');
+}
+function mgLink(which, btn) {
+  var base = location.href.split('#')[0];
+  if (which === 'list' && !OWN && typeof lsState === 'function') {   // Liste: Ansicht-Link (Suche, Server, Sortierung, Scans, Spalten)
+    var ls = lsState();
+    mgEnc(ls).then(function (code) {
+      var u = base + (VIEW === 'g' ? '#gs=' : '#ps=') + code.slice(1);
+      copyLink(u);
+      mgPop(btn, '<div class="mglink"><b class="mgok">✓ Link kopiert (' + nf0.format(u.length) + ' Zeichen)</b><span class="mgsm">Zeigt diese Ansicht mit den Daten der Online-Liste.</span>' +
+        '<input type="text" readonly value="' + esc(u) + '"><button type="button" data-mgcopy="' + esc(u) + '">Noch einmal kopieren</button></div>');
+    });
+    return;
+  }
+  var stt = mgState(which);
+  if (stt) {
+    mgEnc(stt).then(function (code) {
+      var u = base + '#mr=s' + code.slice(1);
+      copyLink(u);
+      mgPop(btn, '<div class="mglink"><b class="mgok">✓ Link kopiert (' + nf0.format(u.length) + ' Zeichen)</b><span class="mgsm">Zeigt genau diese Ansicht mit den Daten der Online-Liste.</span>' +
+        '<input type="text" readonly value="' + esc(u) + '"><button type="button" data-mgcopy="' + esc(u) + '">Noch einmal kopieren</button></div>');
+    });
+    return;
+  }
+  var w = mgWhat(which); if (!w || !w.model) return;           // eigene Scans: Daten muessen im Link mitreisen
+  var pay = w.kind === 'table' ? {v: 2, k: 'table', p: mgPackT(w.model), l: D0.title || ''} : {v: 1, k: w.kind, m: w.model, l: D0.title || ''};
+  mgEnc(pay).then(function (code) { mgTiny(base + '#mr=' + code, btn, 'Langer Link kopiert (' + nf0.format((base + '#mr=' + code).length) + ' Zeichen) – die Daten stehen nur in deinem Browser.'); });
+}
 
 // ---------------- Start
 setLang(S.lang || autoLang());
@@ -10173,6 +10510,7 @@ refreshAll();
 ['hbtn', 'lrows', 'lrowsB', 'scroller'].forEach(function (id) { $(id).hidden = false; });
 ownInit();
 mgInit();
+lsApply();
 (function () {                                          // Vormerkung aus dem Reiter Gilden (Name geklickt / Alle zeigen)
   var pend = null;
   try { pend = JSON.parse(sessionStorage.getItem('sf-pend') || 'null'); sessionStorage.removeItem('sf-pend'); } catch (e) { pend = null; }
@@ -10183,8 +10521,8 @@ mgInit();
   if (pend.prof && PROF) st.prof = pend.prof;
   st.shown = SH0; buildChips(); render();
   if (pend.prof && PROF) {
-    if (NARROW) openProf(pend.prof);
-    else Array.prototype.some.call($('tbody').rows, function (row) { if (row.getAttribute('data-k') === pend.prof) { row.scrollIntoView({block: 'center'}); return true; } return false; });
+    openProf(pend.prof);
+    Array.prototype.some.call($('tbody').rows, function (row) { if (row.getAttribute('data-k') === pend.prof) { row.scrollIntoView({block: 'center'}); return true; } return false; });
   }
 })();
 (function () {
@@ -10336,7 +10674,7 @@ function ranksOf(rows, nm, mcol) {                          // Platz = Anzahl gr
   }
   return out;
 }
-var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "9b9caa8736"};
+var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "35fc45d038"};
 function ctxOf(sp) {
   var cols = sp.cols, C = {nc: cols.length, nm: (sp.metrics || []).length, mcol: {}};
   cols.forEach(function (c, j) { if (c.m != null && c.m >= 0) C.mcol[c.m] = j; });
