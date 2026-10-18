@@ -942,7 +942,7 @@ details.mgdet[open]>summary{margin-bottom:6px}
 <body>
 <div class="app">
   <header class="top">
-    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>5 Scans</b> von 03.01.2026 23:51 bis 17.10.2026 23:55 · alle Spieler<br>Beta 3 gibt mir bitte euen Feedback</p></div>
+    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>8 Scans</b> von 03.01.2025 23:58 bis 17.10.2026 23:55 · alle Spieler<br>Beta 3 gibt mir bitte euen Feedback</p></div>
     <div class="hbtn" id="hbtn" hidden>
       <button class="btn rkq" id="bRk" type="button" aria-pressed="true">#</button>
       <select class="sel" id="lang" aria-label="Sprache / Language"></select>
@@ -1025,7 +1025,7 @@ window.sfErrUI = function (txt, msg, where) {             // Fehlermeldung oben 
   var page = location.protocol === 'file:' ? 'Datei (PC/Handy)' : (/^127\.|^localhost$/.test(location.hostname) ? 'Live-Vorschau' : 'Online-Liste');
   if (/^#og?$/.test(location.hash)) page += ' · Eigene Scans'; else if (/^#s=/.test(location.hash)) page += ' · geteilter Link';
   else if (/^#g/.test(location.hash)) page += ' · Gilden';
-  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 18.10.2026 01:29',
+  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 18.10.2026 02:07',
              'Browser: ' + br + ' · ' + os + ' · ' + (window.innerWidth || 0) + '×' + (window.innerHeight || 0),
              'Fehler: ' + String(msg || '?').slice(0, 300), 'Stelle: ' + String(where || '–').slice(0, 120),
              'Ansprechpartner: Deinnachbar (Discord)'].join('\n');
@@ -6329,7 +6329,7 @@ function valCell(x, c, ci) {
       inner = '<span class="xpw" data-tip="' + esc(xt) + '">' + inner + '</span>';
     }
   }
-  var rk0 = r.r && r.r[c.m] != null ? r.r[c.m] : (c.rate && rkCol(c) ? ownRank(x, c, ci) : null);
+  var rk0 = c.rate && st.cmp && rkCol(c) ? ownRank(x, c, ci) : (r.r && r.r[c.m] != null ? r.r[c.m] : (c.rate && rkCol(c) ? ownRank(x, c, ci) : null));
   if (rkCol(c) && !RKOFF[c.id] && S.rankPos !== 'off' && S.rk && rk0 != null && !x.gone) {
     var rk = rk0, shown = rk, pc = '', tip;
     if (SCOPE && x.lr && x.lr[c.m] != null) {
@@ -10674,7 +10674,7 @@ function ranksOf(rows, nm, mcol) {                          // Platz = Anzahl gr
   }
   return out;
 }
-var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "35fc45d038"};
+var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "cea22a72b0"};
 function ctxOf(sp) {
   var cols = sp.cols, C = {nc: cols.length, nm: (sp.metrics || []).length, mcol: {}};
   cols.forEach(function (c, j) { if (c.m != null && c.m >= 0) C.mcol[c.m] = j; });
