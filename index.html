@@ -937,6 +937,62 @@ details.mgdet[open]>summary{margin-bottom:6px}
 .cchip.dl{box-shadow:inset 4px 0 0 var(--accent)}.cchip.dr{box-shadow:inset -4px 0 0 var(--accent)}
 .status .outb{display:inline-flex;gap:4px;margin-left:10px;vertical-align:middle}
 .status .outb .btn.sm{padding:.18rem .5rem;font-size:.8rem}
+/* ---- Runde 23 */
+[data-mgdc],[data-mglink]{display:none!important}                       /* Für Discord und 🔗 entfallen */
+.pcard [data-phalf]{display:none!important}                              /* ½ nur noch im grossen Diagramm */
+.pcard .phalf svg{max-width:100%}
+.r23rows{display:flex;flex-direction:column;gap:6px;padding:6px 8px 8px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.r23rows .seg2{display:inline-flex}
+.r23rows label{display:flex;align-items:center;gap:6px;font-size:.85rem}
+.r23rows input{width:6rem}
+.r23rows small{font-size:.75rem;line-height:1.3}
+th.sqh > button{flex-wrap:wrap;row-gap:0}
+th.sqh > button .mgsqh{flex-basis:100%;order:9}
+.btn.r23riv{white-space:nowrap}
+th.sqh{text-align:left}
+th.sqh > button{justify-content:flex-start}
+#chartBody.bchalf svg.bcs{width:50%}
+.btn.bchb{min-width:2.4rem;font-weight:800}
+.btn.bchb[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.mggold{color:#f0b43c}
+.r23best{margin-top:8px}.r23best > div{margin:2px 0}
+.r23bh{display:flex;align-items:center;gap:8px}
+.mgcols3 > .mgcard{overflow-x:auto}
+.mgcols3 .mgfs td:nth-child(2){width:100%}.mgcols3 .mgfbar{width:auto;min-width:70px}
+@media (max-width:1450px){.mgcols3{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.mgcols3>.mgprog{grid-column:1/-1}}
+@media (max-width:900px){.mgcols3{grid-template-columns:minmax(0,1fr)}}
+.r23grp{font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--dim);margin:8px 2px 2px}
+.mgpi.r23on{border:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent);display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:3px 0}
+.mgpi.r23on small{flex-basis:100%}
+.r23tag{margin-left:auto;font-weight:800;color:var(--accent);white-space:nowrap}
+.mgchart.big{max-width:1200px}
+#mgDlg.r23full{width:min(1880px,calc(100vw - 24px));max-width:none}
+#mgDlg.r23full .mgchart{max-width:none;width:100%}
+.mgrvl .btn{margin-right:6px}
+.lrow.sfw .sfold .lbl{background:var(--accent);color:var(--accent-ink);padding:3px 10px;border-radius:7px;font-weight:800;letter-spacing:.06em;margin-right:4px}
+.lrow.sfw.folded > #blk_count{display:flex!important;margin-left:auto}
+.lrow.sfw.folded .sfold{width:auto;flex:1 1 auto;min-width:0}
+.lrow.sfw.folded .sfold .car{margin-left:12px}
+#count{cursor:default}
+.r23more{position:relative}
+.r23more > .btn{min-width:2.6rem;font-weight:900;position:relative}
+.r23dot{position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.r23mpop{position:absolute;z-index:70;top:calc(100% + 6px);right:0;display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);min-width:220px}
+.r23mpop[hidden]{display:none}
+.qpop .r23dsq{margin:0 0 6px;width:100%}
+body.mgmode .hbtn #bRk{display:inline-flex}
+.r23mgl{margin-bottom:4px}
+.r23mgl .lrow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:8px}
+.r23mgl .lrow.box{padding:8px 12px}
+.r23mgl .lrow.sfw.folded > .r23mgc{display:flex!important;margin-left:auto}
+.r23mgc{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--dim)}
+.r23mgc b{color:var(--text)}
+.r23mgbar{gap:8px 10px}
+.r23mgbar .mgtabs{margin:0}
+.r23sep{width:1px;align-self:stretch;background:var(--line);margin:0 4px}
+.mgtd .mc,.mgt td .mc{display:inline-flex;align-items:center;gap:6px;justify-content:flex-end}
+.mgt td .mc .rk{font-size:.72rem}
+.r23fus{font-weight:500;color:var(--dim);font-size:.78em;white-space:nowrap}
 </style>
 </head>
 <body>
@@ -1025,7 +1081,7 @@ window.sfErrUI = function (txt, msg, where) {             // Fehlermeldung oben 
   var page = location.protocol === 'file:' ? 'Datei (PC/Handy)' : (/^127\.|^localhost$/.test(location.hostname) ? 'Live-Vorschau' : 'Online-Liste');
   if (/^#og?$/.test(location.hash)) page += ' · Eigene Scans'; else if (/^#s=/.test(location.hash)) page += ' · geteilter Link';
   else if (/^#g/.test(location.hash)) page += ' · Gilden';
-  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 20.10.2026 16:00',
+  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 20.10.2026 16:10',
              'Browser: ' + br + ' · ' + os + ' · ' + (window.innerWidth || 0) + '×' + (window.innerHeight || 0),
              'Fehler: ' + String(msg || '?').slice(0, 300), 'Stelle: ' + String(where || '–').slice(0, 120),
              'Ansprechpartner: Deinnachbar (Discord)'].join('\n');
@@ -2120,7 +2176,7 @@ function ctx(main, st) {
 }
 function gone(X, u, k, id) { var d = X.del[u][k]; return !!d && id != null && d.indexOf(id) >= 0; }
 function rateVal(c, r, o) {                                 // Zuwachs-Spalte fuer die Plaetze (zum Scan davor)
-  if (!c.rate || !o || r._srv !== o._srv) return null;
+  if (!c.rate || !o || (r._srv !== o._srv && !o._fz)) return null;
   var a = o[c.rate[0]], b = r[c.rate[0]]; if (a == null || b == null) return null;
   if (c.rate[1] === 'd') return b - a;
   var dd = ((r._ts || 0) - (o._ts || 0)) / DAY;
@@ -2142,7 +2198,8 @@ function scanOfRecs(recs, T, X, opt) {
   var rows = [], keys = [], used = {}, ic = [], ina = [], av = [], lk = [], pf = opt.pf ? [] : null, rbase = [];
   var wr = opt.pf ? worldRanks(opt.pool || recs) : null;
   recs.forEach(function (r) {
-    var k = keyOf(r), k0 = k, n = 1;
+    var k = keyOf(r); if (opt.ak && opt.ak[k]) k = opt.ak[k];
+    var k0 = k, n = 1;
     while (used[k]) { n++; k = k0 + '#' + n; }
     used[k] = 1;
     var o = opt.prev ? opt.prev[k] : null, q = {};
@@ -2213,6 +2270,78 @@ function xpnMerge(main, recs) {
   return out;
 }
 // items: [{m: meta, d: doc}] (aelteste zuerst) -> Seitendaten "Eigene Scans" (Spieler, .gv = Gilden)
+// Fusion: welche alten Server sind in einer neuen Welt aufgegangen (gespeicherte Zusammenlegungen, sonst Halbjahres-Gruppen der
+// Kompensation) und welcher Spieler ist welcher (Name ohne Fusions-Zusatz, bei Gleichstand dieselbe Herkunfts-Nr.)
+function fusStrip(n) { return String(n == null ? '' : n).toLowerCase().replace(/\s*\([^()]*\)\s*$/, '').replace(/\s+[a-z]{1,4}\d{1,3}[a-z]{0,3}$/, '').trim(); }
+function fusPair(fz, A, B) {                                 // A aelter, B neuer -> {alte Kennung: neue Kennung}
+  var sa = {}, sb = {}, out = {}, to = {}, ws = {};
+  A.forEach(function (r) { sa[r._srv] = 1; }); B.forEach(function (r) { sb[r._srv] = 1; });
+  var gone = Object.keys(sa).filter(function (k) { return !sb[k]; }), fresh = Object.keys(sb).filter(function (k) { return !sa[k]; });
+  if (!gone.length || !fresh.length) return {ak: out, to: to, ws: ws};
+  var mm = {}; (fz.m || []).forEach(function (x) { mm[x[0]] = x[1]; });
+  fresh.forEach(function (w) {
+    var nw = B.filter(function (r) { return r._srv === w && r.name; }); if (!nw.length) return;
+    var nn = {}; nw.forEach(function (r) { nn[fusStrip(r.name)] = 1; });
+    var cand = mm[w] ? [mm[w]] : (fz.g || []), best = null;
+    cand.forEach(function (g) {
+      var olds = g.filter(function (k) { return gone.indexOf(k) >= 0; }); if (!olds.length) return;
+      var ov = A.filter(function (r) { return olds.indexOf(r._srv) >= 0 && nn[fusStrip(r.name)]; }).length;
+      if ((mm[w] || ov >= 0.15 * nw.length) && (!best || ov > best.ov)) best = {ov: ov, olds: olds};
+    });
+    if (!best) return;
+    ws[w] = best.olds;
+    var idx = {};
+    A.forEach(function (r) { if (best.olds.indexOf(r._srv) >= 0 && r.name) (idx[fusStrip(r.name)] = idx[fusStrip(r.name)] || []).push(r); });
+    var used = new Set();
+    nw.forEach(function (r) {
+      var c = (idx[fusStrip(r.name)] || []).filter(function (o) { return !used.has(o); });
+      if (c.length > 1 && r.origin_id != null) { var c2 = c.filter(function (o) { return o.origin_id === r.origin_id; }); if (c2.length) c = c2; }
+      if (c.length !== 1) return;
+      used.add(c[0]); c[0]._fz = 1;
+      var ko = keyOf(c[0]), kn = keyOf(r);
+      if (ko !== kn) { out[ko] = kn; to[kn] = 1; }
+    });
+  });
+  return {ak: out, to: to, ws: ws};
+}
+function fusGuilds(P, GA, GB) {                              // Gilden: gleicher Name (ohne Zusatz) auf den alten Servern -> neue Welt
+  var out = {};
+  Object.keys(P.ws).forEach(function (w) {
+    var olds = P.ws[w], idx = {}, nb = {};
+    (GB || []).forEach(function (g) { if (g._srv === w && g.name) (nb[fusStrip(g.name)] = nb[fusStrip(g.name)] || []).push(g); });
+    (GA || []).forEach(function (g) { if (olds.indexOf(g._srv) >= 0 && g.name) (idx[fusStrip(g.name)] = idx[fusStrip(g.name)] || []).push(g); });
+    Object.keys(nb).forEach(function (n) { if (nb[n].length === 1 && idx[n] && idx[n].length === 1) { var ko = keyOf(idx[n][0]), kn = keyOf(nb[n][0]); if (ko !== kn) out[ko] = kn; } });
+  });
+  return out;
+}
+function fusAlias(fz, RX) {                                  // je Scan: Kennung -> Kennung im neuesten Scan (ueber mehrere Fusionen)
+  var res = {ak: [], to: [], gak: []}, seq = [];
+  RX.forEach(function (x, n) { if (x) seq.push(n); });
+  if (!fz || seq.length < 2) return res;
+  var pair = [];
+  for (var i = 0; i + 1 < seq.length; i++) {
+    var P = fusPair(fz, RX[seq[i]].recs, RX[seq[i + 1]].recs);
+    P.gak = fusGuilds(P, RX[seq[i]].groups, RX[seq[i + 1]].groups);
+    pair.push(P); res.to[seq[i + 1]] = Object.keys(P.to).length ? P.to : null;
+  }
+  for (var j = 0; j < seq.length - 1; j++) {                  // Kette: Scan j -> j+1 -> ... -> neuester
+    var m = {}, any = false;
+    Object.keys(pair[j].ak).forEach(function (k0) {
+      var k = pair[j].ak[k0];
+      for (var q = j + 1; q < pair.length; q++) if (pair[q].ak[k]) k = pair[q].ak[k];
+      m[k0] = k; any = true;
+    });
+    res.ak[seq[j]] = any ? m : null;
+    var gm = {}, gany = false;
+    Object.keys(pair[j].gak).forEach(function (k0) {
+      var k = pair[j].gak[k0];
+      for (var q = j + 1; q < pair.length; q++) if (pair[q].gak[k]) k = pair[q].gak[k];
+      gm[k0] = k; gany = true;
+    });
+    res.gak[seq[j]] = gany ? gm : null;
+  }
+  return res;
+}
 function buildRoot(main, items, opt) {
   var st = opt.share ? {hide: {p: [], g: []}, del: {p: {}, g: {}}} : state();
   var X = ctx(main, st), O = X.O, T = clone(O.p), TG = clone(O.g), fmt = L.fmtTs;
@@ -2228,6 +2357,8 @@ function buildRoot(main, items, opt) {
     });
   }
   var ps = [], gs = [], prevP = null, prevG = null, allRecs = [], presP = {}, presG = {}, last = 0, np = 0, ng = 0;
+  var RX = items.map(function (it) { return it.d.kind === 'sftab' ? null : L.recsFromDoc(it.d); });
+  var FZ = fusAlias(main.fz, RX);                           // alte Kennung -> Kennung nach der Fusion (je Scan)
   var prevDone = null, pli = -1, plp = -1, plR = null, plO = null;
   items.forEach(function (it, n) {                          // Auffaelligkeiten: zuletzt hinzugefuegte Datei gegen den Scan davor (Datum)
     if (it.d.kind === 'sftab' || !it.m || it.m.id == null) return;
@@ -2250,7 +2381,7 @@ function buildRoot(main, items, opt) {
       last = Math.max(last, sc.ts || 0);
       return;
     }
-    var x = L.recsFromDoc(d);
+    var x = RX[n] || L.recsFromDoc(d);
     var recs = x.recs.filter(function (r) { return !gone(X, 'p', keyOf(r), id); });
     allRecs = allRecs.concat(recs);
     var shown = recs.filter(function (r) {
@@ -2260,14 +2391,15 @@ function buildRoot(main, items, opt) {
     });
     var ts = m.ts || 0, prev = {};
     shown.forEach(function (r) { presP[r._srv_disp || r.server] = r._srv; });
-    var sp = scanOfRecs(shown, T, X, {label: label, olab: label + (m.name ? ' · ' + m.name : ''), ts: ts, prev: prevP, IC: X.IC, pf: n === items.length - 1, pool: recs, pfKeys: T.pf_keys});
+    var sp = scanOfRecs(shown, T, X, {label: label, olab: label + (m.name ? ' · ' + m.name : ''), ts: ts, prev: prevP, IC: X.IC, pf: n === items.length - 1, pool: recs, pfKeys: T.pf_keys, ak: FZ.ak[n]});
+    if (FZ.to[n]) { var fu = []; sp.keys.forEach(function (k, i) { if (FZ.to[n][k]) fu.push(i); }); if (fu.length) sp.fu = fu; }
     sp.keys.forEach(function (k, i) { prev[k] = shown[i]; });
     prevP = prev;
     var gl = L.buildGuilds((x.groups || []).filter(function (g) { return !gone(X, 'g', keyOf(g), id); }), recs, X.minPct)
       .filter(function (g) { if (gone(X, 'g', keyOf(g), id)) return false; if (X.hide.g[keyOf(g)]) { X.nHid.g[keyOf(g)] = 1; return false; } return true; });
     gl.forEach(function (g) { presG[g.g_server || g._srv_disp] = g._srv; });
     var gp = {};
-    var sg = scanOfRecs(gl, TG, X, {label: label, olab: label + (m.name ? ' · ' + m.name : ''), ts: ts, prev: prevG, IC: null, pf: false});
+    var sg = scanOfRecs(gl, TG, X, {label: label, olab: label + (m.name ? ' · ' + m.name : ''), ts: ts, prev: prevG, IC: null, pf: false, ak: FZ.gak[n]});
     var cov = L.guildCover(gl, recs, prevDone);              // Gilde ab 45 Mitgliedern nicht vollstaendig gescannt
     prevDone = cov.done;
     if (Object.keys(cov.cv).length) sg.cv = cov.cv;
@@ -5529,7 +5661,7 @@ function applyLayout(lay) {                                // darf mehrfach lauf
     var row = document.createElement('div'); row.className = 'lrow';
     var box = items.some(function (x) { return SCANB[x.b] && x.on !== false; });
     if (box) row.className += ' box';
-    if (PHONE && D.scans.length > 1 && items.some(function (x) { return x.b === 'scan' && x.on !== false; })) {
+    if (D.scans.length > 1 && items.some(function (x) { return x.b === 'scan' && x.on !== false; })) {
       var fb = document.createElement('button'); fb.type = 'button'; fb.className = 'sfold'; fb.id = 'sfold';   // Handy: Scan-Zeile zum Aufklappen
       row.appendChild(fb); row.className += ' sfw' + (String(S.scanFold) !== 'false' ? ' folded' : '');
     }
@@ -6164,7 +6296,7 @@ function headHtml(cols) {
   var h = '<th class="pos r" scope="col"><button type="button" tabindex="-1" aria-label="' + esc(t('pos')) + '">#</button></th>';
   cols.forEach(function (ci) {
     var c = COLS[ci], s = st.sort && st.sort.c === c.id, s2 = !s && st.sort2 && st.sort2.c === c.id;
-    var cls = (ci === NAME ? 'nm ' : '') + (isNum(c) ? 'r ' : '') + (ci === MEMC ? 'mgh ' : '') + (c.kp ? 'kh ' : '') + (s ? 'sorted' : (s2 ? 'sorted2' : ''));
+    var cls = (ci === NAME ? 'nm ' : '') + (c.sq ? 'sqh ' : '') + (isNum(c) ? 'r ' : '') + (ci === MEMC ? 'mgh ' : '') + (c.kp ? 'kh ' : '') + (s ? 'sorted' : (s2 ? 'sorted2' : ''));
     var dir = s ? st.sort.dir : (s2 ? st.sort2.dir : -1);
     var tip = c.kp ? t(c.id === 'komp_lvb' ? 'kpTipL' : 'kpTipS') : (L === 'de' && c.tip ? String(c.tip).replace('X Tage', nf0.format(S.gx) + ' Tage') : '');
     if (tip && dayCol(c) && dayPer() && S.gm !== 'day') tip = tip.replace('pro Tag', S.gm === 'week' ? 'pro Woche' : 'pro ' + nf0.format(S.gx) + ' Tage');
@@ -6176,7 +6308,7 @@ function headHtml(cols) {
     if (FOC[ci]) cls += ' gfoc';
     h += '<th class="' + cls.trim() + (nic ? ' hasnic' : '') + '" scope="col" aria-sort="' + (s ? (dir < 0 ? 'descending' : 'ascending') : 'none') + '"' +
       (tip ? ' data-tip="' + esc(tip) + '"' : '') + '><button type="button" data-c="' + esc(c.id) + '">' + esc(colLabel(c)) +
-      (per ? '<small class="per">' + esc(per) + '</small>' : '') +
+      (per ? '<small class="per">' + esc(per) + '</small>' : '') + (c.sq && MG_SQH[c.id] ? mgSqHead(c.id) : '') +
       (s2 ? '<span class="s2" data-tip="' + esc(t('s2Tip')) + '">2</span>' : '') + '<i class="ar ' + (dir < 0 ? 'd' : 'a') + '"></i></button>' + nic + '</th>';
   });
   return h;
@@ -6211,6 +6343,7 @@ function nameCell(x, c, ci) {
   var tag = '';
   if (st.cmp && x.gone) tag = ' <span class="tag gone" data-tip="' + esc(t('tagGoneTip', {d: SCANS[st.a].label})) + '">' + esc(t('tagGone')) + '</span>';
   else if (st.cmp && !x.o) tag = ' <span class="tag new">' + esc(t('tagNew')) + '</span>';
+  else if (OWN && st.cmp && x.o && SRV != null && x.o.v[SRV] && x.o.v[SRV] !== r.v[SRV]) tag = ' <small class="r23fus" data-tip="Server-Fusion: im Vergleichs-Scan noch auf ' + esc(x.o.v[SRV]) + '">(vorher ' + esc(x.o.v[SRV]) + ')</small>';
   var star = r.me ? '<span class="star" data-tip="' + esc(GUILDLIST ? t('myGuildStar') : t('me')) + '">★</span>' : '';
   var on = oldName(x), tpv = TP && TP.map.get(x);
   var tp = tpv ? '<span class="tp" data-tip="' + esc(t('tpTip', {f: nf1.format(tpv), s: TP.scope, x: nf1.format(D.tp_f)})) + '">✦</span>' : '';
@@ -6281,7 +6414,7 @@ function sqTxt(c, v) {                                 // Text der Kaestchen (Su
 }
 function valCell(x, c, ci) {
   var r = x.r, v = r.v[ci], s = st.sort && st.sort.c === c.id ? ' sorted' : '';
-  if (c.sq) { var sr = sqRecOf(c, v); return '<td class="sqc' + s + '">' + (sr ? mgSq(c.id, sr, null) : '<span class="v">–</span>') + '</td>'; }
+  if (c.sq) { var sr = sqRecOf(c, v); return '<td class="sqc' + s + '">' + (sr ? mgSq(c.id, sr, r23Cls(r)) : '<span class="v">–</span>') + '</td>'; }
   if (c.kp) {                                           // Kompensation (Stand heute): +9 Level / +12.110 Stats
     var kv = num(c, v);
     return '<td class="r kc' + s + '">' + (kv ? '<span class="v kpv">+' + nf0.format(kv) + '</span>' : '<span class="v">–</span>') + '</td>';
@@ -6410,8 +6543,9 @@ function render() {
   if ($('outB') && ML && !$('outB').firstChild) $('outB').innerHTML = '<button class="btn sm" type="button" data-mgimg="list" data-tip="Gezeigte Zeilen als Bild">📷 ▾</button>' +
     '<button class="btn sm" type="button" data-mgdc="list" data-tip="Gezeigte Zeilen als Text für Discord">Für Discord</button>' +
     '<button class="btn sm" type="button" data-mglink="list" data-tip="Kurzlink: nur diese Tabelle">🔗</button>';
-  $('count').innerHTML = t('count', {n: nf0.format(rows.filter(function (x) { return !x.gone; }).length), t: nf0.format(tot), unit: esc(unit())}) +
+  var cfull = t('count', {n: nf0.format(rows.filter(function (x) { return !x.gone; }).length), t: nf0.format(tot), unit: esc(unit())}) +
     (st.cmp ? ' &middot; ' + esc(t('cmpInfo', {a: SCANS[st.a].label, b: SCANS[st.b].label})) : '');
+  r23Count(cfull, rows.filter(function (x) { return !x.gone; }).length, tot);
 }
 function refreshAll() {
   if (HIST) histGet(scansInUse());
@@ -10508,8 +10642,696 @@ applyLook();
 applyTexts();
 refreshAll();
 ['hbtn', 'lrows', 'lrowsB', 'scroller'].forEach(function (id) { $(id).hidden = false; });
+// ---------------------------------------------------------------- Runde 23
+function r23Init() {
+  if (!MGV) { r23More(); r23DsQuick(); sfoldText(); r23MoreDot(); }
+}
+// ---- Fehler: Kaestchen leer in "Meine Gilde", sobald eigene Scans in der Liste stehen (letzter Scan = 📁 ohne Profil)
+function mgPfDet(name, srv) {
+  if (MGPF === null) {
+    MGPF = {};
+    var sc = null, ks = D0.pf_keys || [], di = ks.indexOf('dt');
+    for (var j = (D0.scans || []).length - 1; j >= 0; j--) { var c0 = D0.scans[j]; if (c0 && !c0.own && c0.pf) { sc = c0; break; } }
+    var ni = -1, si = -1; (D0.cols || []).forEach(function (c, i) { if (c.id === 'name') ni = i; if (c.id === 'server') si = i; });
+    if (sc && di >= 0 && ni >= 0) sc.rows.forEach(function (v, i) {
+      var p = sc.pf[i]; if (!p || !p[di]) return;
+      var nm = Array.isArray(v[ni]) ? v[ni][1] : v[ni];
+      MGPF[String(nm) + '|' + (si >= 0 ? v[si] : '')] = p[di];
+    });
+  }
+  var row = MGPF[String(name) + '|' + (srv || '')];
+  return row ? mgDetOf(row) : null;
+}
+
+// ================================================================ Bild 📷: Zeilenanzahl, Platznummern, Zwischenablage
+var R23_IOS = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+var R23_AREA = R23_IOS ? 16000000 : 120000000, R23_SIDE = 32000;        // Grenzen der Browser fuer ein Canvas (Pixel)
+function r23ImgN() { var n = Math.round(+S.imgN || 100); return n > 0 ? n : 100; }
+function r23ListAvail() { return (lastRows || []).filter(function (x) { return !x.gone; }).length; }
+function r23TableSize(T) {                              // Breite, Zeilenhoehe, Kopf (wie mgCanvasTable)
+  var cx = document.createElement('canvas').getContext('2d'), padX = 9, fs = 14, pad = 18;
+  var hasSub = T.rows.some(function (r) { return r.some(function (c) { return c.sub; }); }), rh = hasSub ? 38 : 26, hh = 26;
+  var cw = T.head.map(function (h) { cx.font = mgFont(11, true); return cx.measureText(String(h.t).toUpperCase()).width + 2 * padX; });
+  T.rows.forEach(function (r) {
+    r.forEach(function (c, j) {
+      var w = 0;
+      if (c.sq) w = c.sq.length * 14;
+      else { cx.font = mgFont(fs, c.b); w = cx.measureText(c.t || '').width + (c.ic ? c.ic.length * 22 : 0); if (c.sub) { cx.font = mgFont(11, true); w = Math.max(w, cx.measureText(c.sub).width); } }
+      cw[j] = Math.max(cw[j], w + 2 * padX);
+    });
+  });
+  var W = cw.reduce(function (a, b) { return a + b; }, 0) + 2 * pad;
+  return {cw: cw, W: W, rh: rh, hh: hh, pad: pad, fixed: pad + 30 + hh + pad};
+}
+function r23MaxRows(which) {                            // wie viele Zeilen passen hoechstens in ein Bild (Massstab 1)
+  var w = mgWhat(which, 200); if (!w || !w.model || w.kind !== 'table') return 0;
+  var z = r23TableSize(w.model), hMax = Math.min(R23_SIDE, Math.floor(R23_AREA / Math.max(1, z.W)));
+  return Math.max(1, Math.floor((hMax - z.fixed) / z.rh));
+}
+var R23WHAT0 = mgWhat;
+mgWhat = function (which, nOver) {                      // Liste: gewaehlte Zeilenzahl (hoechstens, was in ein Bild passt)
+  if (which === 'list') {
+    var n = nOver || r23ImgN(), mx = nOver ? 0 : r23MaxRows('list');
+    if (mx && n > mx) n = mx;
+    return {kind: 'table', model: mgListModel(n), name: (D.title || 'Liste')};
+  }
+  return R23WHAT0(which);
+};
+var R23LM0 = mgListModel;
+mgListModel = function (maxRows) {                      // mit Platznummer vorn (wie die Spalte # der Liste)
+  var T = R23LM0(maxRows);
+  T.head.unshift({t: '#', al: 'r'});
+  T.rows.forEach(function (r, i) { r.unshift({t: String(i + 1), al: 'r', c: 'dim'}); });
+  return T;
+};
+function mgImgMenu(btn, which) {
+  var sh = !!(navigator.canShare && window.File), h = '';
+  if (which === 'list') {
+    var have = r23ListAvail(), mx = r23MaxRows('list'), n = r23ImgN();
+    h += '<div class="r23rows"><b>Zeilen im Bild</b><span class="seg2">' + [25, 50, 100, 200].map(function (x) {
+      return '<button type="button" data-r23n="' + x + '" aria-pressed="' + (n === x) + '">' + x + '</button>'; }).join('') + '</span>' +
+      '<label>eigene <input type="number" id="r23N" min="1" max="' + mx + '" step="1" value="' + ([25, 50, 100, 200].indexOf(n) < 0 ? n : '') + '" inputmode="numeric"></label>' +
+      '<small class="dim">gezeigt: ' + nf0.format(have) + ' · passen höchstens ' + nf0.format(mx) + (n > mx ? ' – es kommen ' + nf0.format(mx) : '') + '</small></div>';
+  }
+  h += '<button type="button" data-mgih="dl:' + which + '">⬇ Herunterladen</button><button type="button" data-mgih="copy:' + which + '">📋 In die Zwischenablage</button>' +
+    (sh ? '<button type="button" data-mgih="share:' + which + '">📤 Teilen (Handy)</button>' : '');
+  mgPop(btn, h);
+  $('mgPop').setAttribute('data-r23w', which);
+  R23IMGB = btn;
+}
+var R23IMGB = null;
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('[data-r23n]'); if (!b) return;
+  S.imgN = +b.getAttribute('data-r23n'); saveS();
+  if (R23IMGB) mgImgMenu(R23IMGB, $('mgPop').getAttribute('data-r23w') || 'list');
+});
+document.addEventListener('change', function (e) {
+  if (e.target.id !== 'r23N') return;
+  var v = Math.round(+e.target.value); if (!(v > 0)) return;
+  S.imgN = v; saveS();
+  if (R23IMGB) mgImgMenu(R23IMGB, $('mgPop').getAttribute('data-r23w') || 'list');
+});
+function mgCanvasTable(T) {                             // Massstab 2, bei sehr langen Bildern 1 (Grenzen des Browsers)
+  var keys = []; T.rows.forEach(function (r) { r.forEach(function (c) { (c.ic || []).forEach(function (k2) { keys.push(k2); }); }); });
+  return mgImgs(keys).then(function (IM) {
+    var z = r23TableSize(T), cw = z.cw, rh = z.rh, hh = z.hh, pad = z.pad, padX = 9, fs = 14;
+    var W = z.W, H = pad + 30 + hh + T.rows.length * rh + pad;
+    var sc = (W * 2 * H * 2 <= R23_AREA && H * 2 <= R23_SIDE) ? 2 : 1;
+    var cv = document.createElement('canvas'), cx = cv.getContext('2d'), ink = mgTheme();
+    cv.width = Math.round(W * sc); cv.height = Math.round(H * sc); cx.scale(sc, sc);
+    cx.fillStyle = ink.bg; cx.fillRect(0, 0, W, H);
+    cx.fillStyle = ink.gold; cx.font = mgFont(17, true); cx.fillText(T.title, pad, pad + 16);
+    var y0 = pad + 30, x = pad;
+    cx.fillStyle = ink.head; cx.fillRect(pad, y0, W - 2 * pad, hh);
+    T.head.forEach(function (h, j) {
+      x = pad; for (var q = 0; q < j; q++) x += cw[q];
+      if (h.sq) {                                         // Kaestchen-Spalte: Name klein + Buchstaben unter den Kaestchen
+        cx.font = mgFont(9, true); cx.fillStyle = ink.dim; cx.fillText(String(h.t).toUpperCase(), x + padX, y0 + 10);
+        cx.font = mgFont(8, true);
+        h.sq.forEach(function (s, n) { var sw = cx.measureText(s).width; cx.fillText(s, x + padX + n * 14 + 5.5 - sw / 2, y0 + 22); });
+        return;
+      }
+      cx.font = mgFont(11, true); cx.fillStyle = ink.dim;
+      var t2 = String(h.t).toUpperCase(), tw = cx.measureText(t2).width;
+      cx.fillText(t2, h.al === 'r' ? x + cw[j] - padX - tw : x + padX, y0 + 17);
+    });
+    T.rows.forEach(function (r, i) {
+      var y = y0 + hh + i * rh; x = pad;
+      if (i % 2) { cx.fillStyle = ink.zebra; cx.fillRect(pad, y, W - 2 * pad, rh); }
+      cx.fillStyle = ink.line; cx.fillRect(pad, y + rh - 1, W - 2 * pad, 1);
+      r.forEach(function (c, j) {
+        var mid = y + (c.sub ? 17 : rh / 2 + 5);
+        if (c.sq) {
+          c.sq.forEach(function (q, n) {
+            var qx = x + padX + n * 14, qy = y + rh / 2 - 8;
+            if (q.bg) { cx.fillStyle = q.bg; mgRound(cx, qx, qy, 11, 16, 2); cx.fill(); } else { cx.strokeStyle = ink.edge; cx.lineWidth = 1; mgRound(cx, qx + .5, qy + .5, 10, 15, 2); cx.stroke(); }
+            if (q.el) { cx.fillStyle = q.el; cx.fillRect(qx, qy + 12, 11, 4); }
+            if (q.ol) { cx.strokeStyle = q.ol === '#1a1d26' ? ink.txt : q.ol; cx.lineWidth = 2; mgRound(cx, qx - 1.5, qy - 1.5, 14, 19, 3); cx.stroke(); }
+          });
+        } else {
+          cx.font = mgFont(fs, c.b); cx.fillStyle = ink[c.c] || ink.txt;
+          var tw = cx.measureText(c.t || '').width, tx = c.al === 'r' ? x + cw[j] - padX - tw : x + padX;
+          cx.fillText(c.t || '', tx, mid);
+          var ix = tx + tw + 4;
+          (c.ic || []).forEach(function (k2) { if (IM[k2]) { cx.drawImage(IM[k2], ix, mid - 15, 19, 19); ix += 22; } });
+          if (c.sub) {
+            cx.font = mgFont(11, true); cx.fillStyle = ink[c.subc] || ink.dim;
+            var sw = cx.measureText(c.sub).width; cx.fillText(c.sub, c.al === 'r' ? x + cw[j] - padX - sw : x + padX, y + 32);
+          }
+        }
+        x += cw[j];
+      });
+    });
+    return cv;
+  });
+}
+function mgImg(which, how) {                            // Zwischenablage: Auftrag sofort beim Klick (sonst lehnt der Browser ab)
+  var w = mgWhat(which); if (!w || !w.model) return;
+  var blobP = mgCanvas(w).then(function (cv) { return new Promise(function (ok, no) { cv.toBlob(function (b) { if (b) ok(b); else no(new Error('blob')); }, 'image/png'); }); });
+  var fn = mgFile(w.name);
+  if (how === 'copy') {
+    if (!(navigator.clipboard && navigator.clipboard.write && window.ClipboardItem && window.isSecureContext)) { toast('Kopieren geht hier nicht – bitte „Herunterladen“.', true, 7000); return; }
+    var item = null;
+    try { item = new ClipboardItem({'image/png': blobP}); } catch (e0) { item = null; }
+    var done = function () { toast('Bild kopiert – jetzt in Discord einfügen (Strg+V)'); };
+    var fail = function () { toast('Kopieren hat der Browser abgelehnt – bitte „Herunterladen“.', true, 7000); };
+    if (item) { navigator.clipboard.write([item]).then(done, function () {        // aeltere Browser: ohne "Promise" im Eintrag
+      blobP.then(function (b) { return navigator.clipboard.write([new ClipboardItem({'image/png': b})]); }).then(done, fail); }); }
+    else blobP.then(function (b) { return navigator.clipboard.write([new ClipboardItem({'image/png': b})]); }).then(done, fail);
+    return;
+  }
+  blobP.then(function (blob) {
+    if (how === 'share') {
+      var f = new File([blob], fn, {type: 'image/png'});
+      if (navigator.canShare && navigator.canShare({files: [f]})) navigator.share({files: [f], title: w.model.title}).catch(function () {});
+      else toast('Teilen geht in diesem Browser nicht – bitte „Herunterladen“.', true, 7000);
+      return;
+    }
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = fn; document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+  }, function () { toast('Das Bild konnte nicht erstellt werden.', true); });
+}
+
+// ================================================================ Kaestchen: Pet-Ringe auch in den Listen (Klasse aus den Symbolen)
+function r23Cls(r) {
+  var ks = (r && r.ic) || [];
+  for (var i = 0; i < ks.length; i++) { var m = /^c(\d+)$/.exec(ks[i]); if (m) return +m[1]; }
+  return null;
+}
+function r23SqModel(id, rec, cls) {                     // Kaestchen fuer das Bild (mit Pet-Ringen)
+  var grp = ML.SQ_GROUPS[id], mainPet = cls ? MG_PETK[MG_MAIN[cls] || 0] : null;
+  return ML.sqCells(id, rec).map(function (q, j) {
+    var kk = grp[j][0];
+    return {bg: q[0] === 'f0' ? null : MG_SQC[q[0]], el: q[2] && q[2] !== 'now' ? q[2] : null,
+            ol: q[2] === 'now' ? '#1a1d26' : (id === 'sq_pet' && cls && kk === mainPet ? '#c9952a' : (id === 'sq_pet' && cls && kk === 'pet_shadow' ? '#7a8794' : null))};
+  });
+}
+var R23LM1 = mgListModel;
+mgListModel = function (maxRows) {                      // Kaestchen: Buchstaben im Kopf, Pet-Ringe
+  var T = R23LM1(maxRows), cols = visibleCols(), rows = (lastRows || []).filter(function (x) { return !x.gone; }).slice(0, maxRows || 100);
+  cols.forEach(function (ci, j) {
+    var c = COLS[ci]; if (!c.sq || !MG_SQH[c.id]) return;
+    var hj = T.head.length - cols.length + j;               // vorn steht die Platznummer
+    T.head[hj].sq = MG_SQH[c.id].split(' ');
+    rows.forEach(function (x, i) { var rec = sqRecOf(c, x.r.v[ci]); if (rec && T.rows[i]) T.rows[i][hj] = {sq: r23SqModel(c.id, rec, r23Cls(x.r))}; });
+  });
+  return T;
+};
+var R23MM0 = mgMemModel;
+mgMemModel = function (k) {
+  var T = R23MM0(k); if (!T) return T;
+  mgCols().forEach(function (c, j) { if (c.sq && MG_SQH[c.id] && T.head[j]) T.head[j].sq = MG_SQH[c.id].split(' '); });
+  return T;
+};
+
+// ================================================================ Profil: "Rivalen suchen"
+function r23RivGo() { var g = $('rivGo'); if (g) g.click(); }
+var R23PC0 = profCard;
+profCard = function (o) {
+  var can = typeof RIVOK !== 'undefined' && RIVOK && !GUILDLIST && D0.cols && D0.cols.some(function (c) { return c.id === 'base_sum'; }) && !D0.noRiv;
+  if (can && o && !/data-r23riv/.test(o.btns || '')) {
+    var nm = String(o.name || '').replace(/^★\s*/, ''), q = nm + (o.srv ? ' ' + o.srv : '');
+    var b = '<button class="btn r23riv" type="button" data-r23riv="' + esc(q) + '" data-tip="Spieler mit ähnlicher Base Sum suchen – wer liegt knapp vor oder hinter ihm?">⚔ Rivalen suchen</button>';
+    o.btns = b + (o.btns || '');
+  }
+  return R23PC0(o);
+};
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('[data-r23riv]'); if (!b) return;
+  var q = b.getAttribute('data-r23riv');
+  if (MGV || VIEW !== 'p') { goView('p', {q: q, riv: 1}, true); return; }
+  closeOvl();
+  st.q = q; $('q').value = q; st.riv = null; st.rivRef = -1; st.shown = SH0;
+  if (typeof updQsv === 'function') updQsv();
+  buildChips(); render(); r23RivGo();
+  window.scrollTo(0, 0);
+});
+
+// ================================================================ Grosses Diagramm: ½ (halb so gross), vorher im Profil
+var R23BC0 = bcDraw;
+bcDraw = function () {
+  R23BC0();
+  var cb = $('chartBody'); if (!cb) return;
+  cb.classList.toggle('bchalf', !!S.bcHalf);
+  var hd = cb.querySelector('.cardhead'); if (!hd || hd.querySelector('[data-bchalf]')) return;
+  var b = document.createElement('button'); b.type = 'button'; b.className = 'btn bchb'; b.setAttribute('data-bchalf', '1');
+  b.setAttribute('aria-pressed', S.bcHalf ? 'true' : 'false'); b.setAttribute('data-tip', 'Diagramm halb so groß (mehr Platz für die Tabelle)'); b.textContent = '½';
+  var cl = hd.querySelector('[data-close]'); hd.insertBefore(b, cl);
+};
+document.addEventListener('click', function (e) {
+  if (!e.target.closest || !e.target.closest('[data-bchalf]')) return;
+  S.bcHalf = !S.bcHalf; saveS(); bcDraw();
+});
+
+// ================================================================ Zuwachs, Traenke & Festung: eine Liste mit Base Sum und Level
+function r23Mnt(rows) {                                 // Reittiere nach Stufe buendeln (Greif und Drache = gleiche Stufe), Symbol des haeufigeren
+  var by = {};
+  rows.forEach(function (r) {
+    var mv = r.m.mv || 0, tier = mv > 4 ? mv - 4 : mv;
+    var o = by[tier] = by[tier] || {n: 0, kinds: {}}; o.n++; o.kinds[mv] = (o.kinds[mv] || 0) + 1;
+  });
+  return Object.keys(by).map(Number).sort(function (a, b) { return b - a; }).map(function (tier) {
+    var o = by[tier], best = Object.keys(o.kinds).map(Number).sort(function (a, b) { return o.kinds[b] - o.kinds[a]; })[0];
+    return [tier ? best : 0, o.n, tier];
+  });
+}
+function r23FbN() { var n = MGS.fbn == null ? 3 : +MGS.fbn; return n > 0 ? n : 3; }
+function mgProg(k, mode, n) {
+  var R = mgRowsOf(k); if (!R) return null;
+  mode = mode === 'lv' ? 'lv' : 'bs';
+  var f = mode === 'lv' ? function (r) { return r.m.lv * 1e9 + r.m.bs; } : function (r) { return r.m.bs; };
+  var g = mode === 'lv' ? function (r) { return r.glv; } : function (r) { return r.gbs; };
+  var rows = R.rows.slice().sort(function (a, b) { return f(b) - f(a); });
+  var rkN = mgRanks(rows, f), withO = rows.filter(function (r) { return r.o; });
+  var rkO = mgRanks(withO, function (r) { return mode === 'lv' ? r.o.lv * 1e9 + r.o.bs : r.o.bs; });
+  var gains = withO.filter(function (r) { return g(r) > 0; }).sort(function (a, b) { return g(b) - g(a); });
+  var medal = new Map(); gains.slice(0, 3).forEach(function (r, i) { medal.set(r, i + 1); });
+  var weak = R.pr.base ? mgWeak(R, MGS.weak == null ? 5 : MGS.weak) : new Set();
+  var st2 = function (vf, gf) { var tot = 0, totG = 0, nG = 0; rows.forEach(function (r) { tot += vf(r); var x = gf(r); if (x != null) { totG += x; nG++; } });
+    return {avg: rows.length ? tot / rows.length : 0, avgG: nG ? totG / nG : null, tot: tot, totG: nG ? totG : null}; };
+  var SB = st2(function (r) { return r.m.bs; }, function (r) { return r.gbs; }), SL = st2(function (r) { return r.m.lv; }, function (r) { return r.glv; });
+  var lines = rows.map(function (r) {
+    return {no: rkN.get(r), up: r.o && rkO.get(r) > rkN.get(r), name: r.m.name, medal: medal.get(r) || 0, bs: r.m.bs, gbs: r.gbs, lv: r.m.lv, glv: r.glv,
+            neu: !r.o && !!R.pr.base, weak: weak.has(r.m), cls: r.m.cls};
+  });
+  var cnt = {}; rows.forEach(function (r) { if (r.m.cls) cnt[r.m.cls] = (cnt[r.m.cls] || 0) + 1; });
+  var top = function (gf) {
+    return withO.filter(function (r) { return gf(r) != null && gf(r) > 0; }).sort(function (a, b) { return gf(b) - gf(a) || b.m.bs - a.m.bs; }).slice(0, r23FbN())
+      .map(function (c) { return {name: c.m.name, cls: c.m.cls, gain: gf(c)}; });
+  };
+  var d1 = R.pr.base ? mgShort(R.pr.base.ts) : '', d2 = mgDay(R.pr.nw.ts);
+  return {mode: mode, title: mgName(k) + (d1 ? ' · vom ' + d1 + ' zum ' + d2 : ' · ' + d2), SB: SB, SL: SL,
+          lines: lines, n: n === 'all' || !n ? lines.length : Math.min(+n, lines.length),
+          cls: Object.keys(cnt).map(Number).sort(function (a, b) { return a - b; }).map(function (c) { return [c, cnt[c]]; }),
+          mnt: r23Mnt(rows), topB: top(function (r) { return r.gbs; }), topL: top(function (r) { return r.glv; }), hasBase: !!R.pr.base};
+}
+function r23GainTxt(x, neu) { return neu ? '(neu)' : (x == null ? '' : '(' + mgSigned(x) + ')'); }
+function r23GainCls(x) { return x == null ? 'dim' : (x === 0 ? 'mgz' : (x > 0 ? 'up' : 'down')); }
+function r23MntIc(c) { return c[0] ? mgMntIc(c[0]) || esc(MG_MNT[c[0]] || '') : ' ohne'; }
+function r23TopHtml(lst) { return lst.length ? lst.map(function (x) { return esc(x.name) + ' ' + mgClsIc(x.cls) + ' <span class="up">(' + esc(mgSigned(x.gain)) + ')</span>'; }).join(' · ') : '–'; }
+function mgProgHtml(P) {
+  var nf = function (x) { return nf0.format(x); };
+  var h = '<div class="mgdark"><div class="mgdt">' + esc(P.title) + '</div>';
+  h += '<div class="mgds"><b class="mggold">Base Sum</b> – Durchschnitt: <b>' + nf(P.SB.avg) + '</b>' + (P.SB.avgG != null ? ' · Ø Zuwachs: <b>' + nf(P.SB.avgG) + '</b>' : '') +
+    ' · Gesamt: <b>' + nf(P.SB.tot) + (P.SB.totG != null ? ' (' + esc(mgSigned(P.SB.totG)) + ')' : '') + '</b></div>';
+  h += '<div class="mgds"><b class="mggold">Level</b> – Durchschnitt: <b>' + nf1.format(P.SL.avg) + '</b>' + (P.SL.avgG != null ? ' · Ø Zuwachs: <b>' + nf1.format(P.SL.avgG) + '</b>' : '') + '</div><ol class="mgpl">';
+  P.lines.slice(0, P.n).forEach(function (x) {
+    var gb = '<span class="' + r23GainCls(x.neu ? null : x.gbs) + '">' + esc(r23GainTxt(x.gbs, x.neu)) + '</span>';
+    var gl = '<span class="' + r23GainCls(x.neu ? null : x.glv) + '">' + esc(r23GainTxt(x.glv, x.neu)) + '</span>';
+    h += '<li><span class="mgno">' + x.no + '.</span>' + (x.up ? '<span class="mgup" data-tip="Platz verbessert">⬆</span>' : '<span class="mgup0"></span>') +
+      '<span class="' + (x.weak ? 'mgweak' : '') + '">' + esc(x.name) + '</span>' + (x.medal ? ' <span class="mgmed">' + ['', '🥇', '🥈', '🥉'][x.medal] + '</span>' : '') +
+      ' – ' + (P.mode === 'lv' ? 'Lv <b>' + nf(x.lv) + '</b> ' + gl + ' <span class="dim">·</span> ' + nf(x.bs) + ' ' + gb
+                               : nf(x.bs) + ' ' + gb + ' <span class="dim">·</span> Lv <b>' + nf(x.lv) + '</b> ' + gl) + ' ' + mgClsIc(x.cls) + '</li>';
+  });
+  h += '</ol>';
+  if (P.lines.length > P.n) h += '<div class="mgds">… ' + (P.lines.length - P.n) + ' weitere</div>';
+  h += '<div class="mgstat">' + P.cls.map(function (c) { return '<span><b>' + c[1] + '</b>' + mgClsIc(c[0]) + '</span>'; }).join('') + '</div>';
+  h += '<div class="mgstat">' + P.mnt.map(function (c) { return '<span><b>' + c[1] + '</b>' + r23MntIc(c) + '</span>'; }).join('') + '</div>';
+  if (P.hasBase) h += '<div class="mgds r23best"><div class="r23bh"><b>Höchster Fortschritt</b> <select class="sel sm" id="r23Fbn" aria-label="Wie viele Spieler">' + [1, 3, 5, 10].map(function (x) {
+      return '<option value="' + x + '"' + (x === r23FbN() ? ' selected' : '') + '>' + x + ' Spieler</option>'; }).join('') + '</select></div>' +
+    '<div><b>Base Sum:</b> ' + r23TopHtml(P.topB) + '</div><div><b>Level:</b> ' + r23TopHtml(P.topL) + '</div></div>';
+  return h + '</div>';
+}
+function mgProgLines(P) {                               // fuer das Bild
+  var L2 = [], nf = function (x) { return nf0.format(x); };
+  L2.push([mgSegs('Base Sum', {b: 1, c: 'gold'}), mgSegs(' – Durchschnitt: '), mgSegs(nf(P.SB.avg), {b: 1})].concat(P.SB.avgG != null ? [mgSegs(' · Ø Zuwachs: '), mgSegs(nf(P.SB.avgG), {b: 1})] : [])
+    .concat([mgSegs(' · Gesamt: '), mgSegs(nf(P.SB.tot) + (P.SB.totG != null ? ' (' + mgSigned(P.SB.totG) + ')' : ''), {b: 1})]));
+  L2.push([mgSegs('Level', {b: 1, c: 'gold'}), mgSegs(' – Durchschnitt: '), mgSegs(nf1.format(P.SL.avg), {b: 1})].concat(P.SL.avgG != null ? [mgSegs(' · Ø Zuwachs: '), mgSegs(nf1.format(P.SL.avgG), {b: 1})] : []));
+  L2.push([]);
+  var gs = function (x, v) { return x.neu ? mgSegs('(neu)', {c: 'dim'}) : (v == null ? mgSegs('') : mgSegs('(' + mgSigned(v) + ')', {c: v > 0 ? 'up' : (v < 0 ? 'down' : null), b: v === 0 ? 1 : 0})); };
+  P.lines.slice(0, P.n).forEach(function (x) {
+    var l = [mgSegs(x.no + '. ', {c: 'dim'})];
+    if (x.up) l.push(mgSegs('⬆ ', {c: 'up'}));
+    l.push(mgSegs(x.name, x.weak ? {c: 'down'} : null));
+    if (x.medal) l.push(mgSegs(' ' + ['', '🥇', '🥈', '🥉'][x.medal]));
+    if (P.mode === 'lv') { l.push(mgSegs(' – Lv ')); l.push(mgSegs(nf(x.lv), {b: 1})); l.push(mgSegs(' ')); l.push(gs(x, x.glv)); l.push(mgSegs(' · ' + nf(x.bs) + ' ', {})); l.push(gs(x, x.gbs)); }
+    else { l.push(mgSegs(' – ' + nf(x.bs) + ' ')); l.push(gs(x, x.gbs)); l.push(mgSegs(' · Lv ')); l.push(mgSegs(nf(x.lv), {b: 1})); l.push(mgSegs(' ')); l.push(gs(x, x.glv)); }
+    if (x.cls) l.push(mgSegs('', {ic: 'c' + x.cls}));
+    L2.push(l);
+  });
+  if (P.lines.length > P.n) L2.push([mgSegs('… ' + (P.lines.length - P.n) + ' weitere', {c: 'dim'})]);
+  L2.push([]);
+  var cl = []; P.cls.forEach(function (c, i) { cl.push(mgSegs((i ? '   ' : '') + c[1], {b: 1, ic: 'c' + c[0]})); }); L2.push(cl);
+  var ml = []; P.mnt.forEach(function (c, i) { ml.push(mgSegs((i ? '   ' : '') + c[1] + (c[0] ? '' : ' ohne'), {b: 1, ic: c[0] ? 'm' + c[0] : null})); }); L2.push(ml);
+  if (P.hasBase) {
+    var tl = function (lab, lst) { var o = [mgSegs(lab, {b: 1})]; if (!lst.length) o.push(mgSegs('–'));
+      lst.forEach(function (x, i) { o.push(mgSegs((i ? ' · ' : '') + x.name, {ic: x.cls ? 'c' + x.cls : null})); o.push(mgSegs(' (' + mgSigned(x.gain) + ')', {c: 'up'})); }); return o; };
+    L2.push([mgSegs('Höchster Fortschritt', {b: 1, c: 'gold'})]);
+    L2.push(tl('Base Sum: ', P.topB)); L2.push(tl('Level: ', P.topL));
+  }
+  return {title: P.title, lines: L2};
+}
+function mgProgDiscord(P) { return mgProgLines(P).lines.map(function (l) { return l.map(function (s) { return s.t || ''; }).join(''); }).join('\n'); }
+var R23ZU0 = mgZu;
+mgZu = function (k) {                                   // Kopf der Karte: "sortiert nach" vor dem Umschalter
+  var h = R23ZU0(k);
+  h = h.replace('<span class="mgh">Fortschritt</span><div class="mgseg sm">', '<span class="mgh">Fortschritt</span><span class="mgsm dim">sortiert nach</span><div class="mgseg sm">');
+  return h;
+};
+document.addEventListener('change', function (e) {
+  if (e.target.id !== 'r23Fbn') return;
+  MGS.fbn = +e.target.value; mgSave(); mgRender();
+});
+
+// ================================================================ Rivalen / Gilden waehlen: Suche wie die Spielersuche, Gewaehlte mit goldenem Rahmen
+function r23Terms(q) { return String(q || '').split(',').map(function (x) { return fold(x.trim()); }).filter(Boolean); }
+function r23GMatch(k, tm) {                             // 2 = genau (Name, ggf. mit Server), 1 = enthaelt, 0 = nein
+  var nm = fold(mgName(k)), sv = fold(mgSrvOf(k));
+  if (nm === tm) return 2;
+  var sp = tm.indexOf(' '), lp = tm.lastIndexOf(' ');
+  if (lp > 0) { var a = tm.slice(0, lp).trim(), b = tm.slice(lp + 1); if (nm === a && sv === b) return 3; }   // "Sharkdom F29"
+  if (sp > 0) { var a2 = tm.slice(0, sp), b2 = tm.slice(sp + 1).trim(); if (sv === a2 && nm === b2) return 3; if (sv === a2 && nm.indexOf(b2) >= 0) return 1; }   // "F29 Sharkdom"
+  return nm.indexOf(tm) >= 0 || sv === tm ? 1 : 0;
+}
+function r23Have(mode) { return mode === 'riv' ? mgRivals() : mgMine(); }
+function r23PickRow(mode, k, chosen) {
+  var X = mgX(), s = X.snaps[k], a = s[s.length - 1].agg, note = '';
+  if (X.own[k]) note = X.onl[k] > X.own[k] ? '<small class="mgnote">Online-Liste neuer (Stand ' + esc(mgDay(X.onl[k])) + ') als dein Scan (' + esc(mgDay(X.own[k])) + ')</small>' : '<small class="dim">eigener Scan ' + esc(mgDay(X.own[k])) + '</small>';
+  var data = '<b>' + esc(mgName(k)) + '</b> <span class="dim">' + esc(a.srv) + ' · ' + (a.mem || '?') + ' Mitgl.' + (a.bs ? ' · Σ Base ' + nf0.format(a.bs) : '') + '</span>' + note;
+  if (chosen) return '<button type="button" class="mgpi r23on" data-mgdel="' + mode + ':' + esc(k) + '" data-tip="Klick = entfernen">' + data +
+    '<span class="r23tag">✓ ' + (mode === 'riv' ? 'Rivale' : 'deine Gilde') + ' ×</span></button>';
+  return '<button type="button" class="mgpi" data-mgpk="' + (mode === 'riv' ? 'r' : 'g') + ':' + esc(k) + '">' + data + '</button>';
+}
+function mgPickList(mode, q) {
+  var X = mgX(), terms = r23Terms(q), have = r23Have(mode), excl = mode === 'riv' ? mgMine() : [];
+  var last = function (k) { var s = X.snaps[k]; return s[s.length - 1]; };
+  var byBs = function (a, b) { return (last(b).agg.bs || 0) - (last(a).agg.bs || 0); };
+  var h = '';
+  if (have.length) h += '<div class="r23grp">' + (mode === 'riv' ? 'Gewählte Rivalen' : 'Deine Gilden') + ' (' + have.length + ')</div>' + have.map(function (k) { return r23PickRow(mode, k, true); }).join('');
+  var cur = terms.length ? terms[terms.length - 1] : '';
+  var ks = mgKeys().filter(function (k) { return have.indexOf(k) < 0 && excl.indexOf(k) < 0 && (!cur || r23GMatch(k, cur)); });
+  ks.sort(function (a, b) { return (cur ? r23GMatch(b, cur) - r23GMatch(a, cur) : 0) || byBs(a, b); });
+  h += '<div class="r23grp">' + (cur ? 'Treffer für „' + esc(cur) + '“' : 'Weitere Gilden') + (terms.length > 1 ? ' <small class="dim">– Enter übernimmt alle ' + terms.length + ' Suchbegriffe</small>' : (cur ? ' <small class="dim">– Enter übernimmt den ersten Treffer</small>' : '')) + '</div>';
+  if (!ks.length) return h + '<p class="dim mgsm">Keine Gilde gefunden.</p>';
+  return h + ks.slice(0, 60).map(function (k) { return r23PickRow(mode, k, false); }).join('') + (ks.length > 60 ? '<p class="dim mgsm">… und ' + (ks.length - 60) + ' weitere – bitte genauer suchen.</p>' : '');
+}
+var R23PK0 = mgPick;
+mgPick = function (mode, q) {
+  $('mgDlg').classList.remove('r23full');
+  R23PK0(mode, q);
+  var dl = $('mgDlg'); if (!dl) return;
+  var ch = dl.querySelector('.mgchips'); if (ch) ch.remove();               // Gewaehlte stehen jetzt in der Liste (goldener Rahmen)
+  var inp = $('mgQ'); if (inp) inp.placeholder = 'Gilde oder Server suchen … mehrere mit Komma (z. B. F29 Sharkdom, Order 66)';
+};
+function r23PickAll(mode, q) {                          // Enter: je Suchbegriff den besten Treffer uebernehmen
+  var terms = r23Terms(q), have = r23Have(mode), excl = mode === 'riv' ? mgMine() : [], added = [];
+  if (!terms.length) return;
+  terms.forEach(function (tm) {
+    var best = null, bs = 0;
+    mgKeys().forEach(function (k) {
+      if (have.indexOf(k) >= 0 || excl.indexOf(k) >= 0 || added.indexOf(k) >= 0) return;
+      var s = r23GMatch(k, tm); if (!s) return;
+      var v = s * 1e12 + ((mgX().snaps[k].slice(-1)[0].agg.bs) || 0);
+      if (v > bs) { bs = v; best = k; }
+    });
+    if (best) added.push(best);
+  });
+  if (!added.length) { toast('Keine passende Gilde gefunden.', true); return; }
+  if (mode === 'riv') MGS.r = (MGS.r || []).filter(function (x) { return added.indexOf(x) < 0; }).concat(added);
+  else { MGS.g = (MGS.g || []).filter(function (x) { return added.indexOf(x) < 0; }).concat(added); MGS.cur = added[0]; MGS.src = 'own'; }
+  mgSave(); mgRender(); mgPick(mode, '');
+  toast((added.length === 1 ? mgName(added[0]) : added.length + ' Gilden') + ' hinzugefügt');
+}
+document.addEventListener('keydown', function (e) {
+  if (e.key !== 'Enter' || !e.target || e.target.id !== 'mgQ') return;
+  e.preventDefault();
+  var dl = $('mgDlg'); r23PickAll(dl.getAttribute('data-mode') === 'riv' ? 'riv' : 'g', e.target.value);
+});
+// Bericht: "+ Rivale" auch hier
+var R23REP0 = mgRep;
+mgRep = function (k) {
+  var h = R23REP0(k);
+  return h.replace(/<div class="mgchk mgrvl"><span class="mgsm dim">Rivalen:<\/span>/g, '<div class="mgchk mgrvl"><span class="mgsm dim">Rivalen:</span><button class="btn sm" type="button" data-r23addr="1">+ Rivale</button>')
+          .replace(/noch keine – im Reiter Rivalen mit „\+ Rivale“ hinzufügen/g, 'noch keine');
+};
+document.addEventListener('click', function (e) {
+  if (e.target.closest && e.target.closest('[data-r23addr]')) mgPick('riv');
+});
+// Verlauf: groesser und Vollbild
+var R23CH = null;                                       // {W, H} fuer das Diagramm (null = normal)
+function mgRivChart(rows, met, k) {
+  var pr = mgPair(k), from = MGS.rall ? -Infinity : (pr && pr.base ? pr.base.ts - 43200000 : (pr ? pr.nw.ts - 7 * 86400000 : -Infinity));
+  var ser = rows.map(function (r) { return {r: r, pts: (mgX().snaps[r.k] || []).filter(function (s) { return s.agg[met] != null && s.ts >= from; }).map(function (s) { return [s.ts, +s.agg[met]]; })}; }).filter(function (s) { return s.pts.length; });
+  var tsAll = []; ser.forEach(function (s) { s.pts.forEach(function (p) { if (tsAll.indexOf(p[0]) < 0) tsAll.push(p[0]); }); });
+  var tog = '<button class="btn sm" type="button" id="mgRall" aria-pressed="' + !!MGS.rall + '">' + (MGS.rall ? 'nur der Zeitraum' : 'ganzer Verlauf') + '</button>';
+  if (tsAll.length < 2) return '<p class="mgsm dim">Im Zeitraum gibt es nur einen Scan. ' + tog + '</p>';
+  tsAll.sort(function (a, b) { return a - b; });
+  var big = MGS.rbig && !R23CH, W = R23CH ? R23CH.W : (big ? 1100 : 760), H = R23CH ? R23CH.H : (big ? 420 : 260);
+  var pl = 64, prr = 170, pt = 12, pb = 26, lo = Infinity, hi = -Infinity;
+  ser.forEach(function (s) { s.pts.forEach(function (p) { lo = Math.min(lo, p[1]); hi = Math.max(hi, p[1]); }); });
+  if (hi === lo) { hi += 1; lo -= 1; }
+  var t0 = tsAll[0], t1 = tsAll[tsAll.length - 1], x = function (ts) { return pl + (ts - t0) / (t1 - t0) * (W - pl - prr); };
+  var inv = met === 'rank', y = function (v) { var q = (v - lo) / (hi - lo); return pt + (inv ? q : 1 - q) * (H - pt - pb); };
+  var fmtA = function (v) { return Math.abs(v) >= 1e6 ? nf1.format(v / 1e6) + ' Mio' : (Math.abs(v) >= 1e4 ? nf0.format(v / 1e3) + ' Tsd' : nf1.format(v)); };
+  var cols = ['#3b8fd6', '#2f9e5b', '#8b5cf6', '#e5534b', '#14b8a6', '#d97706', '#db2777', '#64748b', '#0ea5e9', '#84cc16', '#a855f7', '#f43f5e'];
+  var g = '<svg class="mgchart' + (R23CH ? ' full' : (big ? ' big' : '')) + '" viewBox="0 0 ' + W + ' ' + H + '" role="img">';
+  var nG = R23CH ? 6 : 3;
+  for (var i = 0; i <= nG; i++) { var v = lo + (hi - lo) * i / nG, yy = y(v); g += '<line x1="' + pl + '" x2="' + (W - prr) + '" y1="' + yy + '" y2="' + yy + '" class="mggr"/><text x="' + (pl - 6) + '" y="' + (yy + 4) + '" text-anchor="end" class="mgax">' + esc(fmtA(v)) + '</text>'; }
+  var lx = [];
+  tsAll.slice().reverse().forEach(function (ts) { var xx = x(ts); if (lx.every(function (q) { return Math.abs(q - xx) >= 44; })) { lx.push(xx); g += '<text x="' + xx + '" y="' + (H - 6) + '" text-anchor="middle" class="mgax">' + esc(mgShort(ts)) + '</text>'; } });
+  var labs = [];
+  ser.forEach(function (s, i3) {
+    var cur = s.r.k === k, c = cur ? 'var(--accent)' : cols[i3 % cols.length];
+    g += '<polyline fill="none" stroke="' + c + '" stroke-width="' + (cur ? 3.5 : 2) + '" points="' + s.pts.map(function (p) { return x(p[0]).toFixed(1) + ',' + y(p[1]).toFixed(1); }).join(' ') + '"/>';
+    s.pts.forEach(function (p) { g += '<circle cx="' + x(p[0]).toFixed(1) + '" cy="' + y(p[1]).toFixed(1) + '" r="' + (R23CH ? 3.5 : 2.5) + '" fill="' + c + '"><title>' + esc(s.r.name + ' · ' + mgDay(p[0]) + ': ' + nf1.format(p[1])) + '</title></circle>'; });
+    var lp = s.pts[s.pts.length - 1]; labs.push({y: y(lp[1]), t: s.r.name, c: c, me: cur});
+  });
+  labs.sort(function (a, b) { return a.y - b.y; });
+  for (var j = 1; j < labs.length; j++) if (labs[j].y - labs[j - 1].y < 13) labs[j].y = labs[j - 1].y + 13;
+  labs.forEach(function (l) { g += '<text x="' + (W - prr + 8) + '" y="' + (l.y + 4) + '" fill="' + l.c + '" class="mglab' + (l.me ? ' me' : '') + '">' + esc(l.t) + '</text>'; });
+  var tools = R23CH ? '' : ' <button class="btn sm" type="button" data-r23rbig="1" aria-pressed="' + !!MGS.rbig + '">' + (MGS.rbig ? 'kleiner' : 'größer') + '</button>' +
+    ' <button class="btn sm" type="button" data-r23rfull="1">⤢ Vollbild</button>';
+  return g + '</svg><p class="mgsm dim">' + esc(MGS.rall ? 'Alle Scans der Liste.' : 'Scans im eingestellten Zeitraum.') + ' ' + tog + tools + '</p>';
+}
+function r23RivFull() {
+  var k = mgCur(); if (!k) return;
+  var RR = mgRivRows(k), met = MGS.rch || 'bs', lab = (MG_RCOLS.filter(function (c) { return c[0] === met; })[0] || [0, met])[1];
+  R23CH = {W: Math.max(900, Math.min(1800, window.innerWidth - 80)), H: Math.max(380, Math.min(900, window.innerHeight - 220))};
+  var svg = mgRivChart(RR.rows, met, k); R23CH = null;
+  $('mgDlg').innerHTML = '<div class="cardhead"><h2>Verlauf · ' + esc(lab) + ' · ' + esc(mgName(k)) + '</h2><button class="close" type="button" data-close>' + esc(t('close')) + '</button></div>' + svg;
+  $('mgDlg').classList.remove('mgsmall'); $('mgDlg').classList.add('r23full');
+  openOvl('ovlMg');
+}
+document.addEventListener('click', function (e) {
+  if (!e.target.closest) return;
+  if (e.target.closest('[data-r23rbig]')) { MGS.rbig = !MGS.rbig; mgSave(); mgRender(); return; }
+  if (e.target.closest('[data-r23rfull]')) { r23RivFull(); return; }
+  if (e.target.closest('#ovlMg [data-close]') || e.target.id === 'ovlMg') { var d = $('mgDlg'); if (d) d.classList.remove('r23full'); }
+});
+
+var R23CD0 = mgColDlg; mgColDlg = function (k) { $('mgDlg').classList.remove('r23full'); return R23CD0(k); };
+var R23PF0 = mgProfile; mgProfile = function (k, id) { $('mgDlg').classList.remove('r23full'); return R23PF0(k, id); };
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { var d = $('mgDlg'); if (d) setTimeout(function () { if ($('ovlMg').hidden) d.classList.remove('r23full'); }, 0); } });
+
+// ================================================================ Kopf kompakt
+function r23Count(full, n, tot) {                       // "246/246 Spieler · 15.10.26 → 17.10.26", der ganze Satz beim Darueberfahren
+  var el = $('count'); if (!el) return;
+  var tmp = document.createElement('span'); tmp.innerHTML = full;
+  el.innerHTML = '<b>' + nf0.format(n) + '</b>/' + nf0.format(tot) + ' ' + esc(unit()) +
+    (st.cmp && SCANS[st.a] && SCANS[st.b] ? ' &middot; ' + esc(shortDate(SCANS[st.a].label) + ' → ' + shortDate(SCANS[st.b].label)) : '');
+  el.setAttribute('data-tip', tmp.textContent);
+}
+var R23CNT = null;                                      // Platz der Zaehlzeile, wenn die Scan-Zeile aufgeklappt ist
+function r23Fold() {                                    // zugeklappt: Zaehlzeile rechts in die Scan-Zeile
+  var b = $('sfold'), cnt = $('blk_count'); if (!cnt) return;
+  var row = b ? b.parentNode : null, folded = !!(row && row.classList.contains('folded'));
+  if (folded && cnt.parentNode !== row) { R23CNT = {p: cnt.parentNode, n: cnt.nextSibling}; row.appendChild(cnt); cnt.classList.add('r23in'); }
+  else if (!folded && cnt.classList.contains('r23in')) {
+    cnt.classList.remove('r23in');
+    if (R23CNT && R23CNT.p && document.body.contains(R23CNT.p)) R23CNT.p.insertBefore(cnt, R23CNT.n && R23CNT.n.parentNode === R23CNT.p ? R23CNT.n : null);
+  }
+  if (typeof updRows === 'function') updRows();
+}
+var R23SF0 = sfoldText;
+sfoldText = function () {
+  R23SF0();
+  var b = $('sfold');
+  if (b && st.sort && st.sort.delta) { var d = b.querySelector('.dim'); if (d) d.textContent += ' · ' + t('dsort') + ' ' + (st.sort.dir < 0 ? '▲' : '▼'); }
+  r23Fold();
+};
+function r23More() {                                    // Suchzeile: Zuruecksetzen und "alle | angezeigte" ins Menue "⋯"
+  var se = $('blk_search'), row = se && se.parentNode; if (!row || !row.classList.contains('lrow')) return;
+  var mv = ['blk_rks', 'bReset'].map(function (id) { return $(id); }).filter(function (el) { return el && el.parentNode === row; });
+  if (!mv.length) return;
+  var w = document.createElement('div'); w.className = 'blk r23more'; w.id = 'r23more';
+  w.innerHTML = '<button class="btn" type="button" id="r23mb" aria-expanded="false" data-tip="Zurücksetzen und weitere Einstellungen">⋯<span class="r23dot" hidden></span></button><div class="r23mpop" id="r23mp" hidden></div>';
+  row.insertBefore(w, mv[0]);
+  mv.forEach(function (el) { $('r23mp').appendChild(el); });
+  r23MoreDot();
+}
+function r23MoreDot() {                                 // Punkt am "⋯", wenn ein Filter aktiv ist (Zuruecksetzen hat dann eine Zahl)
+  var d = document.querySelector('#r23mb .r23dot'), r = $('bReset'); if (!d || !r) return;
+  d.hidden = !(r.classList.contains('on') || r.querySelector('.n, .badge, i, b'));
+}
+document.addEventListener('click', function (e) {
+  var mb = e.target.closest && e.target.closest('#r23mb'), mp = $('r23mp');
+  if (mb) { mp.hidden = !mp.hidden; mb.setAttribute('aria-expanded', !mp.hidden); return; }
+  if (mp && !mp.hidden && !e.target.closest('#r23mp')) { mp.hidden = true; var b0 = $('r23mb'); if (b0) b0.setAttribute('aria-expanded', 'false'); }
+});
+function r23DsQuick() {                                 // "Nach Zuwachs sortieren" in die Schnellsuche
+  var ds = $('bDs'), qp = document.querySelector('#quick .qpop'); if (!ds) return;
+  if (qp && !$('quick').hidden) { if (ds.parentNode !== qp) qp.insertBefore(ds, qp.firstChild); ds.classList.add('r23dsq'); }
+}
+var R23BCH0 = buildChips;
+buildChips = function () { R23BCH0(); r23DsQuick(); };
+var R23AL0 = applyLayout;
+applyLayout = function (lay) { R23AL0(lay); r23More(); r23DsQuick(); r23Fold(); };
+var R23RND0 = render;
+render = function () { var x = R23RND0.apply(this, arguments); r23MoreDot(); return x; };
+$('quick').addEventListener('mouseenter', function () { var mp = $('r23mp'); if (mp && !mp.hidden) { mp.hidden = true; var b0 = $('r23mb'); if (b0) b0.setAttribute('aria-expanded', 'false'); } });
+document.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('#r23mb') && typeof qOpen === 'function' && QOPEN) qOpen(false); }, true);
+
+// ================================================================ Meine Gilde: gleiche Leiste wie die anderen Reiter + goldener Rahmen
+var R23MQ = '';                                         // Suche (nur Mitglieder)
+var R23MGOK = false;
+function r23MgList(k) { var all = mgX().snaps[k] || [], l = all.filter(function (s) { return s.mem; }); return l.length ? l : all; }
+function mgPair(k, per) {                               // Neu waehlbar (MGS.nw), Alt: vor 7 / 30 Tagen oder ein Scan
+  var list = r23MgList(k);
+  if (MGPIN) { var pl = list.filter(function (s) { return s.ts <= MGPIN + 60000; }); if (pl.length) list = pl; }
+  else if (MGS.nw && per === undefined) { var pn = list.filter(function (s) { return s.ts <= MGS.nw + 60000; }); if (pn.length) list = pn; }
+  if (!list.length) return null;
+  var nw = list[list.length - 1], base = null, p = per === undefined ? (MGS.per == null ? 7 : MGS.per) : per;
+  if (typeof p === 'number') {
+    var lim = nw.ts - p * 86400000 + 43200000;
+    for (var i = list.length - 2; i >= 0; i--) if (list[i].ts <= lim) { base = list[i]; break; }
+    if (!base && list.length > 1) base = list[0];
+  } else if (typeof p === 'string' && p.indexOf('ts:') === 0) {
+    var tsx = +p.slice(3);
+    for (var j = 0; j < list.length - 1; j++) if (Math.abs(list[j].ts - tsx) < 43200000) { base = list[j]; break; }
+    if (!base) for (var j2 = list.length - 2; j2 >= 0; j2--) if (list[j2].ts <= tsx) { base = list[j2]; break; }
+    if (!base && list.length > 1) base = list[0];
+  }
+  return {nw: nw, base: base && base !== nw ? base : null};
+}
+function r23MgLab(ts) { return fmtDay(ts) + (typeof fmtTime === 'function' ? '' : ''); }
+function r23MgTsLab(ts) { try { return new Date(ts).toLocaleString(LOC[L], {day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'}); } catch (e) { return fmtDay(ts); } }
+function r23MgTop(k, tb) {
+  if (!k) return '';
+  var list = r23MgList(k), pr = mgPair(k); if (!pr) return '';
+  var folded = String(S.scanFold) !== 'false', per = MGS.per == null ? 7 : MGS.per;
+  var optsB = list.slice().reverse().map(function (s, i) {
+    return '<option value="' + (i === 0 ? '' : s.ts) + '"' + (s === pr.nw ? ' selected' : '') + '>' + esc(r23MgTsLab(s.ts)) + (s.src === 'e' ? ' 📁' : '') + '</option>'; }).join('');
+  var oa = [[7, 'vor 7 Tagen'], [30, 'vor 30 Tagen']];
+  if (typeof per === 'number' && [7, 30].indexOf(per) < 0) oa.push([per, 'vor ' + per + ' Tagen']);
+  list.filter(function (s) { return s.ts < pr.nw.ts; }).reverse().forEach(function (s) { oa.push(['ts:' + s.ts, r23MgTsLab(s.ts) + (s.src === 'e' ? ' 📁' : '')]); });
+  var optsA = oa.map(function (o) { return '<option value="' + esc(String(o[0])) + '"' + (String(o[0]) === String(per) ? ' selected' : '') + '>' + esc(o[1]) + '</option>'; }).join('');
+  var span = pr.base ? shortDate(r23MgTsLab(pr.base.ts)) + ' → ' + shortDate(r23MgTsLab(pr.nw.ts)) : shortDate(r23MgTsLab(pr.nw.ts));
+  var full = mgName(k) + ' · ' + (pr.base ? 'Vergleich ' + r23MgTsLab(pr.base.ts) + ' → ' + r23MgTsLab(pr.nw.ts) : 'nur ein Scan (' + r23MgTsLab(pr.nw.ts) + ')');
+  var R = tb === 'mem' ? r23Filt(mgRowsOf(k)) : null;
+  var cntTxt = (R ? '<b>' + nf0.format(R.rows.length) + '</b>/' + nf0.format(R.all) + ' Spieler · ' : '') + esc(mgName(k)) + ' · ' + esc(span);
+  var cnt = '<div class="status blk r23mgc' + (folded ? ' r23in' : '') + '" id="r23mgCnt"><span class="r23cnt" data-tip="' + esc(full) + '">' + cntTxt + '</span>' +
+    (tb === 'mem' ? '<span class="outb"><button class="btn sm" type="button" data-mgimg="mem" data-tip="Tabelle als Bild">📷 ▾</button></span>' : '') + '</div>';
+  var h = '<div class="lrows r23mgl"><div class="lrow box sfw' + (folded ? ' folded' : '') + '">' +
+    '<button type="button" class="sfold" id="r23mgf" aria-expanded="' + !folded + '" data-tip="' + esc(t(folded ? 'sfoldOpen' : 'sfoldClose')) + '"><span class="lbl">' + esc(t('scan')) + '</span><b>' + esc(span) + '</b>' +
+    '<span class="dim">' + (pr.base ? ' · Vergleich' : '') + '</span><span class="car">' + (folded ? '&#9662;' : '&#9652;') + '</span></button>' +
+    '<div class="blk scansel"><span class="lbl">' + esc(t('scan')) + '</span><label>Alt <select class="sel hl" id="r23mgA">' + optsA + '</select></label><span aria-hidden="true">→</span>' +
+    '<label>Neu <select class="sel hl" id="r23mgB">' + optsB + '</select></label></div>' + (folded ? cnt : '') + '</div>';
+  if (tb === 'mem') h += '<div class="lrow"><div class="search blk"><span class="mag" aria-hidden="true"></span><input id="r23mgQ" type="search" autocomplete="off" placeholder="Suchen: Name, Klasse … mehrere mit Komma" value="' + esc(R23MQ) + '">' +
+    '<button class="x" id="r23mgQx" type="button" aria-label="Suche löschen">×</button></div><button class="btn blk' + (R23MQ || MGS.ms ? ' on' : '') + '" id="r23mgRst" type="button">Zurücksetzen</button></div>';
+  if (!folded) h += '<div class="lrow">' + cnt + '</div>';
+  return h + '</div>';
+}
+function r23Filt(R) {                                   // Suche: Name oder Klasse enthaelt einen der Begriffe; Plaetze in der Gilde vorher
+  if (!R) return R;
+  var all = R.rows, terms = r23Terms(R23MQ);
+  var rk = function (f) { var s = all.filter(function (r) { return f(r) != null; }).slice().sort(function (a, b) { return f(b) - f(a); }), m = new Map(), last = null, pos = 0;
+    s.forEach(function (r, i) { var v = f(r); if (v !== last) { pos = i + 1; last = v; } m.set(r, pos); }); return m; };
+  var withO = all.filter(function (r) { return r.o; });
+  var rkO = function (f) { var s = withO.slice().sort(function (a, b) { return f(b) - f(a); }), m = new Map(), last = null, pos = 0;
+    s.forEach(function (r, i) { var v = f(r); if (v !== last) { pos = i + 1; last = v; } m.set(r, pos); }); return m; };
+  var K = {lv: [rk(function (r) { return r.m.lv; }), rkO(function (r) { return r.o.lv; })], bs: [rk(function (r) { return r.m.bs; }), rkO(function (r) { return r.o.bs; })],
+           tt: [rk(function (r) { return r.m.tt; }), rkO(function (r) { return r.o.tt == null ? -1 : r.o.tt; })]};
+  all.forEach(function (r) { r.rk = {}; Object.keys(K).forEach(function (q) { var n = K[q][0].get(r), o = K[q][1].get(r); r.rk[q] = n ? [n, o ? o - n : 0] : null; }); });
+  var rows = !terms.length ? all : all.filter(function (r) { var nm = fold(r.m.name), cl = fold(MG_CLS[r.m.cls] || ''); return terms.some(function (tm) { return nm.indexOf(tm) >= 0 || cl === tm; }); });
+  var o = {}; Object.keys(R).forEach(function (q) { o[q] = R[q]; }); o.rows = rows; o.all = all.length; o.allRows = all; return o;
+}
+var R23FILT = false;
+var R23ROF0 = mgRowsOf;
+mgRowsOf = function (k, per) { var R = R23ROF0(k, per); return R23FILT ? r23Filt(R) : R; };
+var R23MEM0 = mgMembers;
+mgMembers = function (k) {
+  R23FILT = true; var h; try { h = R23MEM0(k); } finally { R23FILT = false; }
+  return h.replace(/<button class="btn sm" type="button" id="mgColsB">Spalten …<\/button>/, '').replace(/<button class="btn sm" type="button" data-mgimg="mem"[^>]*>📷 ▾<\/button>/, '');
+};
+var R23MMM0 = mgMemModel;
+mgMemModel = function (k) { R23FILT = true; try { return R23MMM0(k); } finally { R23FILT = false; } };
+function r23RkPill(v) {                                 // Platz in der Gilde (wie die Rang-Marken der Liste)
+  if (!v || S.rankPos === 'off' || !S.rk) return '';
+  var n = v[0], mv = mvOn() ? v[1] : 0, tm = S.tm || 10;
+  var pc = n <= tm ? ' in' + (n <= 3 ? ' t3' + (n === 1 ? ' d1' : (n === 2 ? ' g2' : ' g3')) : '') : '';
+  var tip = 'Platz ' + n + ' in der Gilde' + (mv ? ' · ' + (mv > 0 ? mv + ' Plätze besser' : -mv + ' Plätze schlechter') + ' als im Vergleichs-Scan' : '');
+  return '<i class="rk' + pc + (mv ? ' hasra' : '') + '" data-tip="' + esc(tip) + '">#' + n + (/ (d1|g2|g3)/.test(pc) ? SPK : '') +
+    (mv ? '<b class="ra ' + (mv > 0 ? 'up' : 'dn') + '">' + (mv > 0 ? '▲' : '▼') + Math.abs(mv) + '</b>' : '') + '</i>';
+}
+var R23CELL0 = mgCell;
+mgCell = function (c, r, i, weak) {
+  var h = R23CELL0(c, r, i, weak);
+  if ((c.id === 'lv' || c.id === 'bs' || c.id === 'tt') && r.rk && r.rk[c.id]) {
+    var p = r23RkPill(r.rk[c.id]);
+    if (p) h = h.replace(/^<td class="r">([\s\S]*)<\/td>$/, '<td class="r"><div class="mc' + (S.rankPos === 'left' ? ' left' : '') + '">$1' + p + '</div></td>');
+  }
+  return h;
+};
+function mgRender() {
+  var X = mgX(), cur = mgCur(), mine = mgMine(), tb = mgTab();
+  var h = r23MgTop(cur, tb);
+  h += '<div class="ownbar r23mgbar"><span class="mglbl">Gilde</span><div class="mgseg" id="mgGs">' + mine.map(function (k) {
+    return '<button type="button" data-mgg="' + esc(k) + '" aria-pressed="' + (k === cur) + '">' + esc(mgSrvOf(k) + ' · ' + mgName(k)) + '</button>';
+  }).join('') + '</div><button class="btn" type="button" id="mgAddG">+ Gilde</button>';
+  if (cur && MGS.src === 'har' && X.ownKey === cur) h += '<span class="dim mgsm">aus deiner HAR erkannt · <a href="#" id="mgChg">ändern</a></span>';
+  else if (cur && MGS.src === 'prog') h += '<span class="dim mgsm">Vorgabe der Liste · <a href="#" id="mgChg">ändern</a></span>';
+  h += '<span class="r23sep" aria-hidden="true"></span><div class="mgtabs" role="tablist">' + MG_TABS.map(function (x) {
+    var dis = x[0] === 'fight';
+    return '<button type="button" role="tab" data-mgt="' + x[0] + '" aria-pressed="' + (x[0] === tb) + '"' + (dis ? ' disabled data-tip="Kommt mit Runde 22b: Gildenkämpfe, Verteidigung und Raids – wer war dabei, wer hat gefehlt"' : '') + '>' + esc(x[1]) + '</button>';
+  }).join('') + '</div></div><div id="mgAlert"></div><div id="mgBody"></div>';
+  $('mgpane').innerHTML = h;
+  R23MGOK = true;
+  if (!cur) { $('mgBody').innerHTML = mgEmpty(); return; }
+  mgAlert(cur);
+  $('mgBody').innerHTML = tb === 'zu' ? mgZu(cur) : (tb === 'riv' ? mgRiv(cur) : (tb === 'rep' ? mgRep(cur) : mgMembers(cur)));
+  mgAfter();
+}
+function r23MgRefocus(id, pos) { var n = $(id); if (n) { n.focus(); try { n.setSelectionRange(pos, pos); } catch (e) {} } }
+document.addEventListener('click', function (e) {
+  if (!MGV || !e.target.closest) return;
+  if (e.target.closest('#r23mgf')) { S.scanFold = String(S.scanFold) === 'false'; saveS(); hideTip(); mgRender(); return; }
+  if (e.target.closest('#r23mgQx')) { R23MQ = ''; mgRender(); r23MgRefocus('r23mgQ', 0); return; }
+  if (e.target.closest('#r23mgRst')) { R23MQ = ''; MGS.ms = null; mgSave(); mgRender(); return; }
+});
+var R23MQT = null;
+document.addEventListener('input', function (e) {
+  if (!MGV || e.target.id !== 'r23mgQ') return;
+  R23MQ = e.target.value; var pos = e.target.selectionStart;
+  clearTimeout(R23MQT); R23MQT = setTimeout(function () { mgRender(); r23MgRefocus('r23mgQ', pos); }, 180);
+});
+document.addEventListener('change', function (e) {
+  if (!MGV) return;
+  var id = e.target.id;
+  if (id === 'r23mgA') { var v = e.target.value; MGS.per = /^\d+$/.test(v) ? +v : v; mgSave(); mgRender(); return; }
+  if (id === 'r23mgB') { MGS.nw = e.target.value ? +e.target.value : null; mgSave(); mgRender(); return; }
+});
+// ⚙ › Spalten: in "Meine Gilde" die Spalten der Mitglieder-Tabelle
+var R23BS0 = buildSettings;
+buildSettings = function () {
+  R23BS0();
+  if (!MGV || SETTAB !== 'cols') return;
+  var tabs = document.querySelector('#setBody .stabs'), on = mgCols().map(function (c) { return c.id; });
+  var h = '<h3>Spalten der Mitglieder-Tabelle</h3><p class="expl">Gilt für den Reiter „Meine Gilde“ (Mitglieder). Die Spalten der Spieler- und Gilden-Liste stellst du dort ein.</p><div class="mgcolist">' +
+    MG_COLS.filter(function (c) { return !c.fix; }).map(function (c) { return '<label><input type="checkbox" data-mgcol="mem:' + c.id + '"' + (on.indexOf(c.id) >= 0 ? ' checked' : '') + '> ' + esc(c.l) + (c.tip ? ' <small class="dim">' + esc(c.tip) + '</small>' : '') + '</label>'; }).join('') +
+    '</div><p class="mgrow"><button class="btn sm" type="button" data-mgcold="mem">Standard</button></p>';
+  $('setBody').innerHTML = (tabs ? tabs.outerHTML : '') + h;
+};
+var R23CD1 = mgColDlg;
+mgColDlg = function (kind) { if (kind === 'mem' && !$('ovlSet').hidden) { buildSettings(); mgRender(); return; } return R23CD1(kind); };
+var R23RND1 = render;
+render = function () { var x = R23RND1.apply(this, arguments); if (MGV && R23MGOK) mgRender(); return x; };
+function mgWeak(R, n) {                                 // schwaechster Zuwachs: immer aus allen Mitgliedern (auch bei Suche)
+  var c = (R.allRows || R.rows).filter(function (r) { return r.gbs != null; }).sort(function (a, b) { return a.gbs - b.gbs; });
+  var out = new Set(); c.slice(0, n).forEach(function (r) { out.add(r.m); }); return out;
+}
 ownInit();
 mgInit();
+r23Init();
 lsApply();
 (function () {                                          // Vormerkung aus dem Reiter Gilden (Name geklickt / Alle zeigen)
   var pend = null;
@@ -10520,6 +11342,7 @@ lsApply();
   if (pend.gf) st.gf = {g: pend.gf, srv: pend.srv || ''};
   if (pend.prof && PROF) st.prof = pend.prof;
   st.shown = SH0; buildChips(); render();
+  if (pend.riv) { r23RivGo(); return; }
   if (pend.prof && PROF) {
     openProf(pend.prof);
     Array.prototype.some.call($('tbody').rows, function (row) { if (row.getAttribute('data-k') === pend.prof) { row.scrollIntoView({block: 'center'}); return true; } return false; });
@@ -10674,7 +11497,7 @@ function ranksOf(rows, nm, mcol) {                          // Platz = Anzahl gr
   }
   return out;
 }
-var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "cc545402f8"};
+var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "ef8f881d95"};
 function ctxOf(sp) {
   var cols = sp.cols, C = {nc: cols.length, nm: (sp.metrics || []).length, mcol: {}};
   cols.forEach(function (c, j) { if (c.m != null && c.m >= 0) C.mcol[c.m] = j; });
