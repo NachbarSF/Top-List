@@ -1081,7 +1081,7 @@ window.sfErrUI = function (txt, msg, where) {             // Fehlermeldung oben 
   var page = location.protocol === 'file:' ? 'Datei (PC/Handy)' : (/^127\.|^localhost$/.test(location.hostname) ? 'Live-Vorschau' : 'Online-Liste');
   if (/^#og?$/.test(location.hash)) page += ' · Eigene Scans'; else if (/^#s=/.test(location.hash)) page += ' · geteilter Link';
   else if (/^#g/.test(location.hash)) page += ' · Gilden';
-  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 20.10.2026 16:10',
+  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 20.10.2026 16:49',
              'Browser: ' + br + ' · ' + os + ' · ' + (window.innerWidth || 0) + '×' + (window.innerHeight || 0),
              'Fehler: ' + String(msg || '?').slice(0, 300), 'Stelle: ' + String(where || '–').slice(0, 120),
              'Ansprechpartner: Deinnachbar (Discord)'].join('\n');
@@ -5687,7 +5687,7 @@ function effLayout() {                                   // Anordnung: vom Erste
   return D.layout;
 }
 applyLayout(effLayout());
-function vis(el, on) { el.hidden = !on || !!HIDEB[el.id]; }
+function vis(el, on) { if (!el) return; el.hidden = !on || !!HIDEB[el.id]; }
 function updRows() {
   ROWS.forEach(function (row) {                           // leere Zeilen (auch Kopf-Gruppen) verschwinden
     var any = false;
@@ -11173,7 +11173,10 @@ function r23DsQuick() {                                 // "Nach Zuwachs sortier
   if (qp && !$('quick').hidden) { if (ds.parentNode !== qp) qp.insertBefore(ds, qp.firstChild); ds.classList.add('r23dsq'); }
 }
 var R23BCH0 = buildChips;
-buildChips = function () { R23BCH0(); r23DsQuick(); };
+buildChips = function () {                             // "Nach Zuwachs sortieren" vorher in Sicherheit (die Schnellsuche wird neu gebaut)
+  var ds = $('bDs'), bk = $('blks'); if (ds && bk && $('quick').contains(ds)) bk.appendChild(ds);
+  R23BCH0(); r23DsQuick();
+};
 var R23AL0 = applyLayout;
 applyLayout = function (lay) { R23AL0(lay); r23More(); r23DsQuick(); r23Fold(); };
 var R23RND0 = render;
@@ -11497,7 +11500,7 @@ function ranksOf(rows, nm, mcol) {                          // Platz = Anzahl gr
   }
   return out;
 }
-var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "ef8f881d95"};
+var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "620ac5eca7"};
 function ctxOf(sp) {
   var cols = sp.cols, C = {nc: cols.length, nm: (sp.metrics || []).length, mcol: {}};
   cols.forEach(function (c, j) { if (c.m != null && c.m >= 0) C.mcol[c.m] = j; });
