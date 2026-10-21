@@ -993,12 +993,126 @@ body.mgmode .hbtn #bRk{display:inline-flex}
 .mgtd .mc,.mgt td .mc{display:inline-flex;align-items:center;gap:6px;justify-content:flex-end}
 .mgt td .mc .rk{font-size:.72rem}
 .r23fus{font-weight:500;color:var(--dim);font-size:.78em;white-space:nowrap}
+/* ---- Runde 24: Kopfzeile, Menues, Navigation */
+body.r24 #vtabs{display:none!important}
+body.r24 #title{display:none!important}
+body.r24 header.top{flex-wrap:nowrap;align-items:center;gap:12px}
+body.r24 #hleft{flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:10px;flex-wrap:nowrap}
+body.r24 #blk_title{flex:0 0 auto;display:flex;align-items:center;gap:8px}
+body.r24 #hbtn{flex:0 0 auto;flex-wrap:nowrap}
+#r24sb{display:inline-flex;align-items:center;gap:10px;background:none;border:0;color:var(--text);font:800 2.1rem/1.1 var(--disp);cursor:pointer;padding:0 4px 0 0;white-space:nowrap;letter-spacing:-.01em}
+#r24sb .r24ico{color:var(--accent)}#r24sb .car{color:var(--accent);font-size:.42em}
+#r24sb:hover .r24st{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:6px}
+.r24hb{display:inline-flex;align-items:center;gap:8px;height:43px;padding:0 13px;border:1.5px solid var(--accent);border-radius:10px;background:var(--panel);color:var(--text);font:inherit;font-weight:700;cursor:pointer;white-space:nowrap;flex:0 0 auto;max-width:100%}
+.r24hb small{color:var(--dim);font-weight:500;overflow:hidden;text-overflow:ellipsis;max-width:220px}
+.r24hb.on small{color:var(--accent);font-weight:700}
+.r24hb .r24ico{color:var(--accent)}
+#r24nav .lbl{background:var(--accent);color:var(--accent-ink);padding:3px 10px;border-radius:7px;font-weight:800;letter-spacing:.06em}
+#r24nav .dim{color:var(--dim);font-size:.9em;font-weight:500}#r24nav .r24arr{color:var(--accent);font-size:.8em}
+#r24nav b{font-weight:800}
+body.r24 #hleft #blk_search{flex:1 1 340px;min-width:200px;max-width:560px;margin:0}
+body.r24 #hleft #srvsel{flex:0 0 auto;display:flex;gap:6px}
+body.r24 #srvClr,body.r24 #lnkSel{display:none!important}
+body.r24 #blk_count{display:none!important}
+body.r24 #srvchips{display:none!important}
+.r24shr{flex:0 0 auto;white-space:nowrap}
+#lrows.r24closed,.r23mgl.r24closed{display:none!important}
+body.r24 .lrow.r24row{flex-wrap:wrap}
+body.r24 .lrow.r24row > #sfold,body.r24 .r23mgl #r23mgf{display:none!important}
+body.r24 .r23mgl .lrow:not(.sfw){display:none!important}
+body.r24 .r23mgl #r23mgCnt{display:none!important}
+body.r24 #bReset.push,body.r24 #r23mgRst.push{margin-left:auto}
+/* #-Menue */
+#rkPop .r24gnh.off{opacity:.45}
+#rkPop #gainBox{display:flex;align-items:center;gap:8px;margin:0;border:0;padding:0;background:none}
+#rkPop #blk_rks{margin:0}
+/* Menues */
+.r24pan{position:absolute;z-index:520;background:var(--panel);border:2px solid var(--accent);border-radius:16px;box-shadow:0 18px 48px rgba(0,0,0,.45);padding:14px;color:var(--text);max-height:calc(100vh - 90px);overflow:auto}
+.r24ph{display:flex;align-items:center;gap:12px;font:800 1.25rem/1.2 var(--disp);padding:0 4px 12px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.r24ph .r24ico{color:var(--accent)}
+.r24ph .x{margin-left:auto;font-size:1.3rem;color:var(--dim);background:none;border:0;cursor:pointer}
+.r24grp{border-radius:12px;overflow:hidden;background:var(--panel2);border:1.5px solid var(--accent)}
+.r24row2,.r24grp .r24row{display:flex;width:100%;align-items:center;gap:12px;padding:10px 14px;font:800 1.15rem/1.2 var(--disp);border:0;border-top:1px solid var(--line);background:none;color:var(--text);cursor:pointer;text-align:left}
+.r24grp .r24row:first-child{border-top:0}
+.r24grp .r24row:hover{background:var(--hover)}
+.r24grp .r24row.all.on{background:var(--accent);color:var(--accent-ink)}
+.r24grp .r24row .cnt{font:600 .8rem/1.2 var(--body,inherit);color:var(--dim);margin-left:2px}
+.r24grp .r24row.all.on .cnt{color:inherit;opacity:.75}
+.r24grp .r24row .ic{margin-left:auto;display:flex;align-items:center}
+.r24grp .r24row .chev{font-size:.95rem;width:22px;text-align:center;color:var(--accent)}
+.r24grp .r24row.all.on .r24ico{color:var(--accent-ink)}
+.r24sub{background:var(--panel);padding:10px 14px 12px;display:flex;flex-wrap:wrap;gap:6px;border-top:1px solid var(--line)}
+.r24sub .l{width:100%;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+.r24c{padding:5px 10px;border-radius:9px;border:1.5px solid var(--cline);font-weight:700;font-size:.9rem;background:var(--panel2);color:var(--text);cursor:pointer}
+.r24c:hover{border-color:var(--accent)}
+.r24c.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.r24c.r24fz{border-style:dashed}
+.r24hd{display:flex;align-items:center;gap:8px;width:100%;font:800 .8rem/1.2 var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--text);margin:14px 2px 8px;background:none;border:0;cursor:pointer;padding:2px}
+.r24hd .car{color:var(--accent);font-size:.85rem}.r24hd small{letter-spacing:0;text-transform:none;color:var(--accent);font-weight:700;font-size:.8rem}
+.r24cls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.r24cl{display:flex;align-items:center;gap:8px;padding:6px 9px;border-radius:10px;background:var(--panel2);border:1.5px solid var(--line);font-weight:700;font-size:.9rem;color:var(--text);cursor:pointer;text-align:left;min-width:0}
+.r24cl img{width:24px;height:24px;flex:0 0 auto}.r24cl:hover{border-color:var(--accent)}.r24cl.on{border-color:var(--accent);background:var(--hover)}
+.r24foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;color:var(--dim);font-size:.88rem}
+.r24foot b{color:var(--text)}
+#r24S{padding:10px}
+.r24si{display:flex;align-items:center;gap:12px;width:100%;padding:10px 12px;border-radius:11px;font:800 1.1rem/1.2 var(--disp);position:relative;background:none;border:0;color:var(--text);cursor:pointer;text-decoration:none;text-align:left}
+.r24si .r24ico{color:var(--accent);flex:0 0 auto}
+.r24si.cur{background:var(--accent);color:var(--accent-ink)}.r24si.cur .r24ico{color:var(--accent-ink)}
+.r24si:hover:not(.cur){background:var(--hover)}
+.r24si small{font:600 .74rem/1.2 var(--body,inherit);color:var(--dim);margin-left:auto}.r24si.cur small{color:inherit;opacity:.75}
+.r24si .r24tip{display:none;position:absolute;left:calc(100% + 16px);top:50%;transform:translateY(-50%);width:320px;background:var(--panel);border:1.5px solid var(--accent);border-radius:12px;padding:11px 13px;font:500 .9rem/1.45 var(--body,inherit);color:var(--text);box-shadow:0 10px 30px rgba(0,0,0,.35);z-index:2;white-space:normal}
+.r24si .r24tip b{color:var(--accent)}
+@media (hover:hover){.r24si:hover .r24tip{display:block}}
+.r24sep2{height:1px;background:var(--line);margin:6px 6px}
+.r24ext{font-size:.8rem;color:var(--dim)}
+@media (max-width:1500px){body.r24 #bSetT{display:none}#r24nav .dim{display:none}}
+@media (max-width:1400px){.r24shr{font-size:0}.r24shr::before{content:'📷 ▾';font-size:1rem}body.r24 #hleft #blk_search{min-width:200px}body.r24 header.top{flex-wrap:wrap}body.r24 #hleft{flex:1 1 100%}body.r24 #hbtn{margin-left:auto}}
+@media (max-width:1100px){body.r24 header.top{flex-wrap:wrap}body.r24 #hleft{flex-wrap:wrap}body.r24 #hleft #blk_search{flex-basis:100%;max-width:none}#r24sb{font-size:1.6rem}.r24si .r24tip{left:12px;right:12px;top:auto;bottom:calc(100% + 6px);transform:none;width:auto}}
+/* ---- Runde 24: Profil, Fensterbreiten, Schriftgroesse, Zeilenhoehe */
+body.r24 #ovlProf .card,body.r24 #ovlMg .card.mgsmall,body.r24 #ovlSet .card,body.r24 #ovlInfo .card{width:fit-content;min-width:min(760px,calc(100vw - 24px));max-width:min(1800px,calc(100vw - 80px))}
+@media (max-width:700px){body.r24 #ovlProf .card,body.r24 #ovlMg .card.mgsmall,body.r24 #ovlSet .card,body.r24 #ovlInfo .card{max-width:calc(100vw - 16px);min-width:0}}
+.r24pc{font-size:calc(1rem * var(--fs,1))}
+.r24pc .phead{flex-wrap:nowrap;align-items:center;gap:24px}
+.r24pc .pname2{font-size:calc(1.6rem * var(--fs,1));white-space:nowrap}
+.r24ph2{display:flex;flex-direction:column;gap:7px;margin:4px 0 12px}
+.r24pc .pchips.r24pr{flex-wrap:nowrap;gap:6px 28px;margin:0}
+.r24pc .pchips.r24pr small{font-size:calc(.68rem * var(--fs,1))}
+.r24pc .pchips.r24pr b{font-size:calc(1.15rem * var(--fs,1));white-space:nowrap}
+.r24pc .pchips.r24pr b .mgd{font-size:.62em}
+.r24pc .pchips.r24pr span[data-tip]{cursor:help}
+.r24pc .pline,.r24pc .pper2,.r24pc .mgsm{font-size:calc(.95rem * var(--fs,1))}
+.r24pc p.mgsm{white-space:nowrap}
+.r24fr{display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap}
+.r24fr .r24rune td:first-child{white-space:nowrap}
+.r24pc .r24sq{display:flex;gap:26px;flex-wrap:wrap;margin-top:12px}
+.r24pc .r24sq .fq{width:16px!important;height:24px!important}
+.r24pc .r24sq .mgsqh span{width:19px!important;font-size:.75rem!important}
+@media (max-width:700px){.r24pc .phead{flex-wrap:wrap}.r24pc .pchips.r24pr{flex-wrap:wrap;gap:6px 18px}.r24pc p.mgsm{white-space:normal}}
+/* Schriftgroesse (⚙ › Schrift) in allen Reitern */
+body.r24 .mgt{font-size:calc(.92rem * var(--fs,1))}
+body.r24 .mgt th{font-size:calc(.7rem * var(--fs,1))}
+body.r24 .rtab{font-size:calc(1rem * var(--fs,1))}
+@media (max-width:700px){body.r24 .mgt{font-size:calc(.84rem * var(--fs,1))}}
+/* Zeilenhoehe "eng" im Vergleich: Zuwachs rechts neben dem Wert */
+:root[data-r24dens="compact"] .vw{flex-direction:row;align-items:baseline;gap:6px}
+:root[data-r24dens="compact"] .vw .dl{display:inline}
+/* ---- Runde 24: Statistik */
+body.r24 .istat .issec,body.r24 .r24rise{border:2px solid var(--accent);border-radius:12px;padding:10px 16px 12px;margin:0 0 30px;background:color-mix(in srgb,var(--accent) 4%,transparent)}
+body.r24 .r24rise h3{margin-top:4px}
+.chip .r24n{display:inline-grid;place-items:center;min-width:18px;height:18px;margin-left:6px;border-radius:9px;background:var(--accent);color:var(--accent-ink);font-size:.72rem;font-weight:800;vertical-align:1px}
+.r24sep{display:inline-block;width:1px;height:26px;background:var(--line);margin:0 8px;vertical-align:middle}
+.r24bpl{font-size:.9rem;margin:0 6px 0 2px}
+.r24more{display:flex;gap:10px;align-items:center;margin-top:10px}.r24more input{width:70px;margin-left:6px}
+.istab .sqc{white-space:nowrap}.istab th .mgsqh{display:block}
+.r24pot img{width:22px;height:22px;vertical-align:middle}
+.r24bp{white-space:nowrap}.r24bp small{color:var(--dim);margin-left:6px}
+.r24miss{color:var(--down);font-weight:700;font-size:.85em;cursor:help;margin-left:4px}
 </style>
 </head>
 <body>
 <div class="app">
   <header class="top">
-    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>7 Scans</b> von 03.01.2026 23:51 bis 18.10.2026 20:43 · alle Spieler<br>Beta 3 gibt mir bitte euen Feedback</p></div>
+    <div class="ttl" id="hleft"><div class="tblk blk" id="blk_title"><h1 id="title">Ehrenhalle</h1><div class="vtabs" id="vtabs" role="tablist" hidden></div><button class="newscan" id="newscan" type="button" hidden></button></div><p class="sub blk" id="sub"><b>7 Scans</b> von 03.01.2026 23:51 bis 21.10.2026 17:12 · alle Spieler<br>Beta 3 gibt mir bitte euen Feedback</p></div>
     <div class="hbtn" id="hbtn" hidden>
       <button class="btn rkq" id="bRk" type="button" aria-pressed="true">#</button>
       <select class="sel" id="lang" aria-label="Sprache / Language"></select>
@@ -1011,7 +1125,7 @@ body.mgmode .hbtn #bRk{display:inline-flex}
     interaktiven Seiten anzeigen – zum Beispiel die Vorschau in WhatsApp, Discord, Telegram oder im E-Mail-Programm oder der
     „HTML-Viewer“ am Handy. Bitte öffne die Datei mit einem Browser: <b>Chrome, Edge, Firefox oder Safari</b>
     (am Handy: Datei speichern, antippen, „Öffnen mit“ und Chrome wählen). Dann funktionieren Sortieren, Suchen und alles andere.</div>
-  <div class="static" id="static"><table><thead><tr><th class="r">#</th><th>Name</th><th>⠀</th><th>Guild</th><th class="r">Level</th><th class="r">XP Gain</th><th class="r">Base Sum</th><th class="r">Base Gain</th><th class="r">Base Ratio</th><th class="r">XP/Day</th><th class="r">Total Sum</th><th class="r">Fortress</th><th class="r">Runes</th><th class="r">Pets</th><th class="r">Portal</th><th class="r">Frames</th><th class="r">Album</th><th class="r">Base Main</th><th class="r">Base Con</th><th class="r">HP</th><th class="r">Item Quality</th><th class="r">Gem Mine</th><th class="r">Gem Avg</th><th class="r">Weapon Dmg</th></tr></thead><tbody><tr><td class="r">1</td><td>thceam</td><td>F29</td><td>Order 66</td><td class="r">610<small>#1</small></td><td class="r">–<small>#405</small></td><td class="r">130.103<small>#99</small></td><td class="r">–<small>#419</small></td><td class="r">69:31</td><td class="r">–<small>#405</small></td><td class="r">227.679<small>#278</small></td><td class="r">20.15.15.15.78.20.45.10.2.2.0.0</td><td class="r">0.0.0.0.0.0.0.0.0</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">90.023<small>#78</small></td><td class="r">40.080<small>#114</small></td><td class="r">321.416.550<small>#353</small></td><td class="r">–</td><td class="r">78<small>#29</small></td><td class="r">–</td><td class="r">1.051<small>#1.022</small></td></tr><tr><td class="r">2</td><td>Teigo eu5</td><td>F29</td><td>Tavernenflotte</td><td class="r">605<small>#2</small></td><td class="r">–<small>#1.101</small></td><td class="r">186.718<small>#2</small></td><td class="r">–<small>#419</small></td><td class="r">42:58</td><td class="r">–<small>#1.101</small></td><td class="r">571.377<small>#3</small></td><td class="r">20.15.8.8.88.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.32.32.32</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">78.489<small>#132</small></td><td class="r">108.229<small>#1</small></td><td class="r">1.629.235.469<small>#2</small></td><td class="r">963<small>#3</small></td><td class="r">88<small>#18</small></td><td class="r">2.010<small>#10</small></td><td class="r">2.462<small>#296</small></td></tr><tr><td class="r">3</td><td>BaShFX</td><td>F29</td><td>Tavernenflotte</td><td class="r">605<small>#2</small></td><td class="r">–<small>#1.099</small></td><td class="r">164.357<small>#14</small></td><td class="r">–<small>#47</small></td><td class="r">64:36</td><td class="r">–<small>#1.099</small></td><td class="r">522.717<small>#12</small></td><td class="r">20.15.10.10.80.20.45.10.1.1.10.1</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">105.000<small>#23</small></td><td class="r">59.357<small>#41</small></td><td class="r">578.656.105<small>#168</small></td><td class="r">925<small>#31</small></td><td class="r">80<small>#26</small></td><td class="r">2.026<small>#6</small></td><td class="r">4.333<small>#3</small></td></tr><tr><td class="r">4</td><td>Predator_is_back</td><td>F29</td><td>Tavernenflotte</td><td class="r">604<small>#4</small></td><td class="r">–<small>#426</small></td><td class="r">192.735<small>#1</small></td><td class="r">–<small>#34</small></td><td class="r">62:38</td><td class="r">–<small>#426</small></td><td class="r">573.425<small>#2</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">120.154<small>#2</small></td><td class="r">72.581<small>#9</small></td><td class="r">639.444.691<small>#148</small></td><td class="r">929<small>#27</small></td><td class="r">100<small>#1</small></td><td class="r">2.059<small>#1</small></td><td class="r">4.171<small>#26</small></td></tr><tr><td class="r">5</td><td>Morpheus</td><td>F29</td><td>Tavernenflotte</td><td class="r">603<small>#5</small></td><td class="r">–<small>#290</small></td><td class="r">184.101<small>#4</small></td><td class="r">–<small>#37</small></td><td class="r">54:46</td><td class="r">–<small>#290</small></td><td class="r">575.341<small>#1</small></td><td class="r">20.15.15.15.91.20.45.12.1.1.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">99.243<small>#47</small></td><td class="r">84.858<small>#2</small></td><td class="r">1.791.306.110<small>#1</small></td><td class="r">967<small>#2</small></td><td class="r">91<small>#15</small></td><td class="r">2.029<small>#5</small></td><td class="r">1.938<small>#454</small></td></tr><tr><td class="r">6</td><td>eGoLeipzig</td><td>F29</td><td>Tavernenflotte</td><td class="r">602<small>#6</small></td><td class="r">–<small>#380</small></td><td class="r">165.201<small>#13</small></td><td class="r">–<small>#419</small></td><td class="r">64:36</td><td class="r">–<small>#380</small></td><td class="r">517.429<small>#15</small></td><td class="r">20.15.9.9.65.20.45.6.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">106.192<small>#21</small></td><td class="r">59.009<small>#43</small></td><td class="r">1.130.821.049<small>#39</small></td><td class="r">953<small>#4</small></td><td class="r">65<small>#56</small></td><td class="r">1.850<small>#51</small></td><td class="r">2.432<small>#303</small></td></tr><tr><td class="r">7</td><td>Drossi</td><td>F29</td><td>Tavernenflotte</td><td class="r">602<small>#6</small></td><td class="r">–<small>#377</small></td><td class="r">161.550<small>#21</small></td><td class="r">–<small>#45</small></td><td class="r">67:33</td><td class="r">–<small>#377</small></td><td class="r">502.140<small>#25</small></td><td class="r">20.15.10.10.86.20.45.9.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">109.000<small>#11</small></td><td class="r">52.550<small>#65</small></td><td class="r">1.311.121.083<small>#19</small></td><td class="r">911<small>#47</small></td><td class="r">86<small>#20</small></td><td class="r">2.014<small>#8</small></td><td class="r">4.234<small>#16</small></td></tr><tr><td class="r">8</td><td>Jaces</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#8</small></td><td class="r">–<small>#418</small></td><td class="r">156.941<small>#29</small></td><td class="r">–<small>#15</small></td><td class="r">64:36</td><td class="r">–<small>#418</small></td><td class="r">488.111<small>#40</small></td><td class="r">20.15.10.10.70.20.45.7.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|Twitch-Rahmen</td><td class="r">99,6 %<small>#98</small></td><td class="r">100.055<small>#39</small></td><td class="r">56.886<small>#46</small></td><td class="r">1.071.072.906<small>#49</small></td><td class="r">887<small>#75</small></td><td class="r">70<small>#41</small></td><td class="r">1.874<small>#43</small></td><td class="r">2.240<small>#363</small></td></tr><tr><td class="r">9</td><td>Zur HAFENBAR</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#8</small></td><td class="r">–<small>#481</small></td><td class="r">173.871<small>#6</small></td><td class="r">–<small>#31</small></td><td class="r">62:38</td><td class="r">–<small>#481</small></td><td class="r">509.361<small>#19</small></td><td class="r">20.15.17.18.97.20.45.15.0.0.0.0</td><td class="r">50.0.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">99,92 %<small>#79</small></td><td class="r">107.190<small>#15</small></td><td class="r">66.681<small>#20</small></td><td class="r">1.138.322.928<small>#38</small></td><td class="r">823<small>#158</small></td><td class="r">97<small>#11</small></td><td class="r">2.056<small>#2</small></td><td class="r">2.355<small>#334</small></td></tr><tr><td class="r">10</td><td>GamerSky</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#8</small></td><td class="r">–<small>#356</small></td><td class="r">158.306<small>#27</small></td><td class="r">–<small>#65</small></td><td class="r">55:45</td><td class="r">–<small>#356</small></td><td class="r">505.832<small>#22</small></td><td class="r">20.15.12.12.57.20.45.8.0.1.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.1|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">86.518<small>#94</small></td><td class="r">71.788<small>#11</small></td><td class="r">1.246.280.190<small>#20</small></td><td class="r">950<small>#7</small></td><td class="r">57<small>#121</small></td><td class="r">1.859<small>#46</small></td><td class="r">2.445<small>#300</small></td></tr><tr><td class="r">11</td><td>Teiss</td><td>F29</td><td>Tavernenflotte</td><td class="r">601<small>#8</small></td><td class="r">–<small>#368</small></td><td class="r">163.226<small>#18</small></td><td class="r">–<small>#43</small></td><td class="r">55:45</td><td class="r">–<small>#368</small></td><td class="r">529.464<small>#8</small></td><td class="r">20.15.13.13.74.20.45.10.2.2.2.1</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">90.222<small>#74</small></td><td class="r">73.004<small>#8</small></td><td class="r">1.620.410.360<small>#3</small></td><td class="r">951<small>#5</small></td><td class="r">74<small>#36</small></td><td class="r">1.980<small>#19</small></td><td class="r">1.918<small>#460</small></td></tr><tr><td class="r">12</td><td>Miloo_</td><td>F29</td><td>Order 66</td><td class="r">601<small>#8</small></td><td class="r">–<small>#414</small></td><td class="r">154.590<small>#38</small></td><td class="r">–<small>#419</small></td><td class="r">70:30</td><td class="r">–<small>#414</small></td><td class="r">493.194<small>#33</small></td><td class="r">20.15.12.12.79.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">99,76 %<small>#92</small></td><td class="r">108.090<small>#12</small></td><td class="r">46.500<small>#86</small></td><td class="r">500.286.267<small>#207</small></td><td class="r">920<small>#37</small></td><td class="r">79<small>#27</small></td><td class="r">1.962<small>#22</small></td><td class="r">4.176<small>#25</small></td></tr><tr><td class="r">13</td><td>Captain Tuny</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–<small>#373</small></td><td class="r">172.245<small>#8</small></td><td class="r">–<small>#33</small></td><td class="r">62:38</td><td class="r">–<small>#373</small></td><td class="r">533.592<small>#6</small></td><td class="r">20.15.14.15.97.20.45.15.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.1|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">106.605<small>#19</small></td><td class="r">65.640<small>#22</small></td><td class="r">1.197.168.561<small>#25</small></td><td class="r">943<small>#16</small></td><td class="r">97<small>#11</small></td><td class="r">1.900<small>#32</small></td><td class="r">2.380<small>#320</small></td></tr><tr><td class="r">14</td><td>Rocky der Stein</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–<small>#206</small></td><td class="r">183.032<small>#5</small></td><td class="r">–<small>#60</small></td><td class="r">57:43</td><td class="r">–<small>#206</small></td><td class="r">525.019<small>#11</small></td><td class="r">20.15.20.20.98.20.45.11.1.1.20.1</td><td class="r">50.48.5.10.15.74.75.73.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.1|Silberrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">103.887<small>#25</small></td><td class="r">79.145<small>#6</small></td><td class="r">624.263.958<small>#153</small></td><td class="r">846<small>#127</small></td><td class="r">98<small>#10</small></td><td class="r">1.898<small>#35</small></td><td class="r">4.018<small>#38</small></td></tr><tr><td class="r">15</td><td>Rokky</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–<small>#394</small></td><td class="r">150.046<small>#46</small></td><td class="r">–<small>#82</small></td><td class="r">68:32</td><td class="r">–<small>#394</small></td><td class="r">470.675<small>#52</small></td><td class="r">20.15.9.9.58.20.45.9.0.0.0.0</td><td class="r">0.0.5.0.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">101.358<small>#33</small></td><td class="r">48.688<small>#79</small></td><td class="r">490.505.699<small>#222</small></td><td class="r">946<small>#11</small></td><td class="r">58<small>#103</small></td><td class="r">1.844<small>#55</small></td><td class="r">4.275<small>#10</small></td></tr><tr><td class="r">16</td><td>Rengoku</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–<small>#492</small></td><td class="r">171.632<small>#9</small></td><td class="r">–<small>#322</small></td><td class="r">69:31</td><td class="r">–<small>#492</small></td><td class="r">528.910<small>#10</small></td><td class="r">20.15.17.17.97.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">118.328<small>#4</small></td><td class="r">53.304<small>#63</small></td><td class="r">537.954.010<small>#183</small></td><td class="r">949<small>#8</small></td><td class="r">97<small>#11</small></td><td class="r">2.040<small>#4</small></td><td class="r">4.311<small>#5</small></td></tr><tr><td class="r">17</td><td>EnmaTo</td><td>F29</td><td>Mandalorians</td><td class="r">600<small>#13</small></td><td class="r">–<small>#364</small></td><td class="r">167.411<small>#12</small></td><td class="r">–<small>#62</small></td><td class="r">67:33</td><td class="r">–<small>#364</small></td><td class="r">510.017<small>#18</small></td><td class="r">20.15.11.11.65.20.45.8.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">99,96 %<small>#75</small></td><td class="r">111.735<small>#8</small></td><td class="r">55.676<small>#50</small></td><td class="r">533.804.518<small>#186</small></td><td class="r">908<small>#48</small></td><td class="r">65<small>#56</small></td><td class="r">1.914<small>#29</small></td><td class="r">4.248<small>#14</small></td></tr><tr><td class="r">18</td><td>Lefty</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–<small>#598</small></td><td class="r">163.783<small>#16</small></td><td class="r">–<small>#419</small></td><td class="r">67:33</td><td class="r">–<small>#598</small></td><td class="r">487.379<small>#41</small></td><td class="r">20.15.13.13.89.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">99,8 %<small>#89</small></td><td class="r">110.095<small>#9</small></td><td class="r">53.688<small>#61</small></td><td class="r">503.677.289<small>#204</small></td><td class="r">854<small>#119</small></td><td class="r">89<small>#17</small></td><td class="r">2.025<small>#7</small></td><td class="r">4.275<small>#10</small></td></tr><tr><td class="r">19</td><td>d3stroy3r</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–<small>#349</small></td><td class="r">161.006<small>#22</small></td><td class="r">–<small>#53</small></td><td class="r">67:33</td><td class="r">–<small>#349</small></td><td class="r">517.984<small>#14</small></td><td class="r">20.15.17.16.92.20.45.15.15.15.18.15</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.0.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">107.592<small>#13</small></td><td class="r">53.414<small>#62</small></td><td class="r">1.096.782.479<small>#44</small></td><td class="r">932<small>#21</small></td><td class="r">92<small>#14</small></td><td class="r">1.992<small>#15</small></td><td class="r">1.880<small>#476</small></td></tr><tr><td class="r">20</td><td>moZone</td><td>F29</td><td>Tavernenflotte</td><td class="r">600<small>#13</small></td><td class="r">–<small>#376</small></td><td class="r">169.621<small>#10</small></td><td class="r">–<small>#419</small></td><td class="r">63:37</td><td class="r">–<small>#376</small></td><td class="r">538.945<small>#5</small></td><td class="r">20.15.14.14.90.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">106.643<small>#18</small></td><td class="r">62.978<small>#29</small></td><td class="r">1.498.495.273<small>#7</small></td><td class="r">968<small>#1</small></td><td class="r">90<small>#16</small></td><td class="r">2.000<small>#13</small></td><td class="r">1.954<small>#440</small></td></tr><tr><td class="r">21</td><td>Olivandam</td><td>F29</td><td>Sharkdom</td><td class="r">600<small>#13</small></td><td class="r">–<small>#1.050</small></td><td class="r">156.339<small>#32</small></td><td class="r">–<small>#39</small></td><td class="r">68:32</td><td class="r">–<small>#1.050</small></td><td class="r">494.810<small>#32</small></td><td class="r">20.15.5.5.58.20.45.5.0.0.0.0</td><td class="r">50.49.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">106.299<small>#20</small></td><td class="r">50.040<small>#71</small></td><td class="r">1.027.280.435<small>#55</small></td><td class="r">930<small>#25</small></td><td class="r">58<small>#103</small></td><td class="r">1.866<small>#45</small></td><td class="r">2.347<small>#337</small></td></tr><tr><td class="r">22</td><td>ByLe</td><td>F29</td><td>Order 66</td><td class="r">600<small>#13</small></td><td class="r">–<small>#606</small></td><td class="r">111.573<small>#148</small></td><td class="r">–<small>#419</small></td><td class="r">78:22</td><td class="r">–<small>#606</small></td><td class="r">417.425<small>#104</small></td><td class="r">20.15.7.7.75.20.45.6.0.0.0.0</td><td class="r">50.0.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">97,17 %<small>#210</small></td><td class="r">86.523<small>#93</small></td><td class="r">25.050<small>#219</small></td><td class="r">803.067.919<small>#104</small></td><td class="r">938<small>#18</small></td><td class="r">75<small>#32</small></td><td class="r">1.844<small>#55</small></td><td class="r">1.896<small>#464</small></td></tr><tr><td class="r">23</td><td>Triss Merigold</td><td>F29</td><td>Czarne Wąsy</td><td class="r">600<small>#13</small></td><td class="r">–<small>#407</small></td><td class="r">157.758<small>#28</small></td><td class="r">–<small>#419</small></td><td class="r">68:32</td><td class="r">–<small>#407</small></td><td class="r">499.074<small>#27</small></td><td class="r">20.15.12.12.78.20.45.7.12.9.14.12</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">106.760<small>#17</small></td><td class="r">50.998<small>#67</small></td><td class="r">520.295.991<small>#194</small></td><td class="r">926<small>#28</small></td><td class="r">78<small>#29</small></td><td class="r">1.975<small>#20</small></td><td class="r">4.401<small>#1</small></td></tr><tr><td class="r">24</td><td>Rat</td><td>F29</td><td></td><td class="r">599<small>#24</small></td><td class="r">–<small>#626</small></td><td class="r">153.420<small>#39</small></td><td class="r">–<small>#419</small></td><td class="r">59:41</td><td class="r">–<small>#626</small></td><td class="r">474.523<small>#47</small></td><td class="r">20.15.9.9.59.20.45.7.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.0</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">90.000<small>#80</small></td><td class="r">63.420<small>#28</small></td><td class="r">1.107.470.700<small>#42</small></td><td class="r">918<small>#38</small></td><td class="r">59<small>#94</small></td><td class="r">1.774<small>#95</small></td><td class="r">1.854<small>#489</small></td></tr><tr><td class="r">25</td><td>Black Lotus</td><td>F29</td><td>Tavernenflotte</td><td class="r">599<small>#24</small></td><td class="r">–<small>#360</small></td><td class="r">184.365<small>#3</small></td><td class="r">–<small>#419</small></td><td class="r">61:39</td><td class="r">–<small>#360</small></td><td class="r">531.658<small>#7</small></td><td class="r">20.15.15.15.99.20.45.11.3.3.3.1</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">112.316<small>#6</small></td><td class="r">72.049<small>#10</small></td><td class="r">1.193.329.125<small>#26</small></td><td class="r">849<small>#122</small></td><td class="r">99<small>#9</small></td><td class="r">1.997<small>#14</small></td><td class="r">2.340<small>#338</small></td></tr><tr><td class="r">26</td><td>nedik</td><td>F29</td><td>Tavernenflotte</td><td class="r">599<small>#24</small></td><td class="r">–<small>#297</small></td><td class="r">149.687<small>#47</small></td><td class="r">–<small>#119</small></td><td class="r">60:40</td><td class="r">–<small>#297</small></td><td class="r">469.974<small>#55</small></td><td class="r">20.15.9.9.58.20.45.8.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">90.106<small>#75</small></td><td class="r">59.581<small>#40</small></td><td class="r">1.077.838.650<small>#48</small></td><td class="r">946<small>#11</small></td><td class="r">58<small>#103</small></td><td class="r">1.810<small>#78</small></td><td class="r">2.397<small>#315</small></td></tr><tr><td class="r">27</td><td>Zogrock</td><td>F29</td><td>Tavernenflotte</td><td class="r">598<small>#27</small></td><td class="r">–<small>#1.093</small></td><td class="r">156.461<small>#31</small></td><td class="r">–<small>#38</small></td><td class="r">56:44</td><td class="r">–<small>#1.093</small></td><td class="r">498.646<small>#28</small></td><td class="r">20.15.10.10.58.20.45.8.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">88.000<small>#90</small></td><td class="r">68.461<small>#17</small></td><td class="r">1.199.766.600<small>#24</small></td><td class="r">942<small>#17</small></td><td class="r">58<small>#103</small></td><td class="r">1.851<small>#50</small></td><td class="r">2.375<small>#322</small></td></tr><tr><td class="r">28</td><td>Hi Im Chris</td><td>F29</td><td>Order 66</td><td class="r">598<small>#27</small></td><td class="r">–<small>#427</small></td><td class="r">135.177<small>#87</small></td><td class="r">–<small>#42</small></td><td class="r">63:37</td><td class="r">–<small>#427</small></td><td class="r">413.736<small>#107</small></td><td class="r">20.15.10.10.57.20.45.6.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">99,8 %<small>#89</small></td><td class="r">85.147<small>#101</small></td><td class="r">50.030<small>#73</small></td><td class="r">910.010.458<small>#73</small></td><td class="r">820<small>#163</small></td><td class="r">57<small>#121</small></td><td class="r">1.546<small>#218</small></td><td class="r">2.360<small>#330</small></td></tr><tr><td class="r">29</td><td>ChillPill</td><td>F29</td><td>Czarne Wąsy</td><td class="r">598<small>#27</small></td><td class="r">–<small>#366</small></td><td class="r">163.005<small>#20</small></td><td class="r">–<small>#419</small></td><td class="r">63:37</td><td class="r">–<small>#366</small></td><td class="r">489.024<small>#38</small></td><td class="r">20.15.10.10.60.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">103.005<small>#28</small></td><td class="r">60.000<small>#39</small></td><td class="r">1.068.829.992<small>#50</small></td><td class="r">891<small>#65</small></td><td class="r">60<small>#85</small></td><td class="r">1.829<small>#67</small></td><td class="r">2.185<small>#376</small></td></tr><tr><td class="r">30</td><td>ElonMuskow</td><td>F29</td><td>Czarne Wąsy</td><td class="r">597<small>#30</small></td><td class="r">–<small>#409</small></td><td class="r">159.676<small>#24</small></td><td class="r">–<small>#118</small></td><td class="r">60:40</td><td class="r">–<small>#409</small></td><td class="r">490.463<small>#37</small></td><td class="r">20.15.9.9.67.20.45.10.6.6.6.1</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">95.676<small>#52</small></td><td class="r">64.000<small>#25</small></td><td class="r">1.121.887.991<small>#40</small></td><td class="r">874<small>#92</small></td><td class="r">67<small>#53</small></td><td class="r">1.922<small>#28</small></td><td class="r">2.350<small>#336</small></td></tr><tr><td class="r">31</td><td>TheRock20</td><td>F29</td><td>Tavernenflotte</td><td class="r">597<small>#30</small></td><td class="r">–<small>#381</small></td><td class="r">169.320<small>#11</small></td><td class="r">–<small>#96</small></td><td class="r">50:50</td><td class="r">–<small>#381</small></td><td class="r">529.096<small>#9</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">84.660<small>#105</small></td><td class="r">84.660<small>#3</small></td><td class="r">1.364.472.447<small>#13</small></td><td class="r">935<small>#20</small></td><td class="r">100<small>#1</small></td><td class="r">2.046<small>#3</small></td><td class="r">1.948<small>#445</small></td></tr><tr><td class="r">32</td><td>Ares DICKerson</td><td>F29</td><td>Tavernenflotte</td><td class="r">597<small>#30</small></td><td class="r">–<small>#355</small></td><td class="r">155.754<small>#34</small></td><td class="r">–<small>#91</small></td><td class="r">65:35</td><td class="r">–<small>#355</small></td><td class="r">491.052<small>#35</small></td><td class="r">20.15.12.13.49.20.45.10.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">100.738<small>#34</small></td><td class="r">55.016<small>#53</small></td><td class="r">1.325.025.975<small>#17</small></td><td class="r">946<small>#11</small></td><td class="r">49<small>#256</small></td><td class="r">1.776<small>#93</small></td><td class="r">1.906<small>#462</small></td></tr><tr><td class="r">33</td><td>Hafensänger Xias</td><td>F29</td><td>Tavernenflotte</td><td class="r">597<small>#30</small></td><td class="r">–<small>#595</small></td><td class="r">149.614<small>#48</small></td><td class="r">–<small>#419</small></td><td class="r">67:33</td><td class="r">–<small>#595</small></td><td class="r">501.146<small>#26</small></td><td class="r">20.15.10.10.71.20.45.8.7.7.7.1</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">99.714<small>#46</small></td><td class="r">49.900<small>#75</small></td><td class="r">533.788.441<small>#187</small></td><td class="r">947<small>#10</small></td><td class="r">71<small>#39</small></td><td class="r">1.949<small>#24</small></td><td class="r">4.302<small>#6</small></td></tr><tr><td class="r">34</td><td>Petrise9</td><td>F29</td><td>Order 66</td><td class="r">597<small>#30</small></td><td class="r">–<small>#497</small></td><td class="r">145.808<small>#57</small></td><td class="r">–<small>#419</small></td><td class="r">68:32</td><td class="r">–<small>#497</small></td><td class="r">458.075<small>#65</small></td><td class="r">20.15.10.10.62.20.45.7.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">99.762<small>#45</small></td><td class="r">46.046<small>#88</small></td><td class="r">469.448.089<small>#229</small></td><td class="r">855<small>#118</small></td><td class="r">62<small>#72</small></td><td class="r">1.792<small>#89</small></td><td class="r">4.167<small>#27</small></td></tr><tr><td class="r">35</td><td>Gabodek</td><td>F29</td><td>Order 66</td><td class="r">597<small>#30</small></td><td class="r">–<small>#286</small></td><td class="r">159.471<small>#25</small></td><td class="r">–<small>#82</small></td><td class="r">63:37</td><td class="r">–<small>#286</small></td><td class="r">518.011<small>#13</small></td><td class="r">20.15.12.12.79.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">100.176<small>#37</small></td><td class="r">59.295<small>#42</small></td><td class="r">1.151.385.163<small>#33</small></td><td class="r">949<small>#8</small></td><td class="r">79<small>#27</small></td><td class="r">1.974<small>#21</small></td><td class="r">2.395<small>#316</small></td></tr><tr><td class="r">36</td><td>Kugy</td><td>F29</td><td>All That Matters</td><td class="r">597<small>#30</small></td><td class="r">–<small>#388</small></td><td class="r">173.786<small>#7</small></td><td class="r">–<small>#36</small></td><td class="r">54:46</td><td class="r">–<small>#388</small></td><td class="r">541.420<small>#4</small></td><td class="r">20.15.10.10.83.20.45.10.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">93.766<small>#60</small></td><td class="r">80.020<small>#5</small></td><td class="r">1.334.217.085<small>#16</small></td><td class="r">931<small>#24</small></td><td class="r">83<small>#22</small></td><td class="r">1.988<small>#16</small></td><td class="r">2.432<small>#303</small></td></tr><tr><td class="r">37</td><td>Rafus</td><td>F29</td><td>All That Matters</td><td class="r">597<small>#30</small></td><td class="r">–<small>#354</small></td><td class="r">163.276<small>#17</small></td><td class="r">–<small>#49</small></td><td class="r">63:37</td><td class="r">–<small>#354</small></td><td class="r">510.400<small>#17</small></td><td class="r">20.15.10.10.70.20.45.10.1.1.10.1</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">103.258<small>#26</small></td><td class="r">60.018<small>#37</small></td><td class="r">1.121.114.328<small>#41</small></td><td class="r">917<small>#40</small></td><td class="r">70<small>#41</small></td><td class="r">1.924<small>#27</small></td><td class="r">2.405<small>#312</small></td></tr><tr><td class="r">38</td><td>Andrejkou</td><td>F29</td><td>All That Matters</td><td class="r">596<small>#38</small></td><td class="r">–<small>#370</small></td><td class="r">159.421<small>#26</small></td><td class="r">–<small>#91</small></td><td class="r">66:34</td><td class="r">–<small>#370</small></td><td class="r">505.245<small>#23</small></td><td class="r">20.15.7.8.61.18.45.8.5.5.5.2</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">105.421<small>#22</small></td><td class="r">54.000<small>#59</small></td><td class="r">534.553.836<small>#185</small></td><td class="r">930<small>#25</small></td><td class="r">61<small>#80</small></td><td class="r">1.900<small>#32</small></td><td class="r">4.351<small>#2</small></td></tr><tr><td class="r">39</td><td>Pishkot</td><td>F29</td><td>All That Matters</td><td class="r">596<small>#38</small></td><td class="r">–<small>#404</small></td><td class="r">154.975<small>#37</small></td><td class="r">–<small>#62</small></td><td class="r">74:26</td><td class="r">–<small>#404</small></td><td class="r">488.897<small>#39</small></td><td class="r">20.15.6.5.58.20.45.7.1.1.5.2</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">114.940<small>#5</small></td><td class="r">40.035<small>#121</small></td><td class="r">460.607.252<small>#234</small></td><td class="r">926<small>#28</small></td><td class="r">58<small>#103</small></td><td class="r">1.803<small>#81</small></td><td class="r">4.324<small>#4</small></td></tr><tr><td class="r">40</td><td>Mashkull</td><td>F29</td><td>Tavernenflotte</td><td class="r">596<small>#38</small></td><td class="r">–<small>#400</small></td><td class="r">139.144<small>#73</small></td><td class="r">–<small>#46</small></td><td class="r">64:36</td><td class="r">–<small>#400</small></td><td class="r">442.842<small>#78</small></td><td class="r">20.15.11.11.54.20.45.11.1.1.9.1</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">89.084<small>#83</small></td><td class="r">50.060<small>#70</small></td><td class="r">1.205.377.979<small>#21</small></td><td class="r">874<small>#92</small></td><td class="r">54<small>#166</small></td><td class="r">1.814<small>#76</small></td><td class="r">4.216<small>#19</small></td></tr><tr><td class="r">41</td><td>Yennefeer</td><td>F29</td><td>Czarne Wąsy</td><td class="r">596<small>#38</small></td><td class="r">–<small>#275</small></td><td class="r">129.377<small>#102</small></td><td class="r">–<small>#67</small></td><td class="r">69:31</td><td class="r">–<small>#275</small></td><td class="r">438.442<small>#83</small></td><td class="r">20.15.3.5.66.20.30.6.2.3.2.2</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">89.322<small>#82</small></td><td class="r">40.055<small>#116</small></td><td class="r">453.413.924<small>#241</small></td><td class="r">888<small>#70</small></td><td class="r">66<small>#55</small></td><td class="r">1.879<small>#39</small></td><td class="r">4.297<small>#7</small></td></tr><tr><td class="r">42</td><td>Benzet</td><td>F29</td><td>Tavernenflotte</td><td class="r">595<small>#42</small></td><td class="r">–<small>#280</small></td><td class="r">152.812<small>#40</small></td><td class="r">–<small>#157</small></td><td class="r">56:44</td><td class="r">–<small>#280</small></td><td class="r">477.199<small>#43</small></td><td class="r">20.15.9.9.63.20.45.8.4.4.5.4</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">85.792<small>#97</small></td><td class="r">67.020<small>#19</small></td><td class="r">1.142.085.447<small>#36</small></td><td class="r">905<small>#51</small></td><td class="r">63<small>#65</small></td><td class="r">1.838<small>#59</small></td><td class="r">2.392<small>#317</small></td></tr><tr><td class="r">43</td><td>jaeqer</td><td>F29</td><td>Tavernenflotte</td><td class="r">595<small>#42</small></td><td class="r">–<small>#1.103</small></td><td class="r">149.053<small>#50</small></td><td class="r">–<small>#419</small></td><td class="r">63:37</td><td class="r">–<small>#1.103</small></td><td class="r">472.545<small>#50</small></td><td class="r">20.15.11.11.62.20.45.10.5.5.5.5</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">99,16 %<small>#134</small></td><td class="r">94.491<small>#57</small></td><td class="r">54.562<small>#55</small></td><td class="r">517.481.283<small>#195</small></td><td class="r">875<small>#89</small></td><td class="r">62<small>#72</small></td><td class="r">1.789<small>#90</small></td><td class="r">3.978<small>#43</small></td></tr><tr><td class="r">44</td><td>Descutio</td><td>F29</td><td>Tavernenflotte</td><td class="r">595<small>#42</small></td><td class="r">–<small>#396</small></td><td class="r">145.637<small>#58</small></td><td class="r">–<small>#19</small></td><td class="r">71:29</td><td class="r">–<small>#396</small></td><td class="r">471.719<small>#51</small></td><td class="r">20.15.11.10.59.20.45.10.1.3.11.1</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">102.778<small>#30</small></td><td class="r">42.859<small>#93</small></td><td class="r">1.179.115.038<small>#28</small></td><td class="r">924<small>#33</small></td><td class="r">59<small>#94</small></td><td class="r">1.808<small>#79</small></td><td class="r">4.180<small>#23</small></td></tr><tr><td class="r">45</td><td>ZsombeyHD (s5eu)</td><td>F29</td><td>Order 66</td><td class="r">595<small>#42</small></td><td class="r">–<small>#385</small></td><td class="r">141.260<small>#66</small></td><td class="r">–<small>#113</small></td><td class="r">72:28</td><td class="r">–<small>#385</small></td><td class="r">473.214<small>#49</small></td><td class="r">20.15.20.20.100.20.45.15.12.12.12.1</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">99,92 %<small>#79</small></td><td class="r">101.546<small>#32</small></td><td class="r">39.714<small>#130</small></td><td class="r">1.172.702.265<small>#29</small></td><td class="r">916<small>#43</small></td><td class="r">100<small>#1</small></td><td class="r">2.014<small>#8</small></td><td class="r">1.928<small>#456</small></td></tr><tr><td class="r">46</td><td>Dutinki</td><td>F29</td><td>All That Matters</td><td class="r">595<small>#42</small></td><td class="r">–<small>#1.072</small></td><td class="r">149.543<small>#49</small></td><td class="r">–<small>#58</small></td><td class="r">80:20</td><td class="r">–<small>#1.072</small></td><td class="r">474.935<small>#46</small></td><td class="r">20.15.10.10.58.20.45.8.1.1.9.1</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">100 %<small>#1</small></td><td class="r">119.530<small>#3</small></td><td class="r">30.013<small>#178</small></td><td class="r">409.029.584<small>#276</small></td><td class="r">883<small>#79</small></td><td class="r">58<small>#103</small></td><td class="r">1.857<small>#48</small></td><td class="r">4.135<small>#31</small></td></tr><tr><td class="r">47</td><td>Waves</td><td>F29</td><td>Tavernenflotte</td><td class="r">595<small>#42</small></td><td class="r">–<small>#375</small></td><td class="r">155.530<small>#35</small></td><td class="r">–<small>#75</small></td><td class="r">60:40</td><td class="r">–<small>#375</small></td><td class="r">497.936<small>#29</small></td><td class="r">20.15.10.10.61.20.45.7.3.2.7.3</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.1|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">93.530<small>#62</small></td><td class="r">62.000<small>#32</small></td><td class="r">1.422.498.436<small>#10</small></td><td class="r">912<small>#45</small></td><td class="r">61<small>#80</small></td><td class="r">1.846<small>#54</small></td><td class="r">1.834<small>#502</small></td></tr><tr><td class="r">48</td><td>Grausamer Grogu</td><td>F29</td><td></td><td class="r">594<small>#48</small></td><td class="r">–<small>#626</small></td><td class="r">148.112<small>#52</small></td><td class="r">–<small>#419</small></td><td class="r">68:32</td><td class="r">–<small>#626</small></td><td class="r">424.656<small>#95</small></td><td class="r">20.15.8.7.61.20.45.3.0.0.0.0</td><td class="r">46.50.5.10.13.75.75.75.54|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.0</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">98,64 %<small>#154</small></td><td class="r">100.098<small>#38</small></td><td class="r">48.014<small>#81</small></td><td class="r">934.310.166<small>#67</small></td><td class="r">891<small>#65</small></td><td class="r">61<small>#80</small></td><td class="r">1.769<small>#100</small></td><td class="r">4.203<small>#21</small></td></tr><tr><td class="r">49</td><td>Genshirou</td><td>F29</td><td>Tavernenflotte</td><td class="r">594<small>#48</small></td><td class="r">–<small>#398</small></td><td class="r">136.916<small>#80</small></td><td class="r">–<small>#419</small></td><td class="r">70:30</td><td class="r">–<small>#398</small></td><td class="r">444.479<small>#77</small></td><td class="r">20.15.8.8.58.20.45.6.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">96.288<small>#51</small></td><td class="r">40.628<small>#107</small></td><td class="r">890.570.191<small>#78</small></td><td class="r">932<small>#21</small></td><td class="r">58<small>#103</small></td><td class="r">1.796<small>#86</small></td><td class="r">2.367<small>#324</small></td></tr><tr><td class="r">50</td><td>Hefti</td><td>F29</td><td>Tavernenflotte</td><td class="r">594<small>#48</small></td><td class="r">–<small>#74</small></td><td class="r">151.390<small>#43</small></td><td class="r">–<small>#41</small></td><td class="r">60:40</td><td class="r">–<small>#74</small></td><td class="r">473.461<small>#48</small></td><td class="r">20.15.12.12.57.20.45.8.0.0.0.0</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#1</small></td><td class="r">90.570<small>#71</small></td><td class="r">60.820<small>#34</small></td><td class="r">1.081.286.062<small>#46</small></td><td class="r">932<small>#21</small></td><td class="r">57<small>#121</small></td><td class="r">1.756<small>#108</small></td><td class="r">2.355<small>#334</small></td></tr></tbody></table><div class="more">… und 1.058 weitere Zeilen – vollständig, sortier- und durchsuchbar nur im Browser.</div></div>
+  <div class="static" id="static"><table><thead><tr><th class="r">#</th><th>Name</th><th>⠀</th><th>Guild</th><th class="r">Level</th><th class="r">XP Gain</th><th class="r">Base Sum</th><th class="r">Base Gain</th><th class="r">Base Ratio</th><th class="r">XP/Day</th><th class="r">Total Sum</th><th class="r">Fortress</th><th class="r">Runes</th><th class="r">Pets</th><th class="r">Portal</th><th class="r">Frames</th><th class="r">Album</th><th class="r">Base Main</th><th class="r">Base Con</th><th class="r">HP</th><th class="r">Item Quality</th><th class="r">Gem Mine</th><th class="r">Gem Avg</th><th class="r">Weapon Dmg</th></tr></thead><tbody><tr><td class="r">1</td><td>DeTermit</td><td>GN</td><td>Dragon Enemy Will Burn</td><td class="r">828<small>#1</small></td><td class="r">–<small>#18.598</small></td><td class="r">632.923<small>#136</small></td><td class="r">–<small>#2.574</small></td><td class="r">62:38</td><td class="r">–<small>#18.598</small></td><td class="r">1.442.215<small>#103</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.0.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">390.985<small>#177</small></td><td class="r">241.938<small>#279</small></td><td class="r">4.223.557.386<small>#242</small></td><td class="r">1.188<small>#43</small></td><td class="r">100<small>#1</small></td><td class="r">2.717<small>#13</small></td><td class="r">2.718<small>#12.301</small></td></tr><tr><td class="r">2</td><td>Deinnachbar</td><td>F8</td><td>ENDGEGNER</td><td class="r">827<small>#2</small></td><td class="r">–<small>#26.299</small></td><td class="r">747.944<small>#4</small></td><td class="r">–<small>#4.585</small></td><td class="r">67:33</td><td class="r">–<small>#26.299</small></td><td class="r">1.669.049<small>#3</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.49.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">500.050<small>#9</small></td><td class="r">247.894<small>#251</small></td><td class="r">5.480.101.440<small>#37</small></td><td class="r">1.239<small>#1</small></td><td class="r">100<small>#1</small></td><td class="r">2.751<small>#1</small></td><td class="r">2.238<small>#20.467</small></td></tr><tr><td class="r">3</td><td>DoktorDarm</td><td>F17</td><td>Phoenix</td><td class="r">824<small>#3</small></td><td class="r">–<small>#25.972</small></td><td class="r">561.946<small>#384</small></td><td class="r">–<small>#5.080</small></td><td class="r">57:43</td><td class="r">–<small>#25.972</small></td><td class="r">1.279.371<small>#359</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">318.783<small>#610</small></td><td class="r">243.163<small>#271</small></td><td class="r">5.101.173.773<small>#82</small></td><td class="r">1.205<small>#20</small></td><td class="r">100<small>#1</small></td><td class="r">2.737<small>#3</small></td><td class="r">2.230<small>#20.600</small></td></tr><tr><td class="r">4</td><td>Furaken</td><td>ST</td><td>ENDGEGNER I</td><td class="r">823<small>#4</small></td><td class="r">–<small>#26.446</small></td><td class="r">738.347<small>#9</small></td><td class="r">–<small>#1.322</small></td><td class="r">50:50</td><td class="r">–<small>#26.446</small></td><td class="r">1.652.213<small>#4</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.1.1.0|Goldrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">369.174<small>#266</small></td><td class="r">369.173<small>#2</small></td><td class="r">7.338.919.177<small>#2</small></td><td class="r">1.237<small>#2</small></td><td class="r">100<small>#1</small></td><td class="r">2.732<small>#5</small></td><td class="r">2.244<small>#20.380</small></td></tr><tr><td class="r">5</td><td>Ohrmel</td><td>F8</td><td>ENDGEGNER</td><td class="r">822<small>#5</small></td><td class="r">–<small>#52.824</small></td><td class="r">682.788<small>#46</small></td><td class="r">–<small>#17.045</small></td><td class="r">61:39</td><td class="r">–<small>#52.824</small></td><td class="r">1.513.549<small>#42</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">99,88 %<small>#5.221</small></td><td class="r">415.851<small>#104</small></td><td class="r">266.937<small>#122</small></td><td class="r">2.223.473.689<small>#2.250</small></td><td class="r">1.127<small>#396</small></td><td class="r">100<small>#1</small></td><td class="r">2.622<small>#181</small></td><td class="r">4.943<small>#30</small></td></tr><tr><td class="r">6</td><td>Deraphin</td><td>F17</td><td>Die Unfassbaren</td><td class="r">822<small>#5</small></td><td class="r">–<small>#26.390</small></td><td class="r">700.368<small>#26</small></td><td class="r">–<small>#16.003</small></td><td class="r">62:38</td><td class="r">–<small>#26.390</small></td><td class="r">1.577.297<small>#18</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">433.426<small>#69</small></td><td class="r">266.942<small>#121</small></td><td class="r">4.564.077.665<small>#166</small></td><td class="r">1.211<small>#15</small></td><td class="r">100<small>#1</small></td><td class="r">2.729<small>#7</small></td><td class="r">2.797<small>#11.664</small></td></tr><tr><td class="r">7</td><td>MaiSta</td><td>F8</td><td>ENDGEGNER</td><td class="r">821<small>#7</small></td><td class="r">–<small>#18.663</small></td><td class="r">704.626<small>#23</small></td><td class="r">–<small>#2.334</small></td><td class="r">64:36</td><td class="r">–<small>#18.663</small></td><td class="r">1.577.501<small>#17</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">451.598<small>#45</small></td><td class="r">253.028<small>#203</small></td><td class="r">5.450.254.174<small>#38</small></td><td class="r">1.193<small>#32</small></td><td class="r">100<small>#1</small></td><td class="r">2.721<small>#11</small></td><td class="r">2.203<small>#21.030</small></td></tr><tr><td class="r">8</td><td>Nachteule</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">821<small>#7</small></td><td class="r">–<small>#55.812</small></td><td class="r">757.094<small>#3</small></td><td class="r">–<small>#1.146</small></td><td class="r">66:34</td><td class="r">–<small>#55.812</small></td><td class="r">1.684.975<small>#2</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">501.358<small>#8</small></td><td class="r">255.736<small>#190</small></td><td class="r">2.224.650.114<small>#2.246</small></td><td class="r">1.235<small>#3</small></td><td class="r">100<small>#1</small></td><td class="r">2.750<small>#2</small></td><td class="r">5.048<small>#1</small></td></tr><tr><td class="r">9</td><td>Rhabarber Barbara</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">821<small>#7</small></td><td class="r">–<small>#56.017</small></td><td class="r">684.054<small>#45</small></td><td class="r">–<small>#14.692</small></td><td class="r">61:39</td><td class="r">–<small>#56.017</small></td><td class="r">1.519.543<small>#38</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">417.397<small>#100</small></td><td class="r">266.657<small>#125</small></td><td class="r">4.451.469.691<small>#189</small></td><td class="r">1.135<small>#309</small></td><td class="r">100<small>#1</small></td><td class="r">2.659<small>#64</small></td><td class="r">2.748<small>#12.050</small></td></tr><tr><td class="r">10</td><td>mario ppp</td><td>GN</td><td>Dreamers</td><td class="r">819<small>#10</small></td><td class="r">–<small>#28.153</small></td><td class="r">713.705<small>#19</small></td><td class="r">–<small>#2.755</small></td><td class="r">58:42</td><td class="r">–<small>#28.153</small></td><td class="r">1.604.016<small>#11</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">412.095<small>#114</small></td><td class="r">301.610<small>#35</small></td><td class="r">6.235.593.393<small>#12</small></td><td class="r">1.224<small>#5</small></td><td class="r">100<small>#1</small></td><td class="r">2.720<small>#12</small></td><td class="r">2.240<small>#20.448</small></td></tr><tr><td class="r">11</td><td>Lambretta</td><td>F8</td><td>GODS of LIGHT</td><td class="r">819<small>#10</small></td><td class="r">–<small>#27.039</small></td><td class="r">668.984<small>#60</small></td><td class="r">–<small>#3.056</small></td><td class="r">65:35</td><td class="r">–<small>#27.039</small></td><td class="r">1.514.364<small>#41</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">436.879<small>#66</small></td><td class="r">232.105<small>#354</small></td><td class="r">5.110.013.858<small>#81</small></td><td class="r">1.190<small>#41</small></td><td class="r">100<small>#1</small></td><td class="r">2.731<small>#6</small></td><td class="r">2.201<small>#21.053</small></td></tr><tr><td class="r">12</td><td>T0NY</td><td>ST</td><td>Dragons Legends</td><td class="r">817<small>#12</small></td><td class="r">–<small>#27.011</small></td><td class="r">673.736<small>#55</small></td><td class="r">–<small>#2.881</small></td><td class="r">69:31</td><td class="r">–<small>#27.011</small></td><td class="r">1.532.491<small>#33</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">463.059<small>#34</small></td><td class="r">210.677<small>#579</small></td><td class="r">1.924.009.006<small>#3.208</small></td><td class="r">1.217<small>#9</small></td><td class="r">100<small>#1</small></td><td class="r">2.728<small>#8</small></td><td class="r">5.037<small>#3</small></td></tr><tr><td class="r">13</td><td>Bresl</td><td>F8</td><td>ENDGEGNER</td><td class="r">817<small>#12</small></td><td class="r">–<small>#20.724</small></td><td class="r">716.723<small>#17</small></td><td class="r">–<small>#1.236</small></td><td class="r">64:36</td><td class="r">–<small>#20.724</small></td><td class="r">1.611.826<small>#9</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">459.642<small>#39</small></td><td class="r">257.081<small>#180</small></td><td class="r">2.217.719.064<small>#2.269</small></td><td class="r">1.232<small>#4</small></td><td class="r">100<small>#1</small></td><td class="r">2.712<small>#15</small></td><td class="r">5.044<small>#2</small></td></tr><tr><td class="r">14</td><td>Boom</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">817<small>#12</small></td><td class="r">–<small>#56.735</small></td><td class="r">646.184<small>#103</small></td><td class="r">–<small>#1.802</small></td><td class="r">50:50</td><td class="r">–<small>#56.735</small></td><td class="r">1.440.996<small>#104</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">323.092<small>#572</small></td><td class="r">323.092<small>#14</small></td><td class="r">6.354.116.892<small>#7</small></td><td class="r">1.094<small>#855</small></td><td class="r">100<small>#1</small></td><td class="r">2.683<small>#27</small></td><td class="r">2.234<small>#20.534</small></td></tr><tr><td class="r">15</td><td>markow</td><td>BF</td><td>Awanturnicy</td><td class="r">816<small>#15</small></td><td class="r">–<small>#26.087</small></td><td class="r">684.502<small>#44</small></td><td class="r">–<small>#1.846</small></td><td class="r">63:37</td><td class="r">–<small>#26.087</small></td><td class="r">1.520.443<small>#37</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">429.447<small>#76</small></td><td class="r">255.055<small>#194</small></td><td class="r">2.140.870.373<small>#2.515</small></td><td class="r">1.220<small>#7</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#79</small></td><td class="r">5.010<small>#4</small></td></tr><tr><td class="r">16</td><td>PAPA von Tony</td><td>F17</td><td>Phoenix</td><td class="r">816<small>#15</small></td><td class="r">–<small>#26.264</small></td><td class="r">650.145<small>#93</small></td><td class="r">–<small>#2.470</small></td><td class="r">62:38</td><td class="r">–<small>#26.264</small></td><td class="r">1.480.536<small>#62</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">99,24 %<small>#8.140</small></td><td class="r">400.178<small>#147</small></td><td class="r">249.967<small>#238</small></td><td class="r">2.145.108.918<small>#2.502</small></td><td class="r">1.192<small>#35</small></td><td class="r">100<small>#1</small></td><td class="r">2.708<small>#16</small></td><td class="r">4.902<small>#69</small></td></tr><tr><td class="r">17</td><td>Falka</td><td>MA</td><td>WeAreOne</td><td class="r">815<small>#17</small></td><td class="r">–<small>#18.386</small></td><td class="r">688.960<small>#42</small></td><td class="r">–<small>#1.133</small></td><td class="r">52:48</td><td class="r">–<small>#18.386</small></td><td class="r">1.554.137<small>#22</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.74.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">355.306<small>#323</small></td><td class="r">333.654<small>#10</small></td><td class="r">6.669.587.092<small>#5</small></td><td class="r">1.204<small>#23</small></td><td class="r">100<small>#1</small></td><td class="r">2.728<small>#8</small></td><td class="r">2.211<small>#20.901</small></td></tr><tr><td class="r">18</td><td>Baajl</td><td>ST</td><td>ENDGEGNER I</td><td class="r">815<small>#17</small></td><td class="r">–<small>#11.476</small></td><td class="r">644.975<small>#109</small></td><td class="r">–<small>#1.772</small></td><td class="r">62:38</td><td class="r">–<small>#11.476</small></td><td class="r">1.469.758<small>#69</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">400.166<small>#148</small></td><td class="r">244.809<small>#264</small></td><td class="r">2.107.676.897<small>#2.611</small></td><td class="r">1.214<small>#11</small></td><td class="r">100<small>#1</small></td><td class="r">2.735<small>#4</small></td><td class="r">5.003<small>#6</small></td></tr><tr><td class="r">19</td><td>Warbird</td><td>F9</td><td>Horizon</td><td class="r">815<small>#17</small></td><td class="r">–<small>#19.851</small></td><td class="r">552.362<small>#414</small></td><td class="r">–<small>#3.372</small></td><td class="r">60:40</td><td class="r">–<small>#19.851</small></td><td class="r">1.267.772<small>#388</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.49.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">332.362<small>#489</small></td><td class="r">220.000<small>#479</small></td><td class="r">3.769.341.659<small>#398</small></td><td class="r">1.169<small>#102</small></td><td class="r">100<small>#1</small></td><td class="r">2.707<small>#18</small></td><td class="r">2.744<small>#12.083</small></td></tr><tr><td class="r">20</td><td>Umbums</td><td>F9</td><td>Horizon</td><td class="r">814<small>#20</small></td><td class="r">–<small>#15.727</small></td><td class="r">684.533<small>#43</small></td><td class="r">–<small>#1.628</small></td><td class="r">63:37</td><td class="r">–<small>#15.727</small></td><td class="r">1.503.118<small>#48</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.1.1.1|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">433.848<small>#68</small></td><td class="r">250.685<small>#216</small></td><td class="r">5.195.507.715<small>#65</small></td><td class="r">1.075<small>#1.312</small></td><td class="r">100<small>#1</small></td><td class="r">2.724<small>#10</small></td><td class="r">2.084<small>#23.082</small></td></tr><tr><td class="r">21</td><td>Quilp the Round</td><td>MA</td><td>El Presidente</td><td class="r">813<small>#21</small></td><td class="r">–<small>#55.760</small></td><td class="r">507.644<small>#659</small></td><td class="r">–<small>#2.447</small></td><td class="r">57:43</td><td class="r">–<small>#55.760</small></td><td class="r">1.203.395<small>#551</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">99,52 %<small>#7.099</small></td><td class="r">290.812<small>#929</small></td><td class="r">216.832<small>#516</small></td><td class="r">4.712.371.279<small>#139</small></td><td class="r">1.145<small>#242</small></td><td class="r">100<small>#1</small></td><td class="r">2.655<small>#84</small></td><td class="r">2.149<small>#21.856</small></td></tr><tr><td class="r">22</td><td>DonZeus</td><td>F8</td><td>ENDGEGNER</td><td class="r">813<small>#21</small></td><td class="r">–<small>#23.655</small></td><td class="r">689.829<small>#41</small></td><td class="r">–<small>#17.075</small></td><td class="r">51:49</td><td class="r">–<small>#23.655</small></td><td class="r">1.502.033<small>#49</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.0.0|Goldrahmen</td><td class="r">98,64 %<small>#10.694</small></td><td class="r">350.279<small>#364</small></td><td class="r">339.550<small>#6</small></td><td class="r">5.206.791.801<small>#63</small></td><td class="r">1.098<small>#791</small></td><td class="r">100<small>#1</small></td><td class="r">2.638<small>#130</small></td><td class="r">2.632<small>#13.249</small></td></tr><tr><td class="r">23</td><td>kulfon68</td><td>BF</td><td>SzaUzi</td><td class="r">812<small>#23</small></td><td class="r">–<small>#26.629</small></td><td class="r">575.835<small>#322</small></td><td class="r">–<small>#6.660</small></td><td class="r">57:43</td><td class="r">–<small>#26.629</small></td><td class="r">1.315.525<small>#304</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.0.0.10.15.49.49.75.59|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">325.509<small>#552</small></td><td class="r">250.326<small>#220</small></td><td class="r">5.188.770.900<small>#66</small></td><td class="r">1.101<small>#739</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#79</small></td><td class="r">2.106<small>#22.620</small></td></tr><tr><td class="r">24</td><td>Blue</td><td>BF</td><td>Awanturnicy</td><td class="r">812<small>#23</small></td><td class="r">–<small>#13.218</small></td><td class="r">531.376<small>#532</small></td><td class="r">–<small>#2.389</small></td><td class="r">80:20</td><td class="r">–<small>#13.218</small></td><td class="r">1.228.767<small>#480</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.49.5.10.15.74.74.74.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">425.170<small>#83</small></td><td class="r">106.206<small>#5.053</small></td><td class="r">1.175.547.695<small>#7.756</small></td><td class="r">1.099<small>#769</small></td><td class="r">100<small>#1</small></td><td class="r">2.713<small>#14</small></td><td class="r">4.934<small>#42</small></td></tr><tr><td class="r">25</td><td>Surja</td><td>F8</td><td>ENDGEGNER</td><td class="r">812<small>#23</small></td><td class="r">–<small>#57.458</small></td><td class="r">706.876<small>#20</small></td><td class="r">–<small>#1.505</small></td><td class="r">62:38</td><td class="r">–<small>#57.458</small></td><td class="r">1.535.270<small>#30</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">439.737<small>#63</small></td><td class="r">267.139<small>#118</small></td><td class="r">4.323.753.407<small>#208</small></td><td class="r">1.069<small>#1.481</small></td><td class="r">100<small>#1</small></td><td class="r">2.575<small>#367</small></td><td class="r">2.599<small>#13.774</small></td></tr><tr><td class="r">26</td><td>DonMuErte</td><td>F17</td><td>Werwolf Legion</td><td class="r">812<small>#23</small></td><td class="r">–<small>#56.815</small></td><td class="r">699.476<small>#27</small></td><td class="r">–<small>#2.043</small></td><td class="r">69:31</td><td class="r">–<small>#56.815</small></td><td class="r">1.578.477<small>#16</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">99,96 %<small>#4.704</small></td><td class="r">483.081<small>#17</small></td><td class="r">216.395<small>#521</small></td><td class="r">3.897.956.141<small>#353</small></td><td class="r">1.223<small>#6</small></td><td class="r">100<small>#1</small></td><td class="r">2.708<small>#16</small></td><td class="r">2.789<small>#11.735</small></td></tr><tr><td class="r">27</td><td>Zauriel</td><td>F17</td><td>Phoenix</td><td class="r">812<small>#23</small></td><td class="r">–<small>#23.006</small></td><td class="r">561.583<small>#385</small></td><td class="r">–<small>#1.207</small></td><td class="r">53:47</td><td class="r">–<small>#23.006</small></td><td class="r">1.299.470<small>#327</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">300.040<small>#828</small></td><td class="r">261.543<small>#151</small></td><td class="r">5.398.740.218<small>#45</small></td><td class="r">1.143<small>#254</small></td><td class="r">100<small>#1</small></td><td class="r">2.609<small>#228</small></td><td class="r">2.105<small>#22.660</small></td></tr><tr><td class="r">28</td><td>Tommis</td><td>GN</td><td>Dreamers</td><td class="r">811<small>#28</small></td><td class="r">–<small>#26.225</small></td><td class="r">591.274<small>#266</small></td><td class="r">–<small>#2.098</small></td><td class="r">66:34</td><td class="r">–<small>#26.225</small></td><td class="r">1.349.737<small>#233</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">390.651<small>#179</small></td><td class="r">200.623<small>#761</small></td><td class="r">4.452.422.598<small>#188</small></td><td class="r">1.159<small>#145</small></td><td class="r">100<small>#1</small></td><td class="r">2.653<small>#90</small></td><td class="r">2.162<small>#21.638</small></td></tr><tr><td class="r">29</td><td>Elfinchen</td><td>F8</td><td>ENDGEGNER</td><td class="r">811<small>#28</small></td><td class="r">–<small>#18.166</small></td><td class="r">559.022<small>#393</small></td><td class="r">–<small>#1.230</small></td><td class="r">59:41</td><td class="r">–<small>#18.166</small></td><td class="r">1.291.375<small>#341</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">328.917<small>#521</small></td><td class="r">230.105<small>#371</small></td><td class="r">3.917.407.724<small>#345</small></td><td class="r">1.127<small>#396</small></td><td class="r">100<small>#1</small></td><td class="r">2.576<small>#361</small></td><td class="r">2.749<small>#12.017</small></td></tr><tr><td class="r">30</td><td>Sephrenia</td><td>F9</td><td>Keltic</td><td class="r">811<small>#28</small></td><td class="r">–<small>#28.200</small></td><td class="r">623.860<small>#155</small></td><td class="r">–<small>#2.427</small></td><td class="r">68:32</td><td class="r">–<small>#28.200</small></td><td class="r">1.418.950<small>#132</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">423.730<small>#86</small></td><td class="r">200.130<small>#785</small></td><td class="r">1.799.286.693<small>#3.691</small></td><td class="r">1.149<small>#216</small></td><td class="r">100<small>#1</small></td><td class="r">2.656<small>#79</small></td><td class="r">4.866<small>#114</small></td></tr><tr><td class="r">31</td><td>Rincewind</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">811<small>#28</small></td><td class="r">–<small>#24.547</small></td><td class="r">637.531<small>#122</small></td><td class="r">–<small>#39.864</small></td><td class="r">59:41</td><td class="r">–<small>#24.547</small></td><td class="r">1.115.678<small>#850</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">0.0.0.0.0.0.0.0.0</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.1|Friendly-Fire-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">375.416<small>#242</small></td><td class="r">262.115<small>#148</small></td><td class="r">2.793.483.000<small>#1.251</small></td><td class="r">–</td><td class="r">100<small>#1</small></td><td class="r">–</td><td class="r">1.403<small>#38.696</small></td></tr><tr><td class="r">32</td><td>Marodeur2</td><td>F17</td><td>Ritter des Anduril</td><td class="r">811<small>#28</small></td><td class="r">–<small>#14.810</small></td><td class="r">461.507<small>#1.029</small></td><td class="r">–<small>#226</small></td><td class="r">55:45</td><td class="r">–<small>#14.810</small></td><td class="r">1.117.743<small>#839</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">255.514<small>#1.536</small></td><td class="r">205.993<small>#661</small></td><td class="r">1.805.292.194<small>#3.668</small></td><td class="r">1.130<small>#362</small></td><td class="r">100<small>#1</small></td><td class="r">2.674<small>#42</small></td><td class="r">4.767<small>#323</small></td></tr><tr><td class="r">33</td><td>Vuu</td><td>F8</td><td>ENDGEGNER</td><td class="r">810<small>#33</small></td><td class="r">–<small>#55.762</small></td><td class="r">611.899<small>#189</small></td><td class="r">–<small>#1.163</small></td><td class="r">64:36</td><td class="r">–<small>#55.762</small></td><td class="r">1.371.926<small>#196</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">388.959<small>#183</small></td><td class="r">222.940<small>#445</small></td><td class="r">3.782.100.932<small>#394</small></td><td class="r">1.100<small>#758</small></td><td class="r">100<small>#1</small></td><td class="r">2.702<small>#19</small></td><td class="r">2.683<small>#12.651</small></td></tr><tr><td class="r">34</td><td>Cloud Strife 87</td><td>F17</td><td>A V A L A N C H E</td><td class="r">810<small>#33</small></td><td class="r">–<small>#23.259</small></td><td class="r">676.546<small>#51</small></td><td class="r">–<small>#1.475</small></td><td class="r">63:37</td><td class="r">–<small>#23.259</small></td><td class="r">1.514.903<small>#40</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">426.212<small>#81</small></td><td class="r">250.334<small>#219</small></td><td class="r">5.277.265.955<small>#54</small></td><td class="r">1.158<small>#156</small></td><td class="r">100<small>#1</small></td><td class="r">2.672<small>#46</small></td><td class="r">2.189<small>#21.232</small></td></tr><tr><td class="r">35</td><td>Best</td><td>BF</td><td>Awanturnicy</td><td class="r">809<small>#35</small></td><td class="r">–<small>#23.982</small></td><td class="r">659.289<small>#79</small></td><td class="r">–<small>#1.548</small></td><td class="r">70:30</td><td class="r">–<small>#23.982</small></td><td class="r">1.459.772<small>#79</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.59|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">460.373<small>#38</small></td><td class="r">198.916<small>#846</small></td><td class="r">3.500.886.723<small>#561</small></td><td class="r">1.147<small>#228</small></td><td class="r">100<small>#1</small></td><td class="r">2.697<small>#21</small></td><td class="r">2.774<small>#11.824</small></td></tr><tr><td class="r">36</td><td>W70</td><td>F8</td><td>ENDGEGNER</td><td class="r">809<small>#35</small></td><td class="r">–<small>#25.918</small></td><td class="r">597.259<small>#241</small></td><td class="r">–<small>#16.925</small></td><td class="r">60:40</td><td class="r">–<small>#25.918</small></td><td class="r">1.337.864<small>#254</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.59|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">358.076<small>#312</small></td><td class="r">239.183<small>#307</small></td><td class="r">1.973.269.805<small>#3.033</small></td><td class="r">1.158<small>#156</small></td><td class="r">100<small>#1</small></td><td class="r">2.682<small>#30</small></td><td class="r">4.958<small>#18</small></td></tr><tr><td class="r">37</td><td>Mordae</td><td>F9</td><td>Keltic</td><td class="r">809<small>#35</small></td><td class="r">–<small>#28.165</small></td><td class="r">620.337<small>#166</small></td><td class="r">–<small>#2.228</small></td><td class="r">68:32</td><td class="r">–<small>#28.165</small></td><td class="r">1.422.242<small>#127</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">420.207<small>#93</small></td><td class="r">200.130<small>#785</small></td><td class="r">1.811.373.941<small>#3.637</small></td><td class="r">1.174<small>#84</small></td><td class="r">100<small>#1</small></td><td class="r">2.687<small>#25</small></td><td class="r">4.911<small>#60</small></td></tr><tr><td class="r">38</td><td>W70</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">809<small>#35</small></td><td class="r">–<small>#19.898</small></td><td class="r">583.218<small>#295</small></td><td class="r">–<small>#17.619</small></td><td class="r">56:44</td><td class="r">–<small>#19.898</small></td><td class="r">1.319.411<small>#295</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">326.310<small>#544</small></td><td class="r">256.908<small>#183</small></td><td class="r">5.230.762.565<small>#58</small></td><td class="r">1.141<small>#271</small></td><td class="r">100<small>#1</small></td><td class="r">2.670<small>#50</small></td><td class="r">2.140<small>#21.996</small></td></tr><tr><td class="r">39</td><td>Surja</td><td>F17</td><td>Phoenix</td><td class="r">809<small>#35</small></td><td class="r">–<small>#25.916</small></td><td class="r">696.312<small>#33</small></td><td class="r">–<small>#1.392</small></td><td class="r">63:37</td><td class="r">–<small>#25.916</small></td><td class="r">1.515.830<small>#39</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.1.1.0|Silberrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">440.280<small>#62</small></td><td class="r">256.032<small>#188</small></td><td class="r">4.168.681.402<small>#257</small></td><td class="r">1.067<small>#1.555</small></td><td class="r">100<small>#1</small></td><td class="r">2.573<small>#374</small></td><td class="r">2.596<small>#13.802</small></td></tr><tr><td class="r">40</td><td>Viper1978</td><td>F17</td><td>Ritter des Anduril</td><td class="r">809<small>#35</small></td><td class="r">–<small>#26.684</small></td><td class="r">728.245<small>#12</small></td><td class="r">–<small>#3.483</small></td><td class="r">50:50</td><td class="r">–<small>#26.684</small></td><td class="r">1.536.686<small>#29</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">1.0.1.0|Goldrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">364.145<small>#288</small></td><td class="r">364.100<small>#4</small></td><td class="r">6.709.446.041<small>#4</small></td><td class="r">1.052<small>#2.071</small></td><td class="r">100<small>#1</small></td><td class="r">2.554<small>#459</small></td><td class="r">2.057<small>#23.758</small></td></tr><tr><td class="r">41</td><td>Zaemon</td><td>MA</td><td>La Liga Hispana</td><td class="r">808<small>#41</small></td><td class="r">–<small>#17.924</small></td><td class="r">654.792<small>#84</small></td><td class="r">–<small>#1.389</small></td><td class="r">66:34</td><td class="r">–<small>#17.924</small></td><td class="r">1.455.064<small>#85</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">429.596<small>#74</small></td><td class="r">225.196<small>#420</small></td><td class="r">4.785.621.549<small>#134</small></td><td class="r">1.149<small>#216</small></td><td class="r">100<small>#1</small></td><td class="r">2.647<small>#108</small></td><td class="r">2.170<small>#21.505</small></td></tr><tr><td class="r">42</td><td>Dominik1</td><td>GN</td><td>Dreamers</td><td class="r">808<small>#41</small></td><td class="r">–<small>#16.668</small></td><td class="r">570.325<small>#342</small></td><td class="r">–<small>#5.627</small></td><td class="r">70:30</td><td class="r">–<small>#16.668</small></td><td class="r">1.318.596<small>#299</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">400.319<small>#145</small></td><td class="r">170.006<small>#1.438</small></td><td class="r">1.597.087.652<small>#4.723</small></td><td class="r">1.174<small>#84</small></td><td class="r">100<small>#1</small></td><td class="r">2.683<small>#27</small></td><td class="r">4.943<small>#30</small></td></tr><tr><td class="r">43</td><td>Maverick</td><td>BF</td><td>ZabójczePomidory</td><td class="r">808<small>#41</small></td><td class="r">–<small>#47.326</small></td><td class="r">636.291<small>#126</small></td><td class="r">–<small>#1.735</small></td><td class="r">56:44</td><td class="r">–<small>#47.326</small></td><td class="r">1.451.369<small>#93</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.57|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">99,52 %<small>#7.099</small></td><td class="r">357.377<small>#315</small></td><td class="r">278.914<small>#76</small></td><td class="r">5.730.627.469<small>#26</small></td><td class="r">1.178<small>#68</small></td><td class="r">100<small>#1</small></td><td class="r">2.682<small>#30</small></td><td class="r">2.202<small>#21.031</small></td></tr><tr><td class="r">44</td><td>Imm0rt4liS</td><td>F8</td><td>ENDGEGNER</td><td class="r">808<small>#41</small></td><td class="r">–<small>#20.253</small></td><td class="r">692.780<small>#37</small></td><td class="r">–<small>#1.125</small></td><td class="r">71:29</td><td class="r">–<small>#20.253</small></td><td class="r">1.551.039<small>#24</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.59|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">492.780<small>#11</small></td><td class="r">200.000<small>#821</small></td><td class="r">3.623.738.834<small>#484</small></td><td class="r">1.181<small>#59</small></td><td class="r">100<small>#1</small></td><td class="r">2.688<small>#24</small></td><td class="r">2.728<small>#12.218</small></td></tr><tr><td class="r">45</td><td>W7O</td><td>F11</td><td>ENDGEGNER Alpha</td><td class="r">808<small>#41</small></td><td class="r">–<small>#25.810</small></td><td class="r">591.902<small>#261</small></td><td class="r">–<small>#15.970</small></td><td class="r">56:44</td><td class="r">–<small>#25.810</small></td><td class="r">1.323.756<small>#287</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.49.5.10.15.75.74.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Goldrahmen</td><td class="r">100 %<small>#2</small></td><td class="r">331.019<small>#501</small></td><td class="r">260.883<small>#156</small></td><td class="r">4.190.126.610<small>#251</small></td><td class="r">1.172<small>#92</small></td><td class="r">100<small>#1</small></td><td class="r">2.677<small>#36</small></td><td class="r">2.729<small>#12.214</small></td></tr><tr><td class="r">46</td><td>Muktat</td><td>F17</td><td>Phoenix</td><td class="r">808<small>#41</small></td><td class="r">–<small>#26.099</small></td><td class="r">490.137<small>#785</small></td><td class="r">–<small>#3.104</small></td><td class="r">53:47</td><td class="r">–<small>#26.099</small></td><td class="r">1.145.421<small>#727</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">0.44.5.0.15.0.75.70.55|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">99,36 %<small>#7.695</small></td><td class="r">260.137<small>#1.459</small></td><td class="r">230.000<small>#377</small></td><td class="r">1.906.077.821<small>#3.276</small></td><td class="r">1.153<small>#188</small></td><td class="r">100<small>#1</small></td><td class="r">2.582<small>#330</small></td><td class="r">4.934<small>#42</small></td></tr><tr><td class="r">47</td><td>Stryga</td><td>GN</td><td>Dreamers</td><td class="r">807<small>#47</small></td><td class="r">–<small>#11.348</small></td><td class="r">587.185<small>#276</small></td><td class="r">–<small>#2.269</small></td><td class="r">69:31</td><td class="r">–<small>#11.348</small></td><td class="r">1.338.789<small>#248</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Blitz</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">403.117<small>#139</small></td><td class="r">184.068<small>#1.123</small></td><td class="r">1.664.636.246<small>#4.353</small></td><td class="r">1.208<small>#18</small></td><td class="r">100<small>#1</small></td><td class="r">2.676<small>#38</small></td><td class="r">4.994<small>#9</small></td></tr><tr><td class="r">48</td><td>Fredocbr</td><td>ST</td><td>La Fred Team</td><td class="r">807<small>#47</small></td><td class="r">–<small>#25.986</small></td><td class="r">664.133<small>#72</small></td><td class="r">–<small>#1.764</small></td><td class="r">53:47</td><td class="r">–<small>#25.986</small></td><td class="r">1.505.797<small>#47</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Feuer</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|Twitch-Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">351.644<small>#351</small></td><td class="r">312.489<small>#23</small></td><td class="r">6.260.235.277<small>#11</small></td><td class="r">1.213<small>#12</small></td><td class="r">100<small>#1</small></td><td class="r">2.686<small>#26</small></td><td class="r">2.226<small>#20.676</small></td></tr><tr><td class="r">49</td><td>lucafreak</td><td>F8</td><td>ENDGEGNER</td><td class="r">807<small>#47</small></td><td class="r">–<small>#17.940</small></td><td class="r">740.771<small>#7</small></td><td class="r">–<small>#1.171</small></td><td class="r">57:43</td><td class="r">–<small>#17.940</small></td><td class="r">1.599.639<small>#12</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">50.50.5.10.15.75.75.75.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.1.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">420.700<small>#90</small></td><td class="r">320.071<small>#17</small></td><td class="r">2.480.159.080<small>#1.717</small></td><td class="r">1.081<small>#1.147</small></td><td class="r">100<small>#1</small></td><td class="r">2.563<small>#421</small></td><td class="r">4.981<small>#12</small></td></tr><tr><td class="r">50</td><td>lilith luna</td><td>F17</td><td>moffiX (s4de)</td><td class="r">807<small>#47</small></td><td class="r">–<small>#2.151</small></td><td class="r">507.843<small>#658</small></td><td class="r">–<small>#3.182</small></td><td class="r">77:23</td><td class="r">–<small>#2.151</small></td><td class="r">1.197.692<small>#562</small></td><td class="r">20.15.20.20.100.20.45.15.15.15.20.20</td><td class="r">49.50.5.9.15.25.25.25.60|Eis</td><td class="r">40.40.40.40.40</td><td class="r">50.50</td><td class="r">0.0.0.0|kein Rahmen</td><td class="r">100 %<small>#2</small></td><td class="r">393.282<small>#170</small></td><td class="r">114.561<small>#4.180</small></td><td class="r">1.236.875.542<small>#7.193</small></td><td class="r">1.166<small>#114</small></td><td class="r">100<small>#1</small></td><td class="r">2.633<small>#147</small></td><td class="r">4.900<small>#72</small></td></tr></tbody></table><div class="more">… und 57.816 weitere Zeilen – vollständig, sortier- und durchsuchbar nur im Browser.</div></div>
   <div class="lrows" id="lrows" hidden></div>
   <div id="blks" hidden>
     <div class="blk scansel" id="blk_scan"></div>
@@ -1081,7 +1195,7 @@ window.sfErrUI = function (txt, msg, where) {             // Fehlermeldung oben 
   var page = location.protocol === 'file:' ? 'Datei (PC/Handy)' : (/^127\.|^localhost$/.test(location.hostname) ? 'Live-Vorschau' : 'Online-Liste');
   if (/^#og?$/.test(location.hash)) page += ' · Eigene Scans'; else if (/^#s=/.test(location.hash)) page += ' · geteilter Link';
   else if (/^#g/.test(location.hash)) page += ' · Gilden';
-  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 20.10.2026 16:49',
+  var rep = ['**Fehler Online-Liste**', 'Seite: ' + page + ' · erstellt 21.10.2026 17:25',
              'Browser: ' + br + ' · ' + os + ' · ' + (window.innerWidth || 0) + '×' + (window.innerHeight || 0),
              'Fehler: ' + String(msg || '?').slice(0, 300), 'Stelle: ' + String(where || '–').slice(0, 120),
              'Ansprechpartner: Deinnachbar (Discord)'].join('\n');
@@ -1315,7 +1429,7 @@ var SQ_GROUPS = {
            ['pet_fire', 'Feuer (Glück)', 40, 0], ['pet_water', 'Wasser (Stärke)', 40, 0]],
   sq_portal: [['portal_hp', 'Dämonenportal (Leben)', 50, 0], ['portal_guild', 'Gildenportal', 50, 0]],
   sq_frame: [['gold_frame', 'Goldrahmen', 1, 0], ['silver_frame', 'Silberrahmen', 1, 0], ['twitch_frame', 'Twitch-Rahmen', 1, 0],
-             ['ff_frame', 'Friendly-Fire-Rahmen', 1, 0], ['_hell', 'Hellevator-Rahmen', 1, 0]]};
+             ['ff_frame', 'Friendly-Fire-Rahmen', 1, 0]]};
 var SQ_ELC = {Feuer: '#ff6a2b', Eis: '#46b4ff', Blitz: '#ffd23a'};
 function sqRate(v, mx) { var q = v / mx; return q >= 1 ? 'c4' : (q >= 0.75 ? 'c3' : (q >= 0.5 ? 'c2' : 'c1')); }
 function sqCells(key, rec) {                               // [[Farbcode, Tooltip, Elementfarbe|'now'|null]] oder []
@@ -5576,7 +5690,7 @@ function applyTexts() {
     var vt = [['p', t('vPlayers')]];
     if (OWN ? D0.mainGv : D0.gv) vt.push(['g', t('vGuilds')]);
     if (D0.own) vt.push(['o', t('vOwn')]);
-    if (mgTabOn()) vt.push(['m', 'Meine Gilde']);
+    if (mgTabOn()) vt.push(['m', 'Gildenquartier']);
     $('vtabs').innerHTML = vt.map(function (v) {
       return '<button type="button" role="tab" data-v="' + v[0] + '" aria-pressed="' + ((OWN ? 'o' : (MGV ? 'm' : VIEW)) === v[0]) + '">' + esc(v[1]) +
         (v[0] === 'm' && mgNew() ? '<span class="nb">NEU</span>' : '') + '</button>';
@@ -6064,7 +6178,7 @@ $('q').addEventListener('input', function (e) {             // grosse Listen: er
 $('qx').addEventListener('click', function () { st.q = ''; st.riv = null; st.qx = {}; $('q').value = ''; buildChips(); render(); $('q').focus(); });
 $('bColf').addEventListener('click', function () { st.colfOn = !st.colfOn; this.setAttribute('aria-pressed', st.colfOn); if (!st.colfOn) st.colf = {}; render(); });
 $('bReset').addEventListener('click', function () {
-  st.q = ''; $('q').value = ''; st.list = 'all'; st.srv.clear(); st.colf = {}; st.colfOn = false; st.tpOnly = false; st.twOnly = false; st.riv = null;
+  st.q = ''; $('q').value = ''; st.list = 'all'; st.srv.clear(); if (st.cls) st.cls.clear(); st.colf = {}; st.colfOn = false; st.tpOnly = false; st.twOnly = false; st.riv = null;
   st.prof = null; st.gexp.clear(); st.gf = null; st.gfoc = false; st.qx = {};
   $('bColf').setAttribute('aria-pressed', 'false');
   st.sort = defaultSort(); st.sort2 = defaultSort2();
@@ -6077,6 +6191,7 @@ function activeFilters() {                            // wie viele Suchen / Filt
   if (st.q && String(st.q).trim()) n++;
   if (st.list && st.list !== 'all') n++;
   if (st.srv && st.srv.size) n++;
+  if (st.cls && st.cls.size) n++;
   if (st.colf) Object.keys(st.colf).forEach(function (k) { if (String(st.colf[k] || '').trim()) n++; });
   if (st.tpOnly) n++;
   if (st.twOnly) n++;
@@ -6154,6 +6269,7 @@ function viewRows() {
     if (st.twOnly && TWK[r.k] == null) return false;     // 👥: nur Spieler mit gleichem Aussehen
     if (terms.length && !rtk[r.k] && !terms.some(function (tm) { return st.qx[tm] != null ? st.qx[tm] === r.k : r.h.indexOf(tm) >= 0; })) return false;
     if (st.srv.size && SRV != null && !st.srv.has(r.v[SRV])) return false;
+    if (st.cls && st.cls.size && !st.cls.has(clsKey(r))) return false;
     if (st.gf && (GUILD == null || r.v[GUILD] !== st.gf.g || (SRV != null && st.gf.srv && r.v[SRV] !== st.gf.srv))) return false;
     return true;
   };
@@ -7365,7 +7481,7 @@ function risersHtml() {
   }
   if (climb.length) {
     climb.sort(function (a, b) { return b.m - a.m; });
-    var top = climb.filter(function (x) { return x.m > 0; }).slice(0, 5);
+    var top = climb.filter(function (x) { return x.m > 0; }).slice(0, R24CLN);
     if (top.length) h += '<div><b>' + esc(t('riseClimb', {c: MET[mB].label})) + '</b><table class="rtab">' + hd('<th class="r">▲</th>') + top.map(function (x, i) {
       return '<tr>' + who(x.r, i) + '<td class="r"><b class="ra up" style="display:inline">▲' + nf0.format(x.m) + '</b></td></tr>';
     }).join('') + '</table></div>';
@@ -7477,7 +7593,7 @@ function buildSettings() {
   if (CLSCOL != null && !INTERNAL.has(COLS[CLSCOL].id) && D.icons && !GUILDLIST) add('cin', segRow(t('cinT'), 'cin', [['true', t('yes')], ['false', t('no')]]));
   add('dens', segRow(t('dens'), 'dens', [['compact', t('compact')], ['normal', t('normal')], ['large', t('large')]]));
   var mgm = mgMeta();
-  if (mgm && mgm.vis) parts.view += segRow('Reiter „Meine Gilde“', 'mgTab', [['on', 'zeigen'], ['off', 'ausblenden']]);
+  if (mgm && mgm.vis) parts.view += segRow('Reiter „Gildenquartier“', 'mgTab', [['on', 'zeigen'], ['off', 'ausblenden']]);
   add('lines', segRow(t('lines'), 'lines', [['thick', t('thick')], ['thin', t('thin')], ['off', t('noLines')]]));
   var hid = hiddenSet(), ord = colOrder(), rko = rkOffSet();
   var grs = COLGRP.filter(function (g) { return ord.some(function (id) { return colGrp(id) === g; }); });
@@ -7967,7 +8083,7 @@ function profHtml(r0) {
   head = markHtml(r) + head;
   var eq = [];
   [['pfArmor', 'arm'], ['pfWeap', 'wd'], ['pfIq', 'iq'], ['pfGem', 'gem']].forEach(function (x) { if (pfv(r, x[1]) != null) eq.push([t(x[0]), nf0.format(pfv(r, x[1]))]); });
-  var dtr = pfv(r, 'dt'), d = dtr ? mgDetOf(dtr) : null;
+  var dtr = pfv(r, 'dt'), d = dtr ? mgDetOf(dtr) : (R24MGD || null);
   if (!d) {                                             // ohne Einzelheiten: Upgrade, Runen und Portal als Text
     if (pfv(r, 'upg') != null) eq.push([t('pfUpg'), nf0.format(pfv(r, 'upg'))]);
     var runes = [['pfRGold', 'rg', '%'], ['pfREpic', 're', '%'], ['pfRQual', 'rq', ''], ['pfRXp', 'rx', '%'], ['pfRHp', 'rh', '%'], ['pfRDmg', 'rd', '%']]
@@ -7986,7 +8102,11 @@ function profHtml(r0) {
     '<button class="btn" type="button" data-pclose>' + esc(t('close')) + '</button>';
   var pots = null;
   if (pfv(r, 'pm') != null || pfv(r, 'pc') != null || pfv(r, 'pw') != null) pots = [pfv(r, 'pm'), pfv(r, 'pc'), pfv(r, 'pw')];
-  return profCard({k: k, name: (r.me ? '★ ' : '') + cellText(COLS[NAME], r.v[NAME]), icons: head, cls: cls, inaCls: ia ? ia.cls : '',
+  var r24 = {hp: pfv(r, 'hp'), hof: pfv(r, 'hof'), alb: pfv(r, 'alb'), wrn: D.wr_n || 0,
+             wr: [['Level', 'wl'], ['Base', 'wb'], ['Total', 'wt']].filter(function (x) { return pfv(r, x[1]) != null; }).map(function (x) { return [x[0], pfv(r, x[1])]; }),
+             bd: dB != null && days && days >= 0.25 ? Math.round(dB / days) : null, xd: null};
+  if (CI.xp_day != null) { var xr = lastRows.filter(function (x) { return x.r.k === k && !x.gone; })[0], xv = xr ? rateOf(xr, COLS[CI.xp_day]) : undefined; if (xv != null) r24.xd = xv; }
+  return profCard({k: k, r24: r24, name: (r.me ? '★ ' : '') + cellText(COLS[NAME], r.v[NAME]), icons: head, cls: cls, inaCls: ia ? ia.cls : '',
                    srv: SRV != null ? r.v[SRV] : '', guild: GUILD != null ? r.v[GUILD] : '', lv: lv, glv: dL, bs: bs, gbs: dB, tt: ts, gtt: dT, la: la,
                    gj: d && d.g_joined ? d.g_joined : null, fus: fus, chips: chips, per: per, chart: tog + chartSvg(pts, chk), d: d, eq: eq, cts: pfv(r, 'cts'),
                    pots: d ? null : pots, mount: mt ? esc(mt) + (D.mountDays && pfv(r, 'md') ? ' · ' + esc(t('pfMountDays', {n: nf0.format(pfv(r, 'md'))})) : '') : '', btns: btns,
@@ -8304,6 +8424,7 @@ $('chartBody').addEventListener('input', function (e) {
   bcSetLast(+e.target.value); bcDraw();
   var r = $('bcRange'); if (r) r.focus();
 });
+var R24MGD = null;                                      // Einzelheiten aus dem Gildenquartier, wenn die Liste keine hat
 function openProf(k) {
   var r = NEWK.get(k) || null; if (!r) { SCANS.forEach(function (sc, si) { r = r || scanRow(si, k); }); }
   if (!r) return;
@@ -8810,6 +8931,9 @@ function ownAfter(res) {
   else if (!added.length && dup.length) toast(t('oDup', {n: dup.join(', ')}), true, 9000);
   if (!added.length) return;
   if (!fresh.length) { toast(t('oBkDone', {n: nf0.format(bk)})); setTimeout(function () { oReload(); }, 900); return; }
+  if (res.every(function (x) { return !x.r || !x.r.added.length || x.r.backup || /\.(dat|json)$/i.test((x.f && x.f.name) || ''); })) {   // schon eine gesicherte Datei
+    toast(t('oBkDone', {n: nf0.format(fresh.length)})); setTimeout(function () { oReload(); }, 900); return;
+  }
   var name = fresh.length === 1 ? fresh[0].name : t('oNFiles', {n: nf0.format(fresh.length)});
   oDlg('<div class="cardhead"><h2>' + esc(t('oSvT', {f: name, p: nf0.format(np), g: nf0.format(ng)})) + '</h2></div>' +
     '<p class="dim">' + esc(t('oSvQ')) + '</p>' +
@@ -9414,7 +9538,7 @@ function mgAgo(min) { return min == null ? '–' : fmtAgo(min); }
 
 // ---- Seite "Meine Gilde": Leiste (Gilden, Zeitraum, Reiter) und Inhalt
 var MG_TABS = [['mem', 'Mitglieder'], ['zu', 'Zuwachs, Tränke & Festung'], ['riv', 'Rivalen'], ['rep', 'Bericht'], ['fight', 'Kämpfe']];
-var MG_SQH = {sq_fort: 'F A H S M Ak Sk K B Mt Sm Be', sq_rune: 'G E Q X L F K B S', sq_pet: 'Sc Li Er Fe Wa', sq_portal: 'Le Gi', sq_frame: 'Go Si Tw FF He'};
+var MG_SQH = {sq_fort: 'F A H S M Ak Sk K B Mt Sm Be', sq_rune: 'G E Q X L F K B S', sq_pet: 'Sc Li Er Fe Wa', sq_portal: 'Le Gi', sq_frame: 'Go Si Tw FF'};
 var MG_SQL = {sq_fort: 'Festung', sq_rune: 'Runen', sq_pet: 'Pets', sq_portal: 'Portal', sq_frame: 'Rahmen'};
 var MG_COLS = [
   {id: 'no', l: '#', fix: 1}, {id: 'name', l: 'Spieler', fix: 1}, {id: 'srv', l: 'Server'}, {id: 'g', l: 'Gilde'},
@@ -9444,7 +9568,7 @@ function mgInit() {
   var st0 = $('static'); if (st0 && st0.parentNode) st0.parentNode.removeChild(st0);
   $('mgpane').hidden = false;
   document.body.classList.add('mgmode');
-  $('title').textContent = 'Meine Gilde'; document.title = 'Meine Gilde – ' + (D0.title || '');
+  $('title').textContent = 'Gildenquartier'; document.title = 'Gildenquartier – ' + (D0.title || '');
   var m = MGH.match(/^#mr=(.+)$/);
   if (m) { mgOpenShared(m[1]); return; }
   mgRender();
@@ -9686,7 +9810,7 @@ function mgProfile(k, id) {
   var R = mgRowsOf(k); if (!R) return;
   var r = R.rows.filter(function (x) { return x.m.id === id; })[0]; if (!r) return;
   var mk = mgMainRow(r.m.name, r.srv);
-  if (mk != null && PROF && typeof openProf === 'function') { openProf(mk); return; }
+  if (mk != null && PROF && typeof openProf === 'function') { R24MGD = r.d || null; try { openProf(mk); } finally { R24MGD = null; } return; }
   var m = r.m;
   var h = profCard({name: m.name, icons: mgNameIcons(m), cls: m.cls, srv: r.srv, guild: r.g, lv: m.lv, glv: r.glv, bs: m.bs, gbs: r.gbs, tt: m.tt, gtt: r.gtt,
                     la: m.la, gj: m.gj || (r.d && r.d.g_joined) || null, d: r.d, mount: m.mv ? esc(MG_MNT[m.mv] || '') : '',
@@ -9700,20 +9824,23 @@ function mgProfile(k, id) {
 //      Attribute wie im Spiel + Ausruestung, Festung mit naechstem Schritt, Runen/Pets/Portal/Rahmen, Traenke und Reittier
 function profCard(o) {
   var gt = function (g, d1) { return g == null ? '' : ' <small class="mgd ' + mgGainCls(g) + '">' + esc(mgSigned(g, d1)) + '</small>'; };
-  var h = '<div class="pcard pcard2"' + (o.k != null ? ' data-pk="' + esc(o.k) + '"' : '') + '>';
+  var x = o.r24 || {};
+  var h = '<div class="pcard pcard2 r24pc"' + (o.k != null ? ' data-pk="' + esc(o.k) + '"' : '') + '>';
   h += '<div class="phead"><h2 class="pname2"><span class="' + (o.inaCls || '') + '">' + esc(o.name) + '</span> ' + (o.icons || '') + '</h2><div class="pbtns2">' + (o.btns || '') + '</div></div>';
-  var top = [o.cls ? esc(MG_CLS[o.cls] || '') : '', esc(o.srv || ''), esc(o.guild || '')].filter(Boolean).join(' · ');
-  var vals = [];
-  if (o.lv != null) vals.push('Level <b>' + nf0.format(o.lv) + '</b>' + gt(o.glv));
-  if (o.bs != null) vals.push('Base Sum <b>' + nf0.format(o.bs) + '</b>' + gt(o.gbs));
-  if (o.tt != null) vals.push('Total Sum <b>' + nf0.format(o.tt) + '</b>' + gt(o.gtt));
-  h += '<p class="pline">' + top + (vals.length ? ' · ' + vals.join(' · ') : '') + '</p>';
-  var l2 = [];
-  if (o.la != null) l2.push('Zuletzt online: <b class="' + (o.la > 4320 ? 'ired' : (o.la > 1440 ? 'iyel' : '')) + '">' + esc(mgAgo(o.la)) + '</b>');
-  if (o.gj) l2.push('in der Gilde seit ' + esc(fmtDate(o.gj)));
-  if (o.fus) l2.push('<span class="pfus" data-tip="Die Plätze im Vergleich zählen ab der Fusion neu">Server-Fusion: ' + esc(o.fus) + '</span>');
-  if (l2.length) h += '<p class="pline dim2">' + l2.join(' · ') + '</p>';
-  if (o.chips && o.chips.length) h += '<div class="pchips">' + o.chips.map(function (c) { return '<span' + (c[2] ? ' data-tip="' + esc(c[2]) + '"' : '') + '><small>' + esc(c[0]) + '</small><b>' + c[1] + '</b></span>'; }).join('') + '</div>';
+  var chip = function (lab, val, tip, cls) { return val == null || val === '' ? '' : '<span' + (tip ? ' data-tip="' + esc(tip) + '"' : '') + (cls ? ' class="' + cls + '"' : '') + '><small>' + esc(lab) + '</small><b>' + val + '</b></span>'; };
+  var row = function (a) { a = a.filter(Boolean); return a.length ? '<div class="pchips r24pr">' + a.join('') + '</div>' : ''; };
+  var laTxt = null, laCls = '';
+  if (o.la != null) { laTxt = o.la < 1440 ? '&lt; 24 Std.' : (Math.floor(o.la / 1440) === 1 ? '1 Tag' : nf0.format(Math.floor(o.la / 1440)) + ' Tage'); laCls = o.la > 4320 ? 'ired' : (o.la > 1440 ? 'iyel' : ''); }
+  var hd = '';
+  hd += row([chip('Welt', esc(o.srv || ''), o.fus ? 'Server-Fusion: ' + o.fus : ''), chip('Klasse', o.cls ? esc(MG_CLS[o.cls] || '') : ''), chip('Gilde', esc(o.guild || '')),
+             chip('In der Gilde seit', o.gj ? esc(fmtDay(o.gj)) : ''), chip('Ehrenhalle', x.hof != null ? '#' + nf0.format(x.hof) : ''),
+             chip('Album', x.alb != null ? nf2.format(x.alb) + ' %' : ''), laTxt ? chip('Zuletzt online', '<span class="' + laCls + '">' + laTxt + '</span>') : '']);
+  hd += row([o.lv != null ? chip('Level', nf0.format(o.lv) + gt(o.glv)) : '', o.bs != null ? chip('Base Sum', nf0.format(o.bs) + gt(o.gbs)) : '',
+             o.tt != null ? chip('Total Sum', nf0.format(o.tt) + gt(o.gtt)) : '', x.hp != null ? chip('Lebensenergie', fmtBig(x.hp)) : '']);
+  hd += row([x.bd != null ? chip('Base pro Tag', nf0.format(x.bd)) : '', x.xd != null ? chip('XP pro Tag', fmtBig(x.xd)) : '']);
+  hd += row((x.wr || []).map(function (w) { return chip('Worldrank ' + w[0], '#' + nf0.format(w[1]), 'Platz ' + nf0.format(w[1]) + ' unter allen ' + nf0.format(x.wrn || 0) + ' Spielern im Scan (' + w[0] + ')'); }));
+  if (!o.r24 && o.chips && o.chips.length) hd += '<div class="pchips r24pr">' + o.chips.map(function (c) { return chip(c[0], c[1], c[2]); }).join('') + '</div>';
+  h += '<div class="r24ph2">' + hd + '</div>';
   var po = MGS.pdo || {};
   if (o.chart) h += '<details class="mgdet" data-mgdo="ver"' + (po.ver === 0 ? '' : ' open') + '><summary>Verlauf</summary>' + (o.per ? '<div class="pper2">' + o.per + '</div>' : '') +
     '<div class="' + (S.pchH ? 'phalf' : '') + '">' + o.chart + '</div></details>';
@@ -9722,34 +9849,31 @@ function profCard(o) {
     var at = mgAttHtml(d, o.cls);
     var eqx = (o.eq || []).length ? '<div class="pchips sm">' + o.eq.map(function (c) { return '<span><small>' + esc(c[0]) + '</small><b>' + c[1] + '</b></span>'; }).join('') + '</div>' : '';
     if (at || eqx) h += '<details class="mgdet" data-mgdo="att"' + (po.att === 0 ? '' : ' open') + '><summary>Attribute (wie im Spiel)</summary>' + at + eqx + '</details>';
-    var cells = ML ? ML.sqCells('sq_fort', d) : [];
-    if (cells.length) {
-      var stp = mgStep(d);
-      h += '<details class="mgdet" data-mgdo="fort"' + (po.fort === 0 ? '' : ' open') + '><summary>Festung</summary><table class="mgt mgfort"><tbody>' + cells.map(function (c, i) {
+    var cells = ML ? ML.sqCells('sq_fort', d) : [], rc = ML ? ML.sqCells('sq_rune', d) : [], ft = '', rt = '';
+    var stp = cells.length ? mgStep(d) : null;
+    if (cells.length) ft = '<table class="mgt mgfort"><tbody>' + cells.map(function (c, i) {
         var g = MG_FB[i];
         return '<tr><td>' + esc(g[1]) + '</td><td class="r"><b>' + nf0.format(+(d[g[0]] || 0)) + '</b> / ' + g[2] + '</td><td><i class="fq ' + c[0] + '"></i>' +
           (c[0] === 'w1' || c[0] === 'w2' ? ' <small class="down">zu früh</small>' : '') + '</td></tr>';
-      }).join('') + '</tbody></table>' + (stp ? '<p class="pline"><b>Nächster Schritt:</b> ' + (stp[0] > 40 ? '<span class="up">alles fertig</span>' : esc(mgStepTxt(stp))) + '</p>' : '') + '</details>';
-    }
-    h += '<div class="mgpsq">' + ['sq_rune', 'sq_pet', 'sq_portal', 'sq_frame'].map(function (q) {
+      }).join('') + '</tbody></table>';
+    if (rc.length) rt = '<table class="mgt mgfort r24rune"><tbody>' + rc.map(function (c, i) {
+        var g = R24RUNES[i] || ['', '', 0, ''];
+        return '<tr><td>' + esc(g[1]) + '</td><td class="r"><b>' + nf0.format(+(d[g[0]] || 0)) + '</b> / ' + g[2] + (g[3] || '') + (g[0] === 'rune_dmg' && d.rune_dmg_el ? ' <small class="dim2">' + esc(d.rune_dmg_el) + '</small>' : '') + '</td><td><i class="fq ' + c[0] + '"' +
+          (c[2] ? ' style="box-shadow:inset 0 -4px 0 ' + c[2] + '"' : '') + '></i></td></tr>';
+      }).join('') + '</tbody></table>';
+    if (ft || rt) h += '<details class="mgdet" data-mgdo="fort"' + (po.fort === 0 ? '' : ' open') + '><summary>' + (ft && rt ? 'Festung und Runen' : (ft ? 'Festung' : 'Runen')) + '</summary><div class="r24fr">' +
+      (ft ? '<div>' + ft + (stp ? '<p class="pline"><b>Nächster Schritt:</b> ' + (stp[0] > 40 ? '<span class="up">alles fertig</span>' : esc(mgStepTxt(stp))) + '</p>' : '') + '</div>' : '') +
+      (rt ? '<div>' + rt + '</div>' : '') + '</div></details>';
+    h += '<div class="mgpsq r24sq">' + ['sq_pet', 'sq_portal', 'sq_frame'].map(function (q) {
       return '<div><span class="mglbl">' + esc(MG_SQL[q]) + '</span>' + mgSqHead(q) + mgSq(q, d, o.cls, true) + '</div>';
     }).join('') + '</div>';
   } else if ((o.eq || []).length) h += '<div class="pchips sm">' + o.eq.map(function (c) { return '<span><small>' + esc(c[0]) + '</small><b>' + c[1] + '</b></span>'; }).join('') + '</div>';
-  var potTxt = function (v, n) {
-    if (v == null) return '<span class="down">' + n + ' fehlt</span>';
-    if (v <= 0) return '<span class="down">' + n + ' abgelaufen</span>';
-    var day = o.cts ? ' <span class="dim2">(bis ' + esc(fmtDay(o.cts + v * 86400000)) + ')</span>' : '';
-    return n + ' <b class="' + (v < 3 ? 'iyel' : '') + '">' + (v < 1 ? nf0.format(Math.max(1, Math.floor(v * 24))) + ' h' : nf0.format(Math.floor(v)) + ' T') + '</b>' + day;
-  };
-  var pots = d ? [d.pot_main, d.pot_con, d.pot_life] : (o.pots || null);
-  var l3 = [];
-  if (pots) l3.push('<b>Tränke:</b> ' + potTxt(pots[0], 'Haupttrank') + ' · ' + potTxt(pots[1], 'Ausdauer') + ' · ' + potTxt(pots[2], 'Lebenstrank'));
-  if (o.mount) l3.push('<b>Reittier:</b> ' + o.mount);
-  if (l3.length) h += '<p class="pline">' + l3.join(' &nbsp; ') + '</p>';
   if (!d && o.noDet) h += '<p class="dim2 mgsm">' + esc(o.noDet) + '</p>';
-  if (o.foot) h += '<div class="pfoot">' + o.foot + '</div>';
   return h + '</div>';
 }
+var R24RUNES = [['rune_gold', 'Gold', 50, ' %'], ['rune_epic', 'Epische Items', 50, ' %'], ['rune_quality', 'Item-Qualität', 5, ''], ['rune_xp', 'Erfahrung', 10, ' %'],
+                ['rune_hp', 'Lebensenergie', 15, ' %'], ['rune_res_fire', 'Feuer-Widerstand', 75, ' %'], ['rune_res_cold', 'Kälte-Widerstand', 75, ' %'],
+                ['rune_res_light', 'Blitz-Widerstand', 75, ' %'], ['rune_dmg', 'Schaden', 60, ' %']];
 
 // ---- Reiter "Zuwachs, Tränke & Festung"
 function mgRanks(list, f) { var s = list.slice().sort(function (a, b) { return f(b) - f(a); }), r = new Map(); s.forEach(function (x, i) { r.set(x, i + 1); }); return r; }
@@ -10504,7 +10628,7 @@ window.sfMg = {canvas: function (w) { return mgCanvas(mgWhat(w)); }, discord: fu
 // ---- Gleiche Knopfleiste in allen Reitern: Liste als Bild / fuer Discord / Kurzlink (gezeigte Zeilen und Spalten)
 function mgListModel(maxRows) {
   var cols = visibleCols(), rows = (lastRows || []).filter(function (x) { return !x.gone; }).slice(0, maxRows || 100);
-  var sc = curScan(), out = {title: (D.title || '') + (sc && sc.label ? ' · ' + sc.label : ''), head: [], rows: []};
+  var sc = curScan(), out = {title: (D.title || '') + (st.cmp && SCANS[st.a] && SCANS[st.b] ? ' · ' + SCANS[st.a].label + ' – ' + SCANS[st.b].label : (sc && sc.label ? ' · ' + sc.label : '')), head: [], rows: []};
   out.head = cols.map(function (ci) { var c = COLS[ci]; return {t: colLabel(c), al: isNum(c) ? 'r' : ''}; });
   out.rows = rows.map(function (x) {
     return cols.map(function (ci) {
@@ -10513,12 +10637,13 @@ function mgListModel(maxRows) {
         var rec = sqRecOf(c, v); if (!rec) return {t: '–'};
         return {sq: ML.sqCells(c.id, rec).map(function (q) { return {bg: q[0] === 'f0' ? null : MG_SQC[q[0]], el: q[2] && q[2] !== 'now' ? q[2] : null, ol: q[2] === 'now' ? '#1a1d26' : null}; })};
       }
-      var o = {t: cellText(c, v), al: isNum(c) ? 'r' : ''};
+      var rcol = !!(c.rate || c.xd || (dayCol(c) && dayPer()));
+      var o = {t: rcol ? fmtGainC(c, cellNum(x, c, ci)) : cellText(c, v), al: isNum(c) ? 'r' : ''};
       if (ci === NAME) {
         o.b = 1;
         o.ic = (x.r.ic || []).filter(function (k) { return /^[cm]\d+$/.test(k); });
       }
-      if (isNum(c) && typeof gnOn === 'function' && gnOn() && st.cmp && x.o && !x.gone && !c.nd) {
+      if (!rcol && isNum(c) && typeof gnOn === 'function' && gnOn() && st.cmp && x.o && !x.gone && !c.nd) {
         var a = num(c, x.o.v[ci]), b = num(c, v);
         if (a != null && b != null && a !== b) { o.sub = fmtNum(c, b - a, true); o.subc = b > a ? 'up' : 'down'; }
       }
@@ -11332,9 +11457,676 @@ function mgWeak(R, n) {                                 // schwaechster Zuwachs:
   var c = (R.allRows || R.rows).filter(function (r) { return r.gbs != null; }).sort(function (a, b) { return a.gbs - b.gbs; });
   var out = new Set(); c.slice(0, n).forEach(function (r) { out.add(r.m); }); return out;
 }
+// ================================================================ Runde 24: Kopfzeile (Bereiche, Welten, Suche, Teilen), Navigation, #-Menue
+var R24G = '#e8b443';
+var R24IC = {
+  globe: function (sz) { return '<svg class="r24ico" viewBox="0 0 24 24" width="' + sz + '" height="' + sz + '" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c3 3 3 15.4 0 18.4M12 2.8c-3 3-3 15.4 0 18.4"/></svg>'; },
+  badge: function (txt, id) {
+    return '<svg viewBox="0 0 64 64" width="46" height="46" aria-hidden="true"><defs><linearGradient id="r24bg' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f5fb8"/><stop offset="1" stop-color="#16285c"/></linearGradient>' +
+      '<linearGradient id="r24tx' + id + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3b0"/><stop offset=".55" stop-color="#f2c048"/><stop offset="1" stop-color="#c8861e"/></linearGradient></defs>' +
+      '<path d="M32 4 L55 15 L58 41 L40 59 L20 58 L6 42 L9 16 Z" fill="url(#r24bg' + id + ')" stroke="' + R24G + '" stroke-width="3.2" stroke-linejoin="round"/>' +
+      '<path d="M14 22 Q22 18 30 22 M36 44 Q44 48 50 42 M18 46 Q24 50 28 47" stroke="#5c86d6" stroke-width="1.6" fill="none" opacity=".6"/>' +
+      '<text x="32" y="40" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="21" fill="url(#r24tx' + id + ')" stroke="#2a1a05" stroke-width="1.4" paint-order="stroke">' + txt + '</text></svg>';
+  },
+  galaxy: '<svg viewBox="0 0 64 64" width="46" height="46" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="#141236" stroke="' + R24G + '" stroke-width="3.2"/>' +
+    '<path d="M32 32 m-3 -2 a6 6 0 1 1 6 8 a11 11 0 1 1 -14 -13 a17 17 0 0 1 22 -4" fill="none" stroke="#c45be8" stroke-width="5" stroke-linecap="round"/>' +
+    '<path d="M32 32 m3 2 a6 6 0 1 1 -6 -8 a11 11 0 1 1 14 13 a17 17 0 0 1 -22 4" fill="none" stroke="#4f8df0" stroke-width="4" stroke-linecap="round" opacity=".9"/>' +
+    '<circle cx="32" cy="32" r="4.5" fill="#fff3c4"/><circle cx="14" cy="22" r="2.6" fill="' + R24G + '"/><circle cx="51" cy="44" r="2.6" fill="' + R24G + '"/></svg>',
+  p: '<svg class="r24ico" viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 L16 4 L28 12 Z"/><path d="M7 13v12M12 13v12M20 13v12M25 13v12M3 27h26"/><path d="M14 9h4" stroke-linecap="round"/></svg>',
+  g: '<svg class="r24ico" viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 4v24M6 5h16l-3 5 3 5H6"/><path d="M13 21h13v7H13z M16 21v-3h7v3"/></svg>',
+  o: '<svg class="r24ico" viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M9 5h16a3 3 0 0 1 0 6h-2v14a3 3 0 0 1-3 3H7a3 3 0 0 1 0-6h2z"/><path d="M13 13h6M13 17h6M13 21h4" stroke-linecap="round"/></svg>',
+  m: '<svg class="r24ico" viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M16 4l10 4v8c0 6-4.5 10-10 12C10.5 26 6 22 6 16V8z"/><path d="M11 13l2.5 2.5L16 11l2.5 4.5L21 13l-1 6h-8z" fill="currentColor" fill-opacity=".25"/></svg>',
+  a: '<svg class="r24ico" viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="16" cy="16" r="5"/><circle cx="16" cy="16" r="10" stroke-dasharray="3 3"/><path d="M16 2v4M16 26v4M2 16h4M26 16h4"/></svg>'
+};
+var R24AURA = 'https://nachbarsf.github.io/Aura-Calculator/';
+var R24TX = {
+  de: {p: 'Ehrenhalle', g: 'Gildenhalle', o: 'Eigene Scans', m: 'Gildenquartier', a: 'Aura-Rechner', worlds: 'Welten', all: 'Alle', eu: 'Europa', am: 'Amerika', fu: 'Fusionierte Welten',
+       w1: 'Welt', wn: 'Welten', fz: 'Kommende Fusionen', cls: 'Klassen', sel: 'gewählt', reset: 'Zurücksetzen', choice: 'Auswahl', allW: 'alle', share: 'Teilen', link: 'Link zu dieser Auswahl kopieren',
+       nav: 'Navigation', navO: 'aufgeklappt', navC: 'eingeklappt', navTip: 'Navigation auf- oder zuklappen (Scan-Auswahl, Spaltensuche, Schnellsuche)', gainPer: 'Zuwachs je', rks: 'Marken zählen',
+       tp: 'alle Spieler aus den Scans. Suchen, nach Werten sortieren, Zuwachs zwischen zwei Scans vergleichen und Profile öffnen.',
+       tg: 'alle Gilden. Summen und Durchschnitte, Raids, Hydra und Pet-Level vergleichen, beste Spieler je Gilde sehen.',
+       to: 'deine eigenen Scans (HAR, JSON, .dat) laden und mit der Liste vergleichen. Bleibt nur in deinem Browser.',
+       tm: 'deine Gilde im Blick: Mitglieder, Zuwachs, Tränke & Festung, Rivalen und Bericht.',
+       ta: 'Mana-Bedarf und Tage bis Aura 400 berechnen, mit den Zeiträumen vom Auralen Großputz. Öffnet in einem neuen Tab.',
+       players: 'Spieler'},
+  en: {p: 'Hall of Fame', g: 'Guild Hall', o: 'Own scans', m: 'Guild quarters', a: 'Aura calculator', worlds: 'Worlds', all: 'All', eu: 'Europe', am: 'America', fu: 'Fused worlds',
+       w1: 'world', wn: 'worlds', fz: 'Upcoming fusions', cls: 'Classes', sel: 'selected', reset: 'Reset', choice: 'Selection', allW: 'all', share: 'Share', link: 'Copy link to this selection',
+       nav: 'Navigation', navO: 'open', navC: 'closed', navTip: 'Open or close the navigation (scan selection, column search, quick search)', gainPer: 'Gain per', rks: 'Count marks',
+       tp: 'all players from the scans. Search, sort by values, compare gains between two scans and open profiles.',
+       tg: 'all guilds. Compare sums and averages, raids, hydra and pet level, see the best player of each guild.',
+       to: 'load your own scans (HAR, JSON, .dat) and compare them with the list. Stays in your browser only.',
+       tm: 'your guild at a glance: members, gains, potions & fortress, rivals and report.',
+       ta: 'Mana needed and days until aura 400, with the dates of the aura cleanup event. Opens in a new tab.',
+       players: 'players'}
+};
+function r24t(k) { var m = R24TX[L] || R24TX.en; return m[k] != null ? m[k] : R24TX.de[k]; }
+function r24Sec() { return OWN ? 'o' : (MGV ? 'm' : (VIEW === 'g' ? 'g' : 'p')); }
+function r24NavOpen() { return S.r24nav !== 'closed'; }
+var R24CLS = new Set();
+st.cls = R24CLS;
+var R24WOPEN = false, R24WEXP = {eu: true}, R24CLSOPEN = true;
+
+// ---- Kopfzeile neu aufbauen (nach jeder Anordnung)
+function r24Head() {
+  var hl = $('hleft'), hb = $('hbtn'); if (!hl || !hb) return;
+  var sec = r24Sec();
+  var sb = $('r24sb');
+  if (!sb) { sb = document.createElement('button'); sb.id = 'r24sb'; sb.type = 'button'; sb.setAttribute('aria-haspopup', 'true'); }
+  sb.innerHTML = R24IC[sec].replace('width="28" height="28"', 'width="38" height="38"') + '<span class="r24st">' + esc(r24t(sec)) + (OWN && VIEW === 'g' ? ' – ' + esc(t('vGuilds')) : '') + '</span><span class="car">▼</span>';
+  var tb = $('blk_title'); if (tb) tb.insertBefore(sb, tb.firstChild);
+  var wb = $('r24wb');
+  if (!wb) { wb = document.createElement('button'); wb.id = 'r24wb'; wb.type = 'button'; wb.className = 'r24hb'; }
+  wb.hidden = MGV || !r24WorldsOn();
+  hl.appendChild(wb); r24WbText();
+  var se = $('blk_search'); if (se && !HIDEB.blk_search) { hl.appendChild(se); se.classList.remove('push', 'gapl'); }
+  var ss = $('srvsel'); if (ss) hl.appendChild(ss);
+  var sh = $('r24shr');
+  if (!sh) { sh = document.createElement('button'); sh.id = 'r24shr'; sh.type = 'button'; sh.className = 'btn r24shr'; }
+  sh.innerHTML = '📷 ' + esc(r24t('share')) + ' ▾';
+  if (MGV) { if (mgTab() === 'mem') sh.setAttribute('data-mgimg', 'mem'); else sh.removeAttribute('data-mgimg'); sh.hidden = mgTab() !== 'mem'; }
+  else { sh.setAttribute('data-mgimg', 'list'); sh.hidden = !ML; }
+  hl.appendChild(sh);
+  var emp = typeof ownEmptyNow === 'function' && ownEmptyNow();
+  if (emp) { if (se) se.hidden = true; sh.hidden = true; }
+  var nb = $('r24nav');
+  if (!nb) { nb = document.createElement('button'); nb.id = 'r24nav'; nb.type = 'button'; nb.className = 'r24hb'; }
+  if (hb.firstChild !== nb) hb.insertBefore(nb, hb.firstChild);
+  r24NavText();
+}
+function r24WorldsOn() { return groups().length > 0 || r24ClsList().length > 1; }
+function r24WbText() {
+  var wb = $('r24wb'); if (!wb) return;
+  var parts = [];
+  if (st.srv.size) { var l = Array.from(st.srv).sort(function (a, b) { return a.localeCompare(b, 'de', {numeric: true}); }); parts.push(l.length > 3 ? l.slice(0, 2).join(', ') + ' +' + (l.length - 2) : l.join(', ')); }
+  if (R24CLS.size) parts.push(R24CLS.size === 1 ? r24ClsName(Array.from(R24CLS)[0]) : R24CLS.size + ' ' + r24t('cls'));
+  wb.innerHTML = R24IC.globe(22) + esc(r24t('worlds')) + ' <small>' + esc(parts.length ? parts.join(' · ') : r24t('allW')) + '</small>';
+  wb.classList.toggle('on', !!parts.length);
+}
+function r24NavText() {                                   // Zeitraum-Knopf: was gewaehlt ist, "pro Tag" nur mit Zuwachs
+  var nb = $('r24nav'); if (!nb) return;
+  var src = MGV ? $('r23mgf') : $('sfold'), open = r24NavOpen();
+  if (!src && !MGV && !MULTI) { nb.hidden = (typeof ownEmptyNow === 'function' && ownEmptyNow()) || !ROWS.some(function (r) { return r.parentNode === $('lrows'); }); nb.innerHTML = '<span class="lbl">' + esc(r24t('nav')) + '</span><span class="r24arr">' + (open ? '▲' : '▼') + '</span>'; return; }
+  nb.hidden = !src || (typeof ownEmptyNow === 'function' && ownEmptyNow());
+  if (!src) return;
+  var tmp = document.createElement('div'); tmp.innerHTML = src.innerHTML;
+  var car = tmp.querySelector('.car'); if (car) car.parentNode.removeChild(car);
+  var dm = tmp.querySelector('.dim'); if (dm && !MGV && !(gnOn() && segOn())) dm.textContent = dm.textContent.replace(/ · [^·]*$/, '').replace(/^ · (pro|per|na|za) .*$/, '');
+  nb.innerHTML = tmp.innerHTML + '<span class="r24arr">' + (open ? '▲' : '▼') + '</span>';
+  var ct = MGV ? document.querySelector('#r23mgCnt .r23cnt') : $('count');
+  nb.setAttribute('data-tip', (ct ? ct.textContent + ' · ' : '') + r24t('navTip'));
+  nb.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
+r23More = function () { var m = $('r23more'); if (m && m.parentNode) m.parentNode.removeChild(m); };
+// ---- Navigation: eine Zeile (Scan, Spaltensuche, Schnellsuche, Zuruecksetzen); Zuwachs und "alle | angezeigte" ins #-Menue
+function r24Nav() {
+  var lr = $('lrows'); if (!lr) return;
+  var sf = $('sfold'), row = sf ? sf.parentNode : null;
+  if (!row) row = ROWS.filter(function (r) { return r.parentNode === lr; })[0] || null;
+  if (row) {
+    row.classList.remove('folded'); row.classList.add('r24row');
+    ['bColf', 'quick', 'bReset'].forEach(function (id) { var el = $(id); if (el && !HIDEB[id]) { el.classList.remove('push', 'gapl'); row.appendChild(el); } });
+    var rs = $('bReset'); if (rs) rs.classList.add('push');
+  }
+  ['gainBox', 'blk_rks'].forEach(function (id) { var el = $(id); if (el && el.parentNode !== $('rkPop')) $('blks').appendChild(el); });
+  lr.classList.toggle('r24closed', !r24NavOpen());
+  updRows();
+}
+var R24AL0 = applyLayout;
+applyLayout = function (lay) { R24AL0(lay); r24Head(); r24Nav(); };
+var R24SF0 = sfoldText;
+sfoldText = function () { R24SF0(); r24NavText(); };
+function r24SetNav(open) {
+  S.r24nav = open ? 'open' : 'closed'; saveS(); hideTip();
+  $('lrows').classList.toggle('r24closed', !open);
+  var ml = document.querySelector('#mgpane .r23mgl'); if (ml) ml.classList.toggle('r24closed', !open);
+  r24NavText(); updRows();
+  if (RKOPEN) rkOpen(true);
+}
+document.addEventListener('click', function (e) {
+  if (!e.target.closest) return;
+  if (e.target.closest('#r24nav')) { r24SetNav(!r24NavOpen()); return; }
+  var nv = e.target.closest('[data-r24nav]'); if (nv) { r24SetNav(nv.getAttribute('data-r24nav') === 'open'); return; }
+});
+
+// ---- #-Menue: Navigation, Zuwachs je, alle | angezeigte
+var R24RKO = rkOpen;
+rkOpen = function (on) {
+  ['gainBox', 'blk_rks'].forEach(function (id) { var el = $(id); if (el) $('blks').appendChild(el); });
+  R24RKO(on);
+  if (!on) return;
+  var p = $('rkPop'), op = r24NavOpen();
+  p.insertAdjacentHTML('afterbegin', '<span class="l">' + esc(r24t('nav')) + '</span><span class="seg"><button type="button" data-r24nav="open" aria-pressed="' + op + '">' + esc(r24t('navO')) +
+    '</button><button type="button" data-r24nav="closed" aria-pressed="' + !op + '">' + esc(r24t('navC')) + '</button></span>');
+  var rk = $('blk_rks');
+  if (rk && !rk.hidden && !HIDEB.blk_rks) { p.insertAdjacentHTML('beforeend', '<span class="l">' + esc(r24t('rks')) + '</span><span class="r24rkh"></span>'); p.lastChild.appendChild(rk); }
+  var gb = $('gainBox');
+  if (gb && !gb.hidden && !HIDEB.gainBox) {
+    p.insertAdjacentHTML('beforeend', '<span class="l">' + esc(r24t('gainPer')) + '</span><span class="r24gnh' + (gnOn() ? '' : ' off') + '"></span>'); p.lastChild.appendChild(gb);
+    $('gainLbl').hidden = true;
+  }
+  var bt = $('bRk'), b = bt.getBoundingClientRect(), pw = p.offsetWidth, vw = document.documentElement.clientWidth;
+  var left = b.right - pw; if (left < 8) left = Math.max(8, Math.min(b.left, vw - pw - 8));
+  p.style.left = (left + window.scrollX) + 'px';
+};
+var R24BG0 = buildGain;
+buildGain = function () {
+  var r = R24BG0.apply(this, arguments);
+  var gh = document.querySelector('#rkPop .r24gnh'); if (gh) gh.classList.toggle('off', !gnOn());
+  if ($('gainLbl') && $('gainBox').parentNode !== $('blks')) $('gainLbl').hidden = true;
+  r24NavText();
+  return r;
+};
+
+// ---- Bereichs-Menue (Titel)
+function r24SecMenu() {
+  var cur = r24Sec(), av = Array.prototype.map.call($('vtabs').querySelectorAll('[data-v]'), function (b) { return b.getAttribute('data-v'); });
+  if (!av.length) av = [cur];
+  var it = function (k, v) {
+    return '<button type="button" class="r24si' + (k === cur ? ' cur' : '') + '" data-r24v="' + v + '">' + R24IC[k] + '<span>' + esc(r24t(k)) + '</span>' +
+      (k === 'm' && typeof mgCur === 'function' && mgCur() ? '<small>' + esc(mgName(mgCur())) + '</small>' : '') + '<span class="r24tip"><b>' + esc(r24t(k)) + '</b> – ' + esc(r24t('t' + k)) + '</span></button>';
+  };
+  var h = av.map(function (v) { return it(v === 'o' || v === 'og' ? 'o' : v, v); }).join('');
+  h += '<div class="r24sep2"></div><a class="r24si" href="' + R24AURA + '" target="_blank" rel="noopener">' + R24IC.a + '<span>' + esc(r24t('a')) + ' <span class="r24ext">↗</span></span><span class="r24tip"><b>' + esc(r24t('a')) + '</b> – ' + esc(r24t('ta')) + '</span></a>';
+  return h;
+}
+function r24Pop(id, anchor, html, w) {
+  var p = $(id);
+  if (!p) { p = document.createElement('div'); p.id = id; p.className = 'r24pan'; document.body.appendChild(p); }
+  p.innerHTML = html; p.hidden = false;
+  var r = anchor.getBoundingClientRect(), vw = document.documentElement.clientWidth;
+  p.style.width = w ? Math.min(w, vw - 16) + 'px' : '';
+  p.style.left = Math.max(8, Math.min(r.left, vw - p.offsetWidth - 8)) + window.scrollX + 'px';
+  p.style.top = (r.bottom + 8 + window.scrollY) + 'px';
+  return p;
+}
+function r24Close(id) { var p = $(id); if (p) p.hidden = true; if (id === 'r24W') R24WOPEN = false; }
+document.addEventListener('click', function (e) {
+  if (!e.target.closest) return;
+  if (e.target.closest('#r24sb')) { var sp = $('r24S'); if (sp && !sp.hidden) r24Close('r24S'); else { r24Close('r24W'); r24Pop('r24S', $('r24sb'), r24SecMenu(), 360); } return; }
+  var sv = e.target.closest('[data-r24v]');
+  if (sv) { r24Close('r24S'); var v = sv.getAttribute('data-r24v'), tb = $('vtabs').querySelector('[data-v="' + v + '"]'); if (tb && !sv.classList.contains('cur')) tb.click(); return; }
+  if (e.target.closest('#r24S a.r24si')) { r24Close('r24S'); return; }
+  var sp2 = $('r24S'); if (sp2 && !sp2.hidden && !e.target.closest('#r24S')) r24Close('r24S');
+});
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { r24Close('r24S'); r24Close('r24W'); } });
+
+// ---- Welten-Menue (Server + Klassen)
+function r24Regions() {
+  var cnt = srvCounts(), names = Object.keys(cnt).filter(function (s) { return s; });
+  var srt = function (a, b) { return a.localeCompare(b, 'de', {numeric: true}); };
+  var eu = names.filter(function (s) { return /^EU\d+$/i.test(s); }).sort(srt), am = names.filter(function (s) { return /^AM\d+$/i.test(s); }).sort(srt);
+  var fu = names.filter(function (s) { return eu.indexOf(s) < 0 && am.indexOf(s) < 0; }).sort(function (a, b) {
+    var fa = /^F\d+$/i.test(a), fb = /^F\d+$/i.test(b); return fa !== fb ? (fa ? -1 : 1) : srt(a, b); });
+  var fz = [];
+  groups().forEach(function (g) { (g.fz || []).forEach(function (f) { var mine = f.s.filter(function (x) { return cnt[x]; }); if (mine.length) fz.push({n: f.n, l: f.l || f.s.join(', '), s: mine}); }); });
+  return [{k: 'eu', s: eu, ic: R24IC.badge('EU', 'e'), fz: fz}, {k: 'am', s: am, ic: R24IC.badge('AM', 'a')}, {k: 'fu', s: fu, ic: R24IC.galaxy}].filter(function (r) { return r.s.length; });
+}
+function r24ClsList() {
+  if (GUILDLIST || !D.icons) return [];
+  var have = {};
+  (curScan().rows || []).forEach(function (r) { var k = clsKey(r); if (k) have[k] = 1; });
+  return Object.keys(have).sort(function (a, b) { return +a.slice(1) - +b.slice(1); });
+}
+function r24ClsName(k) { var n = +String(k).slice(1); return (L === 'de' && typeof MG_CLS !== 'undefined' && MG_CLS[n]) || iconTitle(k) || k; }
+function r24WHtml() {
+  var reg = r24Regions(), cls = r24ClsList(), any = st.srv.size || R24CLS.size;
+  var chip = function (s) { return '<button type="button" class="r24c' + (st.srv.has(s) ? ' on' : '') + '" data-r24s="' + esc(s) + '">' + esc(s) + '</button>'; };
+  var nW = reg.reduce(function (n, r) { return n + r.s.length; }, 0);
+  var h = '<div class="r24ph">' + R24IC.globe(26) + esc(r24t('worlds')) + '<button type="button" class="x" data-r24x="r24W" aria-label="' + esc(t('close')) + '">✕</button></div>';
+  if (reg.length) {
+    h += '<div class="r24grp"><button type="button" class="r24row all' + (st.srv.size ? '' : ' on') + '" data-r24all>' + esc(r24t('all')) + '<span class="cnt">' + nf0.format(nW) + ' ' + esc(r24t(nW === 1 ? 'w1' : 'wn')) + '</span><span class="ic">' + R24IC.globe(30) + '</span></button>';
+    reg.forEach(function (r) {
+      var on = r.s.filter(function (s) { return st.srv.has(s); }).length, ex = !!R24WEXP[r.k];
+      h += '<button type="button" class="r24row" data-r24reg="' + r.k + '">' + esc(r24t(r.k)) + '<span class="cnt">' + nf0.format(r.s.length) + ' ' + esc(r24t(r.s.length === 1 ? 'w1' : 'wn')) +
+        (on ? ' · ' + nf0.format(on) + ' ' + esc(r24t('sel')) : '') + '</span><span class="ic">' + r.ic + '</span><span class="chev">' + (ex ? '▲' : '▼') + '</span></button>';
+      if (ex) {
+        h += '<div class="r24sub">' + r.s.map(chip).join('');
+        if (r.fz && r.fz.length) h += '<span class="l">' + esc(r24t('fz')) + '</span>' + r.fz.map(function (f, i) {
+          var onF = f.s.every(function (s) { return st.srv.has(s); }) && st.srv.size === f.s.length;
+          return '<button type="button" class="r24c r24fz' + (onF ? ' on' : '') + '" data-r24fz="' + i + '" data-tip="' + esc(f.s.join(', ')) + '">' + esc(f.n) + ' · ' + esc(f.l) + '</button>';
+        }).join('');
+        h += '</div>';
+      }
+    });
+    h += '</div>';
+  }
+  if (cls.length > 1) {
+    h += '<button type="button" class="r24hd" data-r24clt><span class="car">' + (R24CLSOPEN ? '▼' : '▶') + '</span>' + esc(r24t('cls')) + (R24CLS.size ? ' <small>' + nf0.format(R24CLS.size) + ' ' + esc(r24t('sel')) + '</small>' : '') + '</button>';
+    if (R24CLSOPEN) h += '<div class="r24cls">' + cls.map(function (k) {
+      return '<button type="button" class="r24cl' + (R24CLS.has(k) ? ' on' : '') + '" data-r24cl="' + k + '"><img src="' + D.icons[k] + '" alt="">' + esc(r24ClsName(k)) + '</button>';
+    }).join('') + '</div>';
+  }
+  var sel = [];
+  if (st.srv.size) sel.push(Array.from(st.srv).sort(function (a, b) { return a.localeCompare(b, 'de', {numeric: true}); }).join(', '));
+  if (R24CLS.size) sel.push(Array.from(R24CLS).map(r24ClsName).join(', '));
+  h += '<div class="r24foot"><span>' + esc(r24t('choice')) + ': <b>' + esc(sel.length ? sel.join(' · ') : r24t('all')) + '</b> · ' + nf0.format(lastRows.filter(function (x) { return !x.gone; }).length) + ' ' + esc(unit()) + '</span>' +
+    (any ? '<button class="btn" type="button" data-r24wclr>' + esc(r24t('reset')) + '</button>' : '') + '</div>';
+  return h;
+}
+function r24WShow() { if (!R24WOPEN) return; var sy = $('r24W') ? $('r24W').scrollTop : 0; r24Pop('r24W', $('r24wb'), r24WHtml(), 640); $('r24W').scrollTop = sy; }
+function r24WChanged() { st.shown = SH0; buildChips(); render(); r24WbText(); r24WShow(); }
+document.addEventListener('click', function (e) {
+  if (!e.target.closest) return;
+  if (e.target.closest('#r24wb')) { if (R24WOPEN) r24Close('r24W'); else { r24Close('r24S'); R24WOPEN = true; r24WShow(); } return; }
+  var W = $('r24W'); if (!W || W.hidden) return;
+  if (!e.target.closest('#r24W')) { if (!e.target.closest('#tip')) r24Close('r24W'); return; }
+  if (e.target.closest('[data-r24x]')) { r24Close('r24W'); return; }
+  if (e.target.closest('[data-r24all]')) { st.srv.clear(); r24WChanged(); return; }
+  var rg = e.target.closest('[data-r24reg]'); if (rg) { var k = rg.getAttribute('data-r24reg'); R24WEXP[k] = !R24WEXP[k]; r24WShow(); return; }
+  var sb = e.target.closest('[data-r24s]'); if (sb) { var s = sb.getAttribute('data-r24s'); if (st.srv.has(s)) st.srv.delete(s); else st.srv.add(s); r24WChanged(); return; }
+  var fz = e.target.closest('[data-r24fz]');
+  if (fz) {
+    var F = (r24Regions()[0].fz || [])[+fz.getAttribute('data-r24fz')]; if (!F) return;
+    var was = fz.classList.contains('on'); st.srv.clear();
+    if (!was) { F.s.forEach(function (x) { st.srv.add(x); }); gcEv('Fusion gewählt: ' + F.n); }
+    r24WChanged(); return;
+  }
+  if (e.target.closest('[data-r24clt]')) { R24CLSOPEN = !R24CLSOPEN; r24WShow(); return; }
+  var cl = e.target.closest('[data-r24cl]'); if (cl) { var ck = cl.getAttribute('data-r24cl'); if (R24CLS.has(ck)) R24CLS.delete(ck); else R24CLS.add(ck); r24WChanged(); return; }
+  if (e.target.closest('[data-r24wclr]')) { st.srv.clear(); R24CLS.clear(); r24WChanged(); return; }
+});
+var R24BCH0 = buildChips;
+buildChips = function () { var x = R24BCH0.apply(this, arguments); r24WbText(); return x; };
+
+// ---- Teilen: Bild + Link zur Auswahl
+var R24IMG0 = mgImgMenu;
+mgImgMenu = function (btn, which) {
+  R24IMG0(btn, which);
+  if (btn && btn.id === 'r24shr' && which === 'list' && LNK) {
+    $('mgPop').insertAdjacentHTML('beforeend', '<button type="button" data-r24lnk>🔗 ' + esc(r24t('link')) + '</button>');
+  }
+};
+document.addEventListener('click', function (e) {
+  if (!e.target.closest || !e.target.closest('[data-r24lnk]')) return;
+  $('mgPop').hidden = true; gcEv('Link kopiert: Auswahl'); copyLink(selLink());
+});
+// ---- Gildenquartier: Suche oben in der Kopfzeile, Navigation = Scan-Zeile, Teilen = Bild der Tabelle
+function r24MgPost() {
+  if (!MGV) return;
+  if (!R24MGH.busy && r24MgHist()) { R24MGH.busy = true; try { mgRender(); } finally { R24MGH.busy = false; } return; }
+  var ml = document.querySelector('#mgpane .r23mgl');
+  if (ml) {
+    var row = ml.querySelector('.lrow.sfw');
+    if (row) {
+      row.classList.remove('folded'); row.classList.add('r24row');
+      var rs = $('r23mgRst'); if (rs) { rs.classList.add('push'); row.appendChild(rs); }
+    }
+    ml.classList.toggle('r24closed', !r24NavOpen());
+  }
+  var mem = mgTab() === 'mem', q = $('q');
+  var se = $('blk_search'); if (se) se.hidden = !mem;
+  if (q) { q.placeholder = 'Suchen: Name, Klasse … mehrere mit Komma'; if (document.activeElement !== q) q.value = R23MQ; }
+  r24Head();
+}
+var R24MGR0 = mgRender;
+mgRender = function () { var x = R24MGR0.apply(this, arguments); r24MgPost(); return x; };
+document.addEventListener('input', function (e) {
+  if (!MGV || e.target.id !== 'q') return;
+  e.stopImmediatePropagation();
+  R23MQ = e.target.value; clearTimeout(R23MQT); R23MQT = setTimeout(function () { mgRender(); }, 180);
+}, true);
+document.addEventListener('click', function (e) {
+  if (!MGV || !e.target.closest || !e.target.closest('#qx')) return;
+  e.stopImmediatePropagation(); R23MQ = ''; $('q').value = ''; mgRender(); $('q').focus();
+}, true);
+
+var R24LOOK0 = applyLook;
+applyLook = function () { R24LOOK0(); document.documentElement.setAttribute('data-r24dens', S.dens || 'normal'); };
+function r24Init() {
+  applyLook();
+  if (S.r24nav == null) S.r24nav = 'open';
+  if (!MGV) { r24Head(); r24Nav(); r24NavText(); }
+  else r24MgPost();
+  document.body.classList.add('r24');
+}
+// ================================================================ Runde 24: Statistik ("i")
+// Knoepfe: feste Werte + Pro Tag + Kaestchen (wie in der Ehrenhalle); Gilden: + Bester Spieler; Spalten in Klick-Reihenfolge
+var R24ISP = ['level', 'base_sum', 'total_sum', 'album', 'base_main', 'base_con', 'luck', 'hp', 'item_quality', 'gem_avg', 'weapon_dmg'];
+var R24ISQ = [['sq_fort', 'Festung'], ['sq_rune', 'Runen'], ['sq_pet', 'Pets'], ['sq_portal', 'Portal'], ['r24pot', 'Tränke']];
+var R24IBP = [['bp_bs', 'Base Sum'], ['bp_tt', 'Total Sum'], ['bp_lv', 'Level']];
+var R24AV0 = isAvail;
+isAvail = function () {
+  var av = R24AV0();
+  if (GUILDLIST) return av;
+  return R24ISP.filter(function (id) { return CI[id] != null; });
+};
+function r24IsX(kind) {                                 // Zusatz-Knoepfe je Liste
+  var x = [];
+  if (kind === 'g') x.push(['pt', t('gDay')]);
+  if (!GUILDLIST) R24ISQ.forEach(function (q) { if (q[0] === 'r24pot' ? !!D.icons : CI[q[0]] != null) x.push(q); });
+  else if (r24HasPl()) R24IBP.forEach(function (q) { x.push(q); });
+  return x;
+}
+function r24IsExtra(id) { return id === 'pt' || id === 'r24pot' || /^sq_|^bp_/.test(id); }
+function r24HasPl() { return !!(D0 && D0.cols && D0.scans && D0.cols.some(function (c) { return c.id === 'base_sum'; }) && D0.cols.some(function (c) { return c.id === 'guild'; })); }
+function r24IsSel(kind) {                               // gewaehlt, in Klick-Reihenfolge
+  var key = kind === 'g' ? (GUILDLIST ? 'iStatG' : 'iStatP') : (GUILDLIST ? 'iStatVG' : 'iStatVP');
+  var ok = isAvail().concat(r24IsX(kind).map(function (q) { return q[0]; }));
+  var dflt = GUILDLIST ? ['gs_base_sum', 'g_level_avg'] : ['base_sum', 'level'];
+  if (kind === 'g') dflt = dflt.concat(['pt']);
+  var s0 = Array.isArray(S[key]) ? S[key] : dflt, sel = s0.filter(function (id, i) { return ok.indexOf(id) >= 0 && s0.indexOf(id) === i; });
+  if (!sel.some(function (id) { return !r24IsExtra(id); })) sel = [isAvail()[0]].concat(sel);
+  return sel;
+}
+isSel = function () { return r24IsSel('g').filter(function (id) { return !r24IsExtra(id); }); };
+isSelV = function () { return r24IsSel('v').filter(function (id) { return !r24IsExtra(id); }); };
+isChips = function (kind, av) {
+  var open = isOpen('c' + kind), lab = t(kind === 'g' ? 'isCmp2' : 'isVals'), sel = r24IsSel(kind), att = kind === 'g' ? 'ism' : 'isv';
+  var lb = function (id) { var q = r24IsX(kind).filter(function (x) { return x[0] === id; })[0]; return q ? q[1] : colLabel(COLS[CI[id]]); };
+  var chip = function (id, label) {
+    var n = sel.indexOf(id);
+    return '<button type="button" class="chip" data-' + att + '="' + esc(id) + '" aria-pressed="' + (n >= 0) + '">' + esc(label) + (n >= 0 ? '<span class="r24n">' + (n + 1) + '</span>' : '') + '</button>';
+  };
+  var h = '<div class="isfor"><button type="button" class="istog" data-isec="c' + kind + '" aria-expanded="' + open + '"><span class="car">' + (open ? '&#9662;' : '&#9656;') + '</span>' + esc(lab) + '</button>';
+  if (!open) return h + '<span class="issum">' + esc(sel.map(lb).join(' · ')) + '</span></div>';
+  h += isAvail().map(function (id) { return chip(id, colLabel(COLS[CI[id]])); }).join('');
+  var xs = r24IsX(kind);
+  if (kind === 'g' && xs.length && xs[0][0] === 'pt') { h += chip('pt', xs[0][1]); xs = xs.slice(1); }
+  if (xs.length) h += '<span class="r24sep"></span>' + (GUILDLIST ? '<b class="r24bpl">Bester Spieler:</b>' : '') +
+    xs.map(function (q) { return chip(q[0], q[1] + (GUILDLIST ? ' ★' : ' ▦')); }).join('');
+  return h + '</div>';
+};
+var R24ISC0 = istatClick;
+istatClick = function (e) {
+  var b = e.target.closest('[data-ism], [data-isv]');
+  if (b && b.closest('#infoBody')) {
+    var kind = b.hasAttribute('data-ism') ? 'g' : 'v', id = b.getAttribute(kind === 'g' ? 'data-ism' : 'data-isv');
+    var key = kind === 'g' ? (GUILDLIST ? 'iStatG' : 'iStatP') : (GUILDLIST ? 'iStatVG' : 'iStatVP');
+    var cur = r24IsSel(kind).slice(), i = cur.indexOf(id);
+    if (i >= 0) { var rest = cur.filter(function (x) { return x !== id; }); if (rest.some(function (x) { return !r24IsExtra(x); })) cur = rest; }
+    else cur.push(id);
+    S[key] = cur; saveS(); buildInfo(); return true;
+  }
+  var m = e.target.closest('[data-r24cln]');
+  if (m) { var nIn = $('r24clnN'), step = nIn ? Math.max(1, Math.round(+nIn.value) || 10) : 10; S.r24clnN = step; R24CLN += step; saveS(); buildInfo(); return true; }
+  return R24ISC0(e);
+};
+
+// ---- Gilden: Mitglieder aus der Spieler-Liste (bester Spieler, Zuwachs nur aus Mitgliedern in beiden Scans)
+var R24GM = {};
+function r24GMem(si) {                                  // Spieler-Scan si: Gilde|Server -> [{n, k, lv, bs, tt}]
+  if (R24GM[si]) return R24GM[si];
+  var sc = D0.scans && D0.scans[si], out = new Map(); if (!sc || !sc.rows || !sc.rows.length) return out;
+  var pc = {}; (D0.cols || []).forEach(function (c, i) { pc[c.id] = i; });
+  if (pc.guild == null || pc.server == null || pc.name == null) return out;
+  var nv = function (v) { return Array.isArray(v) ? v[0] : (typeof v === 'number' ? v : null); };
+  var tx = function (v) { return Array.isArray(v) ? v[1] : v; };
+  sc.rows.forEach(function (v, i) {
+    var g = v[pc.guild]; if (!g) return;
+    var key = tx(g) + '|' + v[pc.server];
+    if (!out.has(key)) out.set(key, []);
+    out.get(key).push({n: String(tx(v[pc.name]) || ''), k: sc.keys[i], lv: pc.level != null ? nv(v[pc.level]) : null, bs: pc.base_sum != null ? nv(v[pc.base_sum]) : null,
+                       tt: pc.total_sum != null ? nv(v[pc.total_sum]) : null});
+  });
+  R24GM[si] = out; return out;
+}
+function r24GKey(r) { return cellText(COLS[CI.g_name], r.v[CI.g_name]) + '|' + (CI.g_server != null ? (r.v[CI.g_server] || '') : ''); }
+function r24GBest(r, si) {
+  var mem = r24GMem(si).get(r24GKey(r)) || [], o = {};
+  [['bp_bs', 'bs'], ['bp_tt', 'tt'], ['bp_lv', 'lv']].forEach(function (q) {
+    var b = null; mem.forEach(function (m) { if (m[q[1]] != null && (!b || m[q[1]] > b[q[1]])) b = m; });
+    o[q[0]] = b ? [b.n, b[q[1]]] : null;
+  });
+  return o;
+}
+function r24GGain(r, ai, bi) {                          // Zuwachs der Summen nur aus Mitgliedern, die in beiden Scans stehen
+  var mb = r24GMem(bi).get(r24GKey(r)), ma = r24GMem(ai);
+  if (!mb || !ma.size) return null;
+  var old = new Map(); ma.forEach(function (l) { l.forEach(function (m) { old.set(m.k, m); }); });
+  var o = {bs: 0, tt: 0, n: 0};
+  mb.forEach(function (m) { var p = old.get(m.k); if (!p) return; o.n++; if (m.bs != null && p.bs != null) o.bs += m.bs - p.bs; if (m.tt != null && p.tt != null) o.tt += m.tt - p.tt; });
+  return o.n ? o : null;
+}
+var R24GSUM = {gs_base_sum: 'bs', gs_total_sum: 'tt'};
+function r24CovMark(r) {
+  var cv = r.cv; if (!cv) return '';
+  var n = cv[4] != null ? cv[4] : cv[1] - cv[0]; if (!(n > 0)) return '';
+  return ' <span class="r24miss" data-tip="' + esc(covTip(cv)) + '">(−' + nf0.format(n) + ')</span>';
+}
+function r24CovLegend(list) {
+  return list.some(function (x) { return x.r.cv; }) ? '<p class="dim small r24leg"><span class="r24miss">(−x)</span> = x Mitglieder dieser Gilde stehen nicht im Scan – die Summen sind unvollständig. Maus darauf zeigt, wer fehlt. Der Zuwachs zählt nur Mitglieder, die in beiden Scans stehen.</p>' : '';
+}
+function r24ExtraTh(id, srt, att) {
+  if (id === 'pt') return '<th class="r">' + esc(t('gDay')) + '</th>';
+  var q = R24ISQ.filter(function (x) { return x[0] === id; })[0];
+  if (q) return '<th>' + esc(q[1]) + (id !== 'r24pot' && typeof mgSqHead === 'function' ? mgSqHead(id) : '') + '</th>';
+  var b = R24IBP.filter(function (x) { return x[0] === id; })[0];
+  if (b) return '<th class="' + (id === srt ? 'on' : '') + '"><button type="button" data-' + att + '="' + id + '">Bester Spieler: ' + esc(b[1]) + (id === srt ? ' &#9660;' : '') + '</button></th>';
+  return '';
+}
+function r24ExtraTd(id, r, bp, ptv) {
+  if (id === 'pt') return '<td class="r">' + (ptv == null ? '–' : fmtGain(ptv)) + '</td>';
+  if (id === 'r24pot') return '<td class="r24pot">' + (r.ic || []).filter(function (k) { return D.icons && D.icons[k] && /trank|tränk|potion/i.test(iconTitle(k) || ''); })
+    .map(function (k) { return '<img src="' + D.icons[k] + '" alt="" data-tip="' + esc(iconTitle(k)) + '">'; }).join('') + '</td>';
+  if (/^sq_/.test(id)) { var c = COLS[CI[id]], sr = c ? sqRecOf(c, r.v[CI[id]]) : null; return '<td class="sqc">' + (sr ? mgSq(id, sr, r23Cls(r)) : '<span class="v">–</span>') + '</td>'; }
+  if (/^bp_/.test(id)) { var x = bp && bp[id]; return '<td class="r24bp">' + (x ? esc(x[0]) + ' <small>' + nf0.format(x[1]) + '</small>' : '–') + '</td>'; }
+  return '';
+}
+isTable = function (pair, sel0) {
+  var sel = r24IsSel('g'), A = SCANS[pair[0]], B2 = SCANS[pair[1]], old = new Map(A.rows.map(function (r) { return [r.k, r]; })), ks = isScope();
+  var days = A.ts && B2.ts && B2.ts > A.ts ? (B2.ts - A.ts) / 86400000 : null;
+  var num0 = sel.filter(function (id) { return !r24IsExtra(id); });
+  var gpl = GUILDLIST && r24HasPl(), ai = gpl ? d0Index(pair[0]) : null, bi = gpl ? d0Index(pair[1]) : null;
+  var srt = ISSORT && (num0.indexOf(ISSORT) >= 0 || /^bp_/.test(ISSORT) && sel.indexOf(ISSORT) >= 0) ? ISSORT : num0[0], list = [];
+  B2.rows.forEach(function (r) {
+    var o = old.get(r.k); if (!o || (ks && !ks[r.k])) return;
+    if (!GUILDLIST && (r.ina || r.fu || (SRV != null && o.v[SRV] !== r.v[SRV]))) return;
+    var g = {}, any = false, gg = gpl ? r24GGain(r, ai, bi) : null;
+    num0.forEach(function (id) {
+      var ci = CI[id], c = COLS[ci], a = num(c, o.v[ci]), b = num(c, r.v[ci]);
+      if (gg && R24GSUM[id]) { g[id] = gg[R24GSUM[id]]; any = true; return; }
+      if (a != null && b != null) { g[id] = b - a; any = true; }
+    });
+    if (any) list.push({r: r, g: g, bp: gpl && sel.some(function (id) { return /^bp_/.test(id); }) ? r24GBest(r, bi) : null});
+  });
+  if (!list.length) return '<p class="dim">' + esc(t('isNone')) + '</p>';
+  var gv = /^bp_/.test(srt) ? function (x) { var v = x.bp && x.bp[srt]; return v ? v[1] : -Infinity; } : function (x) { return x.g[srt] == null ? -Infinity : x.g[srt]; };
+  list.sort(function (a, b) { return gv(b) - gv(a); });
+  var nmc = GUILDLIST ? CI.g_name : NAME, svc = GUILDLIST ? CI.g_server : SRV, md = ['&#129351;', '&#129352;', '&#129353;'];
+  var h = '<div class="istw"><table class="rtab istab"><tr><th>' + esc(t('isPlace')) + '</th><th>' + esc(t(GUILDLIST ? 'gpName' : 'riseName')) + '</th>' + (svc != null ? '<th>' + esc(colLabel(COLS[svc])) + '</th>' : '') +
+    sel.map(function (id) {
+      if (r24IsExtra(id)) return id === 'pt' && !(days && days >= 0.25) ? '' : r24ExtraTh(id, srt, 'iss');
+      return '<th class="r' + (id === srt ? ' on' : '') + '"><button type="button" data-iss="' + esc(id) + '">' + esc(t('isGain', {c: colLabel(COLS[CI[id]])})) + (id === srt ? ' &#9660;' : '') + '</button></th>';
+    }).join('') + '</tr>';
+  list.slice(0, ISN).forEach(function (x, i) {
+    var r = x.r, nm = cellText(COLS[nmc], r.v[nmc]), sv = svc != null ? (r.v[svc] || '') : '';
+    var btn = GUILDLIST ? '<button type="button" class="lnk" data-gx="' + esc(nm) + '" data-gs="' + esc(sv) + '">' + esc(nm) + '</button>' + r24CovMark(r)
+                        : '<button type="button" class="lnk" data-pk="' + esc(r.k) + '" data-q="' + esc(nm) + '">' + esc(nm) + '</button>';
+    var ptv = days && days >= 0.25 && x.g[/^bp_/.test(srt) ? num0[0] : srt] != null ? x.g[/^bp_/.test(srt) ? num0[0] : srt] / days : null;
+    h += '<tr' + (i < 3 ? ' class="md"' : '') + '><td class="n">' + (i < 3 ? md[i] + ' ' : '') + '<b>#' + (i + 1) + '</b></td><td>' + btn + markHtml(r) + '</td>' + (svc != null ? '<td class="sv">' + esc(sv) + '</td>' : '') +
+      sel.map(function (id) {
+        if (r24IsExtra(id)) return id === 'pt' && !(days && days >= 0.25) ? '' : r24ExtraTd(id, r, x.bp, ptv);
+        var d = x.g[id]; return '<td class="r">' + (d == null ? '–' : '<span class="dl ' + (d > 0 ? 'up' : (d < 0 ? 'down' : 'eq')) + '" style="display:inline">' + fmtIG(d) + '</span>') + '</td>';
+      }).join('') + '</tr>';
+  });
+  h += '</table></div>';
+  if (list.length > ISN) h += '<p><button type="button" class="btn" id="isMore">' + esc(t('isMore', {n: nf0.format(Math.min(25, list.length - ISN)), m: nf0.format(list.length)})) + '</button></p>';
+  return h + (GUILDLIST ? r24CovLegend(list.slice(0, ISN)) : '') + '<p class="dim small">' + esc(t('isHint')) + '</p>';
+};
+isVTable = function (pair, sel0) {
+  var sel = r24IsSel('v'), A = SCANS[pair[0]], B2 = SCANS[pair[1]], old = new Map(A.rows.map(function (r) { return [r.k, r]; })), ks = isScope();
+  var num0 = sel.filter(function (id) { return !r24IsExtra(id); });
+  var gpl = GUILDLIST && r24HasPl(), ai = gpl ? d0Index(pair[0]) : null, bi = gpl ? d0Index(pair[1]) : null;
+  var srt = ISSORTV && (num0.indexOf(ISSORTV) >= 0 || /^bp_/.test(ISSORTV) && sel.indexOf(ISSORTV) >= 0) ? ISSORTV : num0[0], list = [];
+  var wantBp = gpl && sel.some(function (id) { return /^bp_/.test(id); });
+  B2.rows.forEach(function (r) {
+    if (ks && !ks[r.k]) return;
+    if (!GUILDLIST && (r.ina || r.fu)) return;
+    var v = {}; num0.forEach(function (id) { v[id] = num(COLS[CI[id]], r.v[CI[id]]); });
+    var bp = wantBp ? r24GBest(r, bi) : null;
+    if (/^bp_/.test(srt) ? !(bp && bp[srt]) : v[srt] == null) return;
+    var o = old.get(r.k); if (o && !GUILDLIST && SRV != null && o.v[SRV] !== r.v[SRV]) o = null;
+    list.push({r: r, v: v, o: o, bp: bp, gg: gpl && o ? r24GGain(r, ai, bi) : null});
+  });
+  if (!list.length) return '<p class="dim">' + esc(t('isNone')) + '</p>';
+  var sv0 = /^bp_/.test(srt) ? function (x) { return x.bp[srt][1]; } : function (x) { return x.v[srt]; };
+  list.sort(function (a, b) { return sv0(b) - sv0(a); });
+  var nmc = GUILDLIST ? CI.g_name : NAME, svc = GUILDLIST ? CI.g_server : SRV, md = ['&#129351;', '&#129352;', '&#129353;'];
+  var h = '<div class="istw"><table class="rtab istab"><tr><th>' + esc(t('isPlace')) + '</th><th>' + esc(t(GUILDLIST ? 'gpName' : 'riseName')) + '</th>' + (svc != null ? '<th>' + esc(colLabel(COLS[svc])) + '</th>' : '') +
+    sel.map(function (id) {
+      if (r24IsExtra(id)) return r24ExtraTh(id, srt, 'issv');
+      return '<th class="r' + (id === srt ? ' on' : '') + '"><button type="button" data-issv="' + esc(id) + '">' + esc(colLabel(COLS[CI[id]])) + (id === srt ? ' &#9660;' : '') + '</button></th>';
+    }).join('') + '</tr>';
+  list.slice(0, ISNV).forEach(function (x, i) {
+    var r = x.r, nm = cellText(COLS[nmc], r.v[nmc]), sv = svc != null ? (r.v[svc] || '') : '';
+    var btn = GUILDLIST ? '<button type="button" class="lnk" data-gx="' + esc(nm) + '" data-gs="' + esc(sv) + '">' + esc(nm) + '</button>' + r24CovMark(r)
+                        : '<button type="button" class="lnk" data-pk="' + esc(r.k) + '" data-q="' + esc(nm) + '">' + esc(nm) + '</button>';
+    h += '<tr' + (i < 3 ? ' class="md"' : '') + '><td class="n">' + (i < 3 ? md[i] + ' ' : '') + '<b>#' + (i + 1) + '</b></td><td>' + btn + markHtml(r) + '</td>' + (svc != null ? '<td class="sv">' + esc(sv) + '</td>' : '') +
+      sel.map(function (id) {
+        if (r24IsExtra(id)) return r24ExtraTd(id, r, x.bp, null);
+        var ci = CI[id], v = x.v[id], a = x.o ? num(COLS[ci], x.o.v[ci]) : null, d = v != null && a != null ? v - a : null;
+        if (x.gg && R24GSUM[id]) d = x.gg[R24GSUM[id]];
+        return '<td class="r">' + (v == null ? '–' : '<b>' + esc(cellText(COLS[ci], r.v[ci])) + '</b>') +
+          (d != null && d !== 0 ? ' <span class="dl ' + (d > 0 ? 'up' : 'down') + '" style="display:inline">' + fmtIG(d) + '</span>' : '') + '</td>';
+      }).join('') + '</tr>';
+  });
+  h += '</table></div>';
+  if (list.length > ISNV) h += '<p><button type="button" class="btn" id="isMoreV">' + esc(t('isMore', {n: nf0.format(Math.min(25, list.length - ISNV)), m: nf0.format(list.length)})) + '</button></p>';
+  return h + (GUILDLIST ? r24CovLegend(list.slice(0, ISNV)) : '') + '<p class="dim small">' + esc(t('isHint')) + '</p>';
+};
+// "Plaetze gut gemacht": eigener goldener Kasten + "x weitere zeigen"
+var R24CLN = 5;
+var R24RS0 = risersHtml;
+risersHtml = function () {
+  var h = R24RS0.apply(this, arguments);
+  if (!ISNOGAIN || !h) return h;
+  if (GUILDLIST) return '<div class="issec on r24rise">' + h + '</div>';
+  var n = S.r24clnN || 10;
+  return '<div class="issec on r24rise">' + h + '<div class="r24more"><button type="button" class="btn" data-r24cln>' + nf0.format(n) + ' weitere zeigen</button><label class="dim">Anzahl <input class="sel" id="r24clnN" type="number" min="1" step="1" value="' + n + '"></label></div></div>';
+};
+// ================================================================ Runde 24: Gildenquartier
+// ---- Spalten der Mitglieder-Tabelle verschieben (wie ⚙ › Spalten der Liste)
+function r24MgOrd() {                                    // alle waehlbaren Spalten in der gemerkten Reihenfolge
+  var all = MG_COLS.filter(function (c) { return !c.fix; }).map(function (c) { return c.id; });
+  var o = Array.isArray(MGS.cord) ? MGS.cord.filter(function (id) { return all.indexOf(id) >= 0; }) : [];
+  all.forEach(function (id) { if (o.indexOf(id) < 0) o.push(id); });
+  return o;
+}
+mgCols = function () {
+  var on = MGS.cols && MGS.cols.length ? MGS.cols : MG_DEFCOLS, by = {};
+  MG_COLS.forEach(function (c) { by[c.id] = c; });
+  return MG_COLS.filter(function (c) { return c.fix; }).concat(r24MgOrd().filter(function (id) { return on.indexOf(id) >= 0; }).map(function (id) { return by[id]; }));
+};
+function r24MgStrip() {
+  var on = mgCols().map(function (c) { return c.id; }), ord = r24MgOrd(), by = {};
+  MG_COLS.forEach(function (c) { by[c.id] = c; });
+  var vis = ['no', 'name'].concat(ord.filter(function (id) { return on.indexOf(id) >= 0; })), n = 0;
+  var chip = function (id, i, fixed) {
+    var c = by[id], onx = fixed || on.indexOf(id) >= 0, pos = onx ? vis.indexOf(id) + 1 : null;
+    return '<div class="cchip' + (onx ? '' : ' off') + '" data-r24mc="' + esc(id) + '"><span class="cno">' + (pos ? pos + '.' : '') + '</span>' + (fixed ? '<span class="cgrip"></span>' : '<span class="cgrip" data-r24mg aria-hidden="true">⠿</span>') +
+      '<label><input type="checkbox"' + (fixed ? ' checked disabled' : ' data-mgcol="mem:' + esc(id) + '"' + (onx ? ' checked' : '')) + '><span>' + esc(c.l) + '</span></label>' +
+      (fixed ? '' : '<div class="cbt"><button type="button" data-r24mmv="-1" data-id="' + esc(id) + '"' + (i === 0 ? ' disabled' : '') + ' aria-label="nach links">&#9664;</button>' +
+        '<button type="button" data-r24mmv="1" data-id="' + esc(id) + '"' + (i === ord.length - 1 ? ' disabled' : '') + ' aria-label="nach rechts">&#9654;</button></div>') + '</div>';
+  };
+  return '<p class="expl">Reihenfolge wie in der Tabelle (1. = ganz links). Spalte am Griff ⠿ an ihren Platz ziehen (Maus oder Finger) – oder ◀ ▶ für einen Schritt. Haken = Spalte zeigen.</p>' +
+    '<div class="colist" id="r24mgStrip">' + chip('no', -1, true) + chip('name', -1, true) + ord.map(function (id, i) { return chip(id, i, false); }).join('') + '</div>';
+}
+var R24BS1 = buildSettings;
+buildSettings = function () {
+  R24BS1();
+  if (!MGV || SETTAB !== 'cols') return;
+  var l = document.querySelector('#setBody .mgcolist'); if (!l) return;
+  var sx = $('r24mgStrip') ? $('r24mgStrip').scrollLeft : 0;
+  l.outerHTML = r24MgStrip();
+  var e1 = document.querySelector('#setBody .expl'); if (e1) e1.textContent = 'Gilt für den Reiter „Gildenquartier“ (Mitglieder). Die Spalten der Spieler- und Gilden-Liste stellst du dort ein.';
+  if ($('r24mgStrip')) $('r24mgStrip').scrollLeft = sx;
+};
+function r24MgMove(id, to) {                             // id an Stelle to (Index in der Reihenfolge)
+  var o = r24MgOrd(), i = o.indexOf(id); if (i < 0) return;
+  o.splice(i, 1); o.splice(Math.max(0, Math.min(o.length, to)), 0, id);
+  MGS.cord = o; mgSave(); buildSettings(); mgRender();
+}
+$('ovlSet').addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('[data-r24mmv]'); if (!b) return;
+  var id = b.getAttribute('data-id'), o = r24MgOrd(); r24MgMove(id, o.indexOf(id) + (+b.getAttribute('data-r24mmv')));
+});
+(function () {                                           // ziehen: Griff festhalten, an den neuen Platz, loslassen
+  var drag = null;
+  var at = function (x, y) { var el = document.elementFromPoint(x, y); return el && el.closest ? el.closest('#r24mgStrip .cchip[data-r24mc]') : null; };
+  $('ovlSet').addEventListener('pointerdown', function (e) {
+    var g = e.target.closest && e.target.closest('[data-r24mg]'); if (!g) return;
+    var ch = g.closest('.cchip'); drag = {id: ch.getAttribute('data-r24mc'), el: ch, over: null, side: 0};
+    ch.classList.add('drag'); e.preventDefault();
+    try { g.setPointerCapture(e.pointerId); } catch (e2) {}
+  });
+  $('ovlSet').addEventListener('pointermove', function (e) {
+    if (!drag) return;
+    var ov = at(e.clientX, e.clientY);
+    if (drag.over && drag.over !== ov) drag.over.classList.remove('dl', 'dr');
+    drag.over = ov && ov !== drag.el && ['no', 'name'].indexOf(ov.getAttribute('data-r24mc')) < 0 ? ov : null;
+    if (drag.over) { var r = drag.over.getBoundingClientRect(); drag.side = e.clientX < r.left + r.width / 2 ? 0 : 1; drag.over.classList.toggle('dl', !drag.side); drag.over.classList.toggle('dr', !!drag.side); }
+  });
+  var end = function () {
+    if (!drag) return;
+    var d = drag; drag = null; d.el.classList.remove('drag');
+    if (d.over) { d.over.classList.remove('dl', 'dr'); var o = r24MgOrd().filter(function (x) { return x !== d.id; }), t0 = o.indexOf(d.over.getAttribute('data-r24mc')); r24MgMove(d.id, t0 + d.side); }
+  };
+  $('ovlSet').addEventListener('pointerup', end); $('ovlSet').addEventListener('pointercancel', end);
+})();
+
+// ---- Aeltere Scans: aus den Scans der Liste (online: Verlaufs-Dateien, erst bei Bedarf geladen)
+var R24MGH = {done: {}, busy: false};
+function r24MgCanon(k) {                                 // Gilde von vor einer Fusion -> heutige Kennung (wie die eigenen Scans)
+  var i = k.indexOf('|'), sv = k.slice(0, i), nm = k.slice(i + 1), m = /^eu(\d+)$/.exec(sv), s2 = m ? 's' + m[1] : sv;
+  var ga = MGD && MGD.ga; if (ga && (ga[k] || ga[s2 + '|' + nm])) return ga[k] || ga[s2 + '|' + nm];
+  var fz = (D0.fz && D0.fz.m) || [];
+  for (var j = 0; j < fz.length; j++) if (fz[j][1].indexOf(s2) >= 0) return fz[j][0] + '|' + nm;
+  return k;
+}
+function r24MgHist() {
+  if (!MGV || !ML || !ML.mgBuild || !MULTI || R24MGH.busy) return false;
+  var X = mgX(), minTs = Infinity;
+  Object.keys(X.snaps).forEach(function (k) { X.snaps[k].forEach(function (s) { if (s.src === 'o' && s.mem && s.ts < minTs) minTs = s.ts; }); });
+  if (!isFinite(minTs)) return false;
+  var idx = [];
+  SCANS.forEach(function (sc, i) { if (sc.ts && !sc.own && sc.ts < minTs - 3600000 && !R24MGH.done[i]) idx.push(i); });
+  if (!idx.length) return false;
+  if (HIST && histGet(idx)) return false;                // wird geladen - danach wird neu gezeichnet
+  var scans = [];
+  idx.forEach(function (i) {
+    R24MGH.done[i] = 1;
+    var sc = SCANS[i]; if (!sc.rows || !sc.rows.length || NAME == null || SRV == null || GUILD == null) return;
+    var recs = [];
+    sc.rows.forEach(function (r) {
+      var g = cellText(COLS[GUILD], r.v[GUILD]); if (!g) return;
+      var sv = String(r.v[SRV] || ''), ck = clsKey(r);
+      recs.push({name: cellText(COLS[NAME], r.v[NAME]), _srv: sv.toLowerCase(), _srv_disp: sv, guild: g, _ts: sc.ts,
+                 level: CI.level != null ? num(COLS[CI.level], r.v[CI.level]) : null, base_sum: CI.base_sum != null ? num(COLS[CI.base_sum], r.v[CI.base_sum]) : null,
+                 total_sum: CI.total_sum != null ? num(COLS[CI.total_sum], r.v[CI.total_sum]) : null,
+                 last_active: CI.last_active != null ? num(COLS[CI.last_active], r.v[CI.last_active]) : null, _cls: ck ? +ck.slice(1) : null});
+    });
+    if (recs.length) scans.push({ts: sc.ts, recs: recs, groups: []});
+  });
+  if (!scans.length) return false;
+  var M = ML.mgBuild(scans, null, {}, 100000); if (!M) return false;
+  var X2 = {snaps: {}, names: {}, nts: {}, own: {}, onl: {}};
+  mgAddSrc(X2, M, 'h');
+  Object.keys(X2.snaps).forEach(function (k0) {
+    var k = r24MgCanon(k0), l = X.snaps[k] = X.snaps[k] || [];
+    X2.snaps[k0].forEach(function (s) {
+      var same = l.filter(function (x) { return Math.abs(x.ts - s.ts) < 600000; })[0];
+      if (!same) l.push(s); else if (!same.mem && s.mem) same.mem = s.mem;     // Stand ohne Mitglieder: Mitglieder aus der Liste
+    });
+    l.sort(function (a, b) { return a.ts - b.ts; });
+    if (!X.names[k]) { X.names[k] = X2.names[k0]; X.nts[k] = X2.nts[k0]; }
+  });
+  return true;
+}
+// ---- Einzelheiten (Kaestchen, Traenke) auch, wenn "Neu" nicht der neueste Stand ist: aus dem neuesten Stand
+var R24ROF = mgRowsOf;
+mgRowsOf = function (k, per) {
+  var list = r23MgList(k), pr = mgPair(k, per), nw0 = list.length ? list[list.length - 1] : null;
+  if (pr && nw0 && pr.nw !== nw0 && pr.nw.mem && nw0.mem) {
+    var by = {}; nw0.mem.forEach(function (m) { if (m.d) by[m.nk] = m.d; });
+    pr.nw.mem.forEach(function (m) { if (!m.d && !m.un && by[m.nk]) m.d = by[m.nk]; });
+  }
+  return R24ROF(k, per);
+};
 ownInit();
 mgInit();
 r23Init();
+r24Init();
 lsApply();
 (function () {                                          // Vormerkung aus dem Reiter Gilden (Name geklickt / Alle zeigen)
   var pend = null;
@@ -11500,7 +12292,7 @@ function ranksOf(rows, nm, mcol) {                          // Platz = Anzahl gr
   }
   return out;
 }
-var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "620ac5eca7"};
+var FAR = {}, HISTF = [], PC = null, ONL = {"a": "daten-aktuell.dat", "v": "e8d9744f88"};
 function ctxOf(sp) {
   var cols = sp.cols, C = {nc: cols.length, nm: (sp.metrics || []).length, mcol: {}};
   cols.forEach(function (c, j) { if (c.m != null && c.m >= 0) C.mcol[c.m] = j; });
